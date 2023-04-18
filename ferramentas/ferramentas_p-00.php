@@ -11,28 +11,21 @@
 		<![endif]-->
 
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="assets/Bootstrap4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/Bootstrap4/css/bootstrap.min.css">
 
 		<!-- NORMALIZE CSS -->
-		<link   rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+		<link   rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
 
 		<!-- CSS CUSTOMIZADO -->
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 
 		<title>RS - Resolve Systems</title>
 	</head>
 	<body class="bg-light">
-		<?php include 'template/menu.php';?>
+		<?php include '../template/menu.php';?>
 		<div class="container conteudo">
 			<div class="d-flex justify-content-center">
-				<h2 class="text-success">Portfólio</h2>
-			</div>
-			<hr class="divisor">
-			<div>
-			<div class="container conteudo">
-			<div>
-				<div class="d-flex justify-content-center">
-					<h2 class="text-success">Portfólio</h2>
+				<h2 class="text-success">Ferramentas</h2>
 				</div>
 				<hr class="divisor">
 			</div>
@@ -53,13 +46,13 @@
 				<hr class="divisor">
 				<div class="row">
 					<div class="col-md-6 m-auto text-center">
-						<a href="portfolio/portfolio_p-01.html">Próxima <img src="img/icones/seta_direita.png" width="50px"></a>
+						<a href="ferramentas_p-01.html">Próxima <img src="../img/icones/seta_direita.png" width="50px"></a>
 					</div>
 				</div>
 			</div>
 		</div>	
 			</div>
 		</div>			
-		<?php include 'template/js-bootstrap.php';?>
+		<?php include '../template/js-bootstrap.php';?>
 	</body>    
 </html>

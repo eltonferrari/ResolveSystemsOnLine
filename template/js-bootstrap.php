@@ -4,34 +4,34 @@
             <div class="col-sm-1"></div>
             <div class="col-sm-7 text-light">
                 <span class="fasthand">Copyright </span>
-                <img class="pb-1" src="img/icones/copyright.png" alt="copyright" width="20">
+                <img class="pb-1" src="\img/icones/copyright.png" alt="copyright" width="20">
                 <strong>Resolve Systems 2020-2023</strong>
                  - Todos os direitos registrados
             </div>
             <div class="col-sm-3 bg-light borda-redonda-20 text-center rodape-index d-flex justify-content-around">
             <div class="item">
                 <a href="#">
-                    <img class="ml-2 pt-2 " src="img/icones/facebook.png" alt="facebook" width="20" title="Facebook">
+                    <img class="ml-2 pt-2 " src="\img/icones/facebook.png" alt="facebook" width="20" title="Facebook">
                 </a>
             </div>
             <div class="item">
                 <a href="#">
-                    <img class="ml-2 pt-2" src="img/icones/instagram.png" alt="instagram" width="20" title="Instagram">
+                    <img class="ml-2 pt-2" src="\img/icones/instagram.png" alt="instagram" width="20" title="Instagram">
                 </a>
             </div>
             <div class="item">
                 <a href="#">
-                    <img class="ml-2 pt-2" src="img/icones/linkedin.png" alt="linkedin" width="20" title="LinkedIn">
+                    <img class="ml-2 pt-2" src="\img/icones/linkedin.png" alt="linkedin" width="20" title="LinkedIn">
                 </a>
             </div>
             <div class="item">
                 <a href="https://wa.me/5551980475948">
-                    <img class="ml-2 pt-2"src="img/icones/whatsapp.png" alt="WhatsApp" width="20" title="WhatsApp">
+                    <img class="ml-2 pt-2"src="\img/icones/whatsapp.png" alt="WhatsApp" width="20" title="WhatsApp">
                 </a>
             </div>
             <div class="item">
                 <a href="https://www.youtube.com/channel/UCkT_0ly-WkJqKaJXg4nLYMg">
-                    <img class="ml-2 pt-2" src="img/icones/youtube.png" alt="youtube" width="20" title="YouTube">
+                    <img class="ml-2 pt-2" src="\img/icones/youtube.png" alt="youtube" width="20" title="YouTube">
                 </a>
             </div>
         </div>
