@@ -23,9 +23,148 @@
 	</head>
 	<body class="parallax">
 		<?php include 'template/menu.php'; ?>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h3 class="animate-character">Está precisando de um site?</h3>
+				</div>
+			</div>
+			<h4 class="negrito text-center text-primary">Planos Recomendados</h4>
+			<div class="row" id="container-ofertas">
+				<div class="col-md-4 py-1 px-3">
+					<div class="plano py-1 px-3">
+						<h4 class="text-center bg-primary text-light borda-redonda-10 negrito">Básico</h4>
+						<h6 class="text-center negrito">À partir de R$ 1.000,00</h6>
+						<ul>
+							<li>Site estático</li>
+							<li>Domínio próprio</li>
+							<li>Hospedagem</li>
+							<li>Fotos</li>
+							<li>Vídeos</li>
+							<li>Google Analytics</li>
+						</ul>
+						<br /><br /><br /><br /><br /><br />
+						<div class="text-center">
+							<a href="https://wa.me/5551980475948" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
+						</div>
+					</div>				
+				</div>
+				<div class="col-md-4 py-1 px-3">
+					<div class="plano py-1 px-3">
+						<h4 class="text-center bg-primary text-light borda-redonda-10 negrito">Intermediário</h4>
+						<h6 class="text-center negrito">À partir de R$ 2.000,00</h6>
+						<ul>
+							<li>Site estático</li>
+							<li>Domínio próprio</li>
+							<li>Hospedagem</li>
+							<li>Fotos</li>
+							<li>Vídeos</li>
+							<li>Google Analytics</li>
+							<li>Suporte técnico</li>
+						</ul>
+						<br /><br /><br /><br /><br />
+						<div class="text-center">
+							<a href="https://wa.me/5551980475948" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
+						</div>
+					</div>				
+				</div>
+				<div class="col-md-4 py-1 px-3">
+					<div class="plano py-1 px-3">
+						<h4 class="text-center bg-primary text-light borda-redonda-10 negrito">Avançado</h4>
+						<h6 class="text-center negrito">À partir de R$ 3.000,00</h6>
+						<ul>
+							<li>Site estático</li>
+							<li>Domínio próprio</li>
+							<li>E-mail personalizado<br />(incluindo app para celular)</li>
+							<li>Hospedagem</li>
+							<li>Fotos</li>
+							<li>Vídeos</li>
+							<li>Google Analytics</li>
+							<li>Suporte técnico</li>
+							<li>Levantamento de requisitos presencial</li>
+							<li>Enganjamento as redes sociais de negócio</li>
+						</ul>
+						<div class="text-center mt-2">
+							<a href="https://wa.me/5551980475948" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
+						</div>
+					</div>				
+				</div>
+			</div>
+			<div class="row py-4" id="container-ofertas">
+				<div class="col-md-4 py-1 px-3">
+					<div class="plano py-1 px-3">
+						<h4 class="text-center bg-primary text-light borda-redonda-10 negrito">Rápido</h4>
+						<h6 class="text-center negrito">À partir de R$ 800,00</h6>
+						<ul>
+							<li>Site estático</li>
+							<li>Página única</li>
+							<li>Domínio próprio</li>
+							<li>Hospedagem</li>
+							<li>Fotos</li>
+							<li>Vídeos</li>
+						</ul>
+						<br /><br /><br /><br /><br /><br /><br /><br /><br />
+						<div class="text-center">
+							<a href="https://wa.me/5551980475948" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
+						</div>
+					</div>				
+				</div>
+				<div class="col-md-4 py-1 px-3">
+					<div class="plano py-1 px-3">
+						<h4 class="text-center bg-primary text-light borda-redonda-10 negrito">Personalizado</h4>
+						<h6 class="text-center negrito">
+							<a href="https://wa.me/5551980475948" target="_blank">Consulte o valor aqui!</a>
+						</h6>
+						<ul>
+							<li>Site estático ou dinâmico</li>
+							<li>Domínio próprio</li>
+							<li>E-mail personalizado<br />(incluindo app para celular)</li>
+							<li>Hospedagem</li>
+							<li>Fotos</li>
+							<li>Vídeos</li>
+							<li>Google Analytics</li>
+							<li>Suporte técnico</li>
+							<li>Levantamento de requisitos presencial</li>
+							<li>Enganjamento as redes sociais de negócio</li>
+							<li>Expansividade</li>
+							<li>Treinamento</li>
+							<li>Consultoria</li>							
+						</ul>
+						<div class="text-center">
+							<a href="https://wa.me/5551980475948" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
+						</div>
+					</div>				
+				</div>
+				<div class="col-md-4 py-1 px-3 py-5">
+					<div class="plano py-1 px-3 py-5">
+						<a class="link-index" href="https://wa.me/5551980475948" target="_blank">
+							<h4 class="text-center bg-cinza text-light borda-redonda-10 negrito">Consulte um domínio conosco</h4>
+							<h3 class="text-center negrito py-5 font-cinza">Gratuitamente</h3>
+							<div class="text-center mt-4">
+								<button class="btn btn-secondary borda-redonda-10">Fale Conosco</button>							
+							</div>
+						</a>
+					</div>				
+				</div>
+			</div>
+			<div class="pagamentos">
+				<h5 class="text-center text-danger negrito mb-3">Parcelamento em até 10X no cartão de crédito</h5>
+				<div class="row mb-5">
+					<div class="col-md-8 m-auto bg-light borda-redonda-20-footer text-center d-flex justify-content-around">
+						<div class="item pt-2"><img src="img/logos/pagamentos/pix.png" alt="Pix" title="PIX" width="60"></div>
+						<div class="item pt-2"><img src="img/logos/pagamentos/boleto.png" alt="Boleto" title="BOLETO" width="60"></div>
+						<div class="item pt-2"><img src="img/logos/pagamentos/visa.png" alt="Visa" title="VISA" width="60"></div>
+						<div class="item pt-2"><img src="img/logos/pagamentos/master.png" alt="Master" title="MASTER CARD" width="60"></div>
+						<div class="item pt-2"><img src="img/logos/pagamentos/elo.png" alt="Elo" title="ELO" width="60"></div>
+						<div class="item pt-2"><img src="img/logos/pagamentos/american_express.png" alt="American" title="AMERICAN EXPRESS" width="60"></div>
+						<div class="item pt-2"><img src="img/logos/pagamentos/diners.png" alt="Diners" title="DINERS CLUB" width="60"></div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="img1">
 			<div class="row"><!--Row -->
-				<div class="col-sm-8 m-auto"><!--col-sm8 -->
+				<div class="col-sm-6 m-auto"><!--col-sm8 -->
 					<div id="video" class="section embed-responsive embed-responsive-4by3 m-auto">
 						<video class="embed-responsive-item d-flex justify-content-center m-auto" autoplay loop muted>
 							<source src="videos/video3.mp4" type="video/mp4">
@@ -311,21 +450,6 @@
 					</div><!-- FIM CAROUSEL -->
 				</div>
 			</div>
-		</div>
-		<div class="img3">
-			<p>Mauris ipsum purus, finibus at commodo id, eleifend id nulla. Mauris fringilla suscipit quam, ac cursus
-				 risus vehicula ut. Phasellus condimentum sollicitudin turpis sit amet venenatis. Suspendisse potenti.
-				  Proin cursus sit amet libero vitae semper. Morbi ornare, tortor non blandit blandit, tortor massa
-				   faucibus quam, eget aliquet urna urna in odio. Maecenas blandit sollicitudin neque nec pulvinar.
-				    Praesent ullamcorper lorem at consectetur semper. Mauris in tempor quam, id pulvinar ligula.</p>
-			<p>Vestibulum tempus quis magna eu vehicula. Proin eget libero ante. Suspendisse eget dignissim quam.
-				 Nullam semper tincidunt massa ac ornare. Nullam eget magna tempor, scelerisque massa non, malesuada
-				  diam. Aenean elementum eu ipsum vel luctus. Morbi faucibus, eros a cursus gravida, odio lectus
-				   auctor est, sit amet dapibus nisi quam mollis nibh. Morbi a ornare nulla. Vivamus posuere dolor ac
-				    augue pretium lacinia. Praesent sed metus non odio facilisis egestas. Morbi congue urna at tellus
-					 fermentum aliquam. Integer sem mauris, accumsan sit amet purus in, iaculis interdum ipsum.
-					  Maecenas suscipit, nulla at blandit sollicitudin, augue augue sagittis ante, sed maximus purus
-					   eros at ligula.</p>
 		</div>
 		<div class="text-center voltar-topo">
 			<a href='#topo'>

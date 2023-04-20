@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light">
     <!-- LOGO -->
     <a href="\index.php" class="navbar-brand">
-        <img src="\img/logos/logo.png" width="60">
+        <img src="\img/logos/logo.png" width="40">
     </a>
     <!-- MENU HAMBURGUER -->
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
@@ -27,13 +27,6 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="\contato.php">Contato</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav m-auto">
-            <li class="nav-item">
-                <a class="navbar-brand" href="sustentabilidade.php">
-                    <img src="\img/icones/sustentabilidade.png" alt="sustentabilidade" width="60">
-                </a>
             </li>
         </ul>
     </div>

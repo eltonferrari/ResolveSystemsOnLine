@@ -23,7 +23,7 @@
 	</head>
 	<body class="bg-light">
 		<?php include 'template/menu.php';?>
-		<v class="container">
+		<div class="container">
 			<div id="central" class="conteudo">
 				<div class="d-flex justify-content-center">
 					<h2 class="text-success"><strong>Contatos - Resolve Systems</strong></h2>
@@ -54,12 +54,12 @@
 									</a>
 								</div>
 								<div class="item">
-									<a href="https://wa.me/5551980475948">
+									<a href="https://wa.me/5551980475948" target="_blank">
 										<img class="ml-2 pt-2"src="img/icones/whatsapp.png" alt="WhatsApp" width="20" title="WhatsApp">
 									</a>
 								</div>
 								<div class="item">
-									<a href="https://www.youtube.com/channel/UCkT_0ly-WkJqKaJXg4nLYMg">
+									<a href="https://www.youtube.com/channel/UCkT_0ly-WkJqKaJXg4nLYMg" target="_blank">
 										<img class="ml-2 pt-2" src="img/icones/youtube.png" alt="youtube" width="20" title="YouTube">
 									</a>
 								</div>
@@ -78,7 +78,7 @@
 					</div>
 					<div class="text-center">
 						<h5>
-							<a href="https://www.linkedin.com/in/tiago-emidio-pieretti-vaz-9b126a192/">
+							<a href="https://www.linkedin.com/in/tiago-emidio-pieretti-vaz-9b126a192/" target="_blank">
 								<img class="align-self-center" src="img/icones/linkedin.png" alt="LinkedIn" width="30">
 								Tiago Pieretti Vaz
 							</a>
@@ -87,7 +87,7 @@
 					<div class="text-center">
 						<h5>
 							<img class="align-self-center" src="img/icones/telefone.png" alt="Telefone:" width="30">
-							<a href="https://wa.me/5551980475948">
+							<a href="https://wa.me/5551980475948" target="_blank">
 								<img class="align-self-center" src="img/icones/whatsapp.png" alt="Whatsapp:" width="30">
 								51 98047 5948
 							</a>
@@ -95,7 +95,7 @@
 					</div>
 					<div class="text-center">
 						<h5>
-							<a href="mailto:tiagovaz@resolvesystems.com.br? subject=subject text">
+							<a href="mailto:tiagovaz@resolvesystems.com.br? subject=subject text" target="_blank">
 								<img class="align-self-center" src="img/icones/e-mail.png" alt="E-mail:" width="30">
 								tiagovaz@resolvesystems.com.br
 							</a>
@@ -111,7 +111,7 @@
 					</div>
 					<div class="text-center">
 						<h5>
-							<a href="https://www.linkedin.com/in/elton-mario-rodriguez-ferrari-4558a7154/">
+							<a href="https://www.linkedin.com/in/elton-mario-rodriguez-ferrari-4558a7154/" target="_blank">
 								<img class="align-self-center" src="img/icones/linkedin.png" alt="desenvolvedor" width="30">
 								Elton Ferrari
 							</a>
@@ -120,7 +120,7 @@
 					<div class="text-center">
 						<h5>
 							<img class="align-self-center" src="img/icones/telefone.png" alt="Telefone:" width="30">
-							<a href="https://wa.me/5551980626338">
+							<a href="https://wa.me/5551980626338" target="_blank">
 								<img class="align-self-center" src="img/icones/whatsapp.png" alt="Whatsapp:" width="30">
 								51 98062 6338
 							</a>
@@ -128,7 +128,7 @@
 					</div>
 					<div class="text-center">
 						<h5>
-							<a href="mailto:eltonferrari@resolvesystems.com.br? subject=subject text">
+							<a href="mailto:eltonferrari@resolvesystems.com.br? subject=subject text" target="_blank">
 								<img class="align-self-center" src="img/icones/e-mail.png" alt="E-mail:" width="30">
 								eltonferrari@resolvesystems.com.br
 							</a>

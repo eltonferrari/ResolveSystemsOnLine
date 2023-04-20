@@ -28,9 +28,8 @@
 				<h3 class="text-center text-primary">Quem somos</h3>
 				<p class="recuo-primeira-linha">Fundada em 2020 a <strong>Resolve Systems</strong> está no mercado
 					 atendendo clientes, pessoa física e jurídica, dos mais diversos segmentos. Localizada na cidade 
-					  de Porto Alegre, contamos com o que há de melhor na Tecnologia da Informação.<br />
-					   Prestando consultoria presencial e remota, ajudando pessoas, empresas, microempreendedores (mei) 
-					   e grandes instituições.</p>
+					  de Porto Alegre, contamos com o que há de melhor na Tecnologia da Informação.</p>
+				<p class="recuo-primeira-linha">Prestando consultoria presencial e remota, ajudando pessoas, empresas, microempreendedores (mei).</p>
 				<h3 class="text-center text-primary">Missão</h3>
 				<p class="recuo-primeira-linha">Disponibilizar soluções em site e identidade digital, criar ferramentas
 					 que resolvam dificuldades e que permitam alavancar resultados.</p>
