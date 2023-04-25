@@ -4,6 +4,15 @@
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-2XS66KFNYE"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-2XS66KFNYE');
+		</script>
 
 		<!-- COMPATIBILIDADE COM HTML5 -->
 		<!--[if lt IE 9]>
@@ -28,23 +37,46 @@
 				<h2 class="text-success">Portfólio</h2>
 			</div>
 			<hr class="divisor">
+			<div class="row">
+				<div class="col-md-6 m-auto text-center py-3">
+					<a class="link-no-line" href="https://carroantigo.000webhostapp.com/" target="_blank">
+						<h5 class="text-center text-primary">
+							<img src="img/logos/antigomobilista_logo.png" alt="Em construção" width="40">
+							Antigomobilista
+							<img src="img/logos/antigomobilista_logo_invertido.png" alt="Em construção" width="40">
+						</h5>
+						<button class="btn btn-success">Ir para Site Antigomobilista</button>
+						<h5 class="text-center text-light bg-dark py-1 mt-1 borda-redonda-20">
+							Rede social feita para quem gosta de carros antigos
+							<img src="img/icones/Under_construction_icon.png" alt="Em construção" width="40">
+						</h5>
+					</a>
+				</div>
+			</div>
+			<hr class="divisor">
 			<h3 class="text-success text-center">Modelos</h3>
 			<div class="row">
-				<div class="col-md-6 text-center">
-					<h5 class="text-center text-primary">Formatura</h5>
-					<a href="portfolio/formatura.html" class="btn btn-success">Ir para modelo de Formatura</a>
+				<div class="col-md-6 text-center py-3">
+					<a class="link-no-line" href="portfolio/formatura.html">
+						<h5 class="text-center text-primary">
+							<img src="img/icones/papiro.png" alt="Formatura" width="40">
+							Formatura
+							<img src="img/icones/papiro.png" alt="Formatura" width="40">
+						</h5>
+						<button class="btn btn-success">Ir para modelo de Formatura</button>
+					</a>
 				</div>
-				<div class="col-md-6 text-center">
+				<div class="col-md-6 text-center py-3">
 					<h5 class="text-center text-primary">Casamento</h5>
 					<a href="portfolio/casamento.html" class="btn btn-success">Ir para modelo de Casamento</a>					
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 text-center">
+				<div class="col-md-6 text-center pt-3 pb-5">
 					<h5 class="text-center text-primary">Aniversário</h5>
 					<a href="portfolio/aniversario.html" class="btn btn-success">Ir para modelo de Aniversário</a>					
 				</div>
-				<div class="col-md-6 text-center">
+				<div class="col-md-6 text-center pt-3 pb-5">
 					<h5 class="text-center text-primary">Time de Futebol</h5>
 					<a href="portfolio/time.html" class="btn btn-success">Ir para modelo de Time de Futebol</a>					
 				</div>

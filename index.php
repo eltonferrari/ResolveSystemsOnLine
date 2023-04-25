@@ -4,6 +4,15 @@
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-2XS66KFNYE"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-2XS66KFNYE');
+		</script>
 
 		<!-- COMPATIBILIDADE COM HTML5 -->
 		<!--[if lt IE 9]>
@@ -24,8 +33,8 @@
 	<body class="parallax">
 		<?php include 'template/menu.php'; ?>
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
+			<div class="row pb-3">
+				<div class="col-md-12 text-center py-3">
 					<h3 class="animate-character">Está precisando de um site?</h3>
 				</div>
 			</div>

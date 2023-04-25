@@ -25,20 +25,13 @@
 		<div class="container">
 			<div class="titulo-formatura">
 			<div class="row">
-					<div class="col-md-10 m-auto text-center">
-						<h3 class="animate-character-formatura-2 text-fasthand negrito">
-							Formatura de Análise e Desenvolvimento de Sistemas<br />
-							Universidade UniSSol - Turma 2018/1<br />
-							Parassol - PR<br />
-							29/02/2020
-						</h3>
-					</div>
+				<div class="col-md-3 py-5">
+					<a class=" text-light negrito" href="../index.php">Voltar para Resolve Systems</a>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 m-auto text-center pb-5">
+				<div class="col-md-6 text-center py-5">
 					<img src="../img/portifolio/formatura/moldura-paisagem-baixa.jpg" alt="galeria">
 				</div>
+				<div class="col-md-3"></div>
 			</div>
             <div class="row"><!--Row -->
                 <div class="col-sm-8 m-auto rounded"><!--col-sm8 -->
