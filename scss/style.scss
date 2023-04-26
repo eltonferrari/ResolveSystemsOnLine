@@ -246,7 +246,6 @@ a.link-no-line {
 	text-decoration: none;	
 }
 
-
 .plano {
 	box-shadow: 8px 8px 10px -3px #007bffb3;
 }
@@ -421,7 +420,7 @@ div.font-reduzida {
 }
 
 // RANGE
-input[type=range] {
+/*input[type=range] {
 	height: 28px;
 	-webkit-appearance: none;
 	margin: 10px 0;
@@ -522,7 +521,7 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
 	background: #999999;
 }
-
+*/
 // FLIPSWITCH
 
 .flipswitch {
