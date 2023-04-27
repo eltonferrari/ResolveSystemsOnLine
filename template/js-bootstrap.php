@@ -1,7 +1,11 @@
 <footer class="bg-primary fixed-botton">
     <div class="p-1">
         <div class="row text-center">
-            <div class="col-sm-1"></div>
+            <div class="col-sm-1">
+                <a class="navbar-brand" href="\sustentabilidade.php" title="Sustentabilidade">
+                    <img src="\img/icones/sustentabilidade.png" alt="sustentabilidade" width="40">
+                </a>
+            </div>
             <div class="col-sm-7 text-light">
                 <span class="fasthand">Copyright </span>
                 <img class="pb-1" src="\img/icones/copyright.png" alt="copyright" width="20">
@@ -35,11 +39,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-1">
-                <a class="navbar-brand" href="sustentabilidade.php" title="Sustentabilidade">
-                    <img src="\img/icones/sustentabilidade.png" alt="sustentabilidade" width="40">
-                </a>
-            </div>
+            <div class="col-sm-1"></div>
         </div>
     </div>
 </footer>

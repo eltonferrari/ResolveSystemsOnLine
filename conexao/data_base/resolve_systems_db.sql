@@ -168,9 +168,11 @@ CREATE TABLE IF NOT EXISTS `form_intencao` (
 	`id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
 	`nome` varchar(100) NOT NULL,
   	`email` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-	`telefone` varchar(16) NOT NULL DEFAULT 1,
-	`mensagem` varchar(10) NOT NULL DEFAULT 0,
+	`telefone` varchar(16) NOT NULL,
+	`mensagem` varchar(255),
+	`visibilidade` int(1) NOT NULL DEFAULT 1,
   	`created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` datetime DEFAULT CURRENT_TIMESTAMP,
   	PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
