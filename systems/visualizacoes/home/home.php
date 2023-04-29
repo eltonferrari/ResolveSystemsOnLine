@@ -2,11 +2,7 @@
     include '../../controladores/autenticacao/validador_de_acesso.php';
 	include '../../controladores/tipos/class_tipos.php';
 	include '../../controladores/pessoas/class_pessoas.php';
-    
-	echo '<pre>';
-        print_r($_SESSION);
-    echo '</pre>';
-	$buscaTipo = new Tipos();
+    $buscaTipo = new Tipos();
 	$buscaTipo = $buscaTipo->getAllTipos();
 	$buscaPerfil = new Pessoas();
 	$buscaPerfil = $buscaPerfil->getIdNomeAllPessoas();
@@ -36,11 +32,14 @@
 	</head>
     <body>
         <?php include '../../../template/menu_logado.php';?>
-        <div class="container">    
-            <div class="row pb-5">
+        <div class="container">
+			<div class="text-center">
+				<img src="../../../img/icones/home-azul.png" alt="Home" width="80">
+			</div>
+			<div class="row pb-5">
 				<div class="col-md-4">
 					<div class="text-center mt-3">
-						<h5 class="text-success">Funções de Usuários</h5>
+						<h5 class="text-primary">Funções de Usuários</h5>
 						<?php 
 							if (isset($_SESSION['msg_altera_tipo'])) {
 								$msgAlteraTipo = $_SESSION['msg_altera_tipo'];
@@ -72,7 +71,7 @@
 									}
 								}
 							?>
-						<h5 class="text-success mt-3">Adicionar nova função</h5>
+						<h5 class="text-primary mt-3">Adicionar nova função</h5>
 						<?php 
 							if (isset($_SESSION['msg_add_tipo'])) {
 								$msgAddTipo = $_SESSION['msg_add_tipo'];
@@ -85,7 +84,7 @@
 						<form name="add-tipos" action="../../controladores/tipos/adiciona_tipo.php" method="post">
 							<div class="input-group mb-2">
 								<div class="input-group-prepend">
-									<span class="input-group-text">
+									<span class="input-group-text bg-primary text-light">
 										Nome:
 									</span>
 								</div>
@@ -93,19 +92,19 @@
 							</div>
 							<div class="input-group mb-2">
 								<div class="input-group-prepend">
-									<span class="input-group-text">
+									<span class="input-group-text bg-primary text-light">
 										Descrição:
 									</span>
 								</div>
 								<input class="form-control" type="text" placeholder="Descreva a função" name="descricao" required>
 							</div>
-							<button class="btn btn-lg btn-success btn-lg" type="submit">Salvar</button>
+							<button class="btn btn-lg btn-primary btn-lg" type="submit">Salvar</button>
 						</form>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="text-center text-success">
-						<h5 class="text-success mt-3">Criar novo usuário</h5>
+						<h5 class="text-primary mt-3">Criar novo usuário</h5>
 						<?php 
 							if (isset($_SESSION['msg_add_user'])) {
 								$msgAddUser = $_SESSION['msg_add_user'];
@@ -118,7 +117,7 @@
 						<form name="add-users" action="../../controladores/pessoas/adiciona_pessoa.php" method="post">
 							<div class="input-group mb-2">
 								<div class="input-group-prepend">
-									<span class="input-group-text">Função: </span>
+									<span class="input-group-text bg-primary text-light">Função: </span>
 									<select class="form-control" id="funcao" name="funcao">
 										<option value=0>Selecione a função...</option>
 										<?php
@@ -137,7 +136,7 @@
 							</div>
 							<div class="input-group mb-2">
 								<div class="input-group-prepend">
-									<span class="input-group-text">
+									<span class="input-group-text bg-primary text-light">
 										Nome:
 									</span>
 								</div>
@@ -145,7 +144,7 @@
 							</div>
 							<div class="input-group mb-2">
 								<div class="input-group-prepend">
-									<span class="input-group-text">
+									<span class="input-group-text bg-primary text-light">
 										E-mail:
 									</span>
 								</div>
@@ -153,19 +152,19 @@
 							</div>
 							<div class="input-group mb-2">
 								<div class="input-group-prepend">
-									<span class="input-group-text">
+									<span class="input-group-text bg-primary text-light">
 										Senha:
 									</span>
 								</div>
 								<input class="form-control" type="password" placeholder="Senha do usuário" name="senha" required>
 							</div>
-							<button class="btn btn-lg btn-success btn-lg" type="submit">Adicionar</button>
+							<button class="btn btn-lg btn-primary btn-lg" type="submit">Adicionar</button>
 						</form>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="text-center text-success">
-						<h5 class="text-success mt-3">Perfil de Usuário</h5>
+						<h5 class="text-primary mt-3">Perfil de Usuário</h5>
 						<?php
 							if (isset($_SESSION['msg_update'])) {
 								$msgUpdate = $_SESSION['msg_update'];
@@ -178,7 +177,7 @@
 						<form name="busca-perfil" action="../../visualizacoes/pessoas/busca_perfil.php" method="post">
 							<div class="input-group mb-2">
 								<div class="input-group-prepend">
-									<span class="input-group-text">Usuário: </span>
+									<span class="input-group-text bg-primary text-light">Usuário: </span>
 									<select class="form-control" id="user" name="user">
 										<option value=0>Selecione o Usuário</option>
 										<?php
@@ -195,7 +194,7 @@
 									</select>
 								</div>
 							</div>
-							<button class="btn btn-lg btn-success btn-lg" type="submit">Buscar Perfil</button>
+							<button class="btn btn-lg btn-primary btn-lg" type="submit">Buscar Perfil</button>
 						</form>
 					</div>
 				</div>

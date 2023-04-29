@@ -100,18 +100,18 @@
         <div class="container">    
             <div class="row pb-3">
 				<div class="col-md-10 m-auto pb-5">
-                    <h3 class="text-success text-center mt-1 negrito">Perfil de Usuário</h3>
+                    <h3 class="text-primary text-center mt-1 negrito">Perfil de Usuário</h3>
                     <form class="" name="form-perfil" action="../../controladores/pessoas/altera_pessoa.php" method="post" enctype="multipart/form-data">
                         <div class="text-center">
-                            <label class="bg-success text-light px-2 mt-5 borda-redonda-10 negrito" for="nome">Nome: </label>
+                            <label class="bg-primary text-light px-2 mt-3 borda-redonda-10 negrito" for="nome">Nome: </label>
                             <input class="form-control borda-redonda-40 text-center text-size-grande mb-2" name="nome" type="text" id="nome" placeholder="Digite o nome..." value="<?= $nome ?>">
                         </div>
                         <div class="row">
                             <div class="col-md-6 m-auto text-center">
-                                <label class="bg-success text-light borda-redonda-20 negrito px-2 mt-2" for="id">Código Identificador: "<?= $idTipo ?>"</label>
+                                <label class="bg-primary text-light borda-redonda-20 negrito px-2 mt-2" for="id">Código Identificador: "<?= $idTipo ?>"</label>
                                 <input type="hidden" name="id" id="id" value="<?= $id ?>">
                                 <br />
-                                <label class="bg-success text-light px-2 borda-redonda-10 negrito" for="funcao">Função: </label>
+                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="funcao">Função: </label>
                                 <select id="funcao" name="id_tipo" class=" borda-redonda-10">
                                     <option value=<?= $idTipo ?>><?= $tipo ?></option>
                                     <?php
@@ -141,14 +141,14 @@
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-4 text-center">
-                                <label class="bg-success text-light px-2 borda-redonda-10 negrito" for="cpf">CPF: </label><br />
+                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="cpf">CPF: </label><br />
                                 <input class="form-control text-center" name="cpf" type="text" id="cpf" placeholder="Digite o CPF..." value="<?= $cpf ?>">
                             </div>
                             <div class="col-md-4 text-center">
                                 <?php
                                     $pessoaDataNasc = substr($dataNasc,0,10);
                                 ?>
-                                    <label class="bg-success text-light px-2 borda-redonda-10 negrito" for="datanasc">Nascimento: </label><br />
+                                    <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="datanasc">Nascimento: </label><br />
                                     <input class="form-control text-center" type="date" name="datanasc" id="datanasc" value="<?= $pessoaDataNasc ?>">
                                 <?php
                                     $data = new DateTime($pessoaDataNasc);
@@ -158,7 +158,7 @@
                                 <span class="negrito" for="idade">Idade: <?= $idade ?></span>
                             </div>
                             <div class="col-md-4 text-center">
-                                <label class="bg-success text-light px-2 borda-redonda-10 negrito" for="sexo">Sexo: </label><br />
+                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="sexo">Sexo: </label><br />
                                 <select class="form-control text-center" id="sexo" name="id_sexo">
                                     <option value=<?= $idSexo ?>><?= $sexo ?></option>
                                     <?php
@@ -175,39 +175,39 @@
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-6 text-center">
-                                <label class="bg-success text-light px-2 borda-redonda-10 negrito" for="email">E-mail: </label><br />
+                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="email">E-mail: </label><br />
                                 <input class="form-control text-center" name="email" type="text" id="email" placeholder="Digite o endereço de e-mail..." value="<?= $email ?>">
                             </div>
                             <div class="col-md-6 text-center">
-                                <label class="bg-success text-light px-2 borda-redonda-10 negrito" for="telefone">Telefone: </label><br />
+                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="telefone">Telefone: </label><br />
                                 <input class="form-control text-center" name="telefone" type="text" id="telefone" placeholder="Digite o nº de telefone..." value="<?= $telefone ?>">
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-4 text-center">
-                                <label class="bg-success text-light px-2 borda-redonda-10 negrito" for="cep">CEP: </label>
+                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="cep">CEP: </label>
                                 <input class="form-control text-center" name="cep" type="text" id="cep" placeholder="Digite o cód. do CEP..." value="<?= $cep ?>">
                             </div>
                             <div class="col-md-4 text-center">
-                                <label class="bg-success text-light px-2 borda-redonda-10 negrito" for="endereco">Endereço: </label>
+                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="endereco">Endereço: </label>
                                 <input class="form-control text-center" name="endereco" type="text" id="endereco" placeholder="Digite o seu endereço..." value="<?= $endereco ?>">
                             </div>
                             <div class="col-md-4 text-center">
-                                <label class="bg-success text-light px-2 borda-redonda-10 negrito" for="enderecocompl">Compl.: </label>
+                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="enderecocompl">Compl.: </label>
                                 <input class="form-control text-center" name="endereco_compl" type="text" id="enderecocompl" placeholder="Seu endereço precisa de complemento?" value="<?= $enderecoCompl ?>">
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-4 text-center">
-                                <label class="bg-success text-light px-2 borda-redonda-10 negrito" for="bairro">Bairro: </label>
+                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="bairro">Bairro: </label>
                                 <input class="form-control text-center" name="bairro" type="text" id="bairro" placeholder="Digite o nome do bairro..." value="<?= $bairro ?>">
                             </div>
                             <div class="col-md-4 text-center">
-                                <label class="bg-success text-light px-2 borda-redonda-10 negrito" for="cidade">Cidade: </label>
+                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="cidade">Cidade: </label>
                                 <input class="form-control text-center" name="cidade" type="text" id="cidade" placeholder="Digite o nome da cidade..." value="<?= $cidade ?>">
                             </div>
                             <div class="col-md-4 text-center">
-                                <label class="bg-success text-light px-2 borda-redonda-10 negrito" for="estado">Estado: </label>
+                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="estado">Estado: </label>
                                 <select class="form-control text-center" id="id_estado" name="id_estado">
                                     <option value=<?= $idEstado ?>><?= $estado ?></option>
                                     <?php
@@ -235,12 +235,13 @@
                             <span>Última alteração de perfil em <strong><?= $updatedAtData ?></strong> às <strong><?= $updatedAtHora ?></strong> horas.</span>
                             <br />
                             <br />
-                            <button class="btn btn-success" type="submit">Salvar Perfil</button>
+                            <button class="btn btn-primary" type="submit">Salvar Perfil</button>
                         </div>                        
                     </form>
                 </div>
 			</div>
         </div>
+        <div class="espaco-pre-footer"></div>
         <?php
             include '../../../template/js-bootstrap.php'; 
         ?>

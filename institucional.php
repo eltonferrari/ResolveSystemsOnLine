@@ -48,6 +48,7 @@
 				<p class="recuo-primeira-linha">Transparência, ética, responsabilidade, confiança e respeito.</p>
 			</div>
 		</div>
+		<div class="espaco-pre-footer"></div>
 		<?php include 'template/js-bootstrap.php';?>
 	</body>    
 </html>

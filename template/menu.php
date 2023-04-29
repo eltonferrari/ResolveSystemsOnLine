@@ -1,7 +1,7 @@
 <span id='topo'></span>
 <nav class="navbar navbar-expand-md navbar-light bg-light">
     <!-- LOGO -->
-    <a href="https://www.resolvesystems.com.br" class="navbar-brand">
+    <a href="\index.php" class="navbar-brand">
         <img src="\img/logos/logo.png" width="40">
     </a>
     <!-- MENU HAMBURGUER -->

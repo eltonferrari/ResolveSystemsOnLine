@@ -26,9 +26,8 @@
 		<div class="container conteudo">
 			<div class="d-flex justify-content-center">
 				<h2 class="text-success">Ferramentas</h2>
-				</div>
-				<hr class="divisor">
 			</div>
+			<hr class="divisor">
 			<div>
 				<div class="row">
 					<div class="col-md-6 m-auto">
@@ -50,9 +49,8 @@
 					</div>
 				</div>
 			</div>
-		</div>	
-			</div>
-		</div>			
+		</div>
+		<div class="espaco-pre-footer"></div>			
 		<?php include '../template/js-bootstrap.php';?>
 	</body>    
 </html>

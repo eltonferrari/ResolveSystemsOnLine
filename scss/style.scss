@@ -25,6 +25,10 @@
 	.espaco-pre-footer {
 		height: 150px;
 	}
+
+	.desaparece-sm {
+		display: none;
+	}
 }
 
 /*Extra small devices (portrait phones, menor que 576px)*/
@@ -42,10 +46,14 @@
 	// INSTITUCIONAL
 	.conteudo {
 		padding-bottom: 75px;
-	}	
+	}
 
 	.espaco-pre-footer {
 		height: 150px;
+	}
+
+	.desaparece-md {
+		display: none;
 	}
 }
 
@@ -93,6 +101,10 @@
 	.voltar-topo {
 		padding-bottom: 30px;
 	}
+	
+	.espaco-pre-footer {
+		height: 150px;
+	}
 }
 
 ul.navbar-nav > li.nav-item > a.nav-link {
@@ -100,6 +112,8 @@ ul.navbar-nav > li.nav-item > a.nav-link {
 	color: #007bff;
 }
 
+.navbar-toggler:hover,
+.navbar-toggler:focus,
 ul.navbar-nav > li.nav-item > a.nav-link:hover,
 ul.navbar-nav > li.nav-item > a.nav-link:focus,
 ul.navbar-nav > li.nav-item > div.dropdown-menu >a.dropdown-item:hover,
@@ -172,7 +186,8 @@ h3.madelina {
 
 .animate-character,
 .animate-character-formatura,
-.animate-character-formatura-2 {
+.animate-character-formatura-2,
+.animate-character-msg {
 	background-size: auto auto;
 	background-clip: border-box;
 	background-size: 200% auto;
@@ -181,12 +196,22 @@ h3.madelina {
 	//text-fill-color: transparent;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	animation: textclip 3s linear infinite;
 	display: inline-block;
 	font-weight: bold;
 }
 
-.animate-character {
+.animate-character,
+.animate-character-formatura,
+.animate-character-formatura-2 {
+	animation: textclip 3s linear infinite;
+}
+
+.animate-character-msg {
+	animation: textclip 0.5s linear infinite;
+}
+
+.animate-character,
+.animate-character-msg {
 	text-transform: uppercase;
 	background-image: linear-gradient(
 		-225deg,
@@ -197,7 +222,15 @@ h3.madelina {
 		#e703fc 80%,
 		#dc3545 100%
 	);
+}
+
+.animate-character {
 	font-size: 50px;
+}
+
+.animate-character-formatura,
+.animate-character-msg {
+	font-size: 20px;
 }
 
 .animate-character-formatura {
@@ -211,7 +244,6 @@ h3.madelina {
 		#e703fc 80%,
 		#dc3545 100%
 	);
-	font-size: 20px;
 }
 
 .animate-character-formatura-2 {
@@ -467,7 +499,7 @@ div.font-reduzida {
 .flipswitch-inner:before {
 	content: "ATIVO";
 	padding-left: 20px;
-	background-color: #28A745;
+	background-color: #007bff;
 	color: #FFFFFF;
 }
 
@@ -522,6 +554,10 @@ body.bg-formatura {
 }
 
 // FALE CONOSCO
+.font-size-15 {
+	font-size: 15px;
+}
+
 .font-size-20 {
 	font-size: 20px;
 }
@@ -533,4 +569,30 @@ body.bg-formatura {
 textarea {
 	overflow: hidden;
 	resize: none;
+}
+
+.link-visualiza-mensagem,
+.link-visualiza-mensagem:hover,
+.link-visualiza-mensagem:focus {
+	text-decoration: none;
+}
+
+span.recuo-primeira-linha {
+	text-indent: 25px;
+}
+
+.borda-redonda-top-left {
+	border-radius: 10px 0 0 0;
+}
+
+.borda-redonda-top-right {
+	border-radius: 0 10px 0 0;
+}
+
+.classVisivel-no {
+	display: none;
+}
+
+.classVisivel-yes {
+	display: contents;
 }

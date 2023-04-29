@@ -17,6 +17,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="\systems/visualizacoes/pessoas/busca_perfil.php?user=<?= $_SESSION['id_logado'] ?>">Perfil</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="\systems/visualizacoes/fale_conosco/lista_mensagens.php">Mensagens - Fale conosco</a>
+            </li>
         </ul>
         <ul class="navbar-nav navbar-right">
             <li class="nav-item">

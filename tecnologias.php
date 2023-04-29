@@ -318,10 +318,7 @@
 				</div>
 			</div>
 		</div>
-
-
-
-
+		<div class="espaco-pre-footer"></div>
 		<?php include 'template/js-bootstrap.php';?>
 	</body>    
 </html>

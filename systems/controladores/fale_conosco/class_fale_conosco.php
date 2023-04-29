@@ -38,10 +38,8 @@
         }
 
         function getIntencaoByNome($nome) {
-            $query = "SELECT * FROM form_intencao WHERE nome LIKE ?";
-            $paramType = "s";
-            $paramValue = array($nome);
-            $intencao = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            $query = "SELECT * FROM form_intencao WHERE nome = %$nome%";
+            $intencao = $this->db_handle->runBaseQuery($query);
             return $intencao;
         }
         
@@ -49,6 +47,14 @@
             $query = "SELECT * FROM form_intencao WHERE email = ?";
             $paramType = "s";
             $paramValue = array($email);
+            $intencao = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            return $intencao;
+        }
+
+        function getIntencaoByTelefone($telefone) {
+            $query = "SELECT * FROM form_intencao WHERE telefone = ?";
+            $paramType = "s";
+            $paramValue = array($telefone);
             $intencao = $this->db_handle->runQuery($query, $paramType, $paramValue);
             return $intencao;
         }
@@ -61,7 +67,7 @@
             return $intencao;
         }
 
-        function getAllintencoes() {
+        function getAllIntencoes() {
             $query = "SELECT * FROM form_intencao ORDER BY created_at ASC";
             $lista = $this->db_handle->runBaseQuery($query);
             return $lista;
