@@ -1,23 +1,7 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
 	include '../../controladores/fale_conosco/class_fale_conosco.php';
-
-	echo '===== SESSION =====';
-	echo '<pre>';
-        print_r($_SESSION);
-    echo '</pre>';
-
-	if (isset($_GET['filtro'])) {
-		echo '===== GET =====';
-		echo '<pre>';
-			print_r($_GET);
-		echo '</pre>';
-	} elseif (isset($_POST['filtro'])) {
-		echo '===== POST =====';
-		echo '<pre>';
-			print_r($_POST);
-		echo '</pre>';
-	}
+	include '../../controladores/error/errors.php';
 
 	$lista = new FaleConosco();
 	$parametro = null;
@@ -27,49 +11,50 @@
 	$telefoneFiltro = null;
 	if (isset($_GET['filtro'])) {
 		$parametro = $_GET['filtro'];
-		$classVisivel = 'yes';
-	} elseif (isset($_POST['filtro'])) {
-		$classVisivel = 'yes';
-		if (isset($_POST['nome'])) {
-			$parametro = 'nome';
-			$nomeFiltro = $_POST['nome'];
-		} elseif (isset($_POST['email'])) {
-			$parametro = 'email';
-			$emailFiltro = $_POST['email'];
-		} elseif (isset($_POST['telefone'])) {
-			$parametro = 'telefone';
-			$telefoneFiltro = $_POST['telefone'];
-		}
+	} elseif (isset($_POST['nome'])) {
+		$parametro = 'nome';
+		$nomeFiltro = $_POST['nome']; 
+	} elseif (isset($_POST['email'])) {
+		$parametro = 'email';
+		$emailFiltro = $_POST['email'];
+	} elseif (isset($_POST['telefone'])) {
+		$parametro = 'telefone';
+		$telefoneFiltro = $_POST['telefone'];
 	}
 	
-	if (isset($_GET['filtro']) || isset($_POST['filtro'])) {
-		switch ($parametro) {
-			case 'nome':
-				$lista = $lista->getIntencaoByNome($nomeFiltro);
+	switch ($parametro) {
+		case 'nome':
+			try {
+				throw new MinhaExceptionCustomizada('Esse é um erro de teste');
+				$lista = $lista->getIntencaoByNome($nomeFiltro);		
+			} catch (MinhaExceptionCustomizada $e) {
+				$e->exibirMensagemErroCustomizada();
+				$classVisivel = 'no';
 				break;
-			case 'email':
-				$lista = $lista->getIntencaoByEmail($emailFiltro);
-				break;
-			case 'telefone':
-				$lista = $lista->getIntencaoByTelefone($telefoneFiltro);
-				break;
-			case 'lido':
-				$lista = $lista->getIntencaoByVisibilidade(0);
-				break;
-			case 'nao_lido':
-				$lista = $lista->getIntencaoByVisibilidade(1);
-				break;
-			case 'todos':
-				$lista = $lista->getAllIntencoes();
-				break;
-		}
+			}
+			$classVisivel = 'yes';
+			break;
+		case 'email':
+			$lista = $lista->getIntencaoByEmail($emailFiltro);
+			$classVisivel = 'yes';
+			break;
+		case 'telefone':
+			$lista = $lista->getIntencaoByTelefone($telefoneFiltro);
+			$classVisivel = 'yes';
+			break;
+		case 'lido':
+			$lista = $lista->getIntencaoByVisibilidade(0);
+			$classVisivel = 'yes';
+			break;
+		case 'nao_lido':
+			$lista = $lista->getIntencaoByVisibilidade(1);
+			$classVisivel = 'yes';
+			break;
+		case 'todos':
+			$lista = $lista->getAllIntencoes();
+			$classVisivel = 'yes';
+			break;
 	}
-
-	echo '===== LISTA - BANCO =====';
-	echo '<pre>';
-        print_r($lista);
-    echo '</pre>';
-
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -106,36 +91,13 @@
 				</div>
 			</div>
 			<div class="row mt-3">
-				<div class="col-md-4 mx-auto mt-3 text-center">
-					<form action="lista_mensagens.php" method="post" name="form-nome">
-						<label for="nome">Nome:</label>
-						<input type="text" name="nome" id="nome" placeholder="Digite um nome...">
-						<input type="hidden" name="filtro" value="filtro">
-						<buttom class="btn btn-primary" type="submit">Buscar por nome</buttom>
-					</form>
-				</div>
-				<div class="col-md-4 mx-auto mt-3 text-center">
-					<form action="lista_mensagens.php" method="post" name="form-email">
-						<label for="email">E-mail:</label>
-						<input type="email" name="email" id="email" placeholder="Digite um e-mail...">
-						<input type="hidden" name="filtro" value="filtro">
-						<buttom class="btn btn-primary" type="submit">Buscar por e-mail</buttom>
-					</form>
-				</div>
-				<div class="col-md-4 mx-auto mt-3 text-center">
-					<form action="lista_mensagens.php" method="post" name="form-telefone">
-						<label for="telefone">Telefone:</label>
-						<input type="tel" name="telefone" id="telefone" placeholder="Digite um nº de telefone...">
-						<input type="hidden" name="filtro" value="filtro">
-						<buttom class="btn btn-primary" type="submit">Buscar por telefone</buttom>
-					</form>
-				</div>
-			</div>
-			<div class="row mt-1">
-				<div class="col-md-4 mx-auto mt-1 text-center">
-					<a class="btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=lido">Lido</a>
-					<a class="btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=nao_lido">Não lido</a>
-					<a class="btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=todos">Todos</a>
+				<div class="col-md-10 mx-auto mt-1 text-center d-flex justify-content-around">
+					<a class="item btn btn-primary mx-2 borda-redonda-10" href="busca_nome.php">Buscar por nome</a>
+					<a class="item btn btn-primary mx-2 borda-redonda-10" href="busca_email.php">Buscar por e-mail</a>
+					<a class="item btn btn-primary mx-2 borda-redonda-10" href="busca_telefone.php">Buscar por telefone</a>
+					<a class="item btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=lido">Lido</a>
+					<a class="item btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=nao_lido">Não lido</a>
+					<a class="item btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=todos">Todos</a>
 				</div>
 			</div>			
 			<div class="<?= 'classVisivel-' . $classVisivel ?>">

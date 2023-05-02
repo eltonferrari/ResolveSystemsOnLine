@@ -72,6 +72,10 @@
 	.conteudo {
 		padding-bottom: 75px;
 	}
+
+	.espaco-pre-footer {
+		height: 150px;
+	}
 }
 
 /*Medium devices (tablets, 768px e maiores)*/
@@ -88,6 +92,10 @@
 
 	.voltar-topo {
 		padding-bottom: 20px;
+	}
+
+	.espaco-pre-footer {
+		height: 150px;
 	}
 }
 
@@ -428,7 +436,6 @@ p.cor-paragrafo {
 
 .borda-redonda-20 {
 	border-radius: 20px;
-	padding: 10px 0;
 }
 
 .borda-redonda-20-footer {
@@ -579,6 +586,10 @@ textarea {
 
 span.recuo-primeira-linha {
 	text-indent: 25px;
+}
+
+.borda-redonda-20-right {
+	border-radius: 0 20px 20px 0;
 }
 
 .borda-redonda-top-left {
