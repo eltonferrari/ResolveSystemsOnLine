@@ -21,17 +21,9 @@
 		$parametro = 'telefone';
 		$telefoneFiltro = $_POST['telefone'];
 	}
-	
 	switch ($parametro) {
 		case 'nome':
-			try {
-				throw new MinhaExceptionCustomizada('Esse é um erro de teste');
-				$lista = $lista->getIntencaoByNome($nomeFiltro);		
-			} catch (MinhaExceptionCustomizada $e) {
-				$e->exibirMensagemErroCustomizada();
-				$classVisivel = 'no';
-				break;
-			}
+			$lista = $lista->getIntencaoByNome($nomeFiltro);		
 			$classVisivel = 'yes';
 			break;
 		case 'email':

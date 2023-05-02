@@ -39,9 +39,7 @@
 
         function getIntencaoByNome($nome) {
             $query = "SELECT * FROM form_intencao WHERE nome LIKE '%$nome%'";
-            $paramType = "s";
-            $paramValue = array($nome);
-            $intencao = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            $intencao = $this->db_handle->runBaseQuery($query);
             return $intencao;
         }
         
