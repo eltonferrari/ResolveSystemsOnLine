@@ -1,18 +1,13 @@
 <footer class="bg-primary fixed-botton">
     <div class="p-1">
         <div class="row text-center">
-            <div class="col-sm-1">
-                <a class="navbar-brand" href="\sustentabilidade.php" title="Sustentabilidade">
-                    <img src="\img/icones/sustentabilidade.png" alt="sustentabilidade" width="40">
-                </a>
-            </div>
-            <div class="col-sm-7 text-light">
+            <div class="col-md-7 text-light">
                 <span class="fasthand">Copyright </span>
                 <img class="pb-1" src="\img/icones/copyright.png" alt="copyright" width="20">
                 <strong>Resolve Systems 2020-2023</strong>
                  - Todos os direitos registrados
             </div>
-            <div class="col-sm-3 bg-light borda-redonda-20-footer text-center d-flex justify-content-around">
+            <div class="col-md-4 bg-light borda-redonda-20-footer text-center d-flex justify-content-around">
                 <div class="item pt-2">
                     <a href="#">
                         <img class="ml-2" src="\img/icones/facebook.png" alt="facebook" width="20" title="Facebook">
@@ -38,8 +33,13 @@
                         <img class="ml-2" src="\img/icones/youtube.png" alt="youtube" width="20" title="YouTube">
                     </a>
                 </div>
+                <div class="item pt-2">
+                    <a href="\sustentabilidade.php" title="Sustentabilidade">
+                        <img src="\img/icones/sustentabilidade.png" alt="sustentabilidade" width="20">
+                    </a>
+                </div>
             </div>
-            <div class="col-sm-1"></div>
+            <div class="col-md-1"></div>
         </div>
     </div>
 </footer>

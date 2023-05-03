@@ -18,6 +18,13 @@
 		<!--[if lt IE 9]>
 			<script src="../../../js/html5shiv.js"></script>
 		<![endif]-->
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-2XS66KFNYE');
+		</script>
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="../../../assets/Bootstrap4/css/bootstrap.min.css">
@@ -199,9 +206,10 @@
 					</div>
 				</div>
 			</div>
+			<div class="espaco-pre-footer"></div>
+			<?php
+				include '../../../template/js-bootstrap.php'; 
+			?>	
         </div>
-        <?php
-            include '../../../template/js-bootstrap.php'; 
-        ?>
     </body>
 </html>

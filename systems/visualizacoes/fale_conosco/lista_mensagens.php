@@ -59,6 +59,13 @@
 		<!--[if lt IE 9]>
 			<script src="../../../js/html5shiv.js"></script>
 		<![endif]-->
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-2XS66KFNYE');
+		</script>
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="../../../assets/Bootstrap4/css/bootstrap.min.css">
@@ -84,12 +91,18 @@
 			</div>
 			<div class="row mt-3">
 				<div class="col-md-10 mx-auto mt-1 text-center d-flex justify-content-around">
-					<a class="item btn btn-primary mx-2 borda-redonda-10" href="busca_nome.php">Buscar por nome</a>
-					<a class="item btn btn-primary mx-2 borda-redonda-10" href="busca_email.php">Buscar por e-mail</a>
-					<a class="item btn btn-primary mx-2 borda-redonda-10" href="busca_telefone.php">Buscar por telefone</a>
-					<a class="item btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=lido">Lido</a>
-					<a class="item btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=nao_lido">Não lido</a>
-					<a class="item btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=todos">Todos</a>
+					<div class="row">
+						<div class="col-md-6 my-2">
+							<a class="item btn btn-primary mx-2 borda-redonda-10" href="busca_nome.php">Nome</a>
+							<a class="item btn btn-primary mx-2 borda-redonda-10" href="busca_email.php">E-mail</a>
+							<a class="item btn btn-primary mx-2 borda-redonda-10" href="busca_telefone.php">Telefone</a>
+						</div>
+						<div class="col-md-6 my-2">
+							<a class="item btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=lido">Lido</a>
+							<a class="item btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=nao_lido">Não lido</a>
+							<a class="item btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=todos">Todos</a>
+						</div>
+					</div>
 				</div>
 			</div>			
 			<div class="<?= 'classVisivel-' . $classVisivel ?>">

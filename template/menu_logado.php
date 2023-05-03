@@ -23,7 +23,7 @@
         </ul>
         <ul class="navbar-nav navbar-right">
             <li class="nav-item">
-                <a class="nav-link" href="\systems/controladores/autenticacao/logoff.php">Sair</a>
+                <a class="nav-link" href="\systems/visualizacoes/autenticacao/sair.php">Sair</a>
             </li>   
         </ul>
     </div>

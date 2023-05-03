@@ -12,6 +12,13 @@
 		<!--[if lt IE 9]>
 			<script src="../../../js/html5shiv.js"></script>
 		<![endif]-->
+        <script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-2XS66KFNYE');
+		</script>
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="../../../assets/Bootstrap4/css/bootstrap.min.css">
@@ -49,21 +56,21 @@
                                     <label class="text-primary mr-2 negrito" for="nome">Nome: </label>
                                 </div>
                                 <div class="col-md-9 mb-2">
-                                    <input type="text input-size" name="nome" id="nome" placeholder="Coloque seu nome aqui..." size="50" required>
+                                    <input type="text input-width" name="nome" id="nome" placeholder="Coloque seu nome aqui..." size="50" required>
                                 </div>
                                 <div class="col-md-3 input-group-inline">
                                     <label class="text-danger" for="email">* </label>
                                     <label class="text-primary mr-2 negrito" for="email">E-mail: </label>
                                 </div>
                                 <div class="col-md-9 mb-2">
-                                    <input type="text input-size" name="email" id="email" placeholder="Coloque seu e-mail aqui..." size="50" required>
+                                    <input type="text input-width" name="email" id="email" placeholder="Coloque seu e-mail aqui..." size="50" required>
                                 </div>
                                 <div class="col-md-3 input-group-inline">
                                     <label class="text-danger" for="telefone">* </label>
                                     <label class="text-primary mr-2 negrito" for="telefone">Telefone: </label>
                                 </div>
                                 <div class="col-md-9 mb-2">
-                                    <input type="text input-size" name="telefone" id="telefone" placeholder="Coloque seu telefone aqui..." size="50" required>
+                                    <input type="text input-width" name="telefone" id="telefone" placeholder="Coloque seu telefone aqui..." size="50" required>
                                 </div>
                                 <div class="col-md-3 input-group-inline">
                                     <label class="text-primary mr-2 negrito" for="mensagem">Deixe uma mensagem: </label>
@@ -95,8 +102,8 @@
             <?php
                 }
             ?>
+            <div class="espaco-pre-footer"></div>
+            <?php include '../../../template/js-bootstrap.php'; ?>
         </div>
-        <div class="espaco-pre-footer"></div>
-        <?php include '../../../template/js-bootstrap.php'; ?>
     </body>
 </html>
