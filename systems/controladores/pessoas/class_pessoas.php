@@ -16,8 +16,7 @@
             return $insertIdPessoa;
         }
 
-        function editPessoa($id,
-                            $idTipo,
+        function editPessoa($idTipo,
                             $nome,
                             $cpf,
                             $dataNasc,
@@ -32,10 +31,10 @@
                             $idEstado,
                             $ativo,
                             $createdBy,
-                            $updatedAt) {
+                            $updatedAt,
+                            $id) {
             $query = "UPDATE pessoas 
-                        SET id = ?,
-                            id_tipo = ?,
+                        SET id_tipo = ?,
                             nome = ?,
                             cpf = ?,
                             data_nasc = ?,
@@ -51,10 +50,9 @@
                             ativo = ?,
                             created_by = ?,
                             updated_at = ? 
-                        WHERE id = $id";
-            $paramType = "iisssisssssssiiis";
-            $paramValue = array($id,
-                                $idTipo,
+                        WHERE id = ?";
+            $paramType = "isssisssssssiiisi";
+            $paramValue = array($idTipo,
                                 $nome,
                                 $cpf,
                                 $dataNasc,
@@ -69,7 +67,9 @@
                                 $idEstado,
                                 $ativo,
                                 $createdBy,
-                                $updatedAt);
+                                $updatedAt,
+                                $id
+                                );
             $this->db_handle->update($query, $paramType, $paramValue);
         }
 

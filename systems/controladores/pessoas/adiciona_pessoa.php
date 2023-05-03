@@ -2,16 +2,6 @@
     session_start();
     include 'class_pessoas.php';
     
-    echo '===== SESSION =====';
-    echo '<pre>';
-    print_r($_SESSION);
-    echo '</pre>';
-    
-    echo '===== POST =====';
-    echo '<pre>';
-    print_r($_POST);
-    echo '</pre>';
-    
     $idTipo = $_POST['funcao'];
     $nome = $_POST['nome'];
     $email = $_POST['email'];
@@ -33,5 +23,8 @@
         }
     }
     $_SESSION['msg_add_user'] = $msgUser;
-    header("Location: ../../visualizacoes/home/home.php")
+    ?>
+        <meta http-equiv="refresh" content="0;url=../../visualizacoes/home/home.php">
+    <?php
+    //header("Location: ../../visualizacoes/home/home.php")
 ?>

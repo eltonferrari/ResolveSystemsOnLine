@@ -17,5 +17,8 @@
     // Destruir a variável de sessão
     
     session_destroy();
-    header('Location: \index.php');
+    ?>
+        <meta http-equiv="refresh" content="0;url=\index.php">
+    <?php
+    //header('Location: \index.php');
 ?>
