@@ -51,6 +51,7 @@
 							<li>Fotos</li>
 							<li>Vídeos</li>
 							<li>Google Analytics</li>
+							<li>Certificado de segurança SSL</li>
 						</ul>
 						<br /><br /><br /><br /><br /><br />
 						<div class="text-center">
@@ -70,6 +71,7 @@
 							<li>Vídeos</li>
 							<li>Google Analytics</li>
 							<li>Suporte técnico</li>
+							<li>Certificado de segurança SSL</li>
 						</ul>
 						<br /><br /><br /><br /><br />
 						<div class="text-center">
@@ -90,8 +92,10 @@
 							<li>Vídeos</li>
 							<li>Google Analytics</li>
 							<li>Suporte técnico</li>
+							<li>Certificado de segurança SSL</li>
 							<li>Levantamento de requisitos presencial</li>
 							<li>Enganjamento as redes sociais de negócio</li>
+
 						</ul>
 						<div class="text-center mt-2">
 							<a href="https://wa.me/5551980475948" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
@@ -112,7 +116,7 @@
 							<li>Fotos</li>
 							<li>Vídeos</li>
 						</ul>
-						<br /><br /><br /><br /><br /><br /><br /><br /><br />
+						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 						<div class="text-center">
 							<a href="https://wa.me/5551980475948" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
 						</div>
@@ -133,6 +137,7 @@
 							<li>Vídeos</li>
 							<li>Google Analytics</li>
 							<li>Suporte técnico</li>
+							<li>Certificado de segurança SSL</li>
 							<li>Levantamento de requisitos presencial</li>
 							<li>Engajamento as redes sociais de negócio</li>
 							<li>Expansividade</li>

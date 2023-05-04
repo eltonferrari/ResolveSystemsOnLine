@@ -1,8 +1,7 @@
-<?php 
+<?php
     require_once "../../../conexao/DBController.php";
     class Pessoas {
         private $db_handle;
-        
         function __construct() {
             $this->db_handle = new DBController();
         }
@@ -33,7 +32,7 @@
                             $createdBy,
                             $updatedAt,
                             $id) {
-            $query = "UPDATE pessoas 
+            $query = "UPDATE pessoas
                         SET id_tipo = ?,
                             nome = ?,
                             cpf = ?,

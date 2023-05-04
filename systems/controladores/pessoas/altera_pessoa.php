@@ -2,7 +2,6 @@
     session_start();
     include 'class_pessoas.php';
     date_default_timezone_set('America/Sao_Paulo');
-    
     $id             = $_POST['id'];
     $nome           = $_POST['nome'];
     $idTipo         = $_POST['id_tipo'];
@@ -25,8 +24,9 @@
     $createdBy      = $_POST['created_by'];
     $updatedAt      = new DateTime('now');
     $dataAtual = $updatedAt->format('Y-m-d H:i:s');
+
     $pessoa = new Pessoas();
-    $pessoa->editPessoa($id,
+    $pessoa = $pessoa->editPessoa(
                         $idTipo,
                         $nome,
                         $cpf,
@@ -42,7 +42,9 @@
                         $idEstado,
                         $ativo,
                         $createdBy,
-                        $dataAtual);
+                        $dataAtual,
+                        $id
+                       );
     $_SESSION['msg_update'] = "Usuário $nome alterado com sucesso.";
     ?>
         <meta http-equiv="refresh" content="0;url=../../visualizacoes/pessoas/busca_perfil.php">

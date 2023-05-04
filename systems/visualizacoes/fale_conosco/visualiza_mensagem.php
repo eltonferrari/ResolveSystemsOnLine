@@ -1,17 +1,10 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
 	include '../../controladores/fale_conosco/class_fale_conosco.php';
-	echo '===== SESSION =====';
-	echo '<pre>';
-        print_r($_SESSION);
-    echo '</pre>';
+	
     $id = $_GET['mensagem'];
 	$mensagem = new FaleConosco();
 	$mensagem = $mensagem->getIntencaoById($id);
-	echo '===== MENSAGEM - BANCO =====';
-	echo '<pre>';
-        print_r($mensagem);
-    echo '</pre>';
 	foreach ($mensagem as $m) {
 		$id			  = $m['id'];
 		$nome		  = $m['nome'];
@@ -21,6 +14,10 @@
 		$visibilidade = $m['visibilidade'];
 		$criacao 	  = $m['created_at'];
 		$alteracao 	  = $m['updated_at'];
+	}
+	$visivel = "";
+	if ($visibilidade == 1) {
+		$visivel = 'checked';
 	}
 ?>
 <!doctype html>
@@ -68,6 +65,9 @@
 							<div class="float-left">
 								<span class="negrito">Id: </span>
 								<span class="pr-5"><?= $id ?></span>
+								<?php
+									$_SESSION['id_mensagem'] = $id;
+								?>
 							</div>
 							<div class="float-right">
 								<span class="negrito">Nome: </span>
@@ -91,19 +91,25 @@
 							<p class="recuo-primeira-linha text-justify"><?= $mensagem ?></p>
 						</div>
 						<div class="clearfix"></div>
-						<div class="text-center py-2">
-							<span class="negrito">Marcar como lido? </span>
-							<input type="checkbox" name="lido" id="lido" value="<?= $visibilidade ?>">
-						</div>
-						<div class="clearfix"></div>
-						<div class="border border-primary px-2 font-size-15">
-							<div class="float-left">
-								<span class="negrito">Criação: </span><span><?= $criacao ?></span>
+						<form action="../../controladores/fale_conosco/altera_visualizacao_fale_conosco.php" method="post">
+							<div class="text-center py-2">
+								<span class="negrito">Marcar como lido? </span>
+								<input type="checkbox" name="lido" id="lido" <?= $visivel ?>>
 							</div>
-							<div class="float-right">
-								<span class="negrito">Alteração: </span><span><?= $alteracao ?></span>
+							<div class="clearfix"></div>
+							<div class="border border-primary px-2 font-size-15">
+								<div class="float-left">
+									<span class="negrito">Criação: </span><span><?= $criacao ?></span>
+								</div>
+								<div class="float-right">
+									<span class="negrito">Alteração: </span><span><?= $alteracao ?></span>
+								</div>
 							</div>
-						</div>								
+							<div class="clearfix"></div>
+							<div class="text-center p-2">
+								<button class="btn btn-primary" type="submit">Salvar</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>

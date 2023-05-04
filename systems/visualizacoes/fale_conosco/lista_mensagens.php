@@ -91,17 +91,15 @@
 			</div>
 			<div class="row mt-3">
 				<div class="col-md-10 mx-auto mt-1 text-center d-flex justify-content-around">
-					<div class="row">
-						<div class="col-md-6 my-2">
-							<a class="item btn btn-primary mx-2 borda-redonda-10" href="busca_nome.php">Nome</a>
-							<a class="item btn btn-primary mx-2 borda-redonda-10" href="busca_email.php">E-mail</a>
-							<a class="item btn btn-primary mx-2 borda-redonda-10" href="busca_telefone.php">Telefone</a>
-						</div>
-						<div class="col-md-6 my-2">
-							<a class="item btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=lido">Lido</a>
-							<a class="item btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=nao_lido">Não lido</a>
-							<a class="item btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=todos">Todos</a>
-						</div>
+					<div class="my-2">
+						<a class="item btn btn-primary mx-2 borda-redonda-10" href="busca_nome.php">Nome</a>
+						<a class="item btn btn-primary mx-2 borda-redonda-10" href="busca_email.php">E-mail</a>
+						<a class="item btn btn-primary mx-2 borda-redonda-10" href="busca_telefone.php">Telefone</a>
+					</div>
+					<div class="my-2">
+						<a class="item btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=lido">Lido</a>
+						<a class="item btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=nao_lido">Não lido</a>
+						<a class="item btn btn-primary mx-2 borda-redonda-10" href="lista_mensagens.php?filtro=todos">Todos</a>
 					</div>
 				</div>
 			</div>			

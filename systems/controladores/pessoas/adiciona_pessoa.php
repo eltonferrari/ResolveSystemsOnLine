@@ -1,7 +1,6 @@
 <?php
     session_start();
     include 'class_pessoas.php';
-    
     $idTipo = $_POST['funcao'];
     $nome = $_POST['nome'];
     $email = $_POST['email'];
@@ -9,10 +8,8 @@
     $createdBy = $_SESSION['id_logado'];
     $user = new Pessoas();
     $user = $user->getAllPessoas();
-
     $addUser = new Pessoas();
     $msgUser = "";
-
     foreach ($user as $u) {
         if (($u['nome'] == $nome && $u['email'] == $email) || ($u['nome'] == $nome) || ($u['email'] == $email)) {
             $msgUser = 'Usuário já existe no sistema!';

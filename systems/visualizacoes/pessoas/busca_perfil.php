@@ -6,18 +6,6 @@
     include '../../controladores/estados/class_estados.php';
     include '../../lib/util.php';
 
-    /*
-    echo '===== SESSION ===== <br />';
-    echo '<pre>';
-        print_r($_SESSION);
-    echo '</pre>';
-
-    echo '===== POST ===== <br />';
-    echo '<pre>';
-        print_r($_POST);
-    echo '</pre>';
-    */
-
     if (isset($_GET['user']) && $_GET['user'] > 0) {
         $idPost = $_GET['user'];
     } else {
@@ -28,14 +16,6 @@
     }
     $user = new Pessoas();
     $user = $user->getPessoaById($idPost);
-    
-    /*
-    echo '===== PERFIL ===== <br />';
-    echo '<pre>';
-        print_r($user);
-    echo '</pre>';
-    */
-
     foreach ($user as $u) {
         $id             = $u['id'];
         $idTipo         = $u['id_tipo'];

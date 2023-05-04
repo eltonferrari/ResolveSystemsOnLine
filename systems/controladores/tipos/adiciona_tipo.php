@@ -1,15 +1,12 @@
 <?php
     session_start();
     include 'class_tipos.php';
-    
     $nome = $_POST['nome_tipo'];
     $descricao = $_POST['descricao'];
     $tipo = new Tipos();
-    $tipo = $tipo->getAllTipos();    
-    
+    $tipo = $tipo->getAllTipos();
     $addTipo = new Tipos();
     $msgTipo = "";
-
     foreach ($tipo as $t) {
         if (($t['nome'] == $nome && $t['descricao'] == $descricao) || ($t['nome'] == $nome) || ($t['descricao'] == $descricao)) {
             $msgTipo = 'Função já existe no sistema!';

@@ -10,32 +10,32 @@
             <div class="col-md-4 bg-light borda-redonda-20-footer text-center d-flex justify-content-around">
                 <div class="item pt-2">
                     <a href="#">
-                        <img class="ml-2" src="\img/icones/facebook.png" alt="facebook" width="20" title="Facebook">
+                        <img class="ml-2 pb-2" src="\img/icones/facebook.png" alt="facebook" width="20" title="Facebook">
                     </a>
                 </div>
                 <div class="item pt-2">
                     <a href="#">
-                        <img class="ml-2" src="\img/icones/instagram.png" alt="instagram" width="20" title="Instagram">
+                        <img class="ml-2 pb-2" src="\img/icones/instagram.png" alt="instagram" width="20" title="Instagram">
                     </a>
                 </div>
                 <div class="item pt-2">
                     <a href="#">
-                        <img class="ml-2" src="\img/icones/linkedin.png" alt="linkedin" width="20" title="LinkedIn">
+                        <img class="ml-2 pb-2" src="\img/icones/linkedin.png" alt="linkedin" width="20" title="LinkedIn">
                     </a>
                 </div>
                 <div class="item pt-2">
                     <a href="https://wa.me/5551980475948" target="_blank">
-                        <img class="ml-2"src="\img/icones/whatsapp.png" alt="WhatsApp" width="20" title="WhatsApp">
+                        <img class="ml-2 pb-2"src="\img/icones/whatsapp.png" alt="WhatsApp" width="20" title="WhatsApp">
                     </a>
                 </div>
                 <div class="item pt-2">
                     <a href="https://www.youtube.com/channel/UCkT_0ly-WkJqKaJXg4nLYMg" target="_blank">
-                        <img class="ml-2" src="\img/icones/youtube.png" alt="youtube" width="20" title="YouTube">
+                        <img class="ml-2 pb-2" src="\img/icones/youtube.png" alt="youtube" width="20" title="YouTube">
                     </a>
                 </div>
                 <div class="item pt-2">
                     <a href="\sustentabilidade.php" title="Sustentabilidade">
-                        <img src="\img/icones/sustentabilidade.png" alt="sustentabilidade" width="20">
+                        <img class="pb-2" src="\img/icones/sustentabilidade.png" alt="sustentabilidade" width="20">
                     </a>
                 </div>
             </div>

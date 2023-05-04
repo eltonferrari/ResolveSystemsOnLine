@@ -16,16 +16,16 @@
             return $insertIdMensagem;
         }
 
-        function alteraVisibilidade($id, $visibilidade, $updatedAt) {
+        function alteraVisibilidade($visibilidade, $updatedAt, $id) {
             $query = "UPDATE form_intencao 
-                        SET id = ?,
-                            visibilidade = ?,
+                        SET visibilidade = ?,
                             updated_at = ? 
-                        WHERE id = $id";
-            $paramType = "iis";
-            $paramValue = array($id,
-                                $visibilidade,
-                                $updatedAt);
+                        WHERE id = ?";
+            $paramType = "isi";
+            $paramValue = array($visibilidade,
+                                $updatedAt,
+                                $id
+                                );
             $this->db_handle->update($query, $paramType, $paramValue);
         }
 

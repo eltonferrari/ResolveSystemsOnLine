@@ -1,7 +1,6 @@
 <?php
     session_start();
-    include 'class_tipos.php';
-       
+    include 'class_tipos.php';       
     $id = $_POST['id'];
     $nome = $_POST['nome'];
     $descricao = $_POST['descricao'];
