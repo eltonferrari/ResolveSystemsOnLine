@@ -37,6 +37,7 @@
         $createdAt      = $u['created_at'];
         $updatedAt      = $u['updated_at'];
     }
+    $activ  = ( $ativo == 1)  ? 'checked' : "";
     $tipo = new Tipos();
     $tipo = $tipo->getNomeById($idTipo);
     $buscaTipos = new Tipos();
@@ -117,7 +118,7 @@
                                         Usuário: 
                                     </div>
                                     <div class="flipswitch">
-                                        <input type="checkbox" name="ativo" class="flipswitch-cb" id="fs" checked>
+                                        <input type="checkbox" name="ativo" class="flipswitch-cb" id="fs" <?= $activ ?>>
                                         <label class="flipswitch-label" for="fs">
                                             <div class="flipswitch-inner"></div>
                                             <div class="flipswitch-switch"></div>

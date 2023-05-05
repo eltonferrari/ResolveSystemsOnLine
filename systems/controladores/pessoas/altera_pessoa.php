@@ -5,11 +5,7 @@
     $id             = $_POST['id'];
     $nome           = $_POST['nome'];
     $idTipo         = $_POST['id_tipo'];
-    if (isset($_POST['ativo'])) {
-        $ativo = 1;
-    } else {
-        $ativo = 0;
-    }
+    $ativo  = ( isset($_POST['ativo']) )  ? 1 : 0;
     $cpf            = $_POST['cpf'];
     $dataNasc       = $_POST['datanasc'] . ' 00:00:00';
     $idSexo         = $_POST['id_sexo'];
