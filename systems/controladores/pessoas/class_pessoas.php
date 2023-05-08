@@ -128,16 +128,16 @@
             return $result;
         }
 
-        function getFotoById($id) {
-            $caminhoDaFoto = null;
-            $query = "SELECT foto FROM pessoas WHERE id = ?";
+        function getTipoById($id) {
+            $tipo = null;
+            $query = "SELECT id_tipo FROM pessoas WHERE id = ?";
             $paramType = "i";
             $paramValue = array($id);
             $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
-            foreach($result as $foto) {
-                $caminhoDaFoto = $foto['foto'];
+            foreach($result as $t) {
+                $tipo = $t['id_tipo'];
             }
-            return $caminhoDaFoto;
+            return $tipo;
         }
     }
 ?>

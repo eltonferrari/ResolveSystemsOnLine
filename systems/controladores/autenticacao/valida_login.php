@@ -13,16 +13,22 @@
     ?>
         <meta http-equiv="refresh" content="0;url=../../visualizacoes/autenticacao/login.php">
     <?php
-        //  header("Location: ../../visualizacoes/autenticacao/login.php");
+        
     } else {
         foreach ($pessoa as $p) {
             if ($email == $p['email'] && $senha == $p['senha']) {
                 $_SESSION['logado'] = 1;
                 $_SESSION['id_logado'] = $p['id'];
-                ?>
-                    <meta http-equiv="refresh" content="0;url=../../visualizacoes/home/home.php">
-                <?php
-                //  header("Location: ../../visualizacoes/home/home.php");
+                $_SESSION['tipo'] = $p['id_tipo'];
+                if ($p == 1) {
+                    ?>
+                        <meta http-equiv="refresh" content="0;url=../../visualizacoes/home/home.php">
+                    <?php
+                } else {
+                    ?>
+                        <meta http-equiv="refresh" content="0;url=../../visualizacoes/pessoas/status_cliente.php">
+                    <?php
+                }
             } else {
                 $msgPessoa = "Usuário e/ou Senha inválidos!";
                 $_SESSION['mensagem'] = $msgPessoa;

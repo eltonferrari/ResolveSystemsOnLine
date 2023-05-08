@@ -56,8 +56,8 @@ CREATE TABLE IF NOT EXISTS `tipos_pessoa` (
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `tipos_pessoa` (`id`, `nome`, `descricao`) 
-	VALUES 	(0, 'Não Definido', 'Sem permissões para uso do sistema'),
-			(1, 'Administrador', 'Permissão total sobre o sistema');
+	VALUES 	(1, 'Administrador', 'Permissão total sobre o sistema'),
+			(2, 'Cliente', 'Acesso ao perfil e suas compras');
 
 --
 -- Estrutura da tabela `sexos`
@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS `pessoas` (
 	`cpf` varchar(11) COLLATE utf8_unicode_ci UNIQUE,
 	`data_nasc` datetime COLLATE utf8_unicode_ci,
 	`id_sexo` int(1) DEFAULT 4,
-	`email` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+	`email` varchar(100) COLLATE utf8_unicode_ci UNIQUE NOT NULL,
 	`senha` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
 	`telefone` varchar(16) COLLATE utf8_unicode_ci,
 	`cep` varchar(8) COLLATE utf8_unicode_ci,

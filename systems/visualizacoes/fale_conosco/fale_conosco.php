@@ -66,11 +66,10 @@
                                     <input type="text input-width" name="email" id="email" placeholder="Coloque seu e-mail aqui..." size="50" required>
                                 </div>
                                 <div class="col-md-3 input-group-inline">
-                                    <label class="text-danger" for="telefone">* </label>
                                     <label class="text-primary mr-2 negrito" for="telefone">Telefone: </label>
                                 </div>
                                 <div class="col-md-9 mb-2">
-                                    <input type="text input-width" name="telefone" id="telefone" placeholder="Coloque seu telefone aqui..." size="50" required>
+                                    <input type="text input-width" name="telefone" id="telefone" placeholder="Coloque seu telefone aqui..." size="50">
                                 </div>
                                 <div class="col-md-3 input-group-inline">
                                     <label class="text-primary mr-2 negrito" for="mensagem">Deixe uma mensagem: </label>

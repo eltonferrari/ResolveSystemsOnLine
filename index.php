@@ -468,8 +468,8 @@
 				<a href='#topo'>
 					<img class="voltar-topo" src="img/icones/voltar_topo.png" alt="topo" width="30" title="Voltar ao topo">
 				</a>
-			</div>
+			</div>			
 			<?php include 'template/js-bootstrap.php'; ?>
-		</div>
+		</div>				
 	</body>    
 </html>

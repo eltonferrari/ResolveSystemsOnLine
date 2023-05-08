@@ -1,5 +1,12 @@
 <?php
     session_start();
+    // MENU
+    include '../../controladores/pessoas/class_pessoas.php';
+	$tipoUser = $_SESSION['tipo'];
+	$idUser = $_SESSION['id_logado'];
+    $nomePerfil = new Pessoas;
+	$nomePerfil = $nomePerfil->getNomeById($idUser);
+	// ===============
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -29,7 +36,7 @@
 		<!-- CSS CUSTOMIZADO -->
 		<link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
 		
-		<title>Antigomobilista - Entrar</title>
+		<title>RS - Resolve Systems</title>
 	</head>
     <body>
         <?php include '../../../template/menu_logado.php';?>
@@ -48,7 +55,17 @@
                                     <a class="btn btn-danger" href="../../controladores/autenticacao/logoff.php">Sair</a>
                                 </div>
                                 <div class="col-md-6 text-center">
-                                    <a class="btn btn-primary" href="../../visualizacoes/home/home.php">Voltar para Início</a>
+                                    <?php 
+                                        if ($tipoUser == 1) {
+                                    ?>
+                                            <a class="btn btn-primary" href="../../visualizacoes/home/home.php">Voltar para Início</a>
+                                    <?php 
+                                        } else {
+                                    ?>
+                                            <a class="btn btn-primary" href="../../visualizacoes/pessoas/status_cliente.php">Voltar para Início</a>
+                                    <?php 
+                                        }
+                                    ?>
                                 </div>
                             </div>
 

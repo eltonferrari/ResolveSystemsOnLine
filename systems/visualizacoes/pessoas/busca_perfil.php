@@ -1,11 +1,17 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
-    include '../../controladores/pessoas/class_pessoas.php';
     include '../../controladores/tipos/class_tipos.php';
     include '../../controladores/sexos/class_sexos.php';
     include '../../controladores/estados/class_estados.php';
     include '../../lib/util.php';
 
+    // MENU
+	include '../../controladores/pessoas/class_pessoas.php';
+	$tipoUser = $_SESSION['tipo'];
+	$idUser = $_SESSION['id_logado'];
+    $nomePerfil = new Pessoas;
+	$nomePerfil = $nomePerfil->getNomeById($idUser);
+	// ===============
     if (isset($_GET['user']) && $_GET['user'] > 0) {
         $idPost = $_GET['user'];
     } else {
@@ -52,6 +58,9 @@
     $buscaEstados = $buscaEstados->getAllEstados();
     $criador = new Pessoas();
     $criador = $criador->getNomeById($createdBy);
+    $idUser = $_SESSION['id_logado'];
+    $nomePerfil = new Pessoas;
+	$nomePerfil = $nomePerfil->getNomeById($idUser);
 ?>
 <!doctype html>
 <html lang="pt-br">

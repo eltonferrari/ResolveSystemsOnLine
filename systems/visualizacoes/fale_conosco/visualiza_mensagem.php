@@ -1,7 +1,13 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
 	include '../../controladores/fale_conosco/class_fale_conosco.php';
-	
+	// MENU
+	include '../../controladores/pessoas/class_pessoas.php';
+	$tipoUser = $_SESSION['tipo'];
+	$idUser = $_SESSION['id_logado'];
+    $nomePerfil = new Pessoas;
+	$nomePerfil = $nomePerfil->getNomeById($idUser);
+	// ===============
     $id = $_GET['mensagem'];
 	$mensagem = new FaleConosco();
 	$mensagem = $mensagem->getIntencaoById($id);
