@@ -195,7 +195,7 @@
 							<div class="carousel-inner"><!-- INNER -->
 								<div class="carousel-item active">
 									<div class="text-center text-dark">
-										<h1 class="text-center text-success">Site estático X Site Dinâmico</h1>
+										<h1 class="text-center text-primary">Site estático X Site Dinâmico</h1>
 										<p class="cor-paragrafo">
 											Entenda o que são e qual o mais adequado para sua
 											organização
@@ -210,7 +210,7 @@
 								</div>
 								<div class="carousel-item">
 									<div class="tarja-background text-center container">
-										<h1 class="text-success text-center pt-1">Site estático X Site Dinâmico</h1>
+										<h1 class="text-primary text-center pt-1">Site estático X Site Dinâmico</h1>
 										<div class="video-menor embed-responsive embed-responsive-4by3 m-auto">
 											<video class="embed-responsive-item" autoplay loop muted>
 												<source src="videos/UrB9.mp4" type="video/mp4">
@@ -241,14 +241,14 @@
 								</div>
 								<div class="carousel-item">
 									<div class="tarja-background text-center container">
-										<h1 class="text-success text-center pt-1">Site estático X Site Dinâmico</h1>
+										<h1 class="text-primary text-center pt-1">Site estático X Site Dinâmico</h1>
 										<div class="video-menor embed-responsive embed-responsive-4by3 m-auto">
 											<video class="embed-responsive-item" autoplay loop muted>
 												<source src="videos/UrB9.mp4" type="video/mp4">
 													Your browser does not support the video tag.
 											</video>
 										</div>
-										<h6 class="text-success text-center pt-5">
+										<h6 class="text-primary text-center pt-5">
 											O que é site estático?
 										</h6>					
 										<p class="cor-paragrafo recuo-primeira-linha justificado pt-1">
@@ -266,14 +266,14 @@
 								</div>					
 								<div class="carousel-item">
 									<div class="tarja-background text-center container">
-										<h1 class="text-success text-center pt-1">Site estático X Site Dinâmico</h1>
+										<h1 class="text-primary text-center pt-1">Site estático X Site Dinâmico</h1>
 										<div class="video-menor embed-responsive embed-responsive-4by3 m-auto">
 											<video class="embed-responsive-item" autoplay loop muted>
 												<source src="videos/UrB9.mp4" type="video/mp4">
 													Your browser does not support the video tag.
 											</video>
 										</div>
-										<h6 class="text-success text-center pt-5">
+										<h6 class="text-primary text-center pt-5">
 											Para quem é indicado um site estático?
 										</h6>					
 										<p class="cor-paragrafo recuo-primeira-linha justificado pt-1">
@@ -295,14 +295,14 @@
 								</div>
 								<div class="carousel-item">
 									<div class="tarja-background text-center container">
-										<h1 class="text-success text-center pt-1">Site estático X Site Dinâmico</h1>
+										<h1 class="text-primary text-center pt-1">Site estático X Site Dinâmico</h1>
 										<div class="video-menor embed-responsive embed-responsive-4by3 m-auto">
 											<video class="embed-responsive-item" autoplay loop muted>
 												<source src="videos/UrB9.mp4" type="video/mp4">
 													Your browser does not support the video tag.
 											</video>
 										</div>
-										<h6 class="text-success text-center pt-5">
+										<h6 class="text-primary text-center pt-5">
 											Quais são as vantagens de um site estático?
 										</h6>					
 										<p class="cor-paragrafo recuo-primeira-linha justificado pt-1">
@@ -316,14 +316,14 @@
 								</div>
 								<div class="carousel-item">
 									<div class="tarja-background text-center container">
-										<h1 class="text-success text-center pt-1">Site estático X Site Dinâmico</h1>
+										<h1 class="text-primary text-center pt-1">Site estático X Site Dinâmico</h1>
 										<div class="video-menor embed-responsive embed-responsive-4by3 m-auto">
 											<video class="embed-responsive-item" autoplay loop muted>
 												<source src="videos/UrB9.mp4" type="video/mp4">
 													Your browser does not support the video tag.
 											</video>
 										</div>
-										<h6 class="text-success text-center pt-1">
+										<h6 class="text-primary text-center pt-1">
 											O que é um site dinâmico?
 										</h6>					
 										<p class="cor-paragrafo recuo-primeira-linha justificado pt-1">
@@ -345,14 +345,14 @@
 								</div>
 								<div class="carousel-item">
 									<div class="tarja-background text-center container">
-										<h1 class="text-success text-center pt-1">Site estático X Site Dinâmico</h1>
+										<h1 class="text-primary text-center pt-1">Site estático X Site Dinâmico</h1>
 										<div class="video-menor embed-responsive embed-responsive-4by3 m-auto">
 											<video class="embed-responsive-item" autoplay loop muted>
 												<source src="videos/UrB9.mp4" type="video/mp4">
 													Your browser does not support the video tag.
 											</video>
 										</div>
-										<h6 class="text-success text-center pt-1">
+										<h6 class="text-primary text-center pt-1">
 											Para quem é indicado um site dinâmico?
 										</h6>					
 										<p class="cor-paragrafo recuo-primeira-linha justificado pt-1">
@@ -373,14 +373,14 @@
 								</div>
 								<div class="carousel-item">
 									<div class="tarja-background text-center container">
-										<h1 class="text-success text-center pt-1">Site estático X Site Dinâmico</h1>
+										<h1 class="text-primary text-center pt-1">Site estático X Site Dinâmico</h1>
 										<div class="video-menor embed-responsive embed-responsive-4by3 m-auto">
 											<video class="embed-responsive-item" autoplay loop muted>
 												<source src="videos/UrB9.mp4" type="video/mp4">
 													Your browser does not support the video tag.
 											</video>
 										</div>
-										<h6 class="text-success text-center pt-1">
+										<h6 class="text-primary text-center pt-1">
 											Quais são as vantagens de um site dinâmico?
 										</h6>					
 										<p class="cor-paragrafo recuo-primeira-linha justificado pt-1">
@@ -401,14 +401,14 @@
 								</div>
 								<div class="carousel-item">
 									<div class="tarja-background text-center container">
-										<h1 class="text-success text-center pt-1">Site estático X Site Dinâmico</h1>
+										<h1 class="text-primary text-center pt-1">Site estático X Site Dinâmico</h1>
 										<div class="video-menor embed-responsive embed-responsive-4by3 m-auto">
 											<video class="embed-responsive-item" autoplay loop muted>
 												<source src="videos/UrB9.mp4" type="video/mp4">
 													Your browser does not support the video tag.
 											</video>
 										</div>
-										<h6 class="text-success text-center pt-1">
+										<h6 class="text-primary text-center pt-1">
 											Site estático ou site dinâmico, qual é o mais
 											eficiente?
 										</h6>					
@@ -425,14 +425,14 @@
 								</div>
 								<div class="carousel-item">
 									<div class="tarja-background text-center container">
-										<h1 class="text-success text-center pt-1">Site estático X Site Dinâmico</h1>
+										<h1 class="text-primary text-center pt-1">Site estático X Site Dinâmico</h1>
 										<div class="video-menor embed-responsive embed-responsive-4by3 m-auto">
 											<video class="embed-responsive-item" autoplay loop muted>
 												<source src="videos/UrB9.mp4" type="video/mp4">
 													Your browser does not support the video tag.
 											</video>
 										</div>
-										<h6 class="text-success text-center pt-1">
+										<h6 class="text-primary text-center pt-1">
 											Logo, a verdadeira resposta para esse questionamento
 											é: depende!
 										</h6>					

@@ -25,7 +25,7 @@
 		<?php include '../template/menu.php';?>
 		<div class="container conteudo">
 			<div class="d-flex justify-content-center">
-				<h2 class="text-success">Ferramentas</h2>
+				<h2 class="text-primary">Ferramentas</h2>
 			</div>
 			<hr class="divisor">
 			<div>

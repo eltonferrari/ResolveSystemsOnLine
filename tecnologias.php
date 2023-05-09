@@ -34,7 +34,7 @@
 		<div class="container">
 			<div class="conteudo">
 				<div class="d-flex justify-content-center">
-					<h2>Tecnologias</h2>
+					<h2 class="text-primary">Tecnologias</h2>
 				</div>
 				<div class="row">
 					<div class="border col-md-2 d-flex justify-content-center pt-2 pb-2">
