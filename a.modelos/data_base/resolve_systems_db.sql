@@ -81,14 +81,13 @@ INSERT INTO `sexos` (`id`, `sexo`)
 DROP TABLE IF EXISTS `pessoas`;
 CREATE TABLE IF NOT EXISTS `pessoas` (
 	`id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`id_onde` int(2) NOT NULL,
 	`id_tipo` int(2) NOT NULL DEFAULT 99,
 	`nome` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
 	`cpf` varchar(11) COLLATE utf8_unicode_ci UNIQUE,
 	`data_nasc` datetime COLLATE utf8_unicode_ci,
 	`id_sexo` int(1) DEFAULT 4,
-	`email` varchar(100) COLLATE utf8_unicode_ci UNIQUE NOT NULL,
 	`senha` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-	`telefone` varchar(16) COLLATE utf8_unicode_ci,
 	`cep` varchar(8) COLLATE utf8_unicode_ci,
 	`endereco` varchar(255) COLLATE utf8_unicode_ci,
 	`endereco_compl` varchar(50) COLLATE utf8_unicode_ci,
@@ -101,19 +100,19 @@ CREATE TABLE IF NOT EXISTS `pessoas` (
 	`updated_at` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
 	FOREIGN KEY(id_estado) REFERENCES estados(id),
+	FOREIGN KEY(id_onde) REFERENCES onde(id),
 	FOREIGN KEY(id_tipo) REFERENCES tipos_pessoa(id),
 	FOREIGN KEY(id_sexo) REFERENCES sexos(id)	
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-INSERT INTO `pessoas` (`id`, 
+INSERT INTO `pessoas` (`id`,
+					   `onde`,
 					   `id_tipo`,
 					   `nome`, 
 					   `cpf`,
 					   `data_nasc`,
 					   `id_sexo`,
-					   `email`,
 					   `senha`,
-					   `telefone`, 
 					   `cep`, 
 					   `endereco`, 
 					   `endereco_compl`, 
@@ -126,13 +125,12 @@ INSERT INTO `pessoas` (`id`,
 					   `updated_at`) 
 	VALUES (1, 
 			1,
+			1,
 			'Elton Mario Rodriguez Ferrari', 
 			'12345678910',
 			'1974-02-12 00:00:00',
 			1,
-			'eltonferrari@gmail.com',
 			'e10adc3949ba59abbe56e057f20f883e',
-			'+555199885511',
 			'91450400',
 			'Reverendo Daniel Betts, 267',
 			'Esquina',
@@ -172,7 +170,116 @@ CREATE TABLE IF NOT EXISTS `form_intencao` (
 	`visibilidade` int(1) NOT NULL DEFAULT 1,
   	`created_at` datetime DEFAULT CURRENT_TIMESTAMP,
 	`updated_at` datetime DEFAULT CURRENT_TIMESTAMP,
-  	PRIMARY KEY (`id`)
+  	PRIMARY KEY (`id`),
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Estrutura da tabela `telefones`
+--
+DROP TABLE IF EXISTS `telefones`;
+CREATE TABLE IF NOT EXISTS `telefones` (
+	`id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`id_cliente` int(10) NOT NULL,
+  	`telefone` varchar(16) NOT NULL,
+	`ramal` varchar(6),
+	`tipo` varchar(50),
+	`principal` int(1) DEFAULT 0,
+	`created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`),
+	FOREIGN KEY(id_cliente) REFERENCES pessoas(id)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Estrutura da tabela `emails`
+--
+DROP TABLE IF EXISTS `emails`;
+CREATE TABLE IF NOT EXISTS `emails` (
+	`id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`id_cliente` int(10) NOT NULL,
+  	`email` varchar(16) NOT NULL,
+	`principal` int(1) DEFAULT 0,
+	`created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`),
+	FOREIGN KEY(id_cliente) REFERENCES pessoas(id)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Estrutura da tabela `onde`
+--
+DROP TABLE IF EXISTS `onde`;
+CREATE TABLE IF NOT EXISTS `onde` (
+	`id` int(2) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`local` varchar(50) NOT NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Estrutura da tabela `status`
+--
+DROP TABLE IF EXISTS `status`;
+CREATE TABLE IF NOT EXISTS `status` (
+	`id` int(2) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`nome` varchar(50) NOT NULL,
+	`descricao` varchar(255) NOT NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Estrutura da tabela `contratos`
+--
+DROP TABLE IF EXISTS `contratos`;
+CREATE TABLE IF NOT EXISTS `contratos` (
+	`id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`id_cliente` int(10) NOT NULL,
+  	`descricao` varchar(255) NOT NULL,
+	`id_status` int(2),
+	`data` datetime DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`),
+	FOREIGN KEY(id_cliente) REFERENCES pessoas(id),
+	FOREIGN KEY(id_status) REFERENCES status(id)
+) ENGINE=MyISAM AUTO_INCREMENT=1000 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Estrutura da tabela `ocorrencias`
+--
+DROP TABLE IF EXISTS `ocorrencias`;
+CREATE TABLE IF NOT EXISTS `ocorrencias` (
+	`id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`id_contrato` int(10) NOT NULL,
+  	`texto` varchar(255) NOT NULL,
+	`created_by` int(10),
+	`created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` datetime DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`),
+	FOREIGN KEY(id_contrato) REFERENCES contratos(id)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Estrutura da tabela `contrato_arquivos`
+--
+DROP TABLE IF EXISTS `contrato_arquivos`;
+CREATE TABLE IF NOT EXISTS `contrato_arquivos` (
+	`id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`id_contrato` int(10) NOT NULL,
+  	`descricao` varchar(255),
+	`arquivo` varchar(255),
+	`created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`),
+	FOREIGN KEY(id_contrato) REFERENCES contratos(id)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Estrutura da tabela `pessoa_arquivos`
+--
+DROP TABLE IF EXISTS `pessoa_arquivos`;
+CREATE TABLE IF NOT EXISTS `pessoa_arquivos` (
+	`id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`id_pessoa` int(10) NOT NULL,
+  	`descricao` varchar(255),
+	`arquivo` varchar(255),
+	`created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`),
+	FOREIGN KEY(id_pessoa) REFERENCES pessoas(id)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 COMMIT;
