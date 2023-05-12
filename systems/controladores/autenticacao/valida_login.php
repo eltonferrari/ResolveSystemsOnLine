@@ -43,7 +43,7 @@
                 $_SESSION['logado'] = 0;
                 echo "user/senha inválidos";
                 ?>
-                    <!-- <meta http-equiv="refresh" content="0;url=../../visualizacoes/autenticacao/login.php">-->
+                    <meta http-equiv="refresh" content="0;url=../../visualizacoes/autenticacao/login.php">
                 <?php
                 //  header("Location: ../../visualizacoes/autenticacao/login.php");
             }
