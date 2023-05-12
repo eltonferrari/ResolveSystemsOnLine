@@ -1,6 +1,10 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
 
+	echo '<pre>';
+	print_r($_SESSION);
+	echo '</pre>';
+
 	// MENU
     include '../../controladores/pessoas/class_pessoas.php';
 	$tipoUser = $_SESSION['tipo'];

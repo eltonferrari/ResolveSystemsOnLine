@@ -106,7 +106,7 @@ CREATE TABLE IF NOT EXISTS `pessoas` (
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `pessoas` (`id`,
-					   `onde`,
+					   `id_onde`,
 					   `id_tipo`,
 					   `nome`, 
 					   `cpf`,
@@ -129,7 +129,7 @@ INSERT INTO `pessoas` (`id`,
 			'Elton Mario Rodriguez Ferrari', 
 			'12345678910',
 			'1974-02-12 00:00:00',
-			1,
+			2,
 			'e10adc3949ba59abbe56e057f20f883e',
 			'91450400',
 			'Reverendo Daniel Betts, 267',
@@ -170,7 +170,7 @@ CREATE TABLE IF NOT EXISTS `form_intencao` (
 	`visibilidade` int(1) NOT NULL DEFAULT 1,
   	`created_at` datetime DEFAULT CURRENT_TIMESTAMP,
 	`updated_at` datetime DEFAULT CURRENT_TIMESTAMP,
-  	PRIMARY KEY (`id`),
+  	PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -179,15 +179,18 @@ CREATE TABLE IF NOT EXISTS `form_intencao` (
 DROP TABLE IF EXISTS `telefones`;
 CREATE TABLE IF NOT EXISTS `telefones` (
 	`id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-	`id_cliente` int(10) NOT NULL,
+	`id_pessoa` int(10) NOT NULL,
   	`telefone` varchar(16) NOT NULL,
 	`ramal` varchar(6),
 	`tipo` varchar(50),
 	`principal` int(1) DEFAULT 0,
 	`created_at` datetime DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (`id`),
-	FOREIGN KEY(id_cliente) REFERENCES pessoas(id)
+	FOREIGN KEY(id_pessoa) REFERENCES pessoas(id)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT INTO `telefones` (`id`, `id_pessoa`, `telefone`, `ramal`, `tipo`, `principal`) 
+	VALUES 	(1, 1, '51980626338', '', 'Celular', 1);
 
 --
 -- Estrutura da tabela `emails`
@@ -195,13 +198,15 @@ CREATE TABLE IF NOT EXISTS `telefones` (
 DROP TABLE IF EXISTS `emails`;
 CREATE TABLE IF NOT EXISTS `emails` (
 	`id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-	`id_cliente` int(10) NOT NULL,
-  	`email` varchar(16) NOT NULL,
+	`id_pessoa` int(10) NOT NULL,
+  	`email` varchar(100) NOT NULL,
 	`principal` int(1) DEFAULT 0,
 	`created_at` datetime DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (`id`),
-	FOREIGN KEY(id_cliente) REFERENCES pessoas(id)
+	FOREIGN KEY(id_pessoa) REFERENCES pessoas(id)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+INSERT INTO `emails` (`id`, `id_pessoa`, `email`, `principal`) 
+	VALUES 	(1, 1, 'eltonferrari@gmail.com', 1);
 
 --
 -- Estrutura da tabela `onde`
@@ -212,6 +217,9 @@ CREATE TABLE IF NOT EXISTS `onde` (
 	`local` varchar(50) NOT NULL,
 	PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+INSERT INTO `onde` (`id`, `local`) 
+	VALUES 	(1, 'site'),
+			(2, 'operador');
 
 --
 -- Estrutura da tabela `status`

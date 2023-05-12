@@ -1,5 +1,8 @@
 <?php
     require_once "../../../conexao/DBController.php";
+    include 'class_emails.php';
+    include 'class_telefones.php';    
+
     class Pessoas {
         private $db_handle;
         function __construct() {
@@ -7,12 +10,15 @@
         }
 
         function addPessoa($idTipo, $nome, $email, $senha, $createdBy) {
-            $query = "INSERT INTO pessoas (id_tipo, nome, email, senha, created_by)
-                        VALUES (?, ?, ?, ?, ?)";
-            $paramType = "isssi";
-            $paramValue = array($idTipo, $nome, $email, $senha, $createdBy);
+            $query = "INSERT INTO pessoas (id_tipo, nome, senha, created_by)
+                        VALUES (?, ?, ?, ?)";
+            $paramType = "issi";
+            $paramValue = array($idTipo, $nome, $senha, $createdBy);
             $insertIdPessoa= $this->db_handle->insert($query, $paramType, $paramValue);
-            return $insertIdPessoa;
+            $insertIdEmail = new Emails();
+            $insertIdEmail = $insertIdEmail->addEmailPessoa($insertIdPessoa,$email,1);
+            $ids = [$insertIdPessoa,$insertIdEmail];
+            return $ids;            
         }
 
         function editPessoa($idTipo,
@@ -93,7 +99,8 @@
         }
         
         function getPessoaByEmail($email) {
-            $query = "SELECT * FROM pessoas WHERE email = ?";
+            //SELECT e.email, p.senha, p.id, p.id_tipo FROM pessoas p JOIN emails e ON p.id = e.id_pessoa AND e.email = 'eltonferrari@gmail.com';
+            $query = "SELECT e.email, p.senha, p.id, p.id_tipo FROM pessoas p JOIN emails e ON p.id = e.id_pessoa AND e.email = ?";
             $paramType = "s";
             $paramValue = array($email);
             $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
@@ -110,6 +117,12 @@
 
         function getAllPessoas() {
             $query = "SELECT * FROM pessoas ORDER BY nome ASC";
+            $result = $this->db_handle->runBaseQuery($query);
+            return $result;
+        }
+
+        function getNomeEmailAllPessoas() {
+            $query = "SELECT e.email, p.nome FROM pessoas p JOIN emails e ON p.id = e.id_pessoa ORDER BY nome ASC";
             $result = $this->db_handle->runBaseQuery($query);
             return $result;
         }

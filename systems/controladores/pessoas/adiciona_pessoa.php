@@ -7,7 +7,13 @@
     $senha = md5($_POST['senha']);
     $createdBy = $_SESSION['id_logado'];
     $user = new Pessoas();
-    $user = $user->getAllPessoas();
+    $user = $user->getNomeEmailAllPessoas();
+    
+    echo '<pre>';
+	print_r($user);
+	echo '</pre>';
+
+
     $addUser = new Pessoas();
     $msgUser = "";
     foreach ($user as $u) {
@@ -21,7 +27,7 @@
     }
     $_SESSION['msg_add_user'] = $msgUser;
     ?>
-        <meta http-equiv="refresh" content="0;url=../../visualizacoes/home/home.php">
+        <!--<meta http-equiv="refresh" content="0;url=../../visualizacoes/home/home.php">-->
     <?php
     //header("Location: ../../visualizacoes/home/home.php")
 ?>

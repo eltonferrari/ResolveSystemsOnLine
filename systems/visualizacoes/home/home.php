@@ -53,7 +53,7 @@
         <?php include '../../../template/menu_logado.php';?>
         <div class="container">
 			<div class="text-center">
-				<img src="../../../img/icones/home-azul.png" alt="Home" width="80">
+				<img src="../../../img/icones/home.png" alt="Home" width="80">
 			</div>
 			<div class="row pb-5">
 				<div class="col-md-4">
