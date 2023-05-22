@@ -2,6 +2,19 @@
     session_start();
     include 'class_pessoas.php';
     date_default_timezone_set('America/Sao_Paulo');
+    
+    echo '===== SESSION =====';
+    echo '<pre>';
+    print_r($_SESSION);
+    echo '</pre>';
+    
+    echo '===== POST =====';
+    echo '<pre>';
+    print_r($_POST);
+    echo '</pre>';
+    
+    
+    
     $id             = $_POST['id'];
     $nome           = $_POST['nome'];
     $idTipo         = $_POST['id_tipo'];
@@ -9,8 +22,8 @@
     $cpf            = $_POST['cpf'];
     $dataNasc       = $_POST['datanasc'] . ' 00:00:00';
     $idSexo         = $_POST['id_sexo'];
-    $email          = $_POST['email'];
-    $telefone       = $_POST['telefone'];
+    $email          = ( isset($_POST['email']) ) ? 1 : 0;
+    $telefone       = ( isset($_POST['telefone']) ) ? 1 : 0;
     $cep            = $_POST['cep'];
     $endereco       = $_POST['endereco'];
     $enderecoCompl  = $_POST['endereco_compl'];
@@ -28,8 +41,6 @@
                         $cpf,
                         $dataNasc,
                         $idSexo,
-                        $email,
-                        $telefone,
                         $cep,
                         $endereco,
                         $enderecoCompl,
@@ -41,9 +52,9 @@
                         $dataAtual,
                         $id
                        );
-    $_SESSION['msg_update'] = "Usuário $nome alterado com sucesso.";
+//    $_SESSION['msg_update'] = "Usuário $nome alterado com sucesso.";
     ?>
-        <meta http-equiv="refresh" content="0;url=../../visualizacoes/pessoas/busca_perfil.php">
+        <!--<meta http-equiv="refresh" content="0;url=../../visualizacoes/pessoas/busca_perfil.php">-->
     <?php
     //header("Location: ../../visualizacoes/pessoas/busca_perfil.php");
 

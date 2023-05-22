@@ -22,12 +22,13 @@
             break;
         } else {
             $add_user = $addUser->addPessoa($idTipo, $nome, $email, $senha, $createdBy);
-            $msgUser = 'Usuário cadastrado no sistema, com sucesso!';                  
+            $msgUser = 'Usuário cadastrado no sistema, com sucesso!';
+            break;                 
         }
     }
     $_SESSION['msg_add_user'] = $msgUser;
     ?>
-        <!--<meta http-equiv="refresh" content="0;url=../../visualizacoes/home/home.php">-->
+        <meta http-equiv="refresh" content="0;url=../../visualizacoes/home/home.php">
     <?php
     //header("Location: ../../visualizacoes/home/home.php")
 ?>

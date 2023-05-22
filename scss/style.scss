@@ -596,6 +596,10 @@ span.recuo-primeira-linha {
 	border-radius: 0 20px 20px 0;
 }
 
+.borda-redonda-20-left {
+	border-radius: 20px 0 0 20px;
+}
+
 .borda-redonda-top-left {
 	border-radius: 10px 0 0 0;
 }
@@ -610,4 +614,9 @@ span.recuo-primeira-linha {
 
 .classVisivel-yes {
 	display: contents;
+}
+
+// BUSCA PERFIL
+.font-link {
+	font-size: 25px;
 }

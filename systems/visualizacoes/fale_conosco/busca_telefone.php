@@ -45,16 +45,13 @@
                         <form action="lista_mensagens.php" method="post">
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text text-light bg-primary borda-redonda-20 negrito px-4">
-                                        Telefone: 
-                                    </span>
-                                </div>
-                                <input class="form-control borda-redonda-20" type="text" name="telefone" placeholder="Digite o telefone desejado...">
-                                <div class="input-group-append">
-                                    <button type="submit" class="input-group-text text-light bg-primary borda-redonda-20-right negrito px-4">
-                                        Buscar...
-                                    </button>
-                                </div>
+	                                <input class="form-control borda-redonda-20-left" type="text" name="telefone" placeholder="Digite o telefone desejado...">
+    	                            <div class="input-group-append">
+        	                            <button type="submit" class="input-group-text text-light bg-primary borda-redonda-20-right negrito px-4">
+            	                            Buscar...
+                	                    </button>
+                    	            </div>
+								</div>
                             </div>
                         </form>
                     </div>

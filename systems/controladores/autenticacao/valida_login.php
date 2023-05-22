@@ -15,7 +15,7 @@
         $_SESSION['mensagem'] = $msgPessoa;
         $_SESSION['logado'] = 0;
     ?>
-       <!-- <meta http-equiv="refresh" content="0;url=../../visualizacoes/autenticacao/login.php"> -->
+       <meta http-equiv="refresh" content="0;url=../../visualizacoes/autenticacao/login.php">
     <?php
         
     } else {

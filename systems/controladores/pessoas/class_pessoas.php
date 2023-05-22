@@ -9,7 +9,7 @@
             $this->db_handle = new DBController();
         }
 
-        function addPessoa($idTipo, $nome, $email, $senha, $createdBy) {
+        function addPessoa($idTipo, $nome, $email, $telefone, $senha, $createdBy) {
             $query = "INSERT INTO pessoas (id_tipo, nome, senha, created_by)
                         VALUES (?, ?, ?, ?)";
             $paramType = "issi";
@@ -17,8 +17,9 @@
             $insertIdPessoa= $this->db_handle->insert($query, $paramType, $paramValue);
             $insertIdEmail = new Emails();
             $insertIdEmail = $insertIdEmail->addEmailPessoa($insertIdPessoa,$email,1);
-            $ids = [$insertIdPessoa,$insertIdEmail];
-            return $ids;            
+            $insertIdTelefone = new Telefones();
+            $insertIdTelefone = $insertIdTelefone->addTelefonePessoa($insertIdPessoa, $telefone, 1);
+            return $insertIdPessoa;            
         }
 
         function editPessoa($idTipo,
@@ -26,8 +27,6 @@
                             $cpf,
                             $dataNasc,
                             $idSexo,
-                            $email,
-                            $telefone,
                             $cep,
                             $endereco,
                             $enderecoCompl,
@@ -44,8 +43,6 @@
                             cpf = ?,
                             data_nasc = ?,
                             id_sexo = ?,
-                            email = ?,
-                            telefone = ?,
                             cep = ?,
                             endereco = ?,
                             endereco_compl = ?,
@@ -62,8 +59,6 @@
                                 $cpf,
                                 $dataNasc,
                                 $idSexo,
-                                $email,
-                                $telefone,
                                 $cep,
                                 $endereco,
                                 $enderecoCompl,
@@ -151,6 +146,22 @@
                 $tipo = $t['id_tipo'];
             }
             return $tipo;
+        }
+        
+        function getEmailsById($idPessoa){
+            $query = "SELECT * FROM emails WHERE id_pessoa = ?";
+            $paramType = "i";
+            $paramValue = array($idPessoa);
+            $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            return $result;            
+        }
+
+        function getTelefonesById($idPessoa){
+            $query = "SELECT * FROM telefones WHERE id_pessoa = ?";
+            $paramType = "i";
+            $paramValue = array($idPessoa);
+            $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            return $result;            
         }
     }
 ?>

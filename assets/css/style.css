@@ -634,23 +634,33 @@ span.recuo-primeira-linha {
 }
 
 /* line 599, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+.borda-redonda-20-left {
+  border-radius: 20px 0 0 20px;
+}
+
+/* line 603, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-top-left {
   border-radius: 10px 0 0 0;
 }
 
-/* line 603, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 607, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-top-right {
   border-radius: 0 10px 0 0;
 }
 
-/* line 607, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 611, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .classVisivel-no {
   display: none;
 }
 
-/* line 611, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 615, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .classVisivel-yes {
   display: contents;
+}
+
+/* line 620, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+.font-link {
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,7 +6,7 @@
     include '../../lib/util.php';
 
     // MENU
-	include '../../controladores/pessoas/class_pessoas.php';
+	include '../../controladores/pessoas/class_pessoas.php';  
 	$tipoUser = $_SESSION['tipo'];
 	$idUser = $_SESSION['id_logado'];
     $nomePerfil = new Pessoas;
@@ -29,9 +29,7 @@
         $cpf            = $u['cpf'];
         $dataNasc       = $u['data_nasc'];
         $idSexo         = $u['id_sexo'];
-        $email          = $u['email'];
         $senha          = $u['senha'];
-        $telefone       = $u['telefone'];
         $cep            = $u['cep'];
         $endereco       = $u['endereco'];
         $enderecoCompl  = $u['endereco_compl'];
@@ -59,8 +57,26 @@
     $criador = new Pessoas();
     $criador = $criador->getNomeById($createdBy);
     $idUser = $_SESSION['id_logado'];
-    $nomePerfil = new Pessoas;
-	$nomePerfil = $nomePerfil->getNomeById($idUser);
+    $nomePerfil = new Pessoas();
+	$nomePerfil = $nomePerfil->getNomeById($idPost);
+    $emails = new Pessoas();
+    $emails = $emails->getEmailsById($idPost);
+    $email = new Emails();
+    $email = $email->getEmailById($idPost);
+    $telefones = new Pessoas();
+    $telefones = $telefones->getTelefonesById($idPost);
+    $telefone = new Telefones();
+    $telefone = $telefone->getTelefoneById($idPost);
+    echo '===== EMAILS =====';
+    echo '<pre>';
+    print_r($emails);
+    echo '</pre>';
+
+    echo '===== email =====';
+    echo '<pre>';
+    print_r($email);
+    echo '</pre>';
+
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -172,12 +188,64 @@
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-6 text-center">
-                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="email">E-mail: </label><br />
-                                <input class="form-control text-center" name="email" type="text" id="email" placeholder="Digite o endereço de e-mail..." value="<?= $email ?>">
+                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="email">E-mail: </label>
+                                <p class="negrito d-inline">
+                                    <a class="font-link link-no-line" href="cadastra_email.php?id_perfil=<?= $idPost ?>">+</a>
+                                </p>
+                                <br />
+                                <?php
+                                    foreach ($email as $e) {
+                                        if ($e['principal'] == 1) {
+                                            $emailPrincipal = $e['email'];
+                                            $princPrincipal = 'checked';
+                                ?>
+                                            <label class="text-center" name="email" for="email"><?= $emailPrincipal ?></label>
+                                            <input name="email" type="radio" id="email" <?= $princPrincipal ?> value="<?= $emailPrincipal ?>"><br />
+                                <?php
+                                        }
+                                    }
+                                    foreach ($emails as $es) {
+                                        if ($es['principal'] == 0) {
+                                            $emailOutro = $es['email'];
+                                            $princOutro = $es['principal'];
+                                ?>
+                                            <label for="email-outro"><?= $emailOutro ?></label>
+                                            <input name="email" type="radio" id="email-outro" value="<?= $emailOutro ?>">
+                                            <br />
+                                <?php
+                                        }
+                                    }
+                                ?>
                             </div>
                             <div class="col-md-6 text-center">
-                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="telefone">Telefone: </label><br />
-                                <input class="form-control text-center" name="telefone" type="text" id="telefone" placeholder="Digite o nº de telefone..." value="<?= $telefone ?>">
+                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="telefone">Telefone: </label>
+                                <p class="negrito d-inline">
+                                    <a class="font-link link-no-line" href="cadastra_telefone.php?id_perfil=<?= $idPost ?>">+</a>
+                                </p>
+                                <br />
+                                <?php
+                                    foreach ($telefone as $t) {
+                                        if ($t['principal'] == 1) {
+                                            $telefonePrincipal = $t['telefone'];
+                                            $principalPrincipal = 'checked';
+                                ?>
+                                            <label class="text-center" name="telefone" for="telefone"><?= $telefonePrincipal ?></label>
+                                            <input name="telefone" type="radio" id="telefone" <?= $principalPrincipal ?> value="<?= $telefonePrincipal ?>"><br />
+                                <?php
+                                        }
+                                    }
+                                    foreach ($telefone as $ts) {
+                                        if ($ts['principal'] == 0) {
+                                            $telefoneOutro = $ts['telefone'];
+                                            $principalOutro = $ts['principal'];
+                                ?>
+                                            <label for="telefone-outro"><?= $telefoneOutro ?></label>
+                                            <input name="telefone" type="radio" id="telefone-outro" value="<?= $telefoneOutro ?>">
+                                            <br />
+                                <?php
+                                        }
+                                    }
+                                ?>
                             </div>
                         </div>
                         <div class="row mt-3">
