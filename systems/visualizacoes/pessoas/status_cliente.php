@@ -1,23 +1,12 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
-
-	echo '<pre>';
-	print_r($_SESSION);
-	echo '</pre>';
-
 	// MENU
     include '../../controladores/pessoas/class_pessoas.php';
 	$tipoUser = $_SESSION['tipo'];
 	$idUser = $_SESSION['id_logado'];
-    $nomePerfil = new Pessoas;
-	$nomePerfil = $nomePerfil->getNomeById($idUser);
+    $nomeMenu = new Pessoas;
+	$nomeMenu = $nomeMenu->getNomeById($idUser);
 	// ===============
-	
-	/*
-	echo '<pre>';
-	print_r($_SESSION);
-	echo '</pre>';
-	*/
 ?>
 <!doctype html>
 <html lang="pt-br">

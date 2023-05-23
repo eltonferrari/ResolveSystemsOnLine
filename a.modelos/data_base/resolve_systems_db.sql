@@ -229,8 +229,15 @@ CREATE TABLE IF NOT EXISTS `status` (
 	`id` int(2) UNSIGNED NOT NULL AUTO_INCREMENT,
 	`nome` varchar(50) NOT NULL,
 	`descricao` varchar(255) NOT NULL,
-	PRIMARY KEY (`id`)
+	`anterior` int(2),
+	`proximo` int(2),
+	PRIMARY KEY (`id`),
+	FOREIGN KEY(anterior) REFERENCES status(id),
+	FOREIGN KEY(proximo) REFERENCES status(id)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+INSERT INTO `status` (`nome`, `descricao`, `anterior`, `proximo`) 
+	VALUES 	(1, 'Início', null, 2),
+			(2, 'Fim', 1, null);
 
 --
 -- Estrutura da tabela `contratos`

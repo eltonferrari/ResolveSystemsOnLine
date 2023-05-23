@@ -21,7 +21,7 @@
             $msgUser = 'Usuário já existe no sistema!';
             break;
         } else {
-            $add_user = $addUser->addPessoa($idTipo, $nome, $email, $senha, $createdBy);
+            $adduser = $addUser->addPessoa($idTipo, $nome, $email, $senha, $createdBy);
             $msgUser = 'Usuário cadastrado no sistema, com sucesso!';
             break;                 
         }

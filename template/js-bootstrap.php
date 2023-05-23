@@ -27,22 +27,22 @@
             </div>
             <div class="col-md-4 bg-light borda-redonda-20-footer text-center d-flex justify-content-around">
                 <div class="item pt-2">
-                    <a href="#">
+                    <a href="https://www.facebook.com/profile.php?id=100092631795853">
                         <img class="ml-2 pb-2" src="\img/icones/facebook.png" alt="facebook" width="20" title="Facebook">
                     </a>
                 </div>
                 <div class="item pt-2">
-                    <a href="#">
+                    <a href="https://www.instagram.com/resolvesys/">
                         <img class="ml-2 pb-2" src="\img/icones/instagram.png" alt="instagram" width="20" title="Instagram">
                     </a>
                 </div>
                 <div class="item pt-2">
-                    <a href="#">
+                    <a href="https://www.linkedin.com/company/resolve-systems/">
                         <img class="ml-2 pb-2" src="\img/icones/linkedin.png" alt="linkedin" width="20" title="LinkedIn">
                     </a>
                 </div>
                 <div class="item pt-2">
-                    <a href="https://wa.me/5551980475948" target="_blank">
+                    <a href="https://wa.me/5551998694945" target="_blank">
                         <img class="ml-2 pb-2"src="\img/icones/whatsapp.png" alt="WhatsApp" width="20" title="WhatsApp">
                     </a>
                 </div>

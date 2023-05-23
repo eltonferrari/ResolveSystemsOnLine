@@ -8,7 +8,8 @@
     $nomePerfil = new Pessoas;
 	$nomePerfil = $nomePerfil->getNomeById($idUser);
 	// ===============
-    $id = $_GET['mensagem'];
+    
+	$id = $_GET['mensagem'];
 	$mensagem = new FaleConosco();
 	$mensagem = $mensagem->getIntencaoById($id);
 	foreach ($mensagem as $m) {

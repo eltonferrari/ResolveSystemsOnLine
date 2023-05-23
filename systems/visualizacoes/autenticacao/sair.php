@@ -4,8 +4,8 @@
     include '../../controladores/pessoas/class_pessoas.php';
 	$tipoUser = $_SESSION['tipo'];
 	$idUser = $_SESSION['id_logado'];
-    $nomePerfil = new Pessoas;
-	$nomePerfil = $nomePerfil->getNomeById($idUser);
+    $nomeMenu = new Pessoas;
+	$nomeMenu = $nomeMenu->getNomeById($idUser);
 	// ===============
 ?>
 <!doctype html>

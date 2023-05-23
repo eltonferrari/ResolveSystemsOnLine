@@ -9,26 +9,11 @@
 	$nomeLogado = $nomeLogado->getNomeById($idUser);
 	// ===============
         
-    echo '===== SESSION =====';
-    echo '<pre>';
-    print_r($_SESSION);
-    echo '</pre>';
-
-    echo '===== GET PERFIL =====';
-    echo '<pre>';
-    print_r($_GET);
-    echo '</pre>';
-
     $perfil = new Pessoas();
     $idAlterar = $_GET['id_perfil'];
     $nomePerfil = $perfil->getNomeById($idAlterar);
     $emailsPerfil = new Pessoas();
     $emailsPerfil = $perfil->getEmailsById($idAlterar);
-
-    echo '===== GET E-MAILS =====';
-    echo '<pre>';
-    print_r($emailsPerfil);
-    echo '</pre>';
 ?>
 <!doctype html>
 <html lang="pt-br">

@@ -1,6 +1,13 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
 	include '../../controladores/fale_conosco/class_fale_conosco.php';
+	// MENU
+	include '../../controladores/pessoas/class_pessoas.php';
+	$tipoUser = $_SESSION['tipo'];
+	$idUser = $_SESSION['id_logado'];
+    $nomeMenu = new Pessoas;
+	$nomeMenu = $nomeMenu->getNomeById($idUser);
+	// ===============
 ?>
 <!doctype html>
 <html lang="pt-br">

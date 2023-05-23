@@ -15,12 +15,27 @@
             return $insertIdEmail;
         }
 
-        function getEmailById($idPessoa){
+        function editEmail($principal, $id) {
+            $query = "UPDATE emails SET principal = ? WHERE id = ?";
+            $paramType = "ii";
+            $paramValue = array($principal, $id);
+            $this->db_handle->update($query, $paramType, $paramValue);
+        }
+
+        function getEmailPrincipal($idPessoa){
             $query = "SELECT * FROM emails WHERE id_pessoa = ? AND principal = 1";
             $paramType = "i";
             $paramValue = array($idPessoa);
             $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
             return $result;            
+        }
+
+        function getIdByEmail($email) {
+            $query = "SELECT id FROM emails WHERE email = ?";
+            $paramType = "s";
+            $paramValue = array($email);
+            $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            return $result;
         }
     }
 ?>

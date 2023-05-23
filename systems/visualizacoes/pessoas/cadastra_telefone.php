@@ -1,6 +1,5 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
-    
     // MENU
 	include '../../controladores/pessoas/class_pessoas.php';  
 	$tipoUser = $_SESSION['tipo'];
@@ -9,26 +8,11 @@
 	$nomeLogado = $nomeLogado->getNomeById($idUser);
 	// ===============
         
-    echo '===== SESSION =====';
-    echo '<pre>';
-    print_r($_SESSION);
-    echo '</pre>';
-
-    echo '===== GET PERFIL =====';
-    echo '<pre>';
-    print_r($_GET);
-    echo '</pre>';
-
     $perfil = new Pessoas();
     $idAlterar = $_GET['id_perfil'];
     $nomePerfil = $perfil->getNomeById($idAlterar);
     $telefonesPerfil = new Pessoas();
     $telefonesPerfil = $perfil->getTelefonesById($idAlterar);
-
-    echo '===== GET TELEFONES =====';
-    echo '<pre>';
-    print_r($telefonesPerfil);
-    echo '</pre>';
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -71,17 +55,19 @@
                 <div class="col-md-6 mt-5">
                     <h4 class="text-primary text-center mb-5">Atualmente</h4>
                     <?php
-                        foreach ($telefonesPerfil as $telefones) {
-                            $telefone = $telefones['telefone'];
-                            $principal = $telefones['principal'];
-                            if ($principal == 1) {
-                                $itemLista = "<strong>$telefone</strong> - Telefone principal";
-                            } else {
-                                $itemLista = $telefone;
-                            }
+                        if (isset($telefonesPerfil)) {
+                            foreach ($telefonesPerfil as $telefones) {
+                                $telefone = $telefones['telefone'];
+                                $principal = $telefones['principal'];
+                                if ($principal == 1) {
+                                    $itemLista = "<strong>$telefone</strong> - Telefone principal";
+                                } else {
+                                    $itemLista = $telefone;
+                                }
                     ?>
-                            <p><?= $itemLista ?></p>
+                                <p><?= $itemLista ?></p>
                     <?php        
+                            }
                         }
                     ?>
                 </div>

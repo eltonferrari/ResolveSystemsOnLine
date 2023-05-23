@@ -21,6 +21,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="\systems/visualizacoes/fale_conosco/lista_mensagens.php">Fale conosco</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="\systems/visualizacoes/status/status.php">Status</a>
+                        </li>
             <?php 
                     } else {
             ?>
@@ -38,7 +41,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="\img/users/eltonferrari@gmail.com/Foto 3X4.jpg" width="30" height="40" class="rounded-circle"><?= $nomePerfil ?>
+                        <img src="\img/users/eltonferrari@gmail.com/Foto 3X4.jpg" width="30" height="40" class="rounded-circle"><?= $nomeMenu ?>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="\systems/visualizacoes/pessoas/busca_perfil.php?user=<?= $_SESSION['id_logado'] ?>">Perfil</a>

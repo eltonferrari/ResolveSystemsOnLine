@@ -4,14 +4,14 @@
     include '../../controladores/sexos/class_sexos.php';
     include '../../controladores/estados/class_estados.php';
     include '../../lib/util.php';
-
     // MENU
 	include '../../controladores/pessoas/class_pessoas.php';  
 	$tipoUser = $_SESSION['tipo'];
 	$idUser = $_SESSION['id_logado'];
-    $nomePerfil = new Pessoas;
-	$nomePerfil = $nomePerfil->getNomeById($idUser);
+    $nomeMenu = new Pessoas;
+	$nomeMenu = $nomeMenu->getNomeById($idUser);
 	// ===============
+    
     if (isset($_GET['user']) && $_GET['user'] > 0) {
         $idPost = $_GET['user'];
     } else {
@@ -62,21 +62,11 @@
     $emails = new Pessoas();
     $emails = $emails->getEmailsById($idPost);
     $email = new Emails();
-    $email = $email->getEmailById($idPost);
+    $email = $email->getEmailPrincipal($idPost);
     $telefones = new Pessoas();
     $telefones = $telefones->getTelefonesById($idPost);
     $telefone = new Telefones();
-    $telefone = $telefone->getTelefoneById($idPost);
-    echo '===== EMAILS =====';
-    echo '<pre>';
-    print_r($emails);
-    echo '</pre>';
-
-    echo '===== email =====';
-    echo '<pre>';
-    print_r($email);
-    echo '</pre>';
-
+    $telefone = $telefone->getTelefonePrincipal($idPost);
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -162,13 +152,17 @@
                                     $pessoaDataNasc = substr($dataNasc,0,10);
                                 ?>
                                     <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="datanasc">Nascimento: </label><br />
-                                    <input class="form-control text-center" type="date" name="datanasc" id="datanasc" value="<?= $pessoaDataNasc ?>">
+                                    <input class="form-control" type="date" name="datanasc" id="datanasc" value="<?= $pessoaDataNasc ?>">
                                 <?php
                                     $data = new DateTime($pessoaDataNasc);
                                     $interval = $data->diff(new DateTime(date('Y-m-d')));
                                     $idade = $interval->format('%Y ano(s).');
-                                ?> 
-                                <span class="negrito" for="idade">Idade: <?= $idade ?></span>
+                                    if ($idade <150) {
+                                ?>
+                                        <span class="negrito" for="idade">Idade: <?= $idade ?></span>
+                                <?php 
+                                    }
+                                ?>
                             </div>
                             <div class="col-md-4 text-center">
                                 <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="sexo">Sexo: </label><br />
@@ -188,7 +182,7 @@
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-6 text-center">
-                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="email">E-mail: </label>
+                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="email">E-mail(s): </label>
                                 <p class="negrito d-inline">
                                     <a class="font-link link-no-line" href="cadastra_email.php?id_perfil=<?= $idPost ?>">+</a>
                                 </p>
@@ -199,7 +193,7 @@
                                             $emailPrincipal = $e['email'];
                                             $princPrincipal = 'checked';
                                 ?>
-                                            <label class="text-center" name="email" for="email"><?= $emailPrincipal ?></label>
+                                            <label class="text-center negrito" name="email" for="email"><?= $emailPrincipal ?></label>
                                             <input name="email" type="radio" id="email" <?= $princPrincipal ?> value="<?= $emailPrincipal ?>"><br />
                                 <?php
                                         }
@@ -218,31 +212,35 @@
                                 ?>
                             </div>
                             <div class="col-md-6 text-center">
-                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="telefone">Telefone: </label>
+                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="telefone">Telefone(s): </label>
                                 <p class="negrito d-inline">
                                     <a class="font-link link-no-line" href="cadastra_telefone.php?id_perfil=<?= $idPost ?>">+</a>
                                 </p>
                                 <br />
                                 <?php
-                                    foreach ($telefone as $t) {
-                                        if ($t['principal'] == 1) {
-                                            $telefonePrincipal = $t['telefone'];
-                                            $principalPrincipal = 'checked';
+                                    if (isset($telefone)) {
+                                        foreach ($telefone as $t) {
+                                            if ($t['principal'] == 1) {
+                                                $telefonePrincipal = $t['telefone'];
+                                                $principalPrincipal = 'checked';
                                 ?>
-                                            <label class="text-center" name="telefone" for="telefone"><?= $telefonePrincipal ?></label>
-                                            <input name="telefone" type="radio" id="telefone" <?= $principalPrincipal ?> value="<?= $telefonePrincipal ?>"><br />
+                                                <label class="text-center negrito" name="telefone" for="telefone"><?= $telefonePrincipal ?></label>
+                                                <input name="telefone" type="radio" id="telefone" <?= $principalPrincipal ?> value="<?= $telefonePrincipal ?>"><br />
                                 <?php
+                                            }
                                         }
                                     }
-                                    foreach ($telefone as $ts) {
-                                        if ($ts['principal'] == 0) {
-                                            $telefoneOutro = $ts['telefone'];
-                                            $principalOutro = $ts['principal'];
+                                    if (isset($telefones)) {
+                                        foreach ($telefones as $ts) {
+                                            if ($ts['principal'] == 0) {
+                                                $telefoneOutro = $ts['telefone'];
+                                                $principalOutro = $ts['principal'];
                                 ?>
-                                            <label for="telefone-outro"><?= $telefoneOutro ?></label>
-                                            <input name="telefone" type="radio" id="telefone-outro" value="<?= $telefoneOutro ?>">
-                                            <br />
+                                                <label for="telefone-outro"><?= $telefoneOutro ?></label>
+                                                <input name="telefone" type="radio" id="telefone-outro" value="<?= $telefoneOutro ?>">
+                                                <br />
                                 <?php
+                                            }
                                         }
                                     }
                                 ?>

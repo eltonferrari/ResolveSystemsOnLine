@@ -1,23 +1,19 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
 	include '../../controladores/tipos/class_tipos.php';
-	include '../../controladores/pessoas/class_pessoas.php';
 	// MENU
+	include '../../controladores/pessoas/class_pessoas.php';
 	$tipoUser = $_SESSION['tipo'];
 	$idUser = $_SESSION['id_logado'];
-    $nomePerfil = new Pessoas;
-	$nomePerfil = $nomePerfil->getNomeById($idUser);
+    $nomeMenu = new Pessoas;
+	$nomeMenu = $nomeMenu->getNomeById($idUser);
 	// ===============
 		
 	$buscaTipo = new Tipos();
 	$buscaTipo = $buscaTipo->getAllTipos();
 	$buscaPerfil = new Pessoas();
 	$buscaPerfil = $buscaPerfil->getIdNomeAllPessoas();
-	/*
-	echo '<pre>';
-	print_r($_SESSION);
-	echo '</pre>';
-	*/
+	
 ?>
 <!doctype html>
 <html lang="pt-br">

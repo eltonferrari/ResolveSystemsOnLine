@@ -9,7 +9,7 @@
             $this->db_handle = new DBController();
         }
 
-        function addPessoa($idTipo, $nome, $email, $telefone, $senha, $createdBy) {
+        function addPessoa($idTipo, $nome, $email, $senha, $createdBy) {
             $query = "INSERT INTO pessoas (id_tipo, nome, senha, created_by)
                         VALUES (?, ?, ?, ?)";
             $paramType = "issi";
@@ -17,8 +17,6 @@
             $insertIdPessoa= $this->db_handle->insert($query, $paramType, $paramValue);
             $insertIdEmail = new Emails();
             $insertIdEmail = $insertIdEmail->addEmailPessoa($insertIdPessoa,$email,1);
-            $insertIdTelefone = new Telefones();
-            $insertIdTelefone = $insertIdTelefone->addTelefonePessoa($insertIdPessoa, $telefone, 1);
             return $insertIdPessoa;            
         }
 
@@ -53,7 +51,7 @@
                             created_by = ?,
                             updated_at = ? 
                         WHERE id = ?";
-            $paramType = "isssisssssssiiisi";
+            $paramType = "isssisssssiiisi";
             $paramValue = array($idTipo,
                                 $nome,
                                 $cpf,
