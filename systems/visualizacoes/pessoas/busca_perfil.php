@@ -101,10 +101,10 @@
     <body>
         <?php include '../../../template/menu_logado.php';?>
         <div class="container">    
-            <div class="row pb-3">
-				<div class="col-md-10 m-auto pb-5">
+            <div class="row pb-1">
+				<div class="col-md-10 m-auto pb-1">
                     <h3 class="text-primary text-center mt-1 negrito">Perfil de Usuário</h3>
-                    <form class="" name="form-perfil" action="../../controladores/pessoas/altera_pessoa.php" method="post" enctype="multipart/form-data">
+                    <form name="form-perfil" action="../../controladores/pessoas/altera_pessoa.php" method="post" enctype="multipart/form-data">
                         <div class="text-center">
                             <label class="bg-primary text-light px-2 mt-3 borda-redonda-10 negrito" for="nome">Nome: </label>
                             <input class="form-control borda-redonda-40 text-center text-size-grande mb-2" name="nome" type="text" id="nome" placeholder="Digite o nome..." value="<?= $nome ?>">
@@ -304,7 +304,6 @@
                 </div>
 			</div>
         </div>
-        <div class="espaco-pre-footer"></div>
         <?php
             include '../../../template/js-bootstrap.php'; 
         ?>

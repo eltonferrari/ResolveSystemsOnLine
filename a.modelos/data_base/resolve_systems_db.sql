@@ -235,9 +235,9 @@ CREATE TABLE IF NOT EXISTS `status` (
 	FOREIGN KEY(anterior) REFERENCES status(id),
 	FOREIGN KEY(proximo) REFERENCES status(id)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-INSERT INTO `status` (`nome`, `descricao`, `anterior`, `proximo`) 
-	VALUES 	(1, 'Início', null, 2),
-			(2, 'Fim', 1, null);
+INSERT INTO `status` (`id`, `nome`, `descricao`, `anterior`, `proximo`) 
+	VALUES 	(1, 'Início', 'Começo da lista', null, 2),
+			(2, 'Fim', 'Final da lista.', 1, null);
 
 --
 -- Estrutura da tabela `contratos`
