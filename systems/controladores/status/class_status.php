@@ -15,10 +15,10 @@
             return $insertIdStatus;
         }
         
-        function editStatus($nome, $descricao, $anterior, $proximo, $id) {
-            $query = "UPDATE status SET nome = ?, descricao = ?, anterior = ?, proximo = ? WHERE id = ?";
-            $paramType = "ssiii";
-            $paramValue = array($nome, $descricao, $anterior, $proximo, $id);
+        function editStatus($nome, $descricao, $id) {
+            $query = "UPDATE status SET nome = ?, descricao = ? WHERE id = ?";
+            $paramType = "ssi";
+            $paramValue = array($nome, $descricao, $id);
             $this->db_handle->update($query, $paramType, $paramValue);
         }
 
@@ -33,7 +33,8 @@
             $query = "SELECT * FROM status WHERE id = ?";
             $paramType = "i";
             $paramValue = array($id);
-            $this->db_handle->update($query, $paramType, $paramValue);
+            $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            return $result;
         }
 
         function setStatusAnterior($proximo, $id) {
@@ -56,19 +57,14 @@
             return $result;
         }
 
-        function contaRegistros() {
-            $query = "SELECT COUNT(*) FROM status";
-            $result = $this->db_handle->runBaseQuery($query);
-            return $result;
-        }
-
         function ordenaLista($lista) {
+            $listaDesordenada = $lista;
             $listaOrdenada = [];
-            $proximo = $lista[0]['proximo'];
-            $listaOrdenada[0] = $lista[0];
+            $proximo = $listaDesordenada[0]['proximo'];
+            $listaOrdenada[0] = $listaDesordenada[0];
             $i = 1;
             while ($proximo != null) {
-                foreach ($lista as $l) {
+                foreach ($listaDesordenada as $l) {
                     if ($l['id'] == $proximo) {
                         $listaOrdenada[$i] = $l;
                         $proximo = $l['proximo'];
@@ -77,6 +73,13 @@
                 }                
             }
             return $listaOrdenada; 
+        }
+
+        function apagaStatus($id) {
+            $query = "DELETE FROM status WHERE id = ?";
+            $paramType = "i";
+            $paramValue = array($id);
+            $this->db_handle->update($query, $paramType, $paramValue);
         }
     }        
 ?>

@@ -9,9 +9,26 @@
 	$nomeMenu = $nomeMenu->getNomeById($idUser);
 	// ===============
 	
-	$msgStatus = null;
+
+	echo '===== SESSION =====';
+    echo '<pre>';
+    print_r($_SESSION);
+    echo '</pre>';
+
+
+	$msgStatusNovo = null;
 	if (isset($_SESSION['msgStatusNovo'])) {
-		$msgStatus = $_SESSION['msgStatusNovo'];
+		$msgStatusNovo = $_SESSION['msgStatusNovo'];
+	}
+
+	$msgStatusAlterado = null;
+	if (isset($_SESSION['msgStatusAlterado'])) {
+		$msgStatusAlterado = $_SESSION['msgStatusAlterado'];
+	}
+
+	$msgStatusApagado = null;
+	if (isset($_SESSION['msgStatusApagado'])) {
+		$msgStatusApagado = $_SESSION['msgStatusApagado'];
 	}
 	
 	$listaStatus = new Status();
@@ -53,34 +70,53 @@
     <body>
         <?php include '../../../template/menu_logado.php';?>
         <div class="container">
-			<div class="text-center mt-5">
+			<div class="text-center mt-2">
 				<img src="../../../img/icones/status.png" alt="Home" width="80">
                 <h2 class="text-primary negrito">Status</h2>
 			</div>
             <div class="row">
-                <div class="col-md-7 mt-3">
+                <div class="col-md-8 mt-1">
                     <h3 class="text-primary text-center mt-3 negrito">Lista</h3>
+					<h6 class="text-danger text-center mt-3 negrito"><?= $msgStatusAlterado ?></h6>
+					<?php
+						unset($_SESSION['msgStatusAlterado']);
+					?>
+					<h6 class="text-danger text-center mt-3 negrito"><?= $msgStatusApagado ?></h6>
+					<?php
+						unset($_SESSION['msgStatusApagado']);
+					?>
 					<div class="row">
 						<div class="col-md-4 text-primary negrito">Nome:</div>
 						<div class="col-md-8 text-primary negrito">Descrição:</div>
 					</div>
 					<?php
 						foreach ($listaOrdenada as $status) {
+							$id = $status['id'];
 							$nome = $status['nome'];
 							$descricao = $status['descricao'];
 					?>
 						<div class="row">
-							<div class="col-md-4 border py-1"><?= $nome ?></div>
-							<div class="col-md-8 border py-1"><?= $descricao ?></div>
+							<div class="col-md-3 border py-1"><?= $nome ?></div>
+							<div class="col-md-7 border py-1"><?= $descricao ?></div>
+							<div class="col-md-1 mx-auto my-auto d-flex justify-content-center flex-wrap">
+								<a href="altera_status.php?id=<?= $id ?>">
+									<img src="../../../img/icones/editar.png" alt="editar" title="Editar nome e descrição deste Status" width="20">
+								</a>
+							</div>
+							<div class="col-md-1 mx-auto my-auto d-flex justify-content-center flex-wrap">
+								<a href="apaga_status.php?id=<?= $id ?>">
+									<img src="../../../img/icones/lixeira-vermelha.png" alt="apagar" title="Apagar este Status" width="25">
+								</a>								
+							</div>
 						</div>
 					<?php
 						}
 					?>
                 </div>
-				<div class="col-md-2"></div>
-                <div class="col-md-3">
+				<div class="col-md-1 mt-1"></div>
+                <div class="col-md-3 mt-1">
                     <h3 class="text-primary text-center mt-3 negrito">Adicionar</h3>
-					<h6 class="text-danger text-center mt-3 negrito"><?= $msgStatus ?></h6>
+					<h6 class="text-danger text-center mt-3 negrito"><?= $msgStatusNovo ?></h6>
 					<?php
 						unset($_SESSION['msgStatusNovo']);
 					?>
@@ -91,7 +127,7 @@
 							<input class="borda-redonda-10 font-size-20 border-primary text-center my-1  py-1" type="text" name="descricao" placeholder="Digite aqui a descrição..." required>
 							<br />
 							<div class="mb-2">
-								<div class="input-group-prepend my-2">
+								<div class="input-group-prepend my-1">
 									<span class="input-group-text bg-primary text-light borda-redonda-20-left">Anterior: </span>
 									<select class="form-control borda-redonda-20-right" id="anterior" name="anterior" required>
 										<option value=0>Selecione...</option>
@@ -106,7 +142,7 @@
 										?>
 									</select>
 								</div>
-								<div class="input-group-prepend my-2">
+								<div class="input-group-prepend my-1">
 									<span class="input-group-text bg-primary text-light borda-redonda-20-left">Próximo: </span>
 									<select class="form-control borda-redonda-20-right" id="proximo" name="proximo">
 										<option value=0>Selecione...</option>
@@ -127,7 +163,6 @@
 					</form>
                 </div>
             </div>
-			<div class="espaco-pre-footer"></div>
 			<?php
 				include '../../../template/js-bootstrap.php'; 
 			?>	
