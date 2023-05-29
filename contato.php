@@ -34,10 +34,10 @@
 		<div class="container">
 			<div id="central" class="conteudo">
 				<div class="d-flex justify-content-center">
-					<h2 class="text-success"><strong>Contatos - Resolve Systems</strong></h2>
+					<h2 class="text-primary"><strong>Contatos - Resolve Systems</strong></h2>
 				</div>
 				<div class="row text-center">
-					<div class="col-md-8 bg-success contatos m-auto borda-redonda-40">
+					<div class="col-md-8 bg-primary contatos m-auto borda-redonda-40">
 						<div class="text-light pb-2">
 							<span class="fasthand">Copyright </span>
 							<img class="pb-1" src="img/icones/copyright.png" alt="copyright" width="30">
@@ -47,22 +47,22 @@
 						<div class="row">
 							<div class="col-md-6 m-auto bg-light borda-redonda-20 text-center rodape-index d-flex justify-content-around">
 								<div class="item">
-									<a href="#">
+									<a href="https://www.facebook.com/profile.php?id=100092631795853">
 										<img class="ml-2 pt-2 " src="img/icones/facebook.png" alt="facebook" width="20" title="Facebook">
 									</a>
 								</div>
 				                <div class="item">
-									<a href="#">
+									<a href="https://www.instagram.com/resolvesys/">
 										<img class="ml-2 pt-2" src="img/icones/instagram.png" alt="instagram" width="20" title="Instagram">
 									</a>
 								</div>
                 				<div class="item">
-									<a href="#">
+									<a href="https://www.linkedin.com/company/resolve-systems/">
 										<img class="ml-2 pt-2" src="img/icones/linkedin.png" alt="linkedin" width="20" title="LinkedIn">
 									</a>
 								</div>
 								<div class="item">
-									<a href="https://wa.me/5551980475948" target="_blank">
+									<a href="https://wa.me/5551998694945" target="_blank">
 										<img class="ml-2 pt-2"src="img/icones/whatsapp.png" alt="WhatsApp" width="20" title="WhatsApp">
 									</a>
 								</div>
@@ -145,7 +145,7 @@
 				</div>
 			</div>
 			<div class="text-center">
-				<h4 class="text-success"><strong>ENCONTRE-NOS</strong></h4>
+				<h4 class="text-primary"><strong>ENCONTRE-NOS</strong></h4>
 				<div class="row">
 					<div class="col-md-1"></div>
 					<div class="col-md-5 pt-5">

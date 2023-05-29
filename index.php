@@ -43,7 +43,7 @@
 				<div class="col-md-4 py-1 px-3">
 					<div class="plano py-1 px-3">
 						<h4 class="text-center bg-primary text-light borda-redonda-10 negrito">Básico</h4>
-						<h6 class="text-center negrito">À partir de R$ 1.000,00</h6>
+						<h6 class="text-center negrito">À partir de R$ 1.135,00</h6>
 						<ul>
 							<li>Site estático</li>
 							<li>Domínio próprio</li>
@@ -62,7 +62,7 @@
 				<div class="col-md-4 py-1 px-3">
 					<div class="plano py-1 px-3">
 						<h4 class="text-center bg-primary text-light borda-redonda-10 negrito">Intermediário</h4>
-						<h6 class="text-center negrito">À partir de R$ 2.000,00</h6>
+						<h6 class="text-center negrito">À partir de R$ 2.270,00</h6>
 						<ul>
 							<li>Site estático</li>
 							<li>Domínio próprio</li>
@@ -82,7 +82,7 @@
 				<div class="col-md-4 py-1 px-3">
 					<div class="plano py-1 px-3">
 						<h4 class="text-center bg-primary text-light borda-redonda-10 negrito">Avançado</h4>
-						<h6 class="text-center negrito">À partir de R$ 3.000,00</h6>
+						<h6 class="text-center negrito">À partir de R$ 3.405,00</h6>
 						<ul>
 							<li>Site estático</li>
 							<li>Domínio próprio</li>
@@ -94,7 +94,7 @@
 							<li>Suporte técnico</li>
 							<li>Certificado de segurança SSL</li>
 							<li>Levantamento de requisitos presencial</li>
-							<li>Enganjamento as redes sociais de negócio</li>
+							<li>Engajamento as redes sociais de negócio</li>
 
 						</ul>
 						<div class="text-center mt-2">
@@ -107,7 +107,7 @@
 				<div class="col-md-4 py-1 px-3">
 					<div class="plano py-1 px-3">
 						<h4 class="text-center bg-primary text-light borda-redonda-10 negrito">Rápido</h4>
-						<h6 class="text-center negrito">À partir de R$ 800,00</h6>
+						<h6 class="text-center negrito">À partir de R$ 908,00</h6>
 						<ul>
 							<li>Site estático</li>
 							<li>Página única</li>

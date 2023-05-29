@@ -24,6 +24,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="\systems/visualizacoes/status/status.php">Status</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="\systems/visualizacoes/contratos/contratos.php">Contratos</a>
+                        </li>
             <?php 
                     } else {
             ?>

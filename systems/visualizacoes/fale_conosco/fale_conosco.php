@@ -44,7 +44,7 @@
                     unset($_SESSION['msgAddMensagem']);
                 } else {
             ?>
-                    <p class="text-success text-center mt-1 negrito">
+                    <p class="text-primary text-center mt-1 negrito">
                         Deseja deixar uma mensagem para nós? Preencha este formulário abaixo.
                     </p>
                     <h6 class="text-danger text-center">* Preenchimento obrigatório</h6>
@@ -95,7 +95,7 @@
                             </div>
                         </div>
                         <div class="text-center mt-2">
-                            <button class="btn btn-lg btn-success btn-lg" type="submit">Enviar</button>
+                            <button class="btn btn-lg btn-primary btn-lg" type="submit">Enviar</button>
                         </div>
                     </form>
             <?php

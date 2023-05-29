@@ -34,7 +34,7 @@
 		<?php include 'template/menu.php';?>
 		<div class="container conteudo">
 			<div class="d-flex justify-content-center">
-				<h2 class="text-success">Portfólio</h2>
+				<h2 class="text-primary">Portfólio</h2>
 			</div>
 			<hr class="divisor">
 			<div class="row">
@@ -45,7 +45,7 @@
 							Antigomobilista
 							<img src="img/logos/antigomobilista_logo_invertido.png" alt="Em construção" width="40">
 						</h5>
-						<button class="btn btn-success">Ir para Site Antigomobilista</button>
+						<button class="btn btn-primary">Ir para Site Antigomobilista</button>
 						<h5 class="text-center text-light bg-dark py-1 mt-1 borda-redonda-20">
 							Rede social feita para quem gosta de carros antigos
 							<img src="img/icones/Under_construction_icon.png" alt="Em construção" width="40">
@@ -54,7 +54,7 @@
 				</div>
 			</div>
 			<hr class="divisor">
-			<h3 class="text-success text-center">Modelos</h3>
+			<h3 class="text-primary text-center">Modelos</h3>
 			<div class="row">
 				<div class="col-md-6 text-center py-3">
 					<a class="link-no-line" href="portfolio/formatura.html">
@@ -63,22 +63,22 @@
 							Formatura
 							<img src="img/icones/papiro.png" alt="Formatura" width="40">
 						</h5>
-						<button class="btn btn-success">Ir para modelo de Formatura</button>
+						<button class="btn btn-primary">Ir para modelo de Formatura</button>
 					</a>
 				</div>
 				<div class="col-md-6 text-center py-3">
 					<h5 class="text-center text-primary">Casamento</h5>
-					<a href="portfolio/casamento.html" class="btn btn-success">Ir para modelo de Casamento</a>					
+					<a href="portfolio/casamento.html" class="btn btn-primary">Ir para modelo de Casamento</a>					
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6 text-center pt-3 pb-5">
 					<h5 class="text-center text-primary">Aniversário</h5>
-					<a href="portfolio/aniversario.html" class="btn btn-success">Ir para modelo de Aniversário</a>					
+					<a href="portfolio/aniversario.html" class="btn btn-primary">Ir para modelo de Aniversário</a>					
 				</div>
 				<div class="col-md-6 text-center pt-3 pb-5">
 					<h5 class="text-center text-primary">Time de Futebol</h5>
-					<a href="portfolio/time.html" class="btn btn-success">Ir para modelo de Time de Futebol</a>					
+					<a href="portfolio/time.html" class="btn btn-primary">Ir para modelo de Time de Futebol</a>					
 				</div>
 			</div>
 		</div>			

@@ -34,8 +34,8 @@
     echo '<br />';
     echo 'Próxima: ' . $proximo;
 
-    $statusAnterior = $statusAnterior->setStatusProximo($proximo,$anterior);
-    $statusProximo = $statusProximo->setStatusAnterior($anterior,$proximo);
+    $statusAnterior = $statusAnterior->setStatusProximo($anterior,$proximo);
+    $statusProximo = $statusProximo->setStatusAnterior($proximo,$anterior);
     $statusApagar = $statusApagar->apagaStatus($id);
     $msgStatus = "Status apagado com sucesso";
     $_SESSION['msgStatusApagado'] = $msgStatus;

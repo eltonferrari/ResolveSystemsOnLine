@@ -16,7 +16,14 @@
     $anterior = $_POST['anterior'];
     $proximo = $_POST['proximo'];
 
-    if ($anterior != 0 && $proximo != 0) {
+    $testeProximo = new Status();
+    $testeProximo = $testeProximo->getStatusById($proximo);
+    foreach($testeProximo as $tp) {
+        $testeP = $tp['anterior'];
+    }
+    if ($testeP != $anterior) {
+        $msgStatus = 'Os Status devem ser consecutivos!';
+    } else if ($anterior != 0 && $proximo != 0) {
         $statusNovo = new Status();
         $statusAnterior = new Status();
         $statusProximo = new Status();
