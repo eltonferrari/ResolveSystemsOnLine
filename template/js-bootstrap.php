@@ -1,6 +1,6 @@
 <link   rel="stylesheet" 
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a 	href="https://wa.me/5551980475948"
+<a class="mb-5"	href="https://wa.me/5551998694945"
     style="	position:fixed;
             width:60px;
             height:60px;

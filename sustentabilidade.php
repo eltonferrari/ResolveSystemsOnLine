@@ -96,7 +96,7 @@
                     <br />
                     <p class="recuo-primeira-linha justificado">
                         Para a <strong>Resolve Systems</strong> a colaboração e as
-                         parcerias, publicas e privadas, representam um pressuposto
+                         parcerias, públicas e privadas, representam um pressuposto
                           essencial para um futuro sustentável, ajudando desta forma
                            a trazer o conceito de sustentabilidade da teoria para a
                             prática.

@@ -120,7 +120,7 @@
 							<div class="mb-2">
 								<div class="input-group-prepend my-1">
 									<span class="input-group-text bg-primary text-light borda-redonda-20-left">Anterior: </span>
-									<select class="form-control borda-redonda-20-right" id="anterior" name="anterior" required>
+									<select class="form-control borda-redonda-20-right" id="anterior" name="anterior">
 										<option value=0>Selecione...</option>
 										<?php
 											foreach ($listaOrdenada as $anterior) {

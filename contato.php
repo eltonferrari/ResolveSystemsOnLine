@@ -44,32 +44,15 @@
 							<strong>Resolve Systems 2020-2023</strong>
 							- Todos os direitos registrados
 						</div>
-						<div class="row">
-							<div class="col-md-6 m-auto bg-light borda-redonda-20 text-center rodape-index d-flex justify-content-around">
-								<div class="item">
-									<a href="https://www.facebook.com/profile.php?id=100092631795853">
-										<img class="ml-2 pt-2 " src="img/icones/facebook.png" alt="facebook" width="20" title="Facebook">
-									</a>
-								</div>
-				                <div class="item">
-									<a href="https://www.instagram.com/resolvesys/">
-										<img class="ml-2 pt-2" src="img/icones/instagram.png" alt="instagram" width="20" title="Instagram">
-									</a>
-								</div>
-                				<div class="item">
-									<a href="https://www.linkedin.com/company/resolve-systems/">
-										<img class="ml-2 pt-2" src="img/icones/linkedin.png" alt="linkedin" width="20" title="LinkedIn">
-									</a>
-								</div>
-								<div class="item">
-									<a href="https://wa.me/5551998694945" target="_blank">
-										<img class="ml-2 pt-2"src="img/icones/whatsapp.png" alt="WhatsApp" width="20" title="WhatsApp">
-									</a>
-								</div>
-								<div class="item">
-									<a href="https://www.youtube.com/channel/UCkT_0ly-WkJqKaJXg4nLYMg" target="_blank">
-										<img class="ml-2 pt-2" src="img/icones/youtube.png" alt="youtube" width="20" title="YouTube">
-									</a>
+						<div class="row p-2">
+							<div class="col-md-5 m-auto bg-light borda-redonda-20 text-center rodape-index">
+								<div class="row">
+									<div class="col-md-2">
+										<img class="pt-2 pb-1" src="img/icones/telefone-fixo2.png" alt="Telefone" title="Telefone fixo" width="30">
+									</div>
+									<div class="col-md-10">
+										<h4 class="text-black pt-2 negrito">(51) 32080142</h4>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -157,7 +140,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-md-5">
+					<div class="col-md-5 d-flex justify-content-center">
 						<div id="mapa" class="d-flex justify-content-center pb-5">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1726.9032761116196!2d-51.12782408538673!3d-30.042407223320396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197627d25a0fdd%3A0xc728acda6a03e24e!2sVia%20Dois%2C%2043%20-%20Morro%20Santana%2C%20Porto%20Alegre%20-%20RS%2C%2091450-650!5e0!3m2!1spt-BR!2sbr!4v1680792085490!5m2!1spt-BR!2sbr"
 									width="310" 
