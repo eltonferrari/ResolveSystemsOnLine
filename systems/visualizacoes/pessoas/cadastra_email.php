@@ -5,8 +5,8 @@
 	include '../../controladores/pessoas/class_pessoas.php';  
 	$tipoUser = $_SESSION['tipo'];
 	$idUser = $_SESSION['id_logado'];
-    $nomeLogado = new Pessoas;
-	$nomeLogado = $nomeLogado->getNomeById($idUser);
+    $nomeMenu = new Pessoas;
+	$nomeMenu = $nomeMenu->getNomeById($idUser);
 	// ===============
         
     $perfil = new Pessoas();
@@ -30,10 +30,8 @@
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
-
 			gtag('config', 'G-2XS66KFNYE');
 		</script>
-
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="../../../assets/Bootstrap4/css/bootstrap.min.css">
 
@@ -42,7 +40,7 @@
 
 		<!-- CSS CUSTOMIZADO -->
 		<link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
-
+        <link rel="icon" href="../../../img/logos/logo.png" type="image/x-icon">
 		<title>RS - Resolve Systems</title>
 	</head>
     <body>
@@ -54,7 +52,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6 mt-5">
-                    <h4 class="text-primary text-center mb-5">Atualmente</h4>
+                    <h4 class="text-primary text-center mb-5 negrito">Atualmente</h4>
                     <?php
                         foreach ($emailsPerfil as $emails) {
                             $email = $emails['email'];
@@ -71,7 +69,7 @@
                     ?>
                 </div>
                 <div class="col-md-6 mt-5">
-                    <h4 class="text-primary text-center mb-5">Adicionar novo</h4>
+                    <h4 class="text-primary text-center mb-5 negrito">Adicionar novo</h4>
                     <form class="text-center" action="../../controladores/pessoas/valida_email.php" method="post">
                         <input type="hidden" name="id_perfil" value="<?= $idAlterar ?>">
                         <input class="borda-redonda-10 font-size-20 border-primary py-1" type="email" name="email" placeholder="Digite aqui o e-mail...">
@@ -80,7 +78,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 m-auto">
+                <div class="col-md-4 m-auto text-center">
                     <a class="btn btn-primary" href="busca_perfil.php?user=<?= $idAlterar ?>">Voltar para Perfil</a>
                 </div>
             </div>

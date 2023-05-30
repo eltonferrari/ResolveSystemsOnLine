@@ -13,7 +13,6 @@
 
 			gtag('config', 'G-2XS66KFNYE');
 		</script>
-
 		<!-- COMPATIBILIDADE COM HTML5 -->
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv.js"></script>
@@ -27,7 +26,7 @@
 
 		<!-- CSS CUSTOMIZADO -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+		<link rel="icon" href="img/logos/logo.png" type="image/x-icon">
 		<title>RS - Resolve Systems</title>
 	</head>
 	<body class="parallax">
@@ -177,7 +176,7 @@
 			</div>
 			<div class="img1">
 				<div class="row"><!--Row -->
-					<div class="col-sm-6 m-auto"><!--col-sm8 -->
+					<div class="col-sm-6 m-auto d-flex justify-content-center"><!--col-sm8 -->
 						<div id="video" class="section embed-responsive embed-responsive-4by3 m-auto">
 							<video class="embed-responsive-item d-flex justify-content-center m-auto" autoplay loop muted>
 								<source src="videos/video3.mp4" type="video/mp4">
@@ -468,8 +467,8 @@
 				<a href='#topo'>
 					<img class="voltar-topo" src="img/icones/voltar_topo.png" alt="topo" width="30" title="Voltar ao topo">
 				</a>
-			</div>			
+			</div>
 			<?php include 'template/js-bootstrap.php'; ?>
-		</div>				
-	</body>    
+		</div>
+	</body>
 </html>

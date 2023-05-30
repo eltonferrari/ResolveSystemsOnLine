@@ -4,8 +4,8 @@
 	include '../../controladores/pessoas/class_pessoas.php';  
 	$tipoUser = $_SESSION['tipo'];
 	$idUser = $_SESSION['id_logado'];
-    $nomeLogado = new Pessoas;
-	$nomeLogado = $nomeLogado->getNomeById($idUser);
+    $nomeMenu = new Pessoas;
+	$nomeMenu = $nomeMenu->getNomeById($idUser);
 	// ===============
         
     $perfil = new Pessoas();
@@ -41,7 +41,7 @@
 
 		<!-- CSS CUSTOMIZADO -->
 		<link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
-
+        <link rel="icon" href="../../../img/logos/logo.png" type="image/x-icon">
 		<title>RS - Resolve Systems</title>
 	</head>
     <body>
@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 m-auto">
+                <div class="col-md-4 m-auto text-center">
                     <a class="btn btn-primary" href="busca_perfil.php?user=<?= $idAlterar ?>">Voltar para Perfil</a>
                 </div>
             </div>

@@ -9,15 +9,6 @@
     $nomeMenu = $nomeMenu->getNomeById($idUser);
     // ===============
 
-    echo '===== SESSION =====';
-    echo '<pre>';
-    print_r($_SESSION);
-    echo '</pre>';
-    echo '===== GET =====';
-    echo '<pre>';
-    print_r($_GET);
-    echo '</pre>';
-
     $id = $_GET['id'];
     $status = new Status();
     $status = $status->getStatusById($id);
@@ -26,14 +17,6 @@
         $nome = $s['nome'];
         $descricao = $s['descricao'];
     }
-    echo '===== ARRAY STATUS =====';
-    echo '<pre>';
-    print_r($status);
-    echo '</pre>';
-    
-    echo "ID: $id <br />";
-    echo "Nome: $nome <br />";
-    echo "Descrição: $descricao <br />";
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -50,10 +33,8 @@
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
-
 			gtag('config', 'G-2XS66KFNYE');
 		</script>
-
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="../../../assets/Bootstrap4/css/bootstrap.min.css">
 
@@ -62,7 +43,7 @@
 
 		<!-- CSS CUSTOMIZADO -->
 		<link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
-
+        <link rel="icon" href="../../../img/logos/logo.png" type="image/x-icon">
 		<title>RS - Resolve Systems</title>
 	</head>
     <body>

@@ -11,10 +11,8 @@
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
-
 			gtag('config', 'G-2XS66KFNYE');
 		</script>
-
 		<!-- COMPATIBILIDADE COM HTML5 -->
 		<!--[if lt IE 9]>
 			<script src="../../../js/html5shiv.js"></script>
@@ -28,7 +26,7 @@
 
 		<!-- CSS CUSTOMIZADO -->
 		<link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
-
+        <link rel="icon" href="../../../img/logos/logo.png" type="image/x-icon">
 		<title>RS - Resolve Systems</title>
 	</head>
     <body>
