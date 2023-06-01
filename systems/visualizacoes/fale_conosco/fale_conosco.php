@@ -54,41 +54,28 @@
                                     <label class="text-primary mr-2 negrito" for="nome">Nome: </label>
                                 </div>
                                 <div class="col-md-9 mb-2">
-                                    <input type="text input-width" name="nome" id="nome" placeholder="Coloque seu nome aqui..." size="50" required>
+                                    <input class="border border-primary borda-redonda-10 p-1" type="text input-width" name="nome" id="nome" placeholder="Coloque seu nome aqui..." size="50" required>
                                 </div>
                                 <div class="col-md-3 input-group-inline">
                                     <label class="text-danger" for="email">* </label>
                                     <label class="text-primary mr-2 negrito" for="email">E-mail: </label>
                                 </div>
                                 <div class="col-md-9 mb-2">
-                                    <input type="text input-width" name="email" id="email" placeholder="Coloque seu e-mail aqui..." size="50" required>
+                                    <input class="border border-primary borda-redonda-10 p-1" type="text input-width" name="email" id="email" placeholder="Coloque seu e-mail aqui..." size="50" required>
                                 </div>
                                 <div class="col-md-3 input-group-inline">
                                     <label class="text-primary mr-2 negrito" for="telefone">Telefone: </label>
                                 </div>
                                 <div class="col-md-9 mb-2">
-                                    <input type="text input-width" name="telefone" id="telefone" placeholder="Coloque seu telefone aqui..." size="50">
+                                    <input class="border border-primary borda-redonda-10 p-1" type="text input-width" name="telefone" id="telefone" placeholder="Coloque seu telefone aqui..." size="50">
                                 </div>
                                 <div class="col-md-3 input-group-inline">
                                     <label class="text-primary mr-2 negrito" for="mensagem">Deixe uma mensagem: </label>
                                 </div>
                                 <div class="col-md-9 mb-2">
-                                    <textarea name="mensagem" id="mensagem" placeholder="Coloque sua mensagem aqui..." cols="53" maxlength="255" ></textarea>
+                                    <textarea class="border border-primary borda-redonda-10 p-1" name="mensagem" id="mensagem" placeholder="Coloque sua mensagem aqui..." cols="53" maxlength="255" ></textarea>
                                     <div class="text-danger negrito" id="caracteres_restantes">255</div>
-                                    <script type="text/javascript">
-                                        textarea = document.querySelector("#mensagem");
-                                        textarea.addEventListener('input', autoResize, false);
                                     
-                                        function autoResize() {
-                                            this.style.height = 'auto';
-                                            this.style.height = this.scrollHeight + 'px';
-                                        }                                
-                                        var textarea=document.getElementById("mensagem");
-                                        var caracteresRestantes=document.getElementById("caracteres_restantes");
-                                        textarea.oninput=function(e){
-                                            caracteresRestantes.innerHTML=(255-this.value.length);
-                                        }
-                                    </script>
                                 </div>
                             </div>
                         </div>

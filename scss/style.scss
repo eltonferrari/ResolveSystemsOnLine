@@ -12,6 +12,10 @@
 		width: 345px;
 		height: 213px;
 	}
+	
+	body {
+		margin-bottom: 200px;
+	}
 
 	// INSTITUCIONAL
 	.conteudo {
@@ -54,6 +58,10 @@
 
 	.desaparece-md {
 		display: none;
+	}
+
+	body {
+		margin-bottom: 200px;
 	}
 }
 
@@ -113,6 +121,23 @@
 	.espaco-pre-footer {
 		height: 150px;
 	}
+
+	body {
+		margin-bottom: 100px;
+	}
+}
+
+.clock {
+	background-color: #f8f9fa;
+}
+
+.clock:hover {
+	text-decoration: none;	
+	font-size: 20px;
+	background-color: #f8f9fa;
+	color: #007bff;
+	border: 1px solid #007bff;
+	border-radius: 20px;
 }
 
 ul.navbar-nav > li.nav-item > a.nav-link {
@@ -129,10 +154,6 @@ ul.navbar-nav > li.nav-item > div.dropdown-menu >a.dropdown-item:focus {
 	background-color: #007bff;
 	border-radius: 10px;
 	color:	#f8f9fa;
-}
-
-body {
-	margin-bottom: 200px;
 }
 
 .negrito {

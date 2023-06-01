@@ -12,19 +12,23 @@
     width: 345px;
     height: 213px;
   }
-  /* line 17, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 16, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  body {
+    margin-bottom: 200px;
+  }
+  /* line 21, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   .conteudo {
     padding-bottom: 100px;
   }
-  /* line 21, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 25, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   .carousel-item {
     height: 650px;
   }
-  /* line 25, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 29, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   .espaco-pre-footer {
     height: 150px;
   }
-  /* line 29, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 33, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   .desaparece-sm {
     display: none;
   }
@@ -32,44 +36,48 @@
 
 /*Extra small devices (portrait phones, menor que 576px)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-  /* line 37, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 41, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   #video {
     width: 460px;
     height: 355px;
   }
-  /* line 42, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 46, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   .voltar-topo {
     padding-bottom: 35px;
   }
-  /* line 47, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 51, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   .conteudo {
     padding-bottom: 75px;
   }
-  /* line 51, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 55, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   .espaco-pre-footer {
     height: 150px;
   }
-  /* line 55, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 59, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   .desaparece-md {
     display: none;
+  }
+  /* line 63, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  body {
+    margin-bottom: 200px;
   }
 }
 
 /*Small devices (landscape phones, 576px e maiores)*/
 @media (min-width: 768px) and (max-width: 990.98px) {
-  /* line 63, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 71, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   p.recuo-primeira-linha {
     text-indent: 20px;
   }
-  /* line 67, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 75, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   .voltar-topo {
     padding-bottom: 50px;
   }
-  /* line 72, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 80, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   .conteudo {
     padding-bottom: 75px;
   }
-  /* line 76, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 84, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   .espaco-pre-footer {
     height: 150px;
   }
@@ -77,20 +85,20 @@
 
 /*Medium devices (tablets, 768px e maiores)*/
 @media (min-width: 991px) and (max-width: 1199.98px) {
-  /* line 84, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 92, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   p.recuo-primeira-linha {
     text-indent: 40px;
   }
-  /* line 88, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 96, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   #video {
     width: 576px;
     height: 444px;
   }
-  /* line 93, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 101, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   .voltar-topo {
     padding-bottom: 20px;
   }
-  /* line 97, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 105, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   .espaco-pre-footer {
     height: 150px;
   }
@@ -98,27 +106,46 @@
 
 /*Large devices (desktops, 992px e maiores)*/
 @media (min-width: 1200px) {
-  /* line 105, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 113, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   p.recuo-primeira-linha {
     text-indent: 50px;
   }
-  /* line 109, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 117, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   .voltar-topo {
     padding-bottom: 30px;
   }
-  /* line 113, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  /* line 121, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
   .espaco-pre-footer {
     height: 150px;
   }
+  /* line 125, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+  body {
+    margin-bottom: 100px;
+  }
 }
 
-/* line 118, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 130, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+.clock {
+  background-color: #f8f9fa;
+}
+
+/* line 134, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+.clock:hover {
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #f8f9fa;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 20px;
+}
+
+/* line 143, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 ul.navbar-nav > li.nav-item > a.nav-link {
   background-color: #f8f9fa;
   color: #007bff;
 }
 
-/* line 123, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 148, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .navbar-toggler:hover,
 .navbar-toggler:focus,
 ul.navbar-nav > li.nav-item > a.nav-link:hover,
@@ -130,32 +157,27 @@ ul.navbar-nav > li.nav-item > div.dropdown-menu > a.dropdown-item:focus {
   color: #f8f9fa;
 }
 
-/* line 134, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
-body {
-  margin-bottom: 200px;
-}
-
-/* line 138, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 159, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .negrito {
   font-weight: bold;
 }
 
-/* line 142, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 163, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 p.justificado {
   text-align: justify;
 }
 
-/* line 146, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 167, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 hr.divisor {
   border: 1px dotted #007bff;
 }
 
-/* line 150, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 171, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .caixa div {
   background: #ffffffb0;
 }
 
-/* line 154, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 175, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .carousel-caption {
   width: 60%;
 }
@@ -180,31 +202,31 @@ hr.divisor {
   src: url("../../fonts/Fasthand-Regular.ttf");
 }
 
-/* line 179, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 200, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 h1.ancient {
   font-size: 3em;
   font-family: "Ancient";
 }
 
-/* line 184, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 205, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 h2.bring {
   font-family: "Bring";
   font-size: 3em;
 }
 
-/* line 189, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 210, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 span.fasthand {
   font-family: "Fasthand";
   font-size: 1.3em;
 }
 
-/* line 194, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 215, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 h3.madelina {
   font-size: 3em;
   font-family: "Madelina";
 }
 
-/* line 199, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 220, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .animate-character,
 .animate-character-formatura,
 .animate-character-formatura-2,
@@ -220,43 +242,43 @@ h3.madelina {
   font-weight: bold;
 }
 
-/* line 215, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 236, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .animate-character,
 .animate-character-formatura,
 .animate-character-formatura-2 {
   animation: textclip 3s linear infinite;
 }
 
-/* line 221, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 242, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .animate-character-msg {
   animation: textclip 0.5s linear infinite;
 }
 
-/* line 225, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 246, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .animate-character,
 .animate-character-msg {
   text-transform: uppercase;
   background-image: linear-gradient(-225deg, #007bff 0%, #28a745 20%, #ffc107 40%, #fd9902 60%, #e703fc 80%, #dc3545 100%);
 }
 
-/* line 239, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 260, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .animate-character {
   font-size: 50px;
 }
 
-/* line 243, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 264, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .animate-character-formatura,
 .animate-character-msg {
   font-size: 20px;
 }
 
-/* line 248, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 269, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .animate-character-formatura {
   text-transform: uppercase;
   background-image: linear-gradient(-225deg, #e703fc 0%, #7a0a85 20%, #ff0707 40%, #5e0786 60%, #e703fc 80%, #dc3545 100%);
 }
 
-/* line 261, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 282, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .animate-character-formatura-2 {
   background-image: linear-gradient(-225deg, #e703fc 0%, #7a0a85 20%, #ff0707 40%, #5e0786 60%, #e703fc 80%, #dc3545 100%);
   font-size: 15px;
@@ -268,38 +290,38 @@ h3.madelina {
   }
 }
 
-/* line 280, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 301, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .font-size-14 {
   font-size: 14px;
 }
 
-/* line 284, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 305, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .font-size-15 {
   font-size: 15px;
 }
 
-/* line 288, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 309, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .bg-cinza {
   background-color: #5c5c5c;
 }
 
-/* line 292, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 313, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .font-cinza {
   color: #5c5c5c;
 }
 
-/* line 296, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 317, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 a.link-index,
 a.link-no-line {
   text-decoration: none;
 }
 
-/* line 301, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 322, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .plano {
   box-shadow: 8px 8px 10px -3px #007bffb3;
 }
 
-/* line 306, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 327, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .caixa-borda {
   width: 300px;
   height: 150px;
@@ -309,14 +331,14 @@ a.link-no-line {
   box-sizing: border-box;
 }
 
-/* line 315, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 336, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .caixa-borda-espessura {
   border-style: solid;
   border-color: #5ccc3a;
   border-width: 30px;
 }
 
-/* line 321, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 342, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .caixa-borda-estilo-solid {
   width: 300px;
   height: 50px;
@@ -325,7 +347,7 @@ a.link-no-line {
   border-color: green;
 }
 
-/* line 329, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 350, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .caixa-borda-estilo-groove {
   width: 300px;
   height: 100px;
@@ -334,7 +356,7 @@ a.link-no-line {
   border-color: green;
 }
 
-/* line 337, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 358, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .caixa-borda-estilo-dotted {
   width: 300px;
   height: 50px;
@@ -343,7 +365,7 @@ a.link-no-line {
   border-color: green;
 }
 
-/* line 345, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 366, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .caixa-borda-estilo-inset {
   width: 300px;
   height: 100px;
@@ -352,44 +374,44 @@ a.link-no-line {
   border-color: green;
 }
 
-/* line 354, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 375, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .texto {
   font-size: 1.5em;
   font-family: "Times New Roman", Times, serif;
 }
 
-/* line 359, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 380, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .negrito {
   font-weight: bold;
 }
 
-/* line 363, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 384, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .italico {
   font-style: italic;
 }
 
-/* line 367, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 388, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .formatacao1 {
   text-decoration: underline;
 }
 
-/* line 371, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 392, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .formatacao2 {
   text-decoration: overline;
 }
 
-/* line 375, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 396, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .formatacao3 {
   text-decoration: line-through;
 }
 
-/* line 379, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 400, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .menu-fixed {
   position: fixed;
   z-index: 1;
 }
 
-/* line 384, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 405, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 footer {
   width: 100%;
   position: fixed;
@@ -397,7 +419,7 @@ footer {
   left: 0;
 }
 
-/* line 391, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 412, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 html,
 body .parallax {
   margin: 0;
@@ -405,7 +427,7 @@ body .parallax {
   height: 100%;
 }
 
-/* line 398, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 419, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .img1,
 .img2,
 .img3 {
@@ -419,92 +441,92 @@ body .parallax {
   background-attachment: fixed;
 }
 
-/* line 411, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 432, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .img1 {
   background-image: url(../../img/fotos/imagem2.jpg);
 }
 
-/* line 415, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 436, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .img2 {
   background-color: white;
 }
 
-/* line 419, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 440, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .img3 {
   background-image: url(../../img/fotos/imagem6.jpg);
 }
 
-/* line 423, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 444, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .video-menor {
   max-width: 30%;
 }
 
-/* line 427, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 448, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 p.cor-paragrafo {
   color: black;
 }
 
-/* line 432, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 453, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .contatos {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* line 437, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 458, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-10 {
   border-radius: 10px;
 }
 
-/* line 441, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 462, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-20 {
   border-radius: 20px;
 }
 
-/* line 445, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 466, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-20-footer {
   border-radius: 20px;
 }
 
-/* line 449, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 470, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-40 {
   border-radius: 40px;
 }
 
-/* line 454, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 475, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 div#mapa {
   float: left;
   width: 310px;
   margin-left: 37px;
 }
 
-/* line 460, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 481, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 div.font-reduzida {
   font-size: 12px;
 }
 
-/* line 464, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 485, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .text-size-button {
   font-size: 20px;
   padding: 10px 50px;
 }
 
-/* line 469, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 490, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .text-size-grande {
   font-size: 30px;
 }
 
-/* line 474, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 495, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .flipswitch {
   position: relative;
   width: 127px;
 }
 
-/* line 479, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 500, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .flipswitch input[type=checkbox] {
   display: none;
 }
 
-/* line 483, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 504, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .flipswitch-label {
   display: block;
   overflow: hidden;
@@ -513,14 +535,14 @@ div.font-reduzida {
   border-radius: 19px;
 }
 
-/* line 491, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 512, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .flipswitch-inner {
   width: 200%;
   margin-left: -100%;
   transition: margin 0.3s ease-in 0s;
 }
 
-/* line 497, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 518, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .flipswitch-inner:before, .flipswitch-inner:after {
   float: left;
   width: 50%;
@@ -534,7 +556,7 @@ div.font-reduzida {
   box-sizing: border-box;
 }
 
-/* line 510, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 531, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .flipswitch-inner:before {
   content: "ATIVO";
   padding-left: 20px;
@@ -542,7 +564,7 @@ div.font-reduzida {
   color: #FFFFFF;
 }
 
-/* line 517, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 538, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .flipswitch-inner:after {
   content: "INATIVO";
   padding-right: 20px;
@@ -551,7 +573,7 @@ div.font-reduzida {
   text-align: right;
 }
 
-/* line 525, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 546, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .flipswitch-switch {
   width: 20px;
   margin: 0px;
@@ -565,17 +587,17 @@ div.font-reduzida {
   transition: all 0.3s ease-in 0s;
 }
 
-/* line 538, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 559, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .flipswitch-cb:checked + .flipswitch-label .flipswitch-inner {
   margin-left: 0;
 }
 
-/* line 542, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 563, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .flipswitch-cb:checked + .flipswitch-label .flipswitch-switch {
   right: 0;
 }
 
-/* line 549, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 570, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 body.bg-formatura {
   background-image: url(../../img/portifolio/formatura/formatura.jpg);
   position: relative;
@@ -588,77 +610,77 @@ body.bg-formatura {
   background-attachment: fixed;
 }
 
-/* line 561, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 582, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .text-fasthand {
   font-family: "Fasthand";
   font-size: 40px;
   color: #a71e47;
 }
 
-/* line 568, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 589, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .font-size-15 {
   font-size: 15px;
 }
 
-/* line 572, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 593, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .font-size-20 {
   font-size: 20px;
 }
 
-/* line 576, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 597, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .font-size-25 {
   font-size: 25px;
 }
 
-/* line 580, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 601, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 textarea {
   overflow: hidden;
   resize: none;
 }
 
-/* line 585, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 606, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .link-visualiza-mensagem,
 .link-visualiza-mensagem:hover,
 .link-visualiza-mensagem:focus {
   text-decoration: none;
 }
 
-/* line 591, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 612, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 span.recuo-primeira-linha {
   text-indent: 25px;
 }
 
-/* line 595, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 616, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-20-right {
   border-radius: 0 20px 20px 0;
 }
 
-/* line 599, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 620, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-20-left {
   border-radius: 20px 0 0 20px;
 }
 
-/* line 603, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 624, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-top-left {
   border-radius: 10px 0 0 0;
 }
 
-/* line 607, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 628, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-top-right {
   border-radius: 0 10px 0 0;
 }
 
-/* line 611, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 632, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .classVisivel-no {
   display: none;
 }
 
-/* line 615, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 636, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .classVisivel-yes {
   display: contents;
 }
 
-/* line 620, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 641, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .font-link {
   font-size: 25px;
 }

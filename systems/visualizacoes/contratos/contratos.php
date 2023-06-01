@@ -1,12 +1,28 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
+	include '../../controladores/contratos/class_contratos.php';
 	// MENU
 	include '../../controladores/pessoas/class_pessoas.php';
 	$tipoUser = $_SESSION['tipo'];
 	$idUser = $_SESSION['id_logado'];
     $nomeMenu = new Pessoas;
 	$nomeMenu = $nomeMenu->getNomeById($idUser);
-	// ===============	
+	// ===============
+	$contratosAbertos = new Contratos();
+	$contratosAbertos = $contratosAbertos->getAllContratosAbertos();
+	
+	echo '===== CONTRATOS ABERTOS =====';
+	echo '<pre>';
+	print_r($contratosAbertos);
+	echo '</pre>';
+
+	$contratosTerminados = new Contratos();
+	$contratosTerminados = $contratosTerminados->getAllContratosTerminados();
+
+	echo '===== CONTRATOS TERMINADOS =====';
+	echo '<pre>';
+	print_r($contratosTerminados);
+	echo '</pre>';
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -46,9 +62,57 @@
             <div class="row">
 				<div class="col-md-6">
 					<h2 class="text-primary text-center negrito">Contratos em aberto</h2>
+					<div class="row">
+						<div class="col-md-8">
+							<h5 class="text-primary negrito">Cliente</h5>
+						</div>
+						<div class="col-md-4">
+						<h5 class="text-primary text-center negrito">Contrato</h5>
+						</div>
+					</div>
+					<?php
+						foreach ($contratosAbertos as $aberto) {
+							$nomeContratoA = $aberto['nome'];
+							$idContratoA = $aberto['id'];						
+					?>
+							<div class="row">
+								<div class="col-md-8">
+									<h5><?= $nomeContratoA ?></h5s=>
+								</div>
+								<div class="col-md-4">
+									<h5 class="text-center"><a href="ver_contrato.php?id_contrato=<?= $idContratoA ?>"><?= $idContratoA ?></a></h5>
+								</div>
+							</div>
+					<?php
+						}
+					?>
 				</div>
 				<div class="col-md-6">
 					<h2 class="text-primary text-center negrito">Contratos fechados</h2>
+					<div class="row">
+						<div class="col-md-8">
+							<h5 class="text-primary negrito">Cliente</h5>
+						</div>
+						<div class="col-md-4">
+						<h5 class="text-primary text-center negrito">Contrato</h5>
+						</div>
+					</div>
+					<?php
+						foreach ($contratosTerminados as $terminado) {
+							$nomeContratoT = $terminado['nome'];
+							$idContratoT = $terminado['id'];						
+					?>
+							<div class="row">
+								<div class="col-md-8">
+									<h5><?= $nomeContratoT ?></h5s=>
+								</div>
+								<div class="col-md-4">
+									<h5 class="text-center"><a href="ver_contrato.php?id_contrato=<?= $idContratoT?>"><?= $idContratoT ?></a></h5>
+								</div>
+							</div>
+					<?php
+						}
+					?>
 				</div>
 			</div>
         </div>

@@ -58,6 +58,9 @@
             } else {
         ?>
                 <ul class="navbar-nav navbar-right">
+                    <li class="nav-item pt-2">
+                        <a class="clock px-2 py-1" href="#"></a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="\systems/visualizacoes/autenticacao/login.php">Login</a>
                     </li>

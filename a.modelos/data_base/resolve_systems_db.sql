@@ -249,10 +249,11 @@ CREATE TABLE IF NOT EXISTS `contratos` (
   	`descricao` varchar(255) NOT NULL,
 	`id_status` int(2),
 	`data` datetime DEFAULT CURRENT_TIMESTAMP,
+	`aberto` int(1) DEFAULT 1,
 	PRIMARY KEY (`id`),
 	FOREIGN KEY(id_cliente) REFERENCES pessoas(id),
 	FOREIGN KEY(id_status) REFERENCES status(id)
-) ENGINE=MyISAM AUTO_INCREMENT=1000 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Estrutura da tabela `ocorrencias`
