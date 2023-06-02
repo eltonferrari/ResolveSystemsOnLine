@@ -22,7 +22,7 @@
 
         function editPessoa($idTipo,
                             $nome,
-                            $cpf,
+                            $cpf_cnpj,
                             $dataNasc,
                             $idSexo,
                             $cep,
@@ -38,7 +38,7 @@
             $query = "UPDATE pessoas
                         SET id_tipo = ?,
                             nome = ?,
-                            cpf = ?,
+                            cpf_cnpj = ?,
                             data_nasc = ?,
                             id_sexo = ?,
                             cep = ?,
@@ -54,7 +54,7 @@
             $paramType = "isssisssssiiisi";
             $paramValue = array($idTipo,
                                 $nome,
-                                $cpf,
+                                $cpf_cnpj,
                                 $dataNasc,
                                 $idSexo,
                                 $cep,

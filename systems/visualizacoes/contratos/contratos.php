@@ -54,7 +54,7 @@
 	</head>
     <body>
         <?php include '../../../template/menu_logado.php';?>
-        <div class="container">
+        <div class="container mb-5">
             <div class="text-center mt-3">
                 <img src="../../../img/icones/contrato.png" alt="Contrato" title="Contrato" width="80">
                 <h1 class="text-primary text-center mt-3 negrito">Contratos<a class="link-no-line negrito" href="cadastra_contrato.php"> + </a></h1>

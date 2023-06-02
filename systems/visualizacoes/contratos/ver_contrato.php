@@ -1,7 +1,10 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
 	include '../../controladores/contratos/class_contratos.php';
-    
+    include '../../controladores/sexos/class_sexos.php';
+    include '../../controladores/estados/class_estados.php';
+    include '../../lib/util.php';
+
 	// MENU
 	include '../../controladores/pessoas/class_pessoas.php';
 	$tipoUser = $_SESSION['tipo'];
@@ -42,8 +45,8 @@
     $cliente = $cliente->getPessoaById($idCliente);
     foreach ($cliente as $cli) {
         $nomeCliente            = $cli['nome'];
-        $cpfCliente             = $cli['cpf'];
-        $dataNascCliente        = $cli['data_nasc'];
+        $cpf_cnpjCliente        = $cli['cpf_cnpj'];
+        $dataNascCriacaoCliente        = $cli['data_nasc'];
         $sexoCliente            = $cli['id_sexo'];
         $cepCliente             = $cli['cep'];
         $enderecoCliente        = $cli['endereco'];
@@ -56,7 +59,18 @@
         $criadoEmCliente        = $cli['created_at'];
         $alteradoEmCliente      = $cli['updated_at'];
     }
-	
+    $dataNCCliente = convertDataMySQL_DataPHP($dataNascCriacaoCliente);
+    $sexo = new Sexos();
+    $sexo = $sexo->getSexoById($sexoCliente);
+    $estado = new Estados();
+    $estado = $estado->getNomeById($estadoCliente);
+    $criador = new Pessoas();
+    $criador = $criador->getNomeById($criadoPorCliente);
+    $dataCriacaoCliente = convertDataMySQL_DataPHP($criadoEmCliente);
+    $horaCriacaoCliente = convertDataMySQL_HoraPHP($criadoEmCliente);
+    $dataAlteracaoCliente = convertDataMySQL_DataPHP($alteradoEmCliente);
+    $horaAlteracaoCliente = convertDataMySQL_HoraPHP($alteradoEmCliente);
+    
     echo '===== CLIENTE =====';
 	echo '<pre>';
 	print_r($cliente);
@@ -110,14 +124,14 @@
     <body>
         <?php include '../../../template/menu_logado.php';?>
         <div class="container">
-            <div class="text-center mt-3">
+            <div class="text-center mt-1">
                 <img src="../../../img/icones/contrato.png" alt="Contrato" title="Contrato" width="80">
-                <h1 class="text-primary text-center mt-3 negrito">Contrato</h1>
+                <h4 class="text-primary text-center mt-1 negrito">Contrato</h4>
             </div>
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col-md-6 border">
-                    <h5 class="text-primary text-center negrito">Cliente código "<?= $idCliente ?>"</h5>
-                    <h5 class="text-primary text-center negrito">"<?= $nomeCliente ?>"</h5>
+                    <h6 class="text-primary text-center negrito">Cliente código "<?= $idCliente ?>"</h6>
+                    <h6 class="text-primary text-center negrito">"<?= $nomeCliente ?>"</h6>
                     <hr class="divisor">
                     <div class="row">
                         <div class="col-md-6 text-center">
@@ -126,49 +140,56 @@
                                 Telefones: 
                             </button>
                             <?php
-                                foreach ($telefones as $telP) {
-                                    $telefonePrincipal = null;
-                                    if ($telP['principal'] == 1) {
-                                        $telefonePrincipal = $telP['telefone'];
-                                        break;
+                                $telefonePrincipal = null;
+                                if (!empty($telefones)) {
+                                    foreach ($telefones as $telP) {
+                                        if ($telP['principal'] == 1) {
+                                            $telefonePrincipal = $telP['telefone'];
+                                            break;
+                                        }
                                     }
+                            ?>
+                                    <div class="text-center">
+                                        <h6 class="negrito font-size-14"><?= $telefonePrincipal ?></h6>
+                                    </div>
+                            <?php
                                 }
                             ?>
-                            <div class="text-center">
-                                <h6 class="negrito"><?= $telefonePrincipal ?></h6>
-                            </div>
                             <!-- Modal -->
                             <div class="modal fade" id="modalTelefone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-sm" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Telefones cadastrados</h5>
+                                            <h6 class="modal-title" id="exampleModalLabel">Telefones cadastrados</h6>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
                                             <?php
-                                                foreach ($telefones as $telP) {
-                                                    $telefonePrincipal = null;
-                                                    if ($telP['principal'] == 1) {
-                                                        $telefonePrincipal = $telP['telefone'];
-                                                        break;
-                                                    }
-                                                }
-                                            ?>
-                                                <h5 class="text-left negrito">Principal</h5>
-                                                <h5 class="text-left negrito">< <?= $telefonePrincipal ?> ></h5>
-                                                <h6 class="text-left">Outros</h6>
-                                            <?php
-                                                foreach ($telefones as $telS) {
-                                                    $telefoneSecundario = null;
-                                                    if ($telS['principal'] == 0) {
-                                                        $telefoneSecundario = $telS['telefone'];
+                                                if (!empty($telefones)) {
+                                                    foreach ($telefones as $telP) {
+                                                        $telefonePrincipal = null;
+                                                        if ($telP['principal'] == 1) {
+                                                            $telefonePrincipal = $telP['telefone'];
+                                                            break;
+                                                        }
                                                     }
                                             ?>
-                                                    <h6 class="text-left"><?= $telefoneSecundario ?></h6>
+                                                    <h6 class="text-left font-size-14 negrito">Principal</h6>
+                                                    <h6 class="text-left font-size-14 negrito">< <?= $telefonePrincipal ?> ></h5>
+                                                    <h6 class="text-left font-size-14">Outros</h6>
                                             <?php
+                                                
+                                                    foreach ($telefones as $telS) {
+                                                        $telefoneSecundario = null;
+                                                        if ($telS['principal'] == 0) {
+                                                            $telefoneSecundario = $telS['telefone'];
+                                                        }
+                                            ?>
+                                                        <h6 class="text-left font-size-14"><?= $telefoneSecundario ?></h6>
+                                            <?php
+                                                    }
                                                 }
                                             ?>
                                         </div>
@@ -201,7 +222,7 @@
                                 <div class="modal-dialog modal-sm" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">E-Mails cadastrados</h5>
+                                            <h6 class="modal-title" id="exampleModalLabel">E-Mails cadastrados</h6>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -216,9 +237,9 @@
                                                     }
                                                 }
                                             ?>
-                                                <h5 class="text-left negrito">Principal</h5>
-                                                <h5 class="text-left negrito">< <?= $emailPrincipal ?> ></h5>
-                                                <h6 class="text-left">Outros</h6>
+                                                <h5 class="text-left font-size-14 negrito">Principal</h5>
+                                                <h5 class="text-left font-size-14 negrito"><?= $emailPrincipal ?></h5>
+                                                <h6 class="text-left font-size-14">Outros</h6>
                                             <?php
                                                 foreach ($emails as $emailS) {
                                                     $emailSecundario = null;
@@ -226,7 +247,7 @@
                                                         $emailSecundario = $emailS['email'];
                                                     }
                                             ?>
-                                                    <h6 class="text-left"><?= $emailSecundario ?></h6>
+                                                    <h6 class="text-left font-size-14"><?= $emailSecundario ?></h6>
                                             <?php
                                                 }
                                             ?>
@@ -240,12 +261,86 @@
                         </div>
                     </div>
                     <hr class="divisor">
-                    <div class="row">
-                        <div class="col-md-4">
-                            
+                    <div class="font-size-14">
+                        <div class="row">
+                            <div class="col-md-6 text-right">
+                                CPF/CNPJ:
+                            </div>
+                            <div class="col-md-6">
+                                <?= $cpf_cnpjCliente ?>
+                            </div>
                         </div>
-                        <div class="col-md-8">
-
+                        <div class="row">
+                            <div class="col-md-6 text-right">
+                                Data de Nasc/Criação:
+                            </div>
+                            <div class="col-md-6 mx-auto my-auto d-flex flex-wrap">
+                                <?= $dataNCCliente ?>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 text-right">
+                                Sexo:
+                            </div>
+                            <div class="col-md-6">
+                                <?= $sexo ?>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 text-right">
+                                CEP:
+                            </div>
+                            <div class="col-md-6">
+                                <?= $cepCliente ?>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 text-right">
+                                Endereço:
+                            </div>
+                            <div class="col-md-6">
+                                <?= $enderecoCliente ?>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 text-right">
+                                Complemento: 
+                            </div>
+                            <div class="col-md-6">
+                                <?= $enderecoComplCliente ?>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 text-right">
+                                Bairro: 
+                            </div>
+                            <div class="col-md-6">
+                                <?= $bairroCliente ?>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 text-right">
+                                Cidade: 
+                            </div>
+                            <div class="col-md-6">
+                                <?= $cidadeCliente ?>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 text-right">
+                                Estado: 
+                            </div>
+                            <div class="col-md-6">
+                                <?= $estado ?>
+                            </div>
+                        </div>
+                        <hr class="divisor">
+                        <div>
+                            <p>Cliente inserido no sistema por "<?= $criador ?>"
+                            <br />
+                            Cliente inserido no sistema em <?= $dataCriacaoCliente ?> às <?= $horaCriacaoCliente ?>
+                            <br />
+                            Alterado pela última vez em <?= $dataAlteracaoCliente ?> às <?= $horaAlteracaoCliente ?></p>
                         </div>
                     </div>
                 </div>

@@ -55,7 +55,7 @@
         <header>
             <?php include '../../../template/menu_logado.php';?>
         </header>
-        <section>
+        <section class="mb-5">
             <div class="container">
                 <div class="text-center mt-3">
                     <img src="../../../img/icones/contrato.png" alt="Contrato" title="Contrato" width="80">

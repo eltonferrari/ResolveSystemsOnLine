@@ -19,7 +19,7 @@
     $nome           = $_POST['nome'];
     $idTipo         = $_POST['id_tipo'];
     $ativo  = ( isset($_POST['ativo']) )  ? 1 : 0;
-    $cpf            = $_POST['cpf'];
+    $cpf_cnpj       = $_POST['cpf_cnpj'];
     $dataNasc       = $_POST['datanasc'] . ' 00:00:00';
     $idSexo         = $_POST['id_sexo'];
     $email          = ( isset($_POST['email']) ) ? 1 : 0;
@@ -40,7 +40,7 @@
     $pessoa = $pessoa->editPessoa(
                         $idTipo,
                         $nome,
-                        $cpf,
+                        $cpf_cnpj,
                         $dataNasc,
                         $idSexo,
                         $cep,

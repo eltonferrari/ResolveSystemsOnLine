@@ -26,7 +26,7 @@
         $id             = $u['id'];
         $idTipo         = $u['id_tipo'];
         $nome           = $u['nome'];
-        $cpf            = $u['cpf'];
+        $cpf_cnpj       = $u['cpf_cnpj'];
         $dataNasc       = $u['data_nasc'];
         $idSexo         = $u['id_sexo'];
         $senha          = $u['senha'];
@@ -98,7 +98,7 @@
 	</head>
     <body>
         <?php include '../../../template/menu_logado.php';?>
-        <div class="container">    
+        <div class="container mb-5">    
             <div class="row pb-1">
 				<div class="col-md-10 m-auto pb-1">
                     <h3 class="text-primary text-center mt-1 negrito">Perfil de Usuário</h3>
@@ -142,8 +142,8 @@
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-4 text-center">
-                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="cpf">CPF: </label><br />
-                                <input class="form-control text-center" name="cpf" type="text" id="cpf" placeholder="Digite o CPF..." value="<?= $cpf ?>">
+                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="cpf_cnpj">CPF/CNPJ: </label><br />
+                                <input class="form-control text-center" name="cpf_cnpj" type="text" id="cpf_cnpj" placeholder="Digite o CPF/CNPJ..." value="<?= $cpf_cnpj ?>">
                             </div>
                             <div class="col-md-4 text-center">
                                 <?php
