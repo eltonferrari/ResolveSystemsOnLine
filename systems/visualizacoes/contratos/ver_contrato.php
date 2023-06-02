@@ -158,7 +158,7 @@
                                                 }
                                             ?>
                                                 <h5 class="text-left negrito">Principal</h5>
-                                                <h5 class="text-left negrito"><?= $telefonePrincipal ?></h5>
+                                                <h5 class="text-left negrito">< <?= $telefonePrincipal ?> ></h5>
                                                 <h6 class="text-left">Outros</h6>
                                             <?php
                                                 foreach ($telefones as $telS) {
@@ -167,7 +167,7 @@
                                                         $telefoneSecundario = $telS['telefone'];
                                                     }
                                             ?>
-                                                    <h6 class="text-left"><?= $telefoneSecundario ?></h6>                                                    
+                                                    <h6 class="text-left"><?= $telefoneSecundario ?></h6>
                                             <?php
                                                 }
                                             ?>
@@ -217,7 +217,7 @@
                                                 }
                                             ?>
                                                 <h5 class="text-left negrito">Principal</h5>
-                                                <h5 class="text-left negrito"><?= $emailPrincipal ?></h5>
+                                                <h5 class="text-left negrito">< <?= $emailPrincipal ?> ></h5>
                                                 <h6 class="text-left">Outros</h6>
                                             <?php
                                                 foreach ($emails as $emailS) {
