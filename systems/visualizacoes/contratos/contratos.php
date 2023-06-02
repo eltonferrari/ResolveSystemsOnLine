@@ -80,7 +80,11 @@
 									<h5><?= $nomeContratoA ?></h5s=>
 								</div>
 								<div class="col-md-4">
-									<h5 class="text-center"><a href="ver_contrato.php?id_contrato=<?= $idContratoA ?>"><?= $idContratoA ?></a></h5>
+									<h5 class="text-center">
+										<a href="ver_contrato.php?id_contrato=<?= $idContratoA ?>">
+											<?= $idContratoA ?>
+										</a>
+									</h5>
 								</div>
 							</div>
 					<?php
@@ -107,7 +111,11 @@
 									<h5><?= $nomeContratoT ?></h5s=>
 								</div>
 								<div class="col-md-4">
-									<h5 class="text-center"><a href="ver_contrato.php?id_contrato=<?= $idContratoT?>"><?= $idContratoT ?></a></h5>
+									<h5 class="text-center">
+										<a href="ver_contrato.php?id_contrato=<?= $idContratoT?>">
+											<?= $idContratoT ?>
+										</a>
+									</h5>
 								</div>
 							</div>
 					<?php

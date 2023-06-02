@@ -57,8 +57,8 @@
             $query = "SELECT p.nome, c.id FROM contratos c JOIN pessoas p on p.id = c.id_cliente and aberto = 0";
             $lista = $this->db_handle->runBaseQuery($query);
             return $lista;
-        }        
-
+        }
+        
         /*
         function getIntencaoByEmail($email) {
             $query = "SELECT * FROM form_intencao WHERE email = ?";

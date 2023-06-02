@@ -2,10 +2,6 @@
     session_start();
     include '../pessoas/class_pessoas.php';
     
-    echo '<pre>';
-	print_r($_POST);
-	echo '</pre>';
-
     $email = $_POST['email'];
     $senha = (md5($_POST['senha']));
     $pessoa = new Pessoas();
