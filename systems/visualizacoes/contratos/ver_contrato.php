@@ -76,21 +76,25 @@
 	print_r($cliente);
 	echo '</pre>';
     
-    $emails = new Pessoas();
-    $emails = $emails->getEmailsById($idCliente);
+    $telefonePrincipal = new Telefones();
+    $telefonePrincipal = $telefonePrincipal->getTelefonePrincipal($idCliente);
     
-    echo '===== E-MAILS =====';
+    $telefoneOutros = new Telefones();
+    $telefoneOutros = $telefoneOutros->getTelefoneOutros($idCliente);
+
+    echo '===== Telefone Outros =====';
 	echo '<pre>';
-	print_r($emails);
+	print_r($telefoneOutros);
 	echo '</pre>';
+
+    $emailPrincipal = new Emails();
+    $emailPrincipal = $emailPrincipal->getEmailPrincipal($idCliente);
     
-    $telefones = new Pessoas();
-    $telefones = $telefones->getTelefonesById($idCliente);
-    
-    echo '===== TELEFONES =====';
-	echo '<pre>';
-	print_r($telefones);
-	echo '</pre>';
+    echo '===== Email Principal =====';
+	echo $emailPrincipal ;
+
+    $emailOutros = new Emails();
+    $emailOutros = $emailOutros->getEmailOutros($idCliente);
     
 ?>
 <!doctype html>
@@ -139,15 +143,8 @@
                             <button type="button" class="btn btn-outline-primary borda-redonda-20 my-2" data-toggle="modal" data-target="#modalTelefone">
                                 Telefones: 
                             </button>
-                            <?php
-                                $telefonePrincipal = null;
-                                if (!empty($telefones)) {
-                                    foreach ($telefones as $telP) {
-                                        if ($telP['principal'] == 1) {
-                                            $telefonePrincipal = $telP['telefone'];
-                                            break;
-                                        }
-                                    }
+                            <?php 
+                                if (is_null($telefonePrincipal)) {
                             ?>
                                     <div class="text-center">
                                         <h6 class="negrito font-size-14"><?= $telefonePrincipal ?></h6>
@@ -155,39 +152,33 @@
                             <?php
                                 }
                             ?>
+                            <div class="text-center">
+                                <h6 class="negrito font-size-14"><?= $telefonePrincipal ?></h6>
+                            </div>
                             <!-- Modal -->
                             <div class="modal fade" id="modalTelefone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-sm" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h6 class="modal-title" id="exampleModalLabel">Telefones cadastrados</h6>
+                                            <h6 class="modal-title negrito" id="exampleModalLabel">Telefones cadastrados</h6>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
                                             <?php
-                                                if (!empty($telefones)) {
-                                                    foreach ($telefones as $telP) {
-                                                        $telefonePrincipal = null;
-                                                        if ($telP['principal'] == 1) {
-                                                            $telefonePrincipal = $telP['telefone'];
-                                                            break;
-                                                        }
-                                                    }
+                                                if (!is_null($telefonePrincipal)) {
                                             ?>
-                                                    <h6 class="text-left font-size-14 negrito">Principal</h6>
-                                                    <h6 class="text-left font-size-14 negrito">< <?= $telefonePrincipal ?> ></h5>
-                                                    <h6 class="text-left font-size-14">Outros</h6>
+                                                    <h6 class="text-left text-danger font-size-14 negrito">Principal</h6>
+                                                    <h6 class="text-left font-size-14 negrito"><?= $telefonePrincipal ?></h5>
+                                                    <h6 class="text-left text-danger font-size-14">Outros</h6>
                                             <?php
-                                                
-                                                    foreach ($telefones as $telS) {
-                                                        $telefoneSecundario = null;
-                                                        if ($telS['principal'] == 0) {
-                                                            $telefoneSecundario = $telS['telefone'];
-                                                        }
+                                                }
+                                                if (!empty($telefoneOutros)) {
+                                                    foreach ($telefoneOutros as $t) {
+                                                        $telefoneOutro = $t['telefone'];
                                             ?>
-                                                        <h6 class="text-left font-size-14"><?= $telefoneSecundario ?></h6>
+                                                        <h6 class="text-left font-size-14"><?= $telefoneOutro ?></h6>
                                             <?php
                                                     }
                                                 }
@@ -205,15 +196,6 @@
                             <button type="button" class="btn btn-outline-primary borda-redonda-20 my-2" data-toggle="modal" data-target="#modalEmail">
                                 E-Mails: 
                             </button>
-                            <?php
-                                foreach ($emails as $emailP) {
-                                    $emailPrincipal = null;
-                                    if ($emailP['principal'] == 1) {
-                                        $emailPrincipal = $emailP['email'];
-                                        break;
-                                    }
-                                }
-                            ?>
                             <div class="text-center">
                                 <h6 class="negrito"><?= $emailPrincipal ?></h6>
                             </div>
@@ -222,35 +204,25 @@
                                 <div class="modal-dialog modal-sm" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h6 class="modal-title" id="exampleModalLabel">E-Mails cadastrados</h6>
+                                            <h6 class="modal-title negrito" id="exampleModalLabel">E-Mails cadastrados</h6>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <?php
-                                                foreach ($emails as $emailP) {
-                                                    $emailPrincipal = null;
-                                                    if ($emailP['principal'] == 1) {
-                                                        $emailPrincipal = $emailP['email'];
-                                                        break;
-                                                    }
+                                            <h6 class="text-left text-danger font-size-14 negrito">Principal</h6>
+                                            <h6 class="text-left font-size-14 negrito"><?= $emailPrincipal ?></h5>
+                                            <h6 class="text-left text-danger font-size-14">Outros</h6>
+                                        <?php
+                                            if (!empty($emailOutros)) {
+                                                foreach ($emailOutros as $e) {
+                                                    $emailOutro = $e['email'];
+                                        ?>
+                                                    <h6 class="text-left font-size-14"><?= $emailOutro ?></h6>
+                                        <?php
                                                 }
-                                            ?>
-                                                <h5 class="text-left font-size-14 negrito">Principal</h5>
-                                                <h5 class="text-left font-size-14 negrito"><?= $emailPrincipal ?></h5>
-                                                <h6 class="text-left font-size-14">Outros</h6>
-                                            <?php
-                                                foreach ($emails as $emailS) {
-                                                    $emailSecundario = null;
-                                                    if ($emailS['principal'] == 0) {
-                                                        $emailSecundario = $emailS['email'];
-                                                    }
-                                            ?>
-                                                    <h6 class="text-left font-size-14"><?= $emailSecundario ?></h6>
-                                            <?php
-                                                }
-                                            ?>
+                                            }
+                                        ?>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>

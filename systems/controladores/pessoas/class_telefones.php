@@ -22,13 +22,26 @@
             $this->db_handle->update($query, $paramType, $paramValue);
         }
         
-
         function getTelefonePrincipal($idPessoa){
             $query = "SELECT * FROM telefones WHERE id_pessoa = ? AND principal = 1";
             $paramType = "i";
             $paramValue = array($idPessoa);
             $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
-            return $result;            
+            $telefonePrincipal = null;
+            if (!is_null($result)) {
+                foreach ($result as $telefoneP) {
+                    $telefonePrincipal = $telefoneP['telefone'];
+                }
+            }
+            return $telefonePrincipal;            
+        }
+
+        function getTelefoneOutros($idPessoa){
+            $query = "SELECT * FROM telefones WHERE id_pessoa = ? AND principal = 0";
+            $paramType = "i";
+            $paramValue = array($idPessoa);
+            $telefoneOutros = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            return $telefoneOutros;            
         }
         
         function getIdByTelefone($telefone) {
@@ -39,12 +52,12 @@
             return $result;
         }
 
-
         function getAllTelefones($idPessoa){
             $query = "SELECT * FROM telefones WHERE id_pessoa = ?";
             $paramType = "i";
             $paramValue = array($idPessoa);
             $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
             return $result;            
-        }    }
+        }
+    }
 ?>
