@@ -16,18 +16,10 @@
             return $insertIdContrato;
         }
 
-        function alteraContrato($descricao, $idStatus, $updatedAt, $id) {
-            $query = "UPDATE contratos 
-                        SET descricao = ?,
-                            id_status = ?,
-                            updated_at = ? 
-                        WHERE id = ?";
+        function editContrato($descricao, $idStatus, $updatedAt, $id) {
+            $query = "UPDATE contratos SET descricao = ?, id_status = ?, updated_at = ? WHERE id = ?";
             $paramType = "sisi";
-            $paramValue = array($descricao,
-                                $idStatus,
-                                $updatedAt,
-                                $id
-                                );
+            $paramValue = array($descricao, $idStatus, $updatedAt, $id);
             $this->db_handle->update($query, $paramType, $paramValue);
         }
 
@@ -57,6 +49,22 @@
             $query = "SELECT p.nome, c.id FROM contratos c JOIN pessoas p on p.id = c.id_cliente and aberto = 0";
             $lista = $this->db_handle->runBaseQuery($query);
             return $lista;
+        }
+
+        function getAllContratosAbertosByCliente($idCliente) {
+            $query = "SELECT id FROM contratos WHERE aberto = 1 AND id_cliente = ?";
+            $paramType = "i";
+            $paramValue = array($idCliente);
+            $contratos = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            return $contratos;
+        }
+
+        function getAllContratosTerminadosByCliente($idCliente) {
+            $query = "SELECT id FROM contratos WHERE aberto = 0 AND id_cliente = ?";
+            $paramType = "i";
+            $paramValue = array($idCliente);
+            $contratos = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            return $contratos;
         }
         
         /*

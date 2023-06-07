@@ -3,6 +3,7 @@
 	include '../../controladores/contratos/class_contratos.php';
     include '../../controladores/sexos/class_sexos.php';
     include '../../controladores/estados/class_estados.php';
+    include '../../controladores/status/class_status.php';
     include '../../lib/util.php';
 
 	// MENU
@@ -12,17 +13,17 @@
     $nomeMenu = new Pessoas;
 	$nomeMenu = $nomeMenu->getNomeById($idUser);
 	// ===============
-	
-	echo '===== SESSION =====';
+
+    echo '===== SESSION =====';
 	echo '<pre>';
 	print_r($_SESSION);
 	echo '</pre>';
     
-	echo '===== GET =====';
+    echo '===== GET =====';
 	echo '<pre>';
 	print_r($_GET);
 	echo '</pre>';
-    
+
     $idContrato = $_GET['id_contrato'];
     $contrato = new Contratos();
     $contrato = $contrato->getContratoById($idContrato);
@@ -31,22 +32,52 @@
         $idClienteContrato  = $con['id_cliente'];
         $descricaoContrato  = $con['descricao'];
         $idStatusContrato   = $con['id_status'];
-        $dataStatusContrato = $con['data'];
+        $dataStatusContrato = $con['updated_at'];
         $abertoContrato     = $con['aberto'];
     }
+    $contrAberto = null;
+    if ($abertoContrato == 1) {
+        $contrAberto = 'Aberto';
+    } else {
+        $contrAberto = 'Concluído';
+    }
+
+    $nomeStatus = new Status();
+    $nomeStatus = $nomeStatus->getNomeStatusById($idStatusContrato);
+
+    echo "Nome Status: $nomeStatus <br />";
+
+    $dataStatus = convertDataMySQL_DataPHP($dataStatusContrato);
+    $horaStatus = convertDataMySQL_HoraPHP($dataStatusContrato);
 
 	echo '===== CONTRATO =====';
 	echo '<pre>';
 	print_r($contrato);
 	echo '</pre>';
-    
+
+    $contratosAbertos = new Contratos();
+    $contratosAbertos = $contratosAbertos->getAllContratosAbertosByCliente($idClienteContrato);
+
+    echo '===== CONTRATOS ABERTOS =====';
+	echo '<pre>';
+	print_r($contratosAbertos);
+	echo '</pre>';
+
+    $contratosTerminados = new Contratos();
+    $contratosTerminados = $contratosTerminados->getAllContratosTerminadosByCliente($idClienteContrato);
+
+    echo '===== CONTRATOS TERMINADOS =====';
+	echo '<pre>';
+	print_r($contratosTerminados  );
+	echo '</pre>';
+
     $idCliente = $idClienteContrato;
     $cliente = new Pessoas();
     $cliente = $cliente->getPessoaById($idCliente);
     foreach ($cliente as $cli) {
         $nomeCliente            = $cli['nome'];
         $cpf_cnpjCliente        = $cli['cpf_cnpj'];
-        $dataNascCriacaoCliente        = $cli['data_nasc'];
+        $dataNascCriacaoCliente = $cli['data_nasc'];
         $sexoCliente            = $cli['id_sexo'];
         $cepCliente             = $cli['cep'];
         $enderecoCliente        = $cli['endereco'];
@@ -143,7 +174,7 @@
                             <button type="button" class="btn btn-outline-primary borda-redonda-20 my-2" data-toggle="modal" data-target="#modalTelefone">
                                 Telefones: 
                             </button>
-                            <?php 
+                            <?php
                                 if (is_null($telefonePrincipal)) {
                             ?>
                                     <div class="text-center">
@@ -170,7 +201,7 @@
                                                 if (!is_null($telefonePrincipal)) {
                                             ?>
                                                     <h6 class="text-left text-danger font-size-14 negrito">Principal</h6>
-                                                    <h6 class="text-left font-size-14 negrito"><?= $telefonePrincipal ?></h5>
+                                                    <h6 class="text-left font-size-14 negrito"><?= $telefonePrincipal ?></h6>
                                                     <h6 class="text-left text-danger font-size-14">Outros</h6>
                                             <?php
                                                 }
@@ -194,7 +225,7 @@
                         <div class="col-md-6 text-center">
                             <!-- Botão para acionar modal -->
                             <button type="button" class="btn btn-outline-primary borda-redonda-20 my-2" data-toggle="modal" data-target="#modalEmail">
-                                E-Mails: 
+                                E-Mails:
                             </button>
                             <div class="text-center">
                                 <h6 class="negrito"><?= $emailPrincipal ?></h6>
@@ -211,7 +242,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <h6 class="text-left text-danger font-size-14 negrito">Principal</h6>
-                                            <h6 class="text-left font-size-14 negrito"><?= $emailPrincipal ?></h5>
+                                            <h6 class="text-left font-size-14 negrito"><?= $emailPrincipal ?></h6>
                                             <h6 class="text-left text-danger font-size-14">Outros</h6>
                                         <?php
                                             if (!empty($emailOutros)) {
@@ -316,16 +347,87 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 border">
-                    <h5 class="text-primary text-center negrito">
+                <div class="col-md-6 border text-center">
+                    <div>
+                        <!-- Botão para acionar modal -->
+                        <button type="button" class="btn btn-outline-primary borda-redonda-20 my-2" data-toggle="modal" data-target="#modalContratos">
+                            Ver todos os contratos: 
+                        </button>
+                    </div>
+                    <h5 class="text-primary text-center negrito display-in">
                         Contrato número "<?= $idContrato ?>" - 
-                        <a href="">outros</a>
                     </h5>
+                    <h5 class="animate-character-contrato display-in"><?= $contrAberto ?></h5>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalContratos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title negrito" id="exampleModalLabel">Contratos do cliente</h6>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <?php
+                                        if (!is_null($contratosAbertos)) {
+                                    ?>
+                                            <h6 class="text-left text-danger font-size-14 negrito">Abertos:</h6>
+                                    <?php
+                                            foreach ($contratosAbertos as $cA) {
+                                                $contratoA = $cA['id'];
+                                    ?>
+                                                <a href="ver_contrato.php?id_contrato=<?= $contratoA ?>">
+                                                    <h6 class="text-left font-size-14 negrito"><?= $contratoA ?></h6>
+                                                </a>
+                                    <?php
+                                            }
+                                        }
+                                    ?>
+                                                <h6 class="text-left text-danger font-size-14">Concluídos:</h6>
+                                    <?php
+                                        if (!empty($contratosTerminados)) {
+                                            foreach ($contratosTerminados as $cT) {
+                                                $contratoT = $cT['id'];
+                                    ?>
+                                                <a href="ver_contrato.php?id_contrato=<?= $contratoT ?>">
+                                                    <h6 class="text-left font-size-14"><?= $contratoT ?></h6>
+                                                </a>
+                                    <?php
+                                            }
+                                        }
+                                    ?>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="divisor">
+                    <div class="text-center">
+                        <h6 class="text-primary negrito">Descrição</h6>
+                        <p class="text-justify recuo-primeira-linha"><?= $descricaoContrato ?></p>
+                    </div>
+                    <hr class="divisor">
+                    <div class="text-center">
+                        <h6 class="text-primary negrito">Status atual desde <?= $dataStatus ?> às <?= $horaStatus ?></h6>
+                        <div class="row">
+                            <div class="col-md-6 m-auto">
+                                <div class="bg-light border border-primary borda-redonda-20 pt-1">
+                                    <h6 class="text-center negrito"><?= $nomeStatus ?></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="divisor">
+                    <a class="btn btn-primary borda-redonda-20 " href="altera_contrato.php?id_contrato=<?= $idContrato ?>">Alterar contrato</a>
                 </div>
             </div>
         </div>
+        <div class="espaco-pre-footer"></div>
         <?php
-            include '../../../template/js-bootstrap.php'; 
-		?>	
+            include '../../../template/js-bootstrap.php';
+		?>
     </body>
 </html>

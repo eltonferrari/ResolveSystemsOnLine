@@ -51,6 +51,17 @@
             $this->db_handle->update($query, $paramType, $paramValue);
         }
 
+        function getNomeStatusById($id) {
+            $query = "SELECT nome FROM status WHERE id = ?";
+            $paramType = "i";
+            $paramValue = array($id);
+            $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            foreach ($result as $n) {
+                $nome = $n['nome'];
+            }
+            return $nome;
+        }
+
         function getAllStatus() {
             $query = "SELECT * FROM status";
             $result = $this->db_handle->runBaseQuery($query);

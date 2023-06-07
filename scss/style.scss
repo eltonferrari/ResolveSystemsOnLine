@@ -103,7 +103,7 @@
 	}
 
 	.espaco-pre-footer {
-		height: 150px;
+		height: 50px;
 	}
 }
 
@@ -119,7 +119,7 @@
 	}
 	
 	.espaco-pre-footer {
-		height: 150px;
+		height: 50px;
 	}
 
 	body {
@@ -166,6 +166,14 @@ p.justificado {
 
 hr.divisor {
     border: 1px dotted #007bff;
+}
+
+.display-in {
+	display: inline;
+}
+
+.display-bl {
+	display: block;
 }
 
 .caixa div {
@@ -220,7 +228,8 @@ h3.madelina {
 .animate-character,
 .animate-character-formatura,
 .animate-character-formatura-2,
-.animate-character-msg {
+.animate-character-msg,
+.animate-character-contrato {
 	background-size: auto auto;
 	background-clip: border-box;
 	background-size: 200% auto;
@@ -235,7 +244,8 @@ h3.madelina {
 
 .animate-character,
 .animate-character-formatura,
-.animate-character-formatura-2 {
+.animate-character-formatura-2,
+.animate-character-contrato {
 	animation: textclip 3s linear infinite;
 }
 
@@ -257,12 +267,23 @@ h3.madelina {
 	);
 }
 
+.animate-character-contrato {
+	text-transform: uppercase;
+	background-image: linear-gradient(
+		-225deg,
+   		#28a745 0%,
+    	#ffc107 33%,
+		#007bff 66%
+	);
+}
+
 .animate-character {
 	font-size: 50px;
 }
 
 .animate-character-formatura,
-.animate-character-msg {
+.animate-character-msg,
+.animate-character-contrato {
 	font-size: 20px;
 }
 

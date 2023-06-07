@@ -248,7 +248,7 @@ CREATE TABLE IF NOT EXISTS `contratos` (
 	`id_cliente` int(10) NOT NULL,
   	`descricao` varchar(255) NOT NULL,
 	`id_status` int(2),
-	`data` datetime DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` datetime DEFAULT CURRENT_TIMESTAMP,
 	`aberto` int(1) DEFAULT 1,
 	PRIMARY KEY (`id`),
 	FOREIGN KEY(id_cliente) REFERENCES pessoas(id),
