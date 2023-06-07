@@ -66,37 +66,5 @@
             $contratos = $this->db_handle->runQuery($query, $paramType, $paramValue);
             return $contratos;
         }
-        
-        /*
-        function getIntencaoByEmail($email) {
-            $query = "SELECT * FROM form_intencao WHERE email = ?";
-            $paramType = "s";
-            $paramValue = array($email);
-            $intencao = $this->db_handle->runQuery($query, $paramType, $paramValue);
-            return $intencao;
-        }
-
-        function getIntencaoByTelefone($telefone) {
-            $query = "SELECT * FROM form_intencao WHERE telefone = ?";
-            $paramType = "s";
-            $paramValue = array($telefone);
-            $intencao = $this->db_handle->runQuery($query, $paramType, $paramValue);
-            return $intencao;
-        }
-        
-        function getIntencaoByVisibilidade($visibilidade) {
-            $query = "SELECT * FROM form_intencao WHERE visibilidade = ?";
-            $paramType = "i";
-            $paramValue = array($visibilidade);
-            $intencao = $this->db_handle->runQuery($query, $paramType, $paramValue);
-            return $intencao;
-        }
-
-        function getAllIntencoes() {
-            $query = "SELECT * FROM form_intencao ORDER BY created_at ASC";
-            $lista = $this->db_handle->runBaseQuery($query);
-            return $lista;
-        }
-        */
     }
 ?>

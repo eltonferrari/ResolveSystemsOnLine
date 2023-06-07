@@ -353,6 +353,10 @@
                         <button type="button" class="btn btn-outline-primary borda-redonda-20 my-2" data-toggle="modal" data-target="#modalContratos">
                             Ver todos os contratos: 
                         </button>
+                        <!-- Botão para ver ocorrências -->
+                        <a href="../ocorrencias/ver_ocorrencias.php?id_contrato=<?= $idContrato ?>" class="btn btn-outline-primary borda-redonda-20 my-2">
+                            Ver ocorrências: 
+                        </a>
                     </div>
                     <h5 class="text-primary text-center negrito display-in">
                         Contrato número "<?= $idContrato ?>" - 
