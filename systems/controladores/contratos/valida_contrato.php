@@ -3,16 +3,6 @@
     include '../pessoas/class_pessoas.php';
     include 'class_contratos.php';
 
-    echo '===== SESSION =====';
-    echo '<pre>';
-    print_r($_SESSION);
-    echo '</pre>';
-    
-    echo '===== POST =====';
-    echo '<pre>';
-    print_r($_POST);
-    echo '</pre>';
-
     $idCliente = $_POST['pessoa'];
     $descricao = $_POST['descricao'];
     $idStatus = $_POST['status'];

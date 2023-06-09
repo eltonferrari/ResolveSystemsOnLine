@@ -12,5 +12,4 @@
     ?>
         <meta http-equiv="refresh" content="0;url=../../visualizacoes/fale_conosco/fale_conosco.php">
     <?php
-    //header("Location: ../../visualizacoes/fale_conosco/fale_conosco.php");
 ?>

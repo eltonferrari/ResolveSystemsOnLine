@@ -1,7 +1,8 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
 	include '../../controladores/status/class_status.php';
-    // MENU
+
+	// MENU
 	include '../../controladores/pessoas/class_pessoas.php';
 	$tipoUser = $_SESSION['tipo'];
 	$idUser = $_SESSION['id_logado'];

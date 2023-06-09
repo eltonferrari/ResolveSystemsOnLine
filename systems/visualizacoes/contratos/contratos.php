@@ -1,6 +1,7 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
 	include '../../controladores/contratos/class_contratos.php';
+	
 	// MENU
 	include '../../controladores/pessoas/class_pessoas.php';
 	$tipoUser = $_SESSION['tipo'];
@@ -8,21 +9,13 @@
     $nomeMenu = new Pessoas;
 	$nomeMenu = $nomeMenu->getNomeById($idUser);
 	// ===============
+	
 	$contratosAbertos = new Contratos();
 	$contratosAbertos = $contratosAbertos->getAllContratosAbertos();
 	
-	echo '===== CONTRATOS ABERTOS =====';
-	echo '<pre>';
-	print_r($contratosAbertos);
-	echo '</pre>';
-
 	$contratosTerminados = new Contratos();
 	$contratosTerminados = $contratosTerminados->getAllContratosTerminados();
 
-	echo '===== CONTRATOS TERMINADOS =====';
-	echo '<pre>';
-	print_r($contratosTerminados);
-	echo '</pre>';
 ?>
 <!doctype html>
 <html lang="pt-br">

@@ -1,21 +1,10 @@
 <?php
     session_start();
     include 'class_status.php';
-
-    echo '===== SESSION =====';
-    echo '<pre>';
-    print_r($_SESSION);
-    echo '</pre>';
-    echo '===== POST =====';
-    echo '<pre>';
-    print_r($_POST);
-    echo '</pre>';
-
     $nome = $_POST['nome'];
     $descricao = $_POST['descricao'];
     $anterior = $_POST['anterior'];
     $proximo = $_POST['proximo'];
-
     $testeProximo = new Status();
     $testeProximo = $testeProximo->getStatusById($proximo);
     foreach($testeProximo as $tp) {

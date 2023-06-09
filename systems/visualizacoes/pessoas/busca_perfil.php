@@ -4,6 +4,7 @@
     include '../../controladores/sexos/class_sexos.php';
     include '../../controladores/estados/class_estados.php';
     include '../../lib/util.php';
+    
     // MENU
 	include '../../controladores/pessoas/class_pessoas.php';  
 	$tipoUser = $_SESSION['tipo'];
@@ -20,6 +21,7 @@
             header("Location: ../home/home.php");
         }
     }
+
     $user = new Pessoas();
     $user = $user->getPessoaById($idPost);
     foreach ($user as $u) {
@@ -41,6 +43,7 @@
         $createdAt      = $u['created_at'];
         $updatedAt      = $u['updated_at'];
     }
+    
     $activ  = ( $ativo == 1)  ? 'checked' : "";
     $tipo = new Tipos();
     $tipo = $tipo->getNomeById($idTipo);

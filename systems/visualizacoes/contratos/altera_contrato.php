@@ -11,20 +11,10 @@
     $nomeMenu = new Pessoas;
 	$nomeMenu = $nomeMenu->getNomeById($idUser);
 	// ===============
-
-    echo '===== SESSION =====';
-	echo '<pre>';
-	print_r($_SESSION);
-	echo '</pre>';
     
 	if (isset($_SESSION['msgAlteraContrato'])) {
 		$msgAlteraContrato = $_SESSION['msgAlteraContrato'];
 	}
-
-    echo '===== GET =====';
-	echo '<pre>';
-	print_r($_GET);
-	echo '</pre>';
 
     $idContrato = $_GET['id_contrato'];
     $contrato = new Contratos();
@@ -37,11 +27,7 @@
         $dataStatusContrato = $con['updated_at'];
         $abertoContrato     = $con['aberto'];
     }
-    echo '===== CONTRATO =====';
-	echo '<pre>';
-	print_r($contrato);
-	echo '</pre>';
-
+    
 	$nomeCliente = new Pessoas();
 	$nomeCliente = $nomeCliente->getNomeById($idClienteContrato);
 	$statusAtual = new Status();

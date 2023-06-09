@@ -1,18 +1,9 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
 	include '../../controladores/contratos/class_contratos.php';
-    date_default_timezone_set('America/Sao_Paulo');
-
-    echo '===== SESSION =====';
-	echo '<pre>';
-	print_r($_SESSION);
-	echo '</pre>';
     
-    echo '===== GET =====';
-	echo '<pre>';
-	print_r($_POST);
-	echo '</pre>';
-
+    date_default_timezone_set('America/Sao_Paulo');
+    
     $descricao  = $_POST['descricao'];
     $status     = $_POST['status'];
     $id = $_POST['idContrato'];

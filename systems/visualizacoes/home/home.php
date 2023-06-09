@@ -1,6 +1,7 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
 	include '../../controladores/tipos/class_tipos.php';
+
 	// MENU
 	include '../../controladores/pessoas/class_pessoas.php';
 	$tipoUser = $_SESSION['tipo'];
@@ -13,7 +14,6 @@
 	$buscaTipo = $buscaTipo->getAllTipos();
 	$buscaPerfil = new Pessoas();
 	$buscaPerfil = $buscaPerfil->getIdNomeAllPessoas();
-	
 ?>
 <!doctype html>
 <html lang="pt-br">

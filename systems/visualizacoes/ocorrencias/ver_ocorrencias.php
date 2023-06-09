@@ -1,6 +1,8 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
+    include '../../controladores/contratos/class_contratos.php';
 	include '../../controladores/ocorrencias/class_ocorrencias.php';
+    include '../../lib/util.php';
 
 	// MENU
 	include '../../controladores/pessoas/class_pessoas.php';
@@ -9,31 +11,12 @@
     $nomeMenu = new Pessoas;
 	$nomeMenu = $nomeMenu->getNomeById($idUser);
 	// ===============
-
-    echo '===== SESSION =====';
-	echo '<pre>';
-	print_r($_SESSION);
-	echo '</pre>';
-    
-    echo '===== GET =====';
-	echo '<pre>';
-	print_r($_GET);
-	echo '</pre>';
     
     $idContrato = $_GET['id_contrato'];
-    
+    $nomeCliente = new Contratos();
+    $nomeCliente = $nomeCliente->getNomeClienteByIdContrato($idContrato);
     $ocorrencias = new Ocorrencias();
-    $ocorrencias = $ocorrencias->getAllOcorrenciasByContrato($idContrato);
-    if (!empty($ocorrencias)) {
-        foreach ($ocorrencias as $ocorrenc) {
-            $idOcorrencia           = $ocorrenc['id'];
-            $idContratoOcorrencia   = $ocorrenc['id_contrato'];
-            $textoOcorrencia        = $ocorrenc['texto'];
-            $createdByOcorrencia    = $ocorrenc['created_by'];
-            $createdAtOcorrencia    = $ocorrenc['created_at'];
-            $updatedAtOcorrencia    = $ocorrenc['updated_at'];
-        }
-    }
+    $ocorrencias = $ocorrencias->getAllOcorrenciasByContrato($idContrato);    
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -71,19 +54,75 @@
             <div class="text-center mt-1">
                 <img src="../../../img/icones/ocorrencia.png" alt="Contrato" title="Contrato" width="80">
                 <h1 class="text-primary text-center mt-3 negrito">Ocorrências</h1>
-                <h2 class="text-primary text-center mt-1 negrito font-size-20">Contrato nº <?= $idContrato ?></h2>
+                <h2 class="text-primary text-center mt-1 negrito font-size-20">
+                    <p>
+                        Contrato nº <?= $idContrato ?> - <?= $nomeCliente ?>
+                    </p>
+                </h2>
             </div>
             <div class="row mt-2">
-                <div class="col-md-6 border border-primary borda-redonda-20 text-center mt-1">
-                    <h3 class="text-primary text-center mt-3 negrito">Atuais</h3>
-                    <hr class="divisor">
-                </div>
-                <div class="col-md-1"></div>
                 <div class="col-md-5 border border-primary borda-redonda-20 text-center mt-1">
+                    <h3 class="text-primary text-center mt-3 negrito">Atuais</h3>
+                    <?php
+                        if (!empty($ocorrencias)) {
+                            foreach ($ocorrencias as $ocorrenc) {
+                                $idOcorrencia           = $ocorrenc['id'];
+                                $textoOcorrencia        = $ocorrenc['texto'];
+                                $createdByOcorrencia    = $ocorrenc['created_by'];
+                                $createdAtOcorrencia    = $ocorrenc['created_at'];
+                                $updatedAtOcorrencia    = $ocorrenc['updated_at'];
+                                $criador = new Pessoas();
+                                $criador = $criador->getNomeById($createdByOcorrencia);
+                                $dataCriacao = convertDataMySQL_DataPHP($createdAtOcorrencia);
+                                $horaCriacao = convertDataMySQL_HoraPHP($createdAtOcorrencia);
+                                $dataAlteracao = convertDataMySQL_DataPHP($updatedAtOcorrencia);
+                                $horaAlteracao = convertDataMySQL_HoraPHP($updatedAtOcorrencia);
+                    ?>
+                                <hr class="divisor">
+                                <span class="text-center negrito">Nº da ocorrência: </span>
+                                <span class="text-danger negrito"><?= $idOcorrencia ?></span>
+                                <br />
+                                <p class="text-justify recuo-primeira-linha"><?= $textoOcorrencia ?></p>
+                                <span class="text-primary text-center negrito">Criador: </span>
+                                <span class="negrito"><?= $criador ?></span>
+                                <br />
+                                <span class="text-primary text-center negrito">Ocorrencia criada em </span>
+                                <span class="negrito"><?= $dataCriacao ?> às <?= $horaCriacao ?></span>
+                                <br />
+                                <span class="text-primary text-center negrito">Ocorrencia alterada em </span>
+                                <span class="negrito"><?= $dataAlteracao ?> às <?= $horaAlteracao ?></span>
+                    <?php
+                            }
+                        }
+                    ?>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5 text-center mt-1">
                     <h3 class="text-primary text-center mt-3 negrito">Cadastrar</h3>
+                    <?php
+                        if (isset($_SESSION['msgOcorrencia'])) {
+                            $msgOcorrencia = $_SESSION['msgOcorrencia'];
+                    ?>
+                            <h6 class="text-danger">(<?= $msgOcorrencia ?>)</h6>
+                    <?php 
+                            unset($_SESSION['msgOcorrencia']);
+                        }
+                    ?>
                     <hr class="divisor">
                     <form action="../../controladores/ocorrencias/valida_ocorrencia.php" method="post">
-                        
+                        <input type="hidden" name="id_contrato" value="<?= $idContrato ?>">
+                        <div class="form-group">
+                            <label class="text-primary negrito" for="mensagem">Descrição da ocorrência: </label>
+                            <textarea class="form-control borda-redonda-20 border border-primary p-2" 
+                                      id="mensagem" 
+                                      name="texto" 
+                                      rows="1"
+                                      placeholder="Descreva a ocorrência aqui..." 
+                                      maxlength="255"></textarea>
+                            <div class="text-left text-danger negrito" id="caracteres_restantes">255</div>
+                        </div>
+                        <input type="hidden" name="created_by" value="<?= $idUser ?>">
+                        <button class="btn btn-primary borda-redonda-20 px-5 py-2" type="submit">Salvar</button>
                     </form>
                 </div>            
             </div>

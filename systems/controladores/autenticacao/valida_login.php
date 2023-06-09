@@ -41,7 +41,6 @@
                 ?>
                     <meta http-equiv="refresh" content="0;url=../../visualizacoes/autenticacao/login.php">
                 <?php
-                //  header("Location: ../../visualizacoes/autenticacao/login.php");
             }
         }
     }

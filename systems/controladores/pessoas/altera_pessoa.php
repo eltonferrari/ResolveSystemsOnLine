@@ -2,23 +2,10 @@
     session_start();
     include 'class_pessoas.php';
     date_default_timezone_set('America/Sao_Paulo');
-    
-    echo '===== SESSION =====';
-    echo '<pre>';
-    print_r($_SESSION);
-    echo '</pre>';
-    
-    echo '===== POST =====';
-    echo '<pre>';
-    print_r($_POST);
-    echo '</pre>';
-    
-    
-    
     $id             = $_POST['id'];
     $nome           = $_POST['nome'];
     $idTipo         = $_POST['id_tipo'];
-    $ativo  = ( isset($_POST['ativo']) )  ? 1 : 0;
+    $ativo          = ( isset($_POST['ativo']) )  ? 1 : 0;
     $cpf_cnpj       = $_POST['cpf_cnpj'];
     $dataNasc       = $_POST['datanasc'] . ' 00:00:00';
     $idSexo         = $_POST['id_sexo'];
@@ -63,16 +50,7 @@
     $telefoneAtual = $telefoneAtual->getTelefonePrincipal($id);
     $telefonePrincipalNovo = new Telefones();
     $telefonePrincipalNovo = $telefonePrincipalNovo->getIdByTelefone($telefoneNovo);
-    echo '===== TELEFONE ATUAL =====';
-    echo '<pre>';
-    print_r($telefoneAtual);
-    echo '</pre>';
-    
-    echo '===== TELEFONE NOVO =====';
-    echo '<pre>';
-    print_r($telefonePrincipalNovo);
-    echo '</pre>';
-
+   
     if ($emailAtual[0]['email'] != $emailNovo) {
         $alteraEmailAtual = new Emails();
         $alteraEmailAtual->editEmail(0, $emailAtual[0]['id']);
@@ -88,7 +66,6 @@
     
     $_SESSION['msg_update'] = "Usuário $nome alterado com sucesso.";
     ?>
-      <meta http-equiv="refresh" content="0;url=../../visualizacoes/pessoas/busca_perfil.php">
+        <meta http-equiv="refresh" content="0;url=../../visualizacoes/pessoas/busca_perfil.php">
     <?php
-    //header("Location: ../../visualizacoes/pessoas/busca_perfil.php");
 ?>

@@ -14,16 +14,6 @@
 	$nomeMenu = $nomeMenu->getNomeById($idUser);
 	// ===============
 
-    echo '===== SESSION =====';
-	echo '<pre>';
-	print_r($_SESSION);
-	echo '</pre>';
-    
-    echo '===== GET =====';
-	echo '<pre>';
-	print_r($_GET);
-	echo '</pre>';
-
     $idContrato = $_GET['id_contrato'];
     $contrato = new Contratos();
     $contrato = $contrato->getContratoById($idContrato);
@@ -35,6 +25,7 @@
         $dataStatusContrato = $con['updated_at'];
         $abertoContrato     = $con['aberto'];
     }
+
     $contrAberto = null;
     if ($abertoContrato == 1) {
         $contrAberto = 'Aberto';
@@ -44,32 +35,14 @@
 
     $nomeStatus = new Status();
     $nomeStatus = $nomeStatus->getNomeStatusById($idStatusContrato);
-
-    echo "Nome Status: $nomeStatus <br />";
-
     $dataStatus = convertDataMySQL_DataPHP($dataStatusContrato);
     $horaStatus = convertDataMySQL_HoraPHP($dataStatusContrato);
-
-	echo '===== CONTRATO =====';
-	echo '<pre>';
-	print_r($contrato);
-	echo '</pre>';
 
     $contratosAbertos = new Contratos();
     $contratosAbertos = $contratosAbertos->getAllContratosAbertosByCliente($idClienteContrato);
 
-    echo '===== CONTRATOS ABERTOS =====';
-	echo '<pre>';
-	print_r($contratosAbertos);
-	echo '</pre>';
-
     $contratosTerminados = new Contratos();
     $contratosTerminados = $contratosTerminados->getAllContratosTerminadosByCliente($idClienteContrato);
-
-    echo '===== CONTRATOS TERMINADOS =====';
-	echo '<pre>';
-	print_r($contratosTerminados  );
-	echo '</pre>';
 
     $idCliente = $idClienteContrato;
     $cliente = new Pessoas();
@@ -102,31 +75,17 @@
     $dataAlteracaoCliente = convertDataMySQL_DataPHP($alteradoEmCliente);
     $horaAlteracaoCliente = convertDataMySQL_HoraPHP($alteradoEmCliente);
     
-    echo '===== CLIENTE =====';
-	echo '<pre>';
-	print_r($cliente);
-	echo '</pre>';
-    
     $telefonePrincipal = new Telefones();
     $telefonePrincipal = $telefonePrincipal->getTelefonePrincipal($idCliente);
     
     $telefoneOutros = new Telefones();
     $telefoneOutros = $telefoneOutros->getTelefoneOutros($idCliente);
 
-    echo '===== Telefone Outros =====';
-	echo '<pre>';
-	print_r($telefoneOutros);
-	echo '</pre>';
-
     $emailPrincipal = new Emails();
     $emailPrincipal = $emailPrincipal->getEmailPrincipal($idCliente);
     
-    echo '===== Email Principal =====';
-	echo $emailPrincipal ;
-
     $emailOutros = new Emails();
-    $emailOutros = $emailOutros->getEmailOutros($idCliente);
-    
+    $emailOutros = $emailOutros->getEmailOutros($idCliente);    
 ?>
 <!doctype html>
 <html lang="pt-br">

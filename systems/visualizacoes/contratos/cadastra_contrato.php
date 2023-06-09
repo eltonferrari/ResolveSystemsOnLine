@@ -1,24 +1,21 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
     include '../../controladores/status/class_status.php';
-	// MENU
+	
+    // MENU
 	include '../../controladores/pessoas/class_pessoas.php';
 	$tipoUser = $_SESSION['tipo'];
 	$idUser = $_SESSION['id_logado'];
     $nomeMenu = new Pessoas;
 	$nomeMenu = $nomeMenu->getNomeById($idUser);
 	// ===============
+    
     date_default_timezone_set('America/Sao_Paulo');
     $buscaPessoas = new Pessoas();
     $buscaPessoas = $buscaPessoas->getAllPessoas();
     $buscaStatus = new Status();
     $buscaStatus = $buscaStatus->getAllStatus();
     
-    echo '===== SESSION =====';
-    echo '<pre>';
-    print_r($_SESSION);
-    echo '</pre>';
-
     if (isset($_SESSION['msgContratoAdicionado'])) {
         $msgContratoAdicionado = $_SESSION['msgContratoAdicionado'];
     }
@@ -61,14 +58,14 @@
                     <img src="../../../img/icones/contrato.png" alt="Contrato" title="Contrato" width="80">
                     <h1 class="text-primary text-center mt-3 negrito">Novo Contrato</h1>
                     <?php
-							if (isset($_SESSION['msgContratoAdicionado'])) {
-								$msgContratoAdicionado = $_SESSION['msgContratoAdicionado'];
-						?>
-								<h6 class="text-danger">(<?= $msgContratoAdicionado ?>)</h6>
-						<?php 
-								unset($_SESSION['msgContratoAdicionado']);
-							}
-						?>
+                        if (isset($_SESSION['msgContratoAdicionado'])) {
+                            $msgContratoAdicionado = $_SESSION['msgContratoAdicionado'];
+                    ?>
+                            <h6 class="text-danger">(<?= $msgContratoAdicionado ?>)</h6>
+                    <?php 
+                            unset($_SESSION['msgContratoAdicionado']);
+                        }
+                    ?>
                 </div>
                 <div class="form">
                     <form action="../../controladores/contratos/valida_contrato.php" method="post">
@@ -125,10 +122,8 @@
                                                   maxlength="255"></textarea>
                                     </div>
                                     <div class="text-danger negrito" id="caracteres_restantes">255</div>
-                                    </div>
                                 </div>
                             </div>
-
                             <div class="row">
                                 <div class="col-md-3 m-auto text-center">
                                     <button class="btn btn-lg btn-primary borda-redonda-20 mt-3" type="submit">Salvar</button>

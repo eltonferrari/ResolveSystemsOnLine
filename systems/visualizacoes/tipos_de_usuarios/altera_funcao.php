@@ -2,7 +2,15 @@
     include '../../controladores/autenticacao/validador_de_acesso.php';
 	include '../../controladores/tipos/class_tipos.php';
     include '../../controladores/pessoas/class_pessoas.php';
-    
+
+    // MENU
+	include '../../controladores/pessoas/class_pessoas.php';
+	$tipoUser = $_SESSION['tipo'];
+	$idUser = $_SESSION['id_logado'];
+    $nomeMenu = new Pessoas;
+	$nomeMenu = $nomeMenu->getNomeById($idUser);
+	// ===============
+	    
     $id = $_GET['id_tipo'];
     $buscaTipo = new Tipos();
 	$buscaTipo = $buscaTipo->getTipoById($id);

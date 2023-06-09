@@ -2,6 +2,7 @@
     require_once "../../../conexao/DBController.php";
     class Emails {
         private $db_handle;
+        
         function __construct() {
             $this->db_handle = new DBController();
         }

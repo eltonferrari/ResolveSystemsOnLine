@@ -5,6 +5,7 @@
 
     class Pessoas {
         private $db_handle;
+        
         function __construct() {
             $this->db_handle = new DBController();
         }

@@ -11,5 +11,4 @@
     ?>
         <meta http-equiv="refresh" content="0;url=../../visualizacoes/home/home.php">
     <?php
-    //header("Location: ../../visualizacoes/home/home.php")
 ?>

@@ -1,6 +1,7 @@
 <?php
     session_start();
     include 'class_fale_conosco.php';
+    
     date_default_timezone_set('America/Sao_Paulo');
     $id = $_SESSION['id_mensagem'];
     $_POST['lido']  = ( isset($_POST['lido']) )  ? $lido = 1 : $lido = 0;

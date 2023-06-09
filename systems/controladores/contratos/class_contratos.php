@@ -31,6 +31,17 @@
             return $contrato;
         }
 
+        function getNomeClienteByIdContrato($idContrato) {
+            $query = "SELECT p.nome FROM pessoas p JOIN contratos c ON p.id = c.id_cliente and c.id = ?";
+            $paramType = "i";
+            $paramValue = array($idContrato);
+            $nomeCliente = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            foreach ($nomeCliente as $nC) {
+                $nome = $nC['nome'];
+            }
+            return $nome;
+        }
+
         function getContratosByCliente($idCliente) {
             $query = "SELECT * FROM contratos WHERE id_cliente = ?";
             $paramType = "i";

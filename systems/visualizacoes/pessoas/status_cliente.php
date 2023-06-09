@@ -1,5 +1,6 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
+
 	// MENU
     include '../../controladores/pessoas/class_pessoas.php';
 	$tipoUser = $_SESSION['tipo'];
@@ -7,6 +8,7 @@
     $nomeMenu = new Pessoas;
 	$nomeMenu = $nomeMenu->getNomeById($idUser);
 	// ===============
+	
 ?>
 <!doctype html>
 <html lang="pt-br">

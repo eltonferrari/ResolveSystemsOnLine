@@ -1,6 +1,7 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
     include '../../controladores/status/class_status.php';
+
     // MENU
     include '../../controladores/pessoas/class_pessoas.php';
     $tipoUser = $_SESSION['tipo'];
@@ -8,6 +9,7 @@
     $nomeMenu = new Pessoas;
     $nomeMenu = $nomeMenu->getNomeById($idUser);
     // ===============
+
     $id = $_GET['id'];
     $status = new Status();
     $status = $status->getStatusById($id);
