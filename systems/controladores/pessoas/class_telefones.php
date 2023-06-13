@@ -37,6 +37,14 @@
             return $telefonePrincipal;            
         }
 
+        function getArrayTelefonePrincipal($idPessoa){
+            $query = "SELECT * FROM telefones WHERE id_pessoa = ? AND principal = 1";
+            $paramType = "i";
+            $paramValue = array($idPessoa);
+            $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            return $result;            
+        }
+
         function getTelefoneOutros($idPessoa){
             $query = "SELECT * FROM telefones WHERE id_pessoa = ? AND principal = 0";
             $paramType = "i";

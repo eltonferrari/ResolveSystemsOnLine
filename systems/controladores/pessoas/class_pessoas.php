@@ -94,7 +94,7 @@
         
         function getPessoaByEmail($email) {
             //SELECT e.email, p.senha, p.id, p.id_tipo FROM pessoas p JOIN emails e ON p.id = e.id_pessoa AND e.email = 'eltonferrari@gmail.com';
-            $query = "SELECT e.email, p.senha, p.id, p.id_tipo FROM pessoas p JOIN emails e ON p.id = e.id_pessoa AND e.email = ?";
+            $query = "SELECT e.email, p.senha, p.id, p.id_tipo, p.ativo FROM pessoas p JOIN emails e ON p.id = e.id_pessoa AND e.email = ?";
             $paramType = "s";
             $paramValue = array($email);
             $result = $this->db_handle->runQuery($query, $paramType, $paramValue);

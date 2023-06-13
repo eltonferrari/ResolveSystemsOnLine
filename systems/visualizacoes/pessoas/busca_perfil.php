@@ -43,8 +43,8 @@
         $createdAt      = $u['created_at'];
         $updatedAt      = $u['updated_at'];
     }
-    
     $activ  = ( $ativo == 1)  ? 'checked' : "";
+    $activTipo1  = ( $ativo == 1)  ? 'Ativo' : 'Inativo';
     $tipo = new Tipos();
     $tipo = $tipo->getNomeById($idTipo);
     $buscaTipos = new Tipos();
@@ -104,7 +104,10 @@
         <div class="container mb-5">    
             <div class="row pb-1">
 				<div class="col-md-10 m-auto pb-1">
-                    <h3 class="text-primary text-center mt-1 negrito">Perfil de Usuário</h3>
+                    <div class="text-center">
+                        <img src="../../../img/icones/perfil-outros.png" alt="Home" width="80">
+                        <h3 class="text-primary text-center mt-1 negrito">Perfil de Usuário</h3>
+                    </div>
                     <form name="form-perfil" action="../../controladores/pessoas/altera_pessoa.php" method="post" enctype="multipart/form-data">
                         <div class="text-center">
                             <label class="bg-primary text-light px-2 mt-3 borda-redonda-10 negrito" for="nome">Nome: </label>
@@ -113,33 +116,54 @@
                         <div class="row">
                             <div class="col-md-6 m-auto text-center">
                                 <label class="bg-primary text-light borda-redonda-20 negrito px-2 mt-2" for="id">Código Identificador: "<?= $idTipo ?>"</label>
-                                <input type="hidden" name="id" id="id" value="<?= $id ?>">
+                                <input type="hidden" name="id" value="<?= $id ?>">
+                                <input type="hidden" name="id_tipo" value="<?= $idTipo ?>">                                
                                 <br />
-                                <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="funcao">Função: </label>
-                                <select id="funcao" name="id_tipo" class=" borda-redonda-10">
-                                    <option value=<?= $idTipo ?>><?= $tipo ?></option>
+                                <label class="bg-primary text-light px-2 mr-1 borda-redonda-10 negrito" for="funcao">Função: </label>
+                                <?php
+                                    if ($tipoUser != 1) {
+                                ?>
+                                        <span><?= $tipo ?></span>
+                                <?php
+                                    } else {
+                                ?>
+                                        <select id="funcao" name="id_tipo" class=" borda-redonda-10">
+                                            <option value=<?= $idTipo ?>><?= $tipo ?></option>
+                                            <?php
+                                                foreach ($buscaTipos as $busca) {
+                                                    $id = $busca['id'];
+                                                    $nomeTipo = $busca['nome'];
+                                            ?>
+                                                    <option value="<?= $id ?>"><?= $nomeTipo ?></option>
+                                            <?php
+                                                }
+                                            ?>
+                                        </select>
+                                <?php 
+                                    }
+                                ?>
+                                <br />
+                                <div class="d-flex justify-content-center">
+                                    <div class="bg-primary text-light px-2 mr-1 borda-redonda-10 negrito">
+                                        Usuário: 
+                                    </div>
                                     <?php
-                                        foreach ($buscaTipos as $busca) {
-                                            $id = $busca['id'];
-                                            $nomeTipo = $busca['nome'];
+                                        if ($tipoUser != 1) {
                                     ?>
-                                            <option value="<?= $id ?>"><?= $nomeTipo ?></option>
+                                            <span><?= $activTipo1 ?></span>
+                                    <?php
+                                        } else {
+                                    ?>
+                                            <div class="flipswitch">
+                                                <input type="checkbox" name="ativo" class="flipswitch-cb" id="fs" <?= $activ ?>>
+                                                <label class="flipswitch-label" for="fs">
+                                                    <div class="flipswitch-inner"></div>
+                                                    <div class="flipswitch-switch"></div>
+                                                </label>
+                                            </div>
                                     <?php
                                         }
                                     ?>
-                                </select>
-                                <br />
-                                <div class="d-flex justify-content-center">
-                                    <div class="negrito mr-2">
-                                        Usuário: 
-                                    </div>
-                                    <div class="flipswitch">
-                                        <input type="checkbox" name="ativo" class="flipswitch-cb" id="fs" <?= $activ ?>>
-                                        <label class="flipswitch-label" for="fs">
-                                            <div class="flipswitch-inner"></div>
-                                            <div class="flipswitch-switch"></div>
-                                        </label>
-                                    </div>
                                 </div>                                    
                             </div>
                         </div>
@@ -153,7 +177,7 @@
                                     $pessoaDataNasc = substr($dataNasc,0,10);
                                 ?>
                                     <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="datanasc">Nascimento: </label><br />
-                                    <input class="form-control" type="date" name="datanasc" id="datanasc" value="<?= $pessoaDataNasc ?>">
+                                    <input class="form-control text-center" type="date" name="datanasc" id="datanasc" value="<?= $pessoaDataNasc ?>">
                                 <?php
                                     $data = new DateTime($pessoaDataNasc);
                                     $interval = $data->diff(new DateTime(date('Y-m-d')));
@@ -188,17 +212,9 @@
                                     <a class="font-link link-no-line" href="cadastra_email.php?id_perfil=<?= $idPost ?>">+</a>
                                 </p>
                                 <br />
+                                <label class="text-center negrito" for="email"><?= $email ?></label>
+                                <input name="email" type="radio" id="email" value="<?= $email ?>" checked><br />
                                 <?php
-                                    foreach ($email as $e) {
-                                        if ($e['principal'] == 1) {
-                                            $emailPrincipal = $e['email'];
-                                            $princPrincipal = 'checked';
-                                ?>
-                                            <label class="text-center negrito" name="email" for="email"><?= $emailPrincipal ?></label>
-                                            <input name="email" type="radio" id="email" <?= $princPrincipal ?> value="<?= $emailPrincipal ?>"><br />
-                                <?php
-                                        }
-                                    }
                                     foreach ($emails as $es) {
                                         if ($es['principal'] == 0) {
                                             $emailOutro = $es['email'];
@@ -218,19 +234,15 @@
                                     <a class="font-link link-no-line" href="cadastra_telefone.php?id_perfil=<?= $idPost ?>">+</a>
                                 </p>
                                 <br />
-                                <?php
-                                    if (isset($telefone)) {
-                                        foreach ($telefone as $t) {
-                                            if ($t['principal'] == 1) {
-                                                $telefonePrincipal = $t['telefone'];
-                                                $principalPrincipal = 'checked';
+                                <label class="text-center negrito" name="telefone" for="telefone"><?= $telefone ?></label>
+                                <?php 
+                                    if ($telefone != "") {
                                 ?>
-                                                <label class="text-center negrito" name="telefone" for="telefone"><?= $telefonePrincipal ?></label>
-                                                <input name="telefone" type="radio" id="telefone" <?= $principalPrincipal ?> value="<?= $telefonePrincipal ?>"><br />
+                                        <input name="telefone" type="radio" id="telefone" value="<?= $telefone ?>" checked><br />                                
                                 <?php
-                                            }
-                                        }
                                     }
+                                ?>
+                                <?php
                                     if (isset($telefones)) {
                                         foreach ($telefones as $ts) {
                                             if ($ts['principal'] == 0) {

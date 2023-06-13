@@ -34,7 +34,7 @@
         }
 
         function getNomeById($id) {
-            $tipo_nome = null;
+            $tipo = null;
             $query = "SELECT nome FROM tipos_pessoa WHERE id = ?";
             $paramType = "i";
             $paramValue = array($id);

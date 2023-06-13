@@ -10,37 +10,42 @@
         $msgPessoa = "Usuário e/ou Senha inválidos!";
         $_SESSION['mensagem'] = $msgPessoa;
         $_SESSION['logado'] = 0;
-    ?>
-       <meta http-equiv="refresh" content="0;url=../../visualizacoes/autenticacao/login.php">
-    <?php
-        
-    } else {
+        ?>
+        <meta http-equiv="refresh" content="0;url=../../visualizacoes/autenticacao/login.php">
+        <?php        
+    } else { 
         foreach ($pessoa as $p) {
-            if ($email == $p['email'] && $senha == $p['senha']) {
-                $_SESSION['logado'] = 1;
-                $id = $p['id'];
-                $_SESSION['id_logado'] = $id;
-                $idTipo = $p['id_tipo'];
-                $_SESSION['tipo'] = $idTipo;
-                if ($idTipo == 1) {
-                    echo "logado tipo 1";
-                    ?>
-                       <meta http-equiv="refresh" content="0;url=../../visualizacoes/home/home.php">
-                    <?php
-                } else {
-                    echo "logado tipo 2";
-                    ?>
-                       <meta http-equiv="refresh" content="0;url=../../visualizacoes/pessoas/status_cliente.php">
-                    <?php
-                }
-            } else {
-                $msgPessoa = "Usuário e/ou Senha inválidos!";
+            if ($p['ativo'] == 0) {
+                $msgPessoa = "Usuário INATIVO no momento!";
                 $_SESSION['mensagem'] = $msgPessoa;
                 $_SESSION['logado'] = 0;
-                echo "user/senha inválidos";
                 ?>
                     <meta http-equiv="refresh" content="0;url=../../visualizacoes/autenticacao/login.php">
                 <?php
+            } else {
+                if ($email == $p['email'] && $senha == $p['senha']) {
+                    $_SESSION['logado'] = 1;
+                    $id = $p['id'];
+                    $_SESSION['id_logado'] = $id;
+                    $idTipo = $p['id_tipo'];
+                    $_SESSION['tipo'] = $idTipo;
+                    if ($idTipo == 1) {
+                        ?>
+                            <meta http-equiv="refresh" content="0;url=../../visualizacoes/home/home.php">
+                        <?php
+                    } else {
+                        ?>
+                            <meta http-equiv="refresh" content="0;url=../../visualizacoes/pessoas/status_cliente.php">
+                        <?php
+                    }            
+                } else {
+                    $msgPessoa = "Usuário e/ou Senha inválidos!";
+                    $_SESSION['mensagem'] = $msgPessoa;
+                    $_SESSION['logado'] = 0;
+                    ?>
+                        <meta http-equiv="refresh" content="0;url=../../visualizacoes/autenticacao/login.php">
+                    <?php
+                }
             }
         }
     }

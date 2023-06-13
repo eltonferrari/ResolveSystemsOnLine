@@ -28,13 +28,21 @@
             $paramType = "i";
             $paramValue = array($idPessoa);
             $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
-            $emailPrincipal = null;
+            $emailPrincipal = $result;
             if (!is_null($result)) {
                 foreach ($result as $emailP) {
                     $emailPrincipal = $emailP['email'];
                 }
             }
             return $emailPrincipal;            
+        }
+
+        function getArrayEmailPrincipal($idPessoa){
+            $query = "SELECT * FROM emails WHERE id_pessoa = ? AND principal = 1";
+            $paramType = "i";
+            $paramValue = array($idPessoa);
+            $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            return $result;            
         }
 
         function getEmailOutros($idPessoa){

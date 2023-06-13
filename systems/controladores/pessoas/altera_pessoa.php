@@ -22,7 +22,7 @@
     $createdBy      = $_POST['created_by'];
     $updatedAt      = new DateTime('now');
     $dataAtual = $updatedAt->format('Y-m-d H:i:s');
-
+    
     $pessoa = new Pessoas();
     $pessoa = $pessoa->editPessoa(
                         $idTipo,
@@ -42,12 +42,12 @@
                         $id
                        );
     $emailAtual = new Emails();
-    $emailAtual = $emailAtual->getEmailPrincipal($id);
+    $emailAtual = $emailAtual->getArrayEmailPrincipal($id);
     $emailPrincipalNovo = new Emails();
     $emailPrincipalNovo = $emailPrincipalNovo->getIdByEmail($emailNovo);
     
     $telefoneAtual = new Telefones();
-    $telefoneAtual = $telefoneAtual->getTelefonePrincipal($id);
+    $telefoneAtual = $telefoneAtual->getArrayTelefonePrincipal($id);
     $telefonePrincipalNovo = new Telefones();
     $telefonePrincipalNovo = $telefonePrincipalNovo->getIdByTelefone($telefoneNovo);
    

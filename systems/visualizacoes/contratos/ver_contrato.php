@@ -313,9 +313,19 @@
                             Ver todos os contratos: 
                         </button>
                         <!-- Botão para ver ocorrências -->
-                        <a href="../ocorrencias/ver_ocorrencias.php?id_contrato=<?= $idContrato ?>" class="btn btn-outline-primary borda-redonda-20 my-2">
-                            Ver ocorrências: 
-                        </a>
+                        <?php 
+                        if ($tipoUser == 1) {
+                    ?>
+                            <a href="../ocorrencias/ver_ocorrencias.php?id_contrato=<?= $idContrato ?>" class="btn btn-outline-primary borda-redonda-20 my-2">
+                                Ver ocorrências: 
+                            </a>
+                    <?php
+                        }
+                    ?>
+                        
+                        
+                        
+                        
                     </div>
                     <h5 class="text-primary text-center negrito display-in">
                         Contrato número "<?= $idContrato ?>" - 
@@ -384,7 +394,13 @@
                         </div>
                     </div>
                     <hr class="divisor">
-                    <a class="btn btn-primary borda-redonda-20 " href="altera_contrato.php?id_contrato=<?= $idContrato ?>">Alterar contrato</a>
+                    <?php 
+                        if ($tipoUser == 1) {
+                    ?>
+                            <a class="btn btn-primary borda-redonda-20 " href="altera_contrato.php?id_contrato=<?= $idContrato ?>">Alterar contrato</a>
+                    <?php
+                        }
+                    ?>
                 </div>
             </div>
         </div>
