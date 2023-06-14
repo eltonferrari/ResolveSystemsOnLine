@@ -38,6 +38,18 @@
             return $result;
         }
 
+        function getIdByNome($nome) {
+            $id = null;
+            $query = "SELECT id FROM status WHERE nome = ?";
+            $paramType = "s";
+            $paramValue = array($nome);
+            $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            foreach($result as $status) {
+                $id = $status['id'];
+            }
+            return $id;
+        }
+
         function setStatusAnterior($proximo, $id) {
             $query = "UPDATE status SET proximo = ? WHERE id = ?";
             $paramType = "ii";

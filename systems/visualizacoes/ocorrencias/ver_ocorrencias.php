@@ -70,27 +70,21 @@
                                 $textoOcorrencia        = $ocorrenc['texto'];
                                 $createdByOcorrencia    = $ocorrenc['created_by'];
                                 $createdAtOcorrencia    = $ocorrenc['created_at'];
-                                $updatedAtOcorrencia    = $ocorrenc['updated_at'];
                                 $criador = new Pessoas();
                                 $criador = $criador->getNomeById($createdByOcorrencia);
                                 $dataCriacao = convertDataMySQL_DataPHP($createdAtOcorrencia);
                                 $horaCriacao = convertDataMySQL_HoraPHP($createdAtOcorrencia);
-                                $dataAlteracao = convertDataMySQL_DataPHP($updatedAtOcorrencia);
-                                $horaAlteracao = convertDataMySQL_HoraPHP($updatedAtOcorrencia);
                     ?>
                                 <hr class="divisor">
                                 <span class="text-center negrito">Nº da ocorrência: </span>
                                 <span class="text-danger negrito"><?= $idOcorrencia ?></span>
                                 <br />
                                 <p class="text-justify recuo-primeira-linha"><?= $textoOcorrencia ?></p>
-                                <span class="text-primary text-center negrito">Criador: </span>
-                                <span class="negrito"><?= $criador ?></span>
-                                <br />
-                                <span class="text-primary text-center negrito">Ocorrencia criada em </span>
-                                <span class="negrito"><?= $dataCriacao ?> às <?= $horaCriacao ?></span>
-                                <br />
-                                <span class="text-primary text-center negrito">Ocorrencia alterada em </span>
-                                <span class="negrito"><?= $dataAlteracao ?> às <?= $horaAlteracao ?></span>
+                                <p>
+                                    Criador: <strong><?= $criador ?></strong>
+                                    <br />
+                                    Ocorrencia criada em <strong><?= $dataCriacao ?></strong> às <strong><?= $horaCriacao ?></strong>
+                                </p>
                     <?php
                             }
                         }

@@ -44,6 +44,18 @@
             }
             return $tipo;
         }
+
+        function getIdByNome($nome) {
+            $id = null;
+            $query = "SELECT id FROM tipos_pessoa WHERE nome = ?";
+            $paramType = "s";
+            $paramValue = array($nome);
+            $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            foreach($result as $tipo) {
+                $id = $tipo['id'];
+            }
+            return $id;
+        }
         
         function getAllTipos() {
             $query = "SELECT * FROM tipos_pessoa ORDER BY nome ASC";

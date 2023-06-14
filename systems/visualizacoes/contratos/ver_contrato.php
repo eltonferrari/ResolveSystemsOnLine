@@ -298,11 +298,11 @@
                         </div>
                         <hr class="divisor">
                         <div>
-                            <p>Cliente inserido no sistema por "<?= $criador ?>"
+                            <p>Cliente inserido no sistema por "<strong><?= $criador ?></strong>"
                             <br />
-                            Cliente inserido no sistema em <?= $dataCriacaoCliente ?> às <?= $horaCriacaoCliente ?>
+                            Cliente inserido no sistema em <strong><?= $dataCriacaoCliente ?></strong> às <strong><?= $horaCriacaoCliente ?></strong>
                             <br />
-                            Alterado pela última vez em <?= $dataAlteracaoCliente ?> às <?= $horaAlteracaoCliente ?></p>
+                            Alterado pela última vez em <strong><?= $dataAlteracaoCliente ?></strong> às <strong><?= $horaAlteracaoCliente ?></strong></p>
                         </div>
                     </div>
                 </div>
@@ -384,7 +384,34 @@
                     </div>
                     <hr class="divisor">
                     <div class="text-center">
-                        <h6 class="text-primary negrito">Status atual desde <?= $dataStatus ?> às <?= $horaStatus ?></h6>
+                        <p >
+                            Status atual desde <strong><?= $dataStatus ?></strong> às <strong><?= $horaStatus ?></strong>
+                        </p>
+                        <div class="buttons">
+                            <a class="blob-btn" href="#">
+                                Prévia do site
+                                <span class="blob-btn__inner">
+                                    <span class="blob-btn__blobs">
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                    </span>
+                                </span>
+                            </a>
+                            <br/>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <defs>
+                                    <filter id="goo">
+                                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                        <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </div>
+
+                       
                         <div class="row">
                             <div class="col-md-6 m-auto">
                                 <div class="bg-light border border-primary borda-redonda-20 pt-1">

@@ -63,10 +63,19 @@
 			<div class="row">
 				<div class="col-md-6 m-auto font-size-20">
 					<div class="mt-3">
-						<h4 class="text-light text-center bg-primary borda-redonda-20 negrito">
-							Mensagem
-						</h4>
+						<h4 class="text-light text-center bg-primary borda-redonda-20 negrito p-2">Mensagem</h4>
 					</div>
+					<?php 
+						if (isset($_SESSION['msgPreContrato'])) {
+							$msgPreContrato = $_SESSION['msgPreContrato'];
+					?>
+							<div class="text-center">
+								<h6 class="text-danger negrito"><?= $msgPreContrato ?></h6>
+							</div>
+					<?php	
+							unset($_SESSION['msgPreContrato']);
+						}
+					?>
 					<div>
 						<div class="border border-primary px-2">
 							<div class="float-left">
@@ -83,12 +92,12 @@
 						</div>
 						<div class="clearfix"></div>
 						<div class="border border-primary px-2">
-							<div class="float-left">
+							<div>
 								<span class="negrito">E-mail: </span>
-								<span class="pr-5"><?= $email ?></span>
+								<span><?= $email ?></span>
 							</div>
-							<div class="float-right">
-								<span class="negrito pl-5">Telefone: </span>
+							<div>
+								<span class="negrito">Telefone: </span>
 								<span><?= $telefone ?></span>
 							</div>
 						</div>
@@ -99,10 +108,21 @@
 						</div>
 						<div class="clearfix"></div>
 						<form action="../../controladores/fale_conosco/altera_visualizacao_fale_conosco.php" method="post">
-							<div class="text-center py-2">
+							<input type="hidden" name="nome_cliente" value="<?= $nome ?>">
+							<input type="hidden" name="email_cliente" value="<?= $email ?>">
+							
+							<div class="float-left">
 								<span class="negrito">Marcar como lido? </span>
-								<input type="checkbox" name="lido" id="lido" <?= $visivel ?>>
+								<input class="larger-checkbox" type="checkbox" name="lido" id="lido" <?= $visivel ?>>
 							</div>
+							
+					<!--
+							<div class="float-right">
+								<span class="negrito">Criar Pré-Contrato? </span>
+								<input class="larger-checkbox" type="checkbox" name="criar-pre-contrato" id="pre-contrato">
+							</div>
+					-->
+
 							<div class="clearfix"></div>
 							<div class="border border-primary px-2 font-size-15">
 								<div class="float-left">

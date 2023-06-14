@@ -134,18 +134,16 @@
 						</div>
 						<div class="my-3">
 							<span class="border border-primary borda-redonda-20 p-2">
-								Última alteração em <?= $dataStatus ?> às <?= $horaStatus ?>.
+								Última alteração em <strong><?= $dataStatus ?></strong> às <strong><?= $horaStatus ?></strong>.
 							</span>
 						</div>
-						<button class="btn btn-primary borda-redonda-20 mt-2" type="submit">Salvar alterações</button>
+						<button class="btn btn-primary borda-redonda-20 my-2" type="submit">Salvar alterações</button>
 					</form>
                 </div>
             </div>
         </section>
-		<footer>
-			<?php
-				include '../../../template/js-bootstrap.php';
-			?>
-		</footer>
+		<?php
+			include '../../../template/js-bootstrap.php';
+		?>
     </body>
 </html>

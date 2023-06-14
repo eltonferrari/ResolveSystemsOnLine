@@ -145,7 +145,7 @@
 								$telefone		= $intencao['telefone'];
 								$mensagem		= $intencao['mensagem'];
 								$visibilidade	= $intencao['visibilidade'];
-								if ($visibilidade == 1) {
+								if ($visibilidade == 0) {
 									$visivel = "Nova";
 								} else {
 									$visivel = "";

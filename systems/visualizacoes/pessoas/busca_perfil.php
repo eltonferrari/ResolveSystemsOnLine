@@ -100,8 +100,10 @@
 		<title>RS - Resolve Systems</title>
 	</head>
     <body>
-        <?php include '../../../template/menu_logado.php';?>
-        <div class="container mb-5">    
+        <header>
+            <?php include '../../../template/menu_logado.php'; ?>
+        </header>
+        <section class="container mb-5">    
             <div class="row pb-1">
 				<div class="col-md-10 m-auto pb-1">
                     <div class="text-center">
@@ -316,7 +318,8 @@
                     </form>
                 </div>
 			</div>
-        </div>
+        </section>
+        <section class="pre-footer"></section>
         <?php
             include '../../../template/js-bootstrap.php'; 
         ?>

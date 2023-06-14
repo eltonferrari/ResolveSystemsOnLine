@@ -167,7 +167,7 @@ CREATE TABLE IF NOT EXISTS `form_intencao` (
   	`email` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
 	`telefone` varchar(16) NOT NULL,
 	`mensagem` varchar(255),
-	`visibilidade` int(1) NOT NULL DEFAULT 1,
+	`visibilidade` int(1) NOT NULL DEFAULT 0,
   	`created_at` datetime DEFAULT CURRENT_TIMESTAMP,
 	`updated_at` datetime DEFAULT CURRENT_TIMESTAMP,
   	PRIMARY KEY (`id`)
