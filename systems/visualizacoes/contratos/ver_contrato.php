@@ -409,9 +409,7 @@
                                     </filter>
                                 </defs>
                             </svg>
-                        </div>
-
-                       
+                        </div>                       
                         <div class="row">
                             <div class="col-md-6 m-auto">
                                 <div class="bg-light border border-primary borda-redonda-20 pt-1">

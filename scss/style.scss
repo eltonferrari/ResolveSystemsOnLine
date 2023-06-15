@@ -749,6 +749,10 @@ body.bg-formatura {
 	font-size: 15px;
 }
 
+.font-size-19 {
+	font-size: 19px;
+}
+
 .font-size-20 {
 	font-size: 20px;
 }
@@ -768,8 +772,17 @@ textarea {
 	text-decoration: none;
 }
 
-span.recuo-primeira-linha {
+span.recuo-primeira-linha,
+.recuo-primeira-linha {
 	text-indent: 25px;
+}
+
+.borda-redonda-10-right {
+	border-radius: 0 10px 10px 0;
+}
+
+.borda-redonda-10-left {
+	border-radius: 10px 0 0 10px;
 }
 
 .borda-redonda-20-right {

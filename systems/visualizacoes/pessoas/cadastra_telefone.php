@@ -76,7 +76,7 @@
                     <h4 class="text-primary text-center mb-5">Adicionar novo</h4>
                     <form class="text-center" action="../../controladores/pessoas/valida_telefone.php" method="post">
                         <input type="hidden" name="id_perfil" value="<?= $idAlterar ?>">
-                        <input class="borda-redonda-10 font-size-20 border-primary py-1" type="telefone" name="telefone" placeholder="Digite aqui o telefone...">
+                        <input class="borda-redonda-10 font-size-20 border-primary py-1" type="tel" id="telefone" onkeyup="mascaraFone(event)" name="telefone">
                         <button class="bg-primary text-light borda-redonda-20 px-5 py-2" type="submit">Salvar</button>
                     </form>
                 </div>

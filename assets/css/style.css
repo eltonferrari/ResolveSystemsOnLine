@@ -819,64 +819,80 @@ body.bg-formatura {
 }
 
 /* line 752, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+.font-size-19 {
+  font-size: 19px;
+}
+
+/* line 756, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .font-size-20 {
   font-size: 20px;
 }
 
-/* line 756, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 760, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .font-size-25 {
   font-size: 25px;
 }
 
-/* line 760, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 764, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 textarea {
   overflow: hidden;
   resize: none;
 }
 
-/* line 765, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 769, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .link-visualiza-mensagem,
 .link-visualiza-mensagem:hover,
 .link-visualiza-mensagem:focus {
   text-decoration: none;
 }
 
-/* line 771, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
-span.recuo-primeira-linha {
+/* line 775, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+span.recuo-primeira-linha,
+.recuo-primeira-linha {
   text-indent: 25px;
 }
 
-/* line 775, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 780, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+.borda-redonda-10-right {
+  border-radius: 0 10px 10px 0;
+}
+
+/* line 784, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+.borda-redonda-10-left {
+  border-radius: 10px 0 0 10px;
+}
+
+/* line 788, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-20-right {
   border-radius: 0 20px 20px 0;
 }
 
-/* line 779, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 792, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-20-left {
   border-radius: 20px 0 0 20px;
 }
 
-/* line 783, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 796, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-top-left {
   border-radius: 10px 0 0 0;
 }
 
-/* line 787, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 800, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-top-right {
   border-radius: 0 10px 0 0;
 }
 
-/* line 791, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 804, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .classVisivel-no {
   display: none;
 }
 
-/* line 795, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 808, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .classVisivel-yes {
   display: contents;
 }
 
-/* line 800, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 813, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .font-link {
   font-size: 25px;
 }

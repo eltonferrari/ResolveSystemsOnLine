@@ -1,8 +1,14 @@
+-- ALTERAÇÕES
 --
--- Alteração de nome da coluna "data" para "updated_at"
--- da tabela `contratos`
+-- Estrutura da tabela `contatos`
 --
-ALTER TABLE contratos
-CHANGE data updated_at datetime DEFAULT CURRENT_TIMESTAMP;
-
--- Alteração 
+CREATE TABLE IF NOT EXISTS `contatos` (
+	`id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`nome` varchar(100),
+  	`email` varchar(100),
+	`telefone` varchar(14),
+	`descricao` varchar(50),
+	`created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` datetime DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
