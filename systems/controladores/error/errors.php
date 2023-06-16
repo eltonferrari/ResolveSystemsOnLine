@@ -11,5 +11,9 @@
 		public function exibirMensagemErroCustomizada() {
 			echo "";
 		}
+
+		public function exibirMensagemErroArrayVazio() {
+			echo 'vazioooo';
+		}
 	}
 ?>

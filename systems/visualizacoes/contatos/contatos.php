@@ -66,25 +66,44 @@
                 </div>
                 <?php
                     foreach ($listaContatos as $contato) {
-                        $nome = $contato['nome'];
-                        $email = $contato['email'];
-                        $telefone = $contato['telefone'];
+                        $id        = $contato['id'];
+                        $nome      = $contato['nome'];
+                        $email     = $contato['email'];
+                        $telefoneM = $contato['telefone'];
                         $descricao = $contato['descricao'];
                         $alteracao = $contato['updated_at'];
                         $alteracao = convertDataMySQL_DataPHP($alteracao);
+                        $telefone = convertMascaraTelefone_Numero($telefoneM);
                 ?>
-                        <a href="">
-                            <div class="row">
-                                <div class="col-md-2 border border-primary p-1"><?= $nome ?></div>
-                                <div class="col-md-3 border border-primary p-1"><?= $email ?></div>
-                                <div class="col-md-2 border border-primary text-center p-1"><?= $telefone ?></div>
-                                <div class="col-md-3 border border-primary p-1">
-                                    <p class="recuo-primeira-linha"><?= $descricao ?></p>
-                                </div>
-                                <div class="col-md-1 border border-primary text-center p-1"><?= $alteracao ?></div>
-                                <div class="col-md-1 border border-primary text-center p-1">Funções:</div>
-                            </div>     
-                        </a>   
+                        
+                        <div class="row">
+                            <div class="col-md-2 border border-primary p-1">
+                                <?= $nome ?>
+                            </div>
+                            <div class="col-md-3 border border-primary p-1">
+                                <a class="link-no-line" href="mailto:<?= $email ?>? subject=subject text" title="Enviar e-mail para Contato?">
+                                    <?= $email ?>
+                                </a>
+                            </div>
+                            <div class="col-md-2 border border-primary text-center p-1">
+                                <a class="link-no-line" href="tel:<?= $telefone ?>" title="Ligar para Contato?">
+                                    <?= $telefoneM ?>
+                                </a>
+                            </div>
+                            <div class="col-md-3 border border-primary p-1">
+                                <p class="recuo-primeira-linha">
+                                    <?= $descricao ?>
+                                </p>
+                            </div>
+                            <div class="col-md-1 border border-primary text-center p-1">
+                                <?= $alteracao ?>
+                            </div>
+                            <div class="col-md-1 border border-primary text-center p-1">
+                                <a class="link-no-line" href="visualizar_contato.php?id_contato=<?= $id ?>" title="Ver/Alterar Contato">
+                                    <img src="../../../img/icones/editar.png" alt="Alterar?" width="20">
+                                </a>
+                            </div>
+                        </div>
                 <?php        
                     }
                 ?>

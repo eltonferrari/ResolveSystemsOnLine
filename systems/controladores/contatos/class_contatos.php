@@ -16,6 +16,14 @@
             return $insertIdContato;
         }
 
+        function getContatoById($id) {
+            $query = "SELECT * FROM contatos WHERE id = ?";
+            $paramType = "i";
+            $paramValue = array($id);
+            $contato = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            return $contato;
+        }
+
         function editContato($nome, $email, $telefone, $descricao, $updatedAt, $id) {
             $query = "UPDATE contatos SET nome = ?, email = ?, telefone = ?, descricao, updated_at WHERE id = ?";
             $paramType = "sssssi";

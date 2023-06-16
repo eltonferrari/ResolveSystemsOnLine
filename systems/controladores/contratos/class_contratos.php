@@ -8,8 +8,7 @@
         }
 
         function addContrato($idCliente, $descricao, $idStatus) {
-            $query = "INSERT INTO contratos (id_cliente, descricao, id_status)
-                        VALUES (?, ?, ?)";
+            $query = "INSERT INTO contratos (id_cliente, descricao, id_status) VALUES (?, ?, ?)";
             $paramType = "isi";
             $paramValue = array($idCliente, $descricao, $idStatus);
             $insertIdContrato= $this->db_handle->insert($query, $paramType, $paramValue);
@@ -50,15 +49,11 @@
             return $contratos;
         }
         
-        function getAllContratosAbertos() {
-            $query = "SELECT p.nome, c.id FROM contratos c JOIN pessoas p on p.id = c.id_cliente and aberto = 1";
-            $lista = $this->db_handle->runBaseQuery($query);
-            return $lista;
-        }
-
-        function getAllContratosTerminados() {
-            $query = "SELECT p.nome, c.id FROM contratos c JOIN pessoas p on p.id = c.id_cliente and aberto = 0";
-            $lista = $this->db_handle->runBaseQuery($query);
+        function getAllContratos($aberto) {
+            $query = "SELECT p.nome, c.id FROM contratos c JOIN pessoas p on p.id = c.id_cliente and aberto = ?";
+            $paramType = "i";
+            $paramValue = array($aberto);
+            $lista = $this->db_handle->runQuery($query, $paramType, $paramValue);
             return $lista;
         }
 

@@ -11,10 +11,10 @@
 	// ===============
 	
 	$contratosAbertos = new Contratos();
-	$contratosAbertos = $contratosAbertos->getAllContratosAbertos();
+	$contratosAbertos = $contratosAbertos->getAllContratos(1);
 	
 	$contratosTerminados = new Contratos();
-	$contratosTerminados = $contratosTerminados->getAllContratosTerminados();
+	$contratosTerminados = $contratosTerminados->getAllContratos(0);
 
 ?>
 <!doctype html>
@@ -50,7 +50,10 @@
         <div class="container mb-5">
             <div class="text-center mt-3">
                 <img src="../../../img/icones/contrato.png" alt="Contrato" title="Contrato" width="80">
-                <h1 class="text-primary text-center mt-3 negrito">Contratos<a class="link-no-line negrito" href="cadastra_contrato.php"> + </a></h1>
+                <h1 class="text-primary text-center mt-3 negrito">
+					Contratos
+					<a class="link-no-line negrito" href="cadastra_contrato.php"> + </a>
+				</h1>
             </div>
             <div class="row">
 				<div class="col-md-6">
@@ -64,23 +67,25 @@
 						</div>
 					</div>
 					<?php
-						foreach ($contratosAbertos as $aberto) {
-							$nomeContratoA = $aberto['nome'];
-							$idContratoA = $aberto['id'];						
+						if (!empty($contratosAbertos)) {
+							foreach ($contratosAbertos as $aberto) {
+								$nomeContratoA = $aberto['nome'];
+								$idContratoA = $aberto['id'];						
 					?>
-							<div class="row">
-								<div class="col-md-8">
-									<h5><?= $nomeContratoA ?></h5s=>
+								<div class="row">
+									<div class="col-md-8">
+										<h5><?= $nomeContratoA ?></h5s=>
+									</div>
+									<div class="col-md-4">
+										<h5 class="text-center">
+											<a href="ver_contrato.php?id_contrato=<?= $idContratoA ?>">
+												<?= $idContratoA ?>
+											</a>
+										</h5>
+									</div>
 								</div>
-								<div class="col-md-4">
-									<h5 class="text-center">
-										<a href="ver_contrato.php?id_contrato=<?= $idContratoA ?>">
-											<?= $idContratoA ?>
-										</a>
-									</h5>
-								</div>
-							</div>
 					<?php
+							}
 						}
 					?>
 				</div>
@@ -95,23 +100,25 @@
 						</div>
 					</div>
 					<?php
-						foreach ($contratosTerminados as $terminado) {
-							$nomeContratoT = $terminado['nome'];
-							$idContratoT = $terminado['id'];						
+						if (!empty($contratosTerminados)) {
+							foreach ($contratosTerminados as $terminado) {
+								$nomeContratoT = $terminado['nome'];
+								$idContratoT = $terminado['id'];						
 					?>
-							<div class="row">
-								<div class="col-md-8">
-									<h5><?= $nomeContratoT ?></h5s=>
+								<div class="row">
+									<div class="col-md-8">
+										<h5><?= $nomeContratoT ?></h5s=>
+									</div>
+									<div class="col-md-4">
+										<h5 class="text-center">
+											<a href="ver_contrato.php?id_contrato=<?= $idContratoT?>">
+												<?= $idContratoT ?>
+											</a>
+										</h5>
+									</div>
 								</div>
-								<div class="col-md-4">
-									<h5 class="text-center">
-										<a href="ver_contrato.php?id_contrato=<?= $idContratoT?>">
-											<?= $idContratoT ?>
-										</a>
-									</h5>
-								</div>
-							</div>
 					<?php
+							}
 						}
 					?>
 				</div>
