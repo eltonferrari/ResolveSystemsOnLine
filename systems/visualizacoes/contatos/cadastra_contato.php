@@ -69,19 +69,19 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text bg-primary text-light borda-redonda-10-left font-size-20 negrito p-1">Nome: </span>
                                 </div>
-                                <input class="form-control font-size-19 negrito border border-primary borda-redonda-10-right p-1" type="text" name="nome" placeholder="Nome..." />
+                                <input class="form-control font-size-19 negrito border border-primary borda-redonda-10-right p-1" type="text" name="nome" placeholder="Nome..." required />
                             </div>
                             <div class="input-group mt-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text bg-primary text-light borda-redonda-10-left font-size-20 negrito p-1">E-Mail: </span>
                                 </div>
-                                <input class="form-control font-size-19 negrito border border-primary borda-redonda-10-right p-1" type="email" name="email" placeholder="E-Mail..." />
+                                <input class="form-control font-size-19 negrito border border-primary borda-redonda-10-right p-1" type="email" name="email" placeholder="E-Mail..." required />
                             </div>
                             <div class="input-group mt-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text bg-primary text-light borda-redonda-10-left font-size-20 negrito p-1">Telefone: </span>
                                 </div>
-                                <input class="font-size-19 negrito border border-primary borda-redonda-10-right p-1" type="tel" id="telefone" onkeyup="mascaraFone(event)" name="telefone" />
+                                <input class="font-size-19 negrito border border-primary borda-redonda-10-right p-1" type="tel" id="telefone" onkeyup="mascaraFone(event)" name="telefone" required />
                             </div>
                             <div class="form-group">
                                 <label class="text-primary negrito" for="mensagem">Descrição: </label>

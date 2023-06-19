@@ -16,20 +16,20 @@
             return $insertIdContato;
         }
 
+        function editContato($nome, $email, $telefone, $descricao, $updatedAt, $id) {
+            $query = "UPDATE contatos SET nome = ?, email = ?, telefone = ?, descricao = ?, updated_at = ? WHERE id = ?";
+            $paramType = "sssssi";
+            $paramValue = array($nome, $email, $telefone, $descricao, $updatedAt, $id);
+            $this->db_handle->update($query, $paramType, $paramValue);
+        }
+
         function getContatoById($id) {
             $query = "SELECT * FROM contatos WHERE id = ?";
             $paramType = "i";
             $paramValue = array($id);
             $contato = $this->db_handle->runQuery($query, $paramType, $paramValue);
             return $contato;
-        }
-
-        function editContato($nome, $email, $telefone, $descricao, $updatedAt, $id) {
-            $query = "UPDATE contatos SET nome = ?, email = ?, telefone = ?, descricao, updated_at WHERE id = ?";
-            $paramType = "sssssi";
-            $paramValue = array($nome, $email, $telefone, $descricao, $updatedAt, $id);
-            $this->db_handle->update($query, $paramType, $paramValue);
-        }
+        }        
 
         function getAllContatos() {
             $query = "SELECT * FROM contatos ORDER BY id ASC";

@@ -81,7 +81,7 @@
                                 <?= $nome ?>
                             </div>
                             <div class="col-md-3 border border-primary p-1">
-                                <a class="link-no-line" href="mailto:<?= $email ?>? subject=subject text" title="Enviar e-mail para Contato?">
+                                <a class="link-no-line" href="mailto:<?= $email ?>? subject=subject text" target="_blank" title="Enviar e-mail para Contato?">
                                     <?= $email ?>
                                 </a>
                             </div>

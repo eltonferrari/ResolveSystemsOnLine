@@ -13,9 +13,11 @@ CREATE TABLE IF NOT EXISTS `contatos` (
 	PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-CREATE TABLE IF NOT EXISTS `contato_ocorrencias` (
+CREATE TABLE IF NOT EXISTS `ocorrencias_contato` (
 	`id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`id_contato` int(10) NOT NULL,
 	`descricao` varchar(255),
 	`created_at` datetime DEFAULT CURRENT_TIMESTAMP,
-	PRIMARY KEY (`id`)
+	PRIMARY KEY (`id`),
+	FOREIGN KEY(id_contato) REFERENCES contatos(id)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

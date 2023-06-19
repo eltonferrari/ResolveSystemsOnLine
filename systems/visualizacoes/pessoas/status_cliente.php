@@ -55,12 +55,6 @@
 	$dataNascimento = convertDataMySQL_DataPHP($dataNasc);
 	$contratos = new Contratos();
 	$contratos = $contratos->getContratosByCliente($id);
-	/*
-	echo '===== CONTRATOS =====';
-	echo '<pre>';
-	print_r($contratos);
-	echo '</pre>';
-	*/	
 ?>
 <!doctype html>
 <html lang="pt-br">
