@@ -33,6 +33,10 @@
 	.desaparece-sm {
 		display: none;
 	}
+
+	.lg {
+		display: none;
+	}
 }
 
 /*Extra small devices (portrait phones, menor que 576px)*/
@@ -63,6 +67,10 @@
 	body {
 		margin-bottom: 200px;
 	}
+
+	.lg {
+		display: none;
+	}
 }
 
 /*Small devices (landscape phones, 576px e maiores)*/
@@ -83,6 +91,10 @@
 
 	.espaco-pre-footer {
 		height: 150px;
+	}
+	
+	.lg {
+		display: none;
 	}
 }
 
@@ -105,6 +117,10 @@
 	.espaco-pre-footer {
 		height: 50px;
 	}
+
+	.sm {
+		display: none;
+	}
 }
 
 /*Large devices (desktops, 992px e maiores)*/
@@ -125,11 +141,13 @@
 	body {
 		margin-bottom: 100px;
 	}
+
+	.sm {
+		display: none;
+	}
 }
 
-.pre-footer {
-	height: 50px;
-}
+
 
 .clock {
 	background-color: #f8f9fa;

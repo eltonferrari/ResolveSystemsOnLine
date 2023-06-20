@@ -84,13 +84,14 @@
 										</h5>
 									</div>
 								</div>
+								<hr class="divisor">
 					<?php
 							}
 						}
 					?>
 				</div>
 				<div class="col-md-6">
-					<h2 class="text-primary text-center negrito">Contratos fechados</h2>
+					<h2 class="text-primary text-center negrito">Contratos terminados</h2>
 					<div class="row">
 						<div class="col-md-8">
 							<h5 class="text-primary negrito">Cliente</h5>
@@ -116,7 +117,7 @@
 											</a>
 										</h5>
 									</div>
-								</div>
+								</div><hr class="divisor">
 					<?php
 							}
 						}

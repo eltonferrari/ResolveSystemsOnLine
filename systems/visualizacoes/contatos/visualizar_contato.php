@@ -158,7 +158,8 @@
                                                   name="descricao" 
                                                   rows="1"
                                                   placeholder="Descreva a ocorrência aqui..." 
-                                                  maxlength="255"></textarea>
+                                                  maxlength="255"
+                                                  required></textarea>
                                 </div>
                                 <div class="text-danger negrito text-left" id="caracteres_restantes">255</div>
                             </div>
@@ -220,7 +221,7 @@
                </div>
             </div>
         </section>
-        <section class="pre-footer"></section>
+        <section class="espaco-pre-footer"></section>
         <?php
             include '../../../template/js-bootstrap.php'; 
         ?>

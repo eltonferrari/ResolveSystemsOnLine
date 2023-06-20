@@ -225,7 +225,7 @@
                     <hr class="divisor">
                     <div class="font-size-14">
                         <div class="row">
-                            <div class="col-md-6 text-right">
+                            <div class="col-md-6 negrito">
                                 CPF/CNPJ:
                             </div>
                             <div class="col-md-6">
@@ -233,7 +233,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 text-right">
+                            <div class="col-md-6 negrito">
                                 Data de Nasc/Criação:
                             </div>
                             <div class="col-md-6 mx-auto my-auto d-flex flex-wrap">
@@ -241,7 +241,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 text-right">
+                            <div class="col-md-6 negrito">
                                 Sexo:
                             </div>
                             <div class="col-md-6">
@@ -249,7 +249,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 text-right">
+                            <div class="col-md-6 negrito">
                                 CEP:
                             </div>
                             <div class="col-md-6">
@@ -257,7 +257,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 text-right">
+                            <div class="col-md-6 negrito">
                                 Endereço:
                             </div>
                             <div class="col-md-6">
@@ -265,7 +265,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 text-right">
+                            <div class="col-md-6 negrito">
                                 Complemento: 
                             </div>
                             <div class="col-md-6">
@@ -273,7 +273,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 text-right">
+                            <div class="col-md-6 negrito">
                                 Bairro: 
                             </div>
                             <div class="col-md-6">
@@ -281,7 +281,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 text-right">
+                            <div class="col-md-6 negrito">
                                 Cidade: 
                             </div>
                             <div class="col-md-6">
@@ -289,7 +289,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 text-right">
+                            <div class="col-md-6 negrito">
                                 Estado: 
                             </div>
                             <div class="col-md-6">
