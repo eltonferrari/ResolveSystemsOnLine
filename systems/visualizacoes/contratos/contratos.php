@@ -1,5 +1,6 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
+	include '../../controladores/autenticacao/validador_de_acesso_adm.php';
 	include '../../controladores/contratos/class_contratos.php';
 	
 	// MENU

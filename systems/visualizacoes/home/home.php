@@ -1,10 +1,10 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
+	include '../../controladores/autenticacao/validador_de_acesso_adm.php';
 	include '../../controladores/tipos/class_tipos.php';
 
 	// MENU
 	include '../../controladores/pessoas/class_pessoas.php';
-	$tipoUser = $_SESSION['tipo'];
 	$idUser = $_SESSION['id_logado'];
     $nomeMenu = new Pessoas;
 	$nomeMenu = $nomeMenu->getNomeById($idUser);

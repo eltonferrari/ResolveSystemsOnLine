@@ -1,5 +1,6 @@
 <?php
     include '../../controladores/autenticacao/validador_de_acesso.php';
+    include '../../controladores/autenticacao/validador_de_acesso_adm.php';
     include '../../controladores/contatos/class_contatos.php';
     include '../../controladores/contatos/class_ocorrencias_contato.php';
     include '../../lib/util.php';
