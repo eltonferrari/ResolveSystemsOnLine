@@ -19,10 +19,7 @@
                             <a class="nav-link" href="\systems/visualizacoes/home/home.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Atendimento</a>
-                        </li>
-                        <li class="nav-item outra-cor">
-                            <a class="nav-link" href="\systems/visualizacoes/contatos/contatos.php">Contatos</a>
+                            <a class="nav-link" href="\systems/visualizacoes/contatos/contatos.php">Atendimento</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="\systems/visualizacoes/fale_conosco/lista_mensagens.php">Fale conosco</a>

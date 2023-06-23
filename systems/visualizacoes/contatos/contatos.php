@@ -53,7 +53,7 @@
                     <img src="../../../img/icones/contatos.png" alt="Home" width="80">
                     <br />
                     <h1 class="text-primary text-center mt-1 pl-4 negrito display-in">
-                        Contatos
+                        Atendimento
                         <a class="link-no-line negrito" href="cadastra_contato.php"> + </a>
                     </h1>
                 </div>
