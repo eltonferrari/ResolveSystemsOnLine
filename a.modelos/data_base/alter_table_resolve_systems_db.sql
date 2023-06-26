@@ -21,3 +21,8 @@ CREATE TABLE IF NOT EXISTS `ocorrencias_contato` (
 	PRIMARY KEY (`id`),
 	FOREIGN KEY(id_contato) REFERENCES contatos(id)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ALTERAR TABELA PESSOAS
+-- Adicionar coluna imagem
+ALTER TABLE pessoas
+ADD  imagem varchar(255) NOT NULL DEFAULT '\img/users/sem-foto.png';

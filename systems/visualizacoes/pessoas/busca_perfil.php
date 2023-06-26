@@ -11,6 +11,9 @@
 	$idUser = $_SESSION['id_logado'];
     $nomeMenu = new Pessoas;
 	$nomeMenu = $nomeMenu->getNomeById($idUser);
+    $imagem_perfil = new Pessoas();
+    $imagem_perfil = $imagem_perfil->getImagemById($idUser);
+	echo $imagem_perfil;
 	// ===============
     
     if (isset($_GET['user']) && $_GET['user'] > 0) {
@@ -107,7 +110,9 @@
             <div class="row pb-1">
 				<div class="col-md-10 m-auto pb-1">
                     <div class="text-center">
-                        <img src="../../../img/icones/perfil-outros.png" alt="Home" width="80">
+                        <a href="altera_imagem.php" title="Alterar foto?">
+                            <img src="\<?= $imagem_perfil ?>" alt="Home" width="80">
+                        </a>
                         <h3 class="text-primary text-center mt-1 negrito">Perfil de Usuário</h3>
                     </div>
                     <form name="form-perfil" action="../../controladores/pessoas/altera_pessoa.php" method="post" enctype="multipart/form-data">

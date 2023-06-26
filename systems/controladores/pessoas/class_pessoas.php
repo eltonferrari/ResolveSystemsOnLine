@@ -91,6 +91,18 @@
             }
             return $pessoa;
         }
+
+        function getImagemById($id) {
+            $imagem = null;
+            $query = "SELECT imagem FROM pessoas WHERE id = ?";
+            $paramType = "i";
+            $paramValue = array($id);
+            $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            foreach($result as $foto) {
+                $imagem = $foto['imagem'];
+            }
+            return $imagem;
+        }
         
         function getPessoaByEmail($email) {
             //SELECT e.email, p.senha, p.id, p.id_tipo FROM pessoas p JOIN emails e ON p.id = e.id_pessoa AND e.email = 'eltonferrari@gmail.com';
