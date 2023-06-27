@@ -72,6 +72,13 @@
             $this->db_handle->update($query, $paramType, $paramValue);
         }
 
+        function alteraImagemPerfil($imagem, $id) {
+            $query = "UPDATE pessoas SET imagem = ? WHERE id = ?";
+            $paramType = "si";
+            $paramValue = array($imagem, $id);
+            $this->db_handle->update($query, $paramType, $paramValue);
+        }        
+
         function getPessoaById($id) {
             $query = "SELECT * FROM pessoas WHERE id = ?";
             $paramType = "i";

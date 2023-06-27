@@ -54,10 +54,11 @@
                 </div>
                 <div class="col-md-6 text-left">
                     <!-- Upload Image -->
-                    <h1>Carregar a foto: </h1>
-                    <form method="POST" action="../../controladores/pessoas/valida_upload_image.php" enctype="multipart/form-data">
-                        Imagem: <input name="arquivo" type="file"><br><br>
-                        
+                    <h1> Carregar a foto</h1>
+                    <form method="POST" action="../../controladores/pessoas/valida_upload_image.php?id_user=<?= $idUser ?>" enctype="multipart/form-data">
+                        Imagem: <input name="arquivo" type="file">
+                        <br>
+                        <br>                        
                         <input type="submit" value="Cadastrar">
                     </form>
                     <!-- Fim Upload Image -->
