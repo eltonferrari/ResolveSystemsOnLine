@@ -110,7 +110,7 @@
             <div class="row pb-1">
 				<div class="col-md-10 m-auto pb-1">
                     <div class="text-center">
-                        <a href="altera_imagem.php" title="Alterar foto?">
+                        <a href="altera_imagem.php?user=<?= $id ?>" title="Alterar foto?">
                             <img src="\<?= $imagem_perfil ?>" alt="Home" width="80">
                         </a>
                         <h3 class="text-primary text-center mt-1 negrito">Perfil de Usuário</h3>

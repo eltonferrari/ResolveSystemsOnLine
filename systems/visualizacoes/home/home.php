@@ -46,8 +46,10 @@
 		<title>RS - Resolve Systems</title>
 	</head>
     <body>
-        <?php include '../../../template/menu_logado.php';?>
-        <div class="container">
+        <header>
+			<?php include '../../../template/menu_logado.php';?>
+		</header>
+        <section class="container">
 			<div class="text-center">
 				<img src="../../../img/icones/home.png" alt="Home" width="80">
 			</div>
@@ -213,11 +215,11 @@
 						</form>
 					</div>
 				</div>
-			</div>
-			<div class="espaco-pre-footer"></div>
-			<?php
-				include '../../../template/js-bootstrap.php'; 
-			?>	
-        </div>
+			</div>	
+        </section>
+		<div class="espaco-pre-footer"></div>
+		<?php
+			include '../../../template/js-bootstrap.php'; 
+		?>	
     </body>
 </html>

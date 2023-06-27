@@ -147,8 +147,6 @@
 	}
 }
 
-
-
 .clock {
 	background-color: #f8f9fa;
 }
@@ -834,4 +832,29 @@ span.recuo-primeira-linha,
 // BUSCA PERFIL
 .font-link {
 	font-size: 25px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label.file {
+    padding: 3px 10px;
+    width: 110px;
+    background-color: $cyan;
+    color: #FFF;
+	font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+	border-radius: 20px;
+}
+
+label.file:hover,
+label.file:focus {
+	background-color: #fff;
+    color: $cyan;
+	border: 2px solid #007bff;
 }
