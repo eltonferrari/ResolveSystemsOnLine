@@ -7,14 +7,14 @@
 	include '../../lib/util.php';
 
 	// MENU
-	include '../../controladores/pessoas/class_pessoas.php';  
+    include '../../controladores/pessoas/class_pessoas.php';
 	$tipoUser = $_SESSION['tipo'];
-	$idUser = $_SESSION['id_logado'];
-	$nomeMenu = new Pessoas;
-	$nomeMenu = $nomeMenu->getNomeById($idUser);
-	$imagem_perfil = new Pessoas();
-	$imagem_perfil = $imagem_perfil->getImagemById($idUser);
-	// ===============
+    $idUser = $_SESSION['id_logado'];
+    $nomeMenu = new Pessoas;
+    $nomeMenu = $nomeMenu->getNomeById($idUser);
+    $imagem_perfil = new Pessoas();
+    $imagem_perfil = $imagem_perfil->getImagemById($idUser);
+    // ===============
 	
 	$user = new Pessoas();
     $user = $user->getPessoaById($idUser);
@@ -92,12 +92,12 @@
 		</header>
         <section class="container">
 			<div class="text-center mt-3">
-				<img src="../../../img/icones/cliente.png" alt="Home" width="80">
-                <h1 class="text-primary negrito">Página do cliente</h1>
+				<img src="../../../img/icones/cliente.png" alt="Home" width="60">
+                <h1 class="text-primary negrito font-size-24">Página do cliente</h1>
 			</div>
 			<div class="row">
 				<div class="col-md-5 border border-primary borda-redonda-20">
-					<div class="text-center mt-3">
+					<div class="text-center mt-2">
 						<div class="row">
 							<div class="col-md-10 pl-5">
 								<img src="../../../img/icones/perfil-outros.png" alt="Home" width="40">
@@ -182,9 +182,7 @@
 				</div>
 				<div class="col-md-2"></div>
 				<div class="col-md-5 text-center">
-					<div class="text-center border border-primary borda-redonda-20">
-
-						<img class="mt-3" src="../../../img/icones/contrato.png" alt="Home" width="40">
+					<div class="text-center border border-primary borda-redonda-20">						<img class="mt-3" src="../../../img/icones/contrato.png" alt="Home" width="40">
 						<h2 class="text-primary negrito">Contratos</h2>
 						<hr class="divisor">
 						<div class="row mb-5">
@@ -232,8 +230,9 @@
 				</div>
 			</div>
         </section>
+		<div class="espaco-pre-footer"></div>
 		<?php
-				include '../../../template/js-bootstrap.php'; 
+			include '../../../template/js-bootstrap.php'; 
 			?>	
     </body>
 </html>

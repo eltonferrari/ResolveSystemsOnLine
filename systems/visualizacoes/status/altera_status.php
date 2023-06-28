@@ -4,15 +4,15 @@
     include '../../controladores/status/class_status.php';
 
     // MENU
-	include '../../controladores/pessoas/class_pessoas.php';  
+    include '../../controladores/pessoas/class_pessoas.php';
 	$tipoUser = $_SESSION['tipo'];
-	$idUser = $_SESSION['id_logado'];
-	$nomeMenu = new Pessoas;
-	$nomeMenu = $nomeMenu->getNomeById($idUser);
-	$imagem_perfil = new Pessoas();
-	$imagem_perfil = $imagem_perfil->getImagemById($idUser);
-	// ===============
-
+    $idUser = $_SESSION['id_logado'];
+    $nomeMenu = new Pessoas;
+    $nomeMenu = $nomeMenu->getNomeById($idUser);
+    $imagem_perfil = new Pessoas();
+    $imagem_perfil = $imagem_perfil->getImagemById($idUser);
+    // ===============
+	
     $id = $_GET['id'];
     $status = new Status();
     $status = $status->getStatusById($id);

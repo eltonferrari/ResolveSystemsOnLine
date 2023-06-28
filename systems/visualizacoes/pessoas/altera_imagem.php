@@ -2,15 +2,18 @@
     include '../../controladores/autenticacao/validador_de_acesso.php';
         
     // MENU
-	include '../../controladores/pessoas/class_pessoas.php';  
+    include '../../controladores/pessoas/class_pessoas.php';
 	$tipoUser = $_SESSION['tipo'];
-	$idUser = $_SESSION['id_logado'];
+    $idUser = $_SESSION['id_logado'];
     $nomeMenu = new Pessoas;
-	$nomeMenu = $nomeMenu->getNomeById($idUser);
+    $nomeMenu = $nomeMenu->getNomeById($idUser);
     $imagem_perfil = new Pessoas();
     $imagem_perfil = $imagem_perfil->getImagemById($idUser);
-	// ===============
-    $idPessoa = $_GET['user'];   
+    // ===============
+    
+    $idPessoa = $_GET['user'];
+    $imagem = new Pessoas();
+    $imagem = $imagem->getImagemById($idPessoa);
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -49,7 +52,7 @@
             <div class="row">
                 <div class="col-md-6 text-right border-right border-primary pr-2">
                     <h2 class="text-primary negrito">Foto atual</h2>    
-                    <img class="pr-4" src="\<?= $imagem_perfil ?>" alt="Foto Perfil" title="Foto atual" width="100">
+                    <img class="pr-4" src="\<?= $imagem ?>" alt="Foto Perfil" title="Foto atual" width="100">
                 </div>
                 <div class="col-md-6 text-left">
                     <!-- Upload Image -->

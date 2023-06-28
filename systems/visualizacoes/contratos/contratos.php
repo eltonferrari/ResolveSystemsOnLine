@@ -4,13 +4,14 @@
 	include '../../controladores/contratos/class_contratos.php';
 	
 	// MENU
-	include '../../controladores/pessoas/class_pessoas.php';
-	$idUser = $_SESSION['id_logado'];
+    include '../../controladores/pessoas/class_pessoas.php';
+	$tipoUser = $_SESSION['tipo'];
+    $idUser = $_SESSION['id_logado'];
     $nomeMenu = new Pessoas;
-	$nomeMenu = $nomeMenu->getNomeById($idUser);
-	$imagem_perfil = new Pessoas();
+    $nomeMenu = $nomeMenu->getNomeById($idUser);
+    $imagem_perfil = new Pessoas();
     $imagem_perfil = $imagem_perfil->getImagemById($idUser);
-	// ===============
+    // ===============
 	
 	$contratosAbertos = new Contratos();
 	$contratosAbertos = $contratosAbertos->getAllContratos(1);

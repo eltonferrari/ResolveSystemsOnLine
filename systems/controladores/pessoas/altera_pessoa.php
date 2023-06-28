@@ -2,6 +2,14 @@
     session_start();
     include 'class_pessoas.php';
     date_default_timezone_set('America/Sao_Paulo');
+
+
+    echo '===== POST =====';
+    echo '<pre>';
+    print_r($_POST);
+    echo '</pre>';  
+
+
     $id             = $_POST['id'];
     $nome           = $_POST['nome'];
     $idTipo         = $_POST['id_tipo'];
@@ -57,15 +65,19 @@
         $alteraEmailPrincipalNovo = new Emails();
         $alteraEmailPrincipalNovo->editEmail(1, $emailPrincipalNovo[0]['id']);
     }
-    if ($telefoneAtual[0]['telefone'] != $telefoneNovo) {
-        $alteraTelefoneAtual = new Telefones();        
-        $alteraTelefoneAtual->editTelefone(0, $telefoneAtual[0]['id']);
-        $alteraTelefonePrincipalNovo = new Telefones();
-        $alteraTelefonePrincipalNovo->editTelefone(1, $telefonePrincipalNovo[0]['id']);
+    if (!empty($telefoneAtual)) {    
+        if ($telefoneAtual[0]['telefone'] != $telefoneNovo) {
+            $alteraTelefoneAtual = new Telefones();        
+            $alteraTelefoneAtual->editTelefone(0, $telefoneAtual[0]['id']);
+            $alteraTelefonePrincipalNovo = new Telefones();
+            $alteraTelefonePrincipalNovo->editTelefone(1, $telefonePrincipalNovo[0]['id']);
+        }   
     }
     
     $_SESSION['msg_update'] = "Usuário $nome alterado com sucesso.";
+    /*
     ?>
         <meta http-equiv="refresh" content="0;url=../../visualizacoes/pessoas/busca_perfil.php?user=<?= $id ?>">
     <?php
+    */
 ?>

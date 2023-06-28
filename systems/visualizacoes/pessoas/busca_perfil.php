@@ -6,14 +6,14 @@
     include '../../lib/util.php';
     
     // MENU
-	include '../../controladores/pessoas/class_pessoas.php';  
+    include '../../controladores/pessoas/class_pessoas.php';
 	$tipoUser = $_SESSION['tipo'];
-	$idUser = $_SESSION['id_logado'];
+    $idUser = $_SESSION['id_logado'];
     $nomeMenu = new Pessoas;
-	$nomeMenu = $nomeMenu->getNomeById($idUser);
+    $nomeMenu = $nomeMenu->getNomeById($idUser);
     $imagem_perfil = new Pessoas();
     $imagem_perfil = $imagem_perfil->getImagemById($idUser);
-	// ===============
+    // ===============
     
     if (isset($_GET['user']) && $_GET['user'] > 0) {
         $idPost = $_GET['user'];
@@ -30,6 +30,7 @@
         $id             = $u['id'];
         $idTipo         = $u['id_tipo'];
         $nome           = $u['nome'];
+        $imagem         = $u['imagem'];
         $cpf_cnpj       = $u['cpf_cnpj'];
         $dataNasc       = $u['data_nasc'];
         $idSexo         = $u['id_sexo'];
@@ -110,7 +111,7 @@
 				<div class="col-md-10 m-auto pb-1">
                     <div class="text-center">
                         <a href="altera_imagem.php?user=<?= $id ?>" title="Alterar foto?">
-                            <img src="\<?= $imagem_perfil ?>" alt="Home" width="80" class="rounded-circle">
+                            <img src="\<?= $imagem ?>" alt="Home" width="80" class="rounded-circle">
                         </a>
                         <h3 class="text-primary text-center mt-1 negrito">Perfil de Usuário</h3>
                     </div>
@@ -244,7 +245,11 @@
                                 <?php 
                                     if ($telefone != "") {
                                 ?>
-                                        <input name="telefone" type="radio" id="telefone" value="<?= $telefone ?>" checked><br />                                
+                                        <input name="telefone" type="radio" id="telefone" value="<?= $telefone ?>" checked><br />
+                                <?php
+                                    } else {
+                                ?>
+                                        <input name="telefone" type="hidden"value=""><br />
                                 <?php
                                     }
                                 ?>

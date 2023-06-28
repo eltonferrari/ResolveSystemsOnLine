@@ -4,13 +4,14 @@
 	include '../../controladores/fale_conosco/class_fale_conosco.php';
 
 	// MENU
-	include '../../controladores/pessoas/class_pessoas.php';
-	$idUser = $_SESSION['id_logado'];
-	$nomeMenu = new Pessoas;
-	$nomeMenu = $nomeMenu->getNomeById($idUser);
-	$imagem_perfil = new Pessoas();
-	$imagem_perfil = $imagem_perfil->getImagemById($idUser);
-	// ===============
+    include '../../controladores/pessoas/class_pessoas.php';
+	$tipoUser = $_SESSION['tipo'];
+    $idUser = $_SESSION['id_logado'];
+    $nomeMenu = new Pessoas;
+    $nomeMenu = $nomeMenu->getNomeById($idUser);
+    $imagem_perfil = new Pessoas();
+    $imagem_perfil = $imagem_perfil->getImagemById($idUser);
+    // ===============
     
 	$id = $_GET['mensagem'];
 	$mensagem = new FaleConosco();
