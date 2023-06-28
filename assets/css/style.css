@@ -834,95 +834,105 @@ body.bg-formatura {
 }
 
 /* line 768, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+.font-size-12 {
+  font-size: 12px;
+}
+
+/* line 772, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+.font-size-14 {
+  font-size: 14px;
+}
+
+/* line 776, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .font-size-15 {
   font-size: 15px;
 }
 
-/* line 772, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 780, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .font-size-19 {
   font-size: 19px;
 }
 
-/* line 776, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 784, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .font-size-20 {
   font-size: 20px;
 }
 
-/* line 780, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 788, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .font-size-25 {
   font-size: 25px;
 }
 
-/* line 784, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 792, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 textarea {
   overflow: hidden;
   resize: none;
 }
 
-/* line 789, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 797, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .link-visualiza-mensagem,
 .link-visualiza-mensagem:hover,
 .link-visualiza-mensagem:focus {
   text-decoration: none;
 }
 
-/* line 795, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 803, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 span.recuo-primeira-linha,
 .recuo-primeira-linha {
   text-indent: 25px;
 }
 
-/* line 800, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 808, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-10-right {
   border-radius: 0 10px 10px 0;
 }
 
-/* line 804, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 812, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-10-left {
   border-radius: 10px 0 0 10px;
 }
 
-/* line 808, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 816, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-20-right {
   border-radius: 0 20px 20px 0;
 }
 
-/* line 812, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 820, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-20-left {
   border-radius: 20px 0 0 20px;
 }
 
-/* line 816, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 824, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-top-left {
   border-radius: 10px 0 0 0;
 }
 
-/* line 820, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 828, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .borda-redonda-top-right {
   border-radius: 0 10px 0 0;
 }
 
-/* line 824, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 832, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .classVisivel-no {
   display: none;
 }
 
-/* line 828, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 836, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .classVisivel-yes {
   display: contents;
 }
 
-/* line 833, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 841, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .font-link {
   font-size: 25px;
 }
 
-/* line 837, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 845, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 input[type="file"] {
   display: none;
 }
 
-/* line 841, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 849, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 label.file {
   padding: 3px 10px;
   width: 110px;
@@ -937,7 +947,7 @@ label.file {
   border-radius: 20px;
 }
 
-/* line 855, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 863, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 label.file:hover,
 label.file:focus {
   background-color: #fff;

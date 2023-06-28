@@ -6,12 +6,14 @@
     include '../../lib/util.php';
 
     // MENU
-	include '../../controladores/pessoas/class_pessoas.php';  
-	$tipoUser = $_SESSION['tipo'];
+	include '../../controladores/pessoas/class_pessoas.php';
 	$idUser = $_SESSION['id_logado'];
     $nomeMenu = new Pessoas;
 	$nomeMenu = $nomeMenu->getNomeById($idUser);
+	$imagem_perfil = new Pessoas();
+    $imagem_perfil = $imagem_perfil->getImagemById($idUser);
 	// ===============
+    
     date_default_timezone_set('America/Sao_Paulo');
     
     $idContato = $_GET['id_contato'];
@@ -208,13 +210,15 @@
                                 $dataOcorrencia = convertDataMySQL_DataPHP($dataOcorr);
                                 $horaOcorrencia = convertDataMySQL_HoraPHP($dataOcorr);
                     ?>
-                                <span class="negrito">Cód. Ocorrência: </span> <span><?= $idOcorrencia ?></span>
-                                <br />
-                                <span class="negrito">Descrição: </span>
-                                <p class="display-in"><?= $descricaoOcorrencia ?></p>
-                                <br />
-                                <span class="negrito">Data: </span><span><?= $dataOcorrencia ?> às <?= $horaOcorrencia ?></span>
-                                <hr class="divisor">
+                                <div class="font-size-14">
+                                    <span class="negrito">Cód. Ocorrência: </span> <span><?= $idOcorrencia ?></span>
+                                    <br />
+                                    <span class="negrito">Descrição: </span>
+                                    <p class="display-in"><?= $descricaoOcorrencia ?></p>
+                                    <br />
+                                    <span class="negrito">Data: </span><span><?= $dataOcorrencia ?> às <?= $horaOcorrencia ?></span>
+                                    <hr class="divisor">
+                                </div>
                     <?php 
                             }
                         }

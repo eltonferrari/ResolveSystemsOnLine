@@ -5,11 +5,12 @@
     include '../../lib/util.php';
 
     // MENU
-	include '../../controladores/pessoas/class_pessoas.php';  
-	$tipoUser = $_SESSION['tipo'];
+	include '../../controladores/pessoas/class_pessoas.php';
 	$idUser = $_SESSION['id_logado'];
     $nomeMenu = new Pessoas;
 	$nomeMenu = $nomeMenu->getNomeById($idUser);
+	$imagem_perfil = new Pessoas();
+    $imagem_perfil = $imagem_perfil->getImagemById($idUser);
 	// ===============
     
     $listaContatos = new Contatos();
@@ -59,12 +60,12 @@
                 </div>
                 <div class="lg">
                     <div class="row mt-3">
-                        <div class="col-md-2 border border-primary borda-redonda-top-left text-primary text-center p-1 negrito">Nome:</div>
-                        <div class="col-md-3 border border-primary text-primary text-center p-1 negrito">E-Mail:</div>
-                        <div class="col-md-2 border border-primary text-primary text-center p-1 negrito">Telefone:</div>
-                        <div class="col-md-3 border border-primary text-primary text-center p-1 negrito">Descrição:</div>
-                        <div class="col-md-1 border border-primary text-primary text-center p-1 negrito">Alterações:</div>
-                        <div class="col-md-1 border border-primary borda-redonda-top-right text-primary text-center p-1 negrito">Funções:</div>
+                        <div class="col-md-2 border border-primary borda-redonda-top-left text-primary text-center negrito pt-1">Nome:</div>
+                        <div class="col-md-3 border border-primary text-primary text-center negrito pt-1">E-Mail:</div>
+                        <div class="col-md-2 border border-primary text-primary text-center negrito pt-1">Telefone:</div>
+                        <div class="col-md-3 border border-primary text-primary text-center negrito pt-1">Descrição:</div>
+                        <div class="col-md-1 border border-primary text-primary text-center negrito pt-1">Alter.:</div>
+                        <div class="col-md-1 border border-primary borda-redonda-top-right text-primary text-center negrito pt-1">Funções:</div>
                     </div>
                     <?php
                         foreach ($listaContatos as $contato) {
@@ -78,31 +79,31 @@
                             $telefone = convertMascaraTelefone_Numero($telefoneM);
                     ?>
                             
-                            <div class="row">
-                                <div class="col-md-2 border border-primary p-1">
+                            <div class="row font-size-12">
+                                <div class="col-md-2 border border-primary pt-1">
                                     <?= $nome ?>
                                 </div>
-                                <div class="col-md-3 border border-primary p-1">
+                                <div class="col-md-3 border border-primary pt-1">
                                     <a class="link-no-line" href="mailto:<?= $email ?>? subject=subject text" target="_blank" title="Enviar e-mail para Contato?">
                                         <?= $email ?>
                                     </a>
                                 </div>
-                                <div class="col-md-2 border border-primary text-center p-1">
+                                <div class="col-md-2 border border-primary pt-1 text-center">
                                     <a class="link-no-line" href="tel:<?= $telefone ?>" title="Ligar para Contato?">
                                         <?= $telefoneM ?>
                                     </a>
                                 </div>
-                                <div class="col-md-3 border border-primary p-1">
+                                <div class="col-md-3 border border-primary pt-1">
                                     <p class="recuo-primeira-linha">
                                         <?= $descricao ?>
                                     </p>
                                 </div>
-                                <div class="col-md-1 border border-primary text-center p-1">
+                                <div class="col-md-1 border border-primary pt-1 text-center">
                                     <?= $alteracao ?>
                                 </div>
-                                <div class="col-md-1 border border-primary text-center p-1">
+                                <div class="col-md-1 border border-primary pt-1 text-center">
                                     <a class="link-no-line" href="visualizar_contato.php?id_contato=<?= $id ?>" title="Ver/Alterar Contato">
-                                        <img src="../../../img/icones/editar.png" alt="Alterar?" width="20">
+                                        <img src="../../../img/icones/editar.png" alt="Alterar?" width="15">
                                     </a>
                                 </div>
                             </div>
@@ -122,10 +123,10 @@
                             $alteracao = convertDataMySQL_DataPHP($alteracao);
                             $telefone = convertMascaraTelefone_Numero($telefoneM);
                     ?>
-                            <div class="col-md-1 p-1">
+                            <div class="col-md-1">
                                 <p>    
                                     <a class="link-no-line" href="visualizar_contato.php?id_contato=<?= $id ?>" title="Ver/Alterar Contato">
-                                        <img src="../../../img/icones/editar.png" alt="Alterar?" width="20">
+                                        <img src="../../../img/icones/editar.png" alt="Alterar?" width="15">
                                     </a>
                                     <strong>Nome: </strong><?= $nome ?></p>
                                 <p>

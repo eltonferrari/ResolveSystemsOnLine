@@ -13,7 +13,6 @@
 	$nomeMenu = $nomeMenu->getNomeById($idUser);
     $imagem_perfil = new Pessoas();
     $imagem_perfil = $imagem_perfil->getImagemById($idUser);
-	echo $imagem_perfil;
 	// ===============
     
     if (isset($_GET['user']) && $_GET['user'] > 0) {
@@ -111,7 +110,7 @@
 				<div class="col-md-10 m-auto pb-1">
                     <div class="text-center">
                         <a href="altera_imagem.php?user=<?= $id ?>" title="Alterar foto?">
-                            <img src="\<?= $imagem_perfil ?>" alt="Home" width="80">
+                            <img src="\<?= $imagem_perfil ?>" alt="Home" width="80" class="rounded-circle">
                         </a>
                         <h3 class="text-primary text-center mt-1 negrito">Perfil de Usuário</h3>
                     </div>

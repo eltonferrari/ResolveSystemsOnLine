@@ -66,6 +66,6 @@
     
     $_SESSION['msg_update'] = "Usuário $nome alterado com sucesso.";
     ?>
-        <meta http-equiv="refresh" content="0;url=../../visualizacoes/pessoas/busca_perfil.php">
+        <meta http-equiv="refresh" content="0;url=../../visualizacoes/pessoas/busca_perfil.php?user=<?= $id ?>">
     <?php
 ?>
