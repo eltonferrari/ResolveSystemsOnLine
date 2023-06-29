@@ -49,9 +49,9 @@
 		}
 	}
 	$_SESSION['$msgAlteraImagem'] = $msgAlteraImagem;
-/*
+
 ?>
 	<meta http-equiv="refresh" content="0;url=../../visualizacoes/pessoas/altera_imagem.php?user=<?= $idUser ?>">
 <?php
-*/
+
 ?>
