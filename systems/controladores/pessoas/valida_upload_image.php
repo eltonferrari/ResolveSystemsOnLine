@@ -3,6 +3,9 @@
 	$idUser = $_POST['id_pessoa'];
 	$arquivo = $_FILES['imagem']['name'];
 	
+	echo $idUser;
+	echo $arquivo;
+
 	//Pasta onde o arquivo vai ser salvo
 	$_UP['pasta'] = "../../../img/users/ids/";
 	
@@ -46,7 +49,9 @@
 		}
 	}
 	$_SESSION['$msgAlteraImagem'] = $msgAlteraImagem;
+/*
 ?>
 	<meta http-equiv="refresh" content="0;url=../../visualizacoes/pessoas/altera_imagem.php?user=<?= $idUser ?>">
 <?php
+*/
 ?>
