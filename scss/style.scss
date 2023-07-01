@@ -333,7 +333,7 @@ h3.madelina {
 	font-size: 15px;
 }
 
-// BOTÃO ANIMADO
+// BOTÃO ANIMADO 1
 *, *:before, *:after {
 	box-sizing: border-box;
 	margin: 0;
@@ -452,7 +452,103 @@ a.blob-btn {
 }
 //==================
 
+// BOTÃO ANIMADO 2
 
+.custom-btn {
+	margin: 20px;
+	width: 130px;
+	height: 40px;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px 25px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	box-shadow:inset 2px 2px  2px 0px #ffffff80,
+					 7px 7px 20px 0px #0000001a,
+	 				 4px 4px  5px 0px #0000001a;
+	outline: none;
+}
+
+.btn-giro {
+	position: relative;
+	right: 20px;
+	bottom: 20px;
+	border:none;
+	box-shadow: none;
+	width: 130px;
+	height: 40px;
+	line-height: 42px;
+	-webkit-perspective: 230px;
+	perspective: 230px;
+}
+
+.btn-giro span {
+	background: $cyan;
+	display: block;
+	position: absolute;
+	width: 130px;
+	height: 40px;
+	box-shadow:inset 2px 2px  2px 0px #ffffff80,
+	 				 7px 7px 20px 0px #0000001a,
+					 4px 4px  5px 0px #0000001a;
+	border-radius: 5px;
+	margin:0;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.btn-giro span:nth-child(1) {
+	box-shadow:
+	 	-7px -7px 20px 0px #fff9,
+	 	-4px -4px  5px 0px #fff9,
+	 	 7px  7px 20px 0px #0002,
+	 	 4px  4px  5px 0px #0001;
+	-webkit-transform: rotateX(90deg);
+	-moz-transform: rotateX(90deg);
+	transform: rotateX(90deg);
+	-webkit-transform-origin: 50% 50% -20px;
+	-moz-transform-origin: 50% 50% -20px;
+	transform-origin: 50% 50% -20px;
+}
+
+.btn-giro span:nth-child(2) {
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	-webkit-transform-origin: 50% 50% -20px;
+	-moz-transform-origin: 50% 50% -20px;
+	transform-origin: 50% 50% -20px;
+}
+
+.btn-giro:hover span:nth-child(1) {
+	box-shadow:inset 2px 2px  2px 0px #ffffff80,
+					 7px 7px 20px 0px #0000001a,
+					 4px 4px  5px 0px #0000001a;
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.btn-giro:hover span:nth-child(2) {
+	box-shadow:inset 2px 2px  2px 0px #ffffff80,
+					 7px 7px 20px 0px #0000001a,
+					 4px 4px  5px 0px #0000001a;
+    color: transparent;
+	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+}
+//==================
+  
 @keyframes textclip {
 	to {
 		background-position: 200% center;
@@ -744,25 +840,8 @@ div.font-reduzida {
 }
 
 // PORTIFÓLIO
-// Formatura
 
-body.bg-formatura {
-	background-image: url(../../img/portifolio/formatura/formatura.jpg);
-	position: relative;
-	height: 100%;
-	min-height: 500px;
-	opacity: 0.7;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;	
-}
 
-.text-fasthand {
-	font-family: "Fasthand";
-	font-size: 40px;
-	color: #a71e47;
-}
 
 // FALE CONOSCO
 .font-size-12 {
@@ -785,8 +864,20 @@ body.bg-formatura {
 	font-size: 20px;
 }
 
+.font-size-22 {
+	font-size: 22px;
+}
+
+.font-size-24 {
+	font-size: 24px;
+}
+
 .font-size-25 {
 	font-size: 25px;
+}
+
+.font-size-26 {
+	font-size: 26px;
 }
 
 textarea {
@@ -842,27 +933,28 @@ span.recuo-primeira-linha,
 	font-size: 25px;
 }
 
-input[type="file"] {
-    display: none;
-}
-
-label.file {
-    padding: 3px 10px;
-    width: 110px;
-    background-color: $cyan;
-    color: #FFF;
-	font-size: 20px;
-    text-transform: capitalize;
-    text-align: center;
-    display: block;
-    margin-top: 10px;
-    cursor: pointer;
+input[type=file] {
+	width: 350px;
+	max-width: 100%;
+	color: $cyan;
+	padding: 5px;
+	background: #fff;
 	border-radius: 20px;
+	border: 1px solid $cyan;
 }
-
-label.file:hover,
-label.file:focus {
-	background-color: #fff;
-    color: $cyan;
-	border: 2px solid #007bff;
+  
+input[type=file]::file-selector-button {
+	margin-right: 20px;
+	border: none;
+	background: $cyan;
+	padding: 10px 20px;
+	border-radius: 20px;
+	color: #fff;
+	cursor: pointer;
+	transition: background .2s ease-in-out;
+}
+  
+input[type=file]::file-selector-button:hover {
+	background: $dark;
+	color: $cyan;
 }

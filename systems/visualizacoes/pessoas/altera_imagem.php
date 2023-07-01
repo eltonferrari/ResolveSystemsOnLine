@@ -59,9 +59,10 @@
                     <h2 class="text-primary negrito"> Carregar nova foto</h2>
                     <form method="POST" action="../../controladores/pessoas/valida_upload_image.php" enctype="multipart/form-data">
                         <input type="hidden" name="id_pessoa" value="<?= $idPessoa ?>">
-                        <div>
-                            <label class="file" for="img-input">Buscar</label>    
-                            <input id="img-input" type="file" name="imagem">
+                        <div class="mt-2">
+                            <label for="img-input" class="drop-container">
+                                <input type="file" id="img-input" accept="image/*" name="imagem" required>
+                            </label> 
                         </div>
                         <div id="img-container">
                             <img id="preview" src="" width="100">

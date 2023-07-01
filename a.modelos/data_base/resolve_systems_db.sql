@@ -271,31 +271,19 @@ CREATE TABLE IF NOT EXISTS `ocorrencias` (
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Estrutura da tabela `contrato_arquivos`
+-- Estrutura da tabela `arquivos`
 --
-DROP TABLE IF EXISTS `contrato_arquivos`;
-CREATE TABLE IF NOT EXISTS `contrato_arquivos` (
-	`id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-	`id_contrato` int(10) NOT NULL,
-  	`descricao` varchar(255),
-	`arquivo` varchar(255),
-	`created_at` datetime DEFAULT CURRENT_TIMESTAMP,
-	PRIMARY KEY (`id`),
-	FOREIGN KEY(id_contrato) REFERENCES contratos(id)
-) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Estrutura da tabela `pessoa_arquivos`
---
-DROP TABLE IF EXISTS `pessoa_arquivos`;
-CREATE TABLE IF NOT EXISTS `pessoa_arquivos` (
+DROP TABLE IF EXISTS `arquivos`;
+CREATE TABLE IF NOT EXISTS `arquivos` (
 	`id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
 	`id_pessoa` int(10) NOT NULL,
+	`id_contrato` int(10) NOT NULL,
   	`descricao` varchar(255),
-	`arquivo` varchar(255),
+	`arquivo` varchar(100),
 	`created_at` datetime DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (`id`),
-	FOREIGN KEY(id_pessoa) REFERENCES pessoas(id)
+	FOREIGN KEY(id_pessoa) REFERENCES pessoas(id),
+	FOREIGN KEY(id_contrato) REFERENCES contratos(id)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 COMMIT;

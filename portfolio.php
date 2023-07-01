@@ -55,13 +55,13 @@
 			<h3 class="text-primary text-center">Modelos</h3>
 			<div class="row">
 				<div class="col-md-6 text-center py-3">
-					<a class="link-no-line" href="portfolio/formatura.html">
+					<a class="link-no-line" href="https://formaturaads2022.000webhostapp.com/" target="_blank">
 						<h5 class="text-center text-primary">
 							<img src="img/icones/papiro.png" alt="Formatura" width="40">
 							Formatura
 							<img src="img/icones/papiro.png" alt="Formatura" width="40">
 						</h5>
-						<button class="btn btn-primary">Ir para modelo de Formatura</button>
+						<button class="btn btn-primary">Ir para site de Formatura</button>
 					</a>
 				</div>
 				<div class="col-md-6 text-center py-3">
