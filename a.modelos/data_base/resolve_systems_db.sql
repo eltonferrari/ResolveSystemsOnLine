@@ -278,9 +278,10 @@ CREATE TABLE IF NOT EXISTS `arquivos` (
 	`id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
 	`id_pessoa` int(10) NOT NULL,
 	`id_contrato` int(10) NOT NULL,
-  	`descricao` varchar(255),
-	`arquivo` varchar(100),
-	`created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+	`descricao` varchar(255) NOT NULL,
+	`caminho` varchar(50) NOT NULL,
+	`arquivo` varchar(20) NOT NULL,
+	`created_at` datetime DEFAULT current_timestamp(),
 	PRIMARY KEY (`id`),
 	FOREIGN KEY(id_pessoa) REFERENCES pessoas(id),
 	FOREIGN KEY(id_contrato) REFERENCES contratos(id)

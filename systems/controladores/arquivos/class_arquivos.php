@@ -8,33 +8,36 @@
             $this->db_handle = new DBController();
         }
 
-        function addArquivoPessoa($idPessoa, $descricao, $arquivo) {
-            $query = "INSERT INTO arquivos (id_pessoa, descricao, arquivo)
-                        VALUES (?, ?, ?)";
-            $paramType = "iss";
-            $paramValue = array($idPessoa, $descricao, $arquivo);
+        function addArquivoPessoa($idPessoa, $descricao, $caminho, $arquivo) {
+            $query = "INSERT INTO arquivos (id_pessoa, descricao, caminho, arquivo)
+                        VALUES (?, ?, ?, ?)";
+            $paramType = "isss";
+            $paramValue = array($idPessoa, $descricao, $caminho, $arquivo);
             $insertIdArquivo= $this->db_handle->insert($query, $paramType, $paramValue);
             return $insertIdArquivo;            
         }
 
-        function addArquivoContrato($idContrato, $descricao, $arquivo) {
-            $query = "INSERT INTO arquivos (id_contrato, descricao, arquivo)
-                        VALUES (?, ?, ?)";
+        function addArquivoContrato($idContrato, $descricao, $caminho, $arquivo) {
+            $query = "INSERT INTO arquivos (id_contrato, descricao, caminho, arquivo)
+                        VALUES (?, ?, ?, ?)";
             $paramType = "isss";
-            $paramValue = array($idContrato, $descricao, $arquivo);
+            $paramValue = array($idContrato, $descricao, $caminho, $arquivo);
             $insertIdArquivo= $this->db_handle->insert($query, $paramType, $paramValue);
             return $insertIdArquivo;
         }
 
         function editArquivo($descricao,
+                             $caminho,
                              $arquivo,
                              $id) {
             $query = "UPDATE arquivos
                         SET descricao = ?,
+                            caminho = ?,
                             arquivo = ?, 
                         WHERE id = ?";
-            $paramType = "ssi";
+            $paramType = "sssi";
             $paramValue = array($descricao,
+                                $caminho,
                                 $arquivo,
                                 $id
                                 );
@@ -63,6 +66,28 @@
             $paramValue = array($idContrato);
             $arquivosContrato = $this->db_handle->runQuery($query, $paramType, $paramValue);
             return $arquivosContrato;
+        }
+
+        function getNumeroArquivoPessoa($idPessoa) {
+            $query = "SELECT COUNT(*) FROM arquivos WHERE id_pessoa = ?";
+            $paramType = "i";
+            $paramValue = array($idPessoa);
+            $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            foreach ($result as $num) {
+                $numeroArquivos = $num['COUNT(*)'];
+            }
+            return $numeroArquivos;
+        }
+
+        function getNumeroArquivoContrato($idContrato) {
+            $query = "SELECT COUNT(*) FROM arquivos WHERE id_contrato = ?";
+            $paramType = "i";
+            $paramValue = array($idContrato);
+            $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            foreach ($result as $num) {
+                $numeroArquivos = $num['COUNT(*)'];
+            }
+            return $numeroArquivos;
         }
     }
 ?>

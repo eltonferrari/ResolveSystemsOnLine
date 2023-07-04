@@ -103,8 +103,14 @@
 					<form action="../../controladores/contratos/valida_altera_contrato.php" method="post">
 						<input type="hidden" name="idContrato" value="<?= $idContrato ?>">
 						<input type="hidden" name="aberto" value="<?= $abertoContrato ?>">
-						<h6 class="text-center pt-2 font-size-20 negrito display-in">Contrato nº: "<?= $idContrato ?>" - </h6>
-						<h6 class="animate-character-contrato display-in"><?= $contrAberto ?></h6>
+						<h6 class="text-center pt-2 font-size-20 negrito display-in">Contrato nº: "<?= $idContrato ?>"</h6>
+						<div class="text-center">
+							<a class="custom-btn btn-giro" href="../arquivos/arquivos.php?id_contrato=<?= $idContrato ?>">
+								<span>Visualizar</span>
+								<span>Arquivos</span>
+							</a>                                    
+						</div>
+						<h6 class="animate-character-contrato display-in"> - <?= $contrAberto ?></h6>
 						<div class="my-3">
 							<span class="bg-primary text-light borda-redonda-20 py-2 px-5">Descrição: </span>
 							<br />

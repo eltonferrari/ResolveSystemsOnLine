@@ -39,10 +39,8 @@
             <?php
                     }
                 }
-            ?>
-           
+            ?>           
         </ul>
-
         <div class="collapse navbar-collapse" id="navbar-list-4">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item pt-3">
@@ -50,7 +48,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="\<?= $imagem_perfil ?>" width="30" height="40" class="rounded-circle"><?= $nomeMenu ?>
+                        <img src="\<?= $imagem_perfil ?>" width="30" class="rounded-circle"><?= $nomeMenu ?>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="\systems/visualizacoes/pessoas/busca_perfil.php?user=<?= $_SESSION['id_logado'] ?>">Perfil</a>

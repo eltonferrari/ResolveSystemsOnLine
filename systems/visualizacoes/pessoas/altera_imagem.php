@@ -52,7 +52,7 @@
             <div class="row">
                 <div class="col-md-6 text-right border-right border-primary pr-2">
                     <h2 class="text-primary negrito">Foto atual</h2>    
-                    <img class="pr-4" src="\<?= $imagem ?>" alt="Foto Perfil" title="Foto atual" width="100">
+                    <img class="rounded-circle border-primary borda-foto" src="\<?= $imagem ?>" alt="Foto Perfil" title="Foto atual" width="100">
                 </div>
                 <div class="col-md-6 text-left">
                     <!-- Upload Image -->

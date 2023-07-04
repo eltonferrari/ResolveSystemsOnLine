@@ -3,11 +3,12 @@
 	$idUser = $_POST['id_pessoa'];
 	$arquivo = $_FILES['imagem']['name'];
 	
-	echo $idUser;
-	echo $arquivo;
-
 	//Pasta onde o arquivo vai ser salvo
-	$_UP['pasta'] = "../../../img/users/ids/";
+    $uploaddir = "../../../img/users/id_$idUser";     
+    if (!is_dir($uploaddir)) {
+        mkdir($uploaddir);
+    }
+	$_UP['pasta'] = "../../../img/users/id_$idUser/";
 	
 	//Tamanho máximo do arquivo em Bytes
 	$_UP['tamanho'] = 1024*1024*100; //5mb
@@ -32,8 +33,10 @@
 	}
 	
 	//Faz a verificação da extensao do arquivo
-	$extensao = strtolower(end(explode('.', $_FILES['imagem']['name'])));
-	if (array_search($extensao, $_UP['extensoes'])=== false) {		
+	$arquivo_up = $_FILES['imagem']['name'];
+    $extensao = pathinfo($arquivo_up);
+    $extensao = $extensao['extension'];	
+	if (array_search($extensao, $_UP['extensoes']) === false) {		
 		$msgAlteraImagem = "A imagem não foi alterada - extensão inválida.";
 	} else if ($_UP['tamanho'] < $_FILES['imagem']['size']) {
 		$msgAlteraImagem = "Arquivo muito grande.";
@@ -49,9 +52,7 @@
 		}
 	}
 	$_SESSION['$msgAlteraImagem'] = $msgAlteraImagem;
-
 ?>
 	<meta http-equiv="refresh" content="0;url=../../visualizacoes/pessoas/altera_imagem.php?user=<?= $idUser ?>">
 <?php
-
 ?>
