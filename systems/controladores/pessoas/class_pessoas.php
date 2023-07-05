@@ -72,6 +72,13 @@
             $this->db_handle->update($query, $paramType, $paramValue);
         }
 
+        function alteraSenha($senha, $id) {
+            $query = "UPDATE pessoas SET senha = ? WHERE id = ?";
+            $paramType = "si";
+            $paramValue = array($senha, $id);
+            $this->db_handle->update($query, $paramType, $paramValue);
+        }
+
         function getNomeValidar($nome) {
             $query = "SELECT nome FROM pessoas WHERE nome = ?";
             $paramType = "s";
@@ -123,6 +130,18 @@
                 $imagem = $foto['imagem'];
             }
             return $imagem;
+        }
+
+        function getSenhaById($id) {
+            $senha = null;
+            $query = "SELECT senha FROM pessoas WHERE id = ?";
+            $paramType = "i";
+            $paramValue = array($id);
+            $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            foreach($result as $pass) {
+                $senha = $pass['senha'];
+            }
+            return $senha;
         }
         
         function getPessoaByEmail($email) {

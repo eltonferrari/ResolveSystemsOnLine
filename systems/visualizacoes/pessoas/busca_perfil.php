@@ -125,19 +125,22 @@
 						?>
                     </div>
                     <form name="form-perfil" action="../../controladores/pessoas/altera_pessoa.php" method="post" enctype="multipart/form-data">
-                        <div class="text-center">
-                            <div class="row">
-                                <div class="col-md-2"></div>    
-                                <div class="col-md-8">
-                                    <label class="bg-primary text-light px-2 mt-3 borda-redonda-10 negrito" for="nome">Nome: </label>
-                                    <input class="form-control borda-redonda-40 text-center text-size-grande mb-2" name="nome" type="text" id="nome" placeholder="Digite o nome..." value="<?= $nome ?>">
-                                </div>
-                                <div class="col-md-2">
-                                    <a class="custom-btn btn-giro" href="../arquivos/arquivos.php?id_pessoa=<?= $id ?>">
-                                        <span>Visualizar</span>
-                                        <span>Arquivos</span>
-                                    </a>                                    
-                                </div>
+                        <div class="row text-center">
+                            <div class="col-md-2">
+                                <a class="custom-btn btn-giro" href="alterar_senha.php?id_pessoa=<?= $id ?>">
+                                    <span>Alterar</span>
+                                    <span>Senha</span>
+                                </a>                                    
+                            </div>
+                            <div class="col-md-8">
+                                <label class="bg-primary text-light px-2 mt-3 borda-redonda-10 negrito" for="nome">Nome: </label>
+                                <input class="form-control borda-redonda-40 text-center text-size-grande mb-2" name="nome" type="text" id="nome" placeholder="Digite o nome..." value="<?= $nome ?>">
+                            </div>
+                            <div class="col-md-2">
+                                <a class="custom-btn btn-giro" href="../arquivos/arquivos.php?id_pessoa=<?= $id ?>">
+                                    <span>Visualizar</span>
+                                    <span>Arquivos</span>
+                                </a>                                    
                             </div>
                         </div>
                         <div class="row">
