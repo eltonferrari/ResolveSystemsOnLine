@@ -114,6 +114,15 @@
                             <img src="\<?= $imagem ?>" alt="Home" width="80" class="rounded-circle">
                         </a>
                         <h1 class="text-primary text-center mt-1 negrito text-size-24">Perfil de Usuário</h1>
+                        <?php
+							if (isset($_SESSION['msg_update'])) {
+								$msgUpdate = $_SESSION['msg_update'];
+						?>
+								<h6 class="text-danger">(<?= $msgUpdate ?>)</h6>
+						<?php 
+								unset($_SESSION['msg_update']);
+							}
+						?>
                     </div>
                     <form name="form-perfil" action="../../controladores/pessoas/altera_pessoa.php" method="post" enctype="multipart/form-data">
                         <div class="text-center">
@@ -130,8 +139,6 @@
                                     </a>                                    
                                 </div>
                             </div>
-                            <label class="bg-primary text-light px-2 mt-3 borda-redonda-10 negrito" for="nome">Nome: </label>
-                            <input class="form-control borda-redonda-40 text-center text-size-grande mb-2" name="nome" type="text" id="nome" placeholder="Digite o nome..." value="<?= $nome ?>">
                         </div>
                         <div class="row">
                             <div class="col-md-6 m-auto text-center">

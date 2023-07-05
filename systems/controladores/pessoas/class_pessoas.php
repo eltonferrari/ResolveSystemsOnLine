@@ -72,6 +72,20 @@
             $this->db_handle->update($query, $paramType, $paramValue);
         }
 
+        function getNomeValidar($nome) {
+            $query = "SELECT nome FROM pessoas WHERE nome = ?";
+            $paramType = "s";
+            $paramValue = array($nome);
+            $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            $nomeBanco = null;
+            if (!empty($result)) {
+                foreach ($result as $n) {
+                    $nomeBanco = $n['nome'];
+                }
+            }
+            return $nomeBanco;
+        }
+
         function alteraImagemPerfil($imagem, $id) {
             $query = "UPDATE pessoas SET imagem = ? WHERE id = ?";
             $paramType = "si";
@@ -130,12 +144,6 @@
 
         function getAllPessoas() {
             $query = "SELECT * FROM pessoas ORDER BY nome ASC";
-            $result = $this->db_handle->runBaseQuery($query);
-            return $result;
-        }
-
-        function getNomeEmailAllPessoas() {
-            $query = "SELECT e.email, p.nome FROM pessoas p JOIN emails e ON p.id = e.id_pessoa ORDER BY nome ASC";
             $result = $this->db_handle->runBaseQuery($query);
             return $result;
         }

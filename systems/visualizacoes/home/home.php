@@ -183,15 +183,6 @@
 				<div class="col-md-4">
 					<div class="text-center text-success">
 						<h5 class="text-primary mt-3">Perfil de Usuário</h5>
-						<?php
-							if (isset($_SESSION['msg_update'])) {
-								$msgUpdate = $_SESSION['msg_update'];
-						?>
-								<h6 class="text-danger">(<?= $msgUpdate ?>)</h6>
-						<?php 
-								unset($_SESSION['msg_update']);
-							}
-						?>
 						<form name="busca-perfil" action="../../visualizacoes/pessoas/busca_perfil.php" method="post">
 							<div class="input-group mb-2">
 								<div class="input-group-prepend">

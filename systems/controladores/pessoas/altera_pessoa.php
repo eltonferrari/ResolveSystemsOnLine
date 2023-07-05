@@ -3,12 +3,15 @@
     include 'class_pessoas.php';
     date_default_timezone_set('America/Sao_Paulo');
 
+    echo '===== SESSÃO =====';
+    echo '<pre>';
+    print_r($_SESSION);
+    echo '</pre>';
 
     echo '===== POST =====';
     echo '<pre>';
     print_r($_POST);
     echo '</pre>';  
-
 
     $id             = $_POST['id'];
     $nome           = $_POST['nome'];
@@ -75,7 +78,6 @@
     }
     
     $_SESSION['msg_update'] = "Usuário $nome alterado com sucesso.";
-    
     ?>
         <meta http-equiv="refresh" content="0;url=../../visualizacoes/pessoas/busca_perfil.php?user=<?= $id ?>">
     <?php

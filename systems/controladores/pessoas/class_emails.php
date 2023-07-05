@@ -60,5 +60,19 @@
             $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
             return $result;
         }
+
+        function getEmailValidar($email) {
+            $query = "SELECT email FROM emails WHERE email = ?";
+            $paramType = "s";
+            $paramValue = array($email);
+            $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
+            $emailCadastrado = null;
+            if (!empty($result)) {
+                foreach ($result as $e) {
+                    $emailCadastrado = $e['email'];
+                }
+            }
+            return $emailCadastrado;
+        }
     }
 ?>

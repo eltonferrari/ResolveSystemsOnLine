@@ -2,24 +2,36 @@
     session_start();
     include 'class_pessoas.php';
     $idTipo = $_POST['funcao'];
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
+    $nomeNovo = $_POST['nome'];
+    $emailNovo = $_POST['email'];
     $senha = md5($_POST['senha']);
     $createdBy = $_SESSION['id_logado'];
-    $user = new Pessoas();
-    $user = $user->getNomeEmailAllPessoas();
+
+    $emailBanco = new Emails();
+    $emailBanco = $emailBanco->getEmailValidar($emailNovo);
+    
+    $nomeBanco = new Pessoas();
+    $nomeBanco = $nomeBanco->getNomeValidar($nomeNovo);
+/*
+    echo "Email Novo: $emailNovo <br />";
+    echo "Email Banco: $emailBanco <br />";
+    echo "Nome Novo: $nomeNovo <br />";
+    echo "Nome Banco: $nomeBanco <br />";
+*/
     $addUser = new Pessoas();
     $msgUser = "";
-    foreach ($user as $u) {
-        if (($u['nome'] == $nome && $u['email'] == $email) || ($u['nome'] == $nome) || ($u['email'] == $email)) {
-            $msgUser = 'Usuário já existe no sistema!';
-            break;
+    
+    if ($emailNovo == $emailBanco) {
+        $msgUser = 'E-mail já cadastrado no sistema!';
+    } else {
+        if ($nomeNovo == $nomeBanco) {
+                $msgUser = 'Nome já cadastrado no sistema!';
         } else {
-            $adduser = $addUser->addPessoa($idTipo, $nome, $email, $senha, $createdBy);
+            $adduser = $addUser->addPessoa($idTipo, $nomeNovo, $emailNovo, $senha, $createdBy);
             $msgUser = 'Usuário cadastrado no sistema, com sucesso!';
-            break;                 
         }
     }
+//  echo $msgUser;
     $_SESSION['msg_add_user'] = $msgUser;
     ?>
         <meta http-equiv="refresh" content="0;url=../../visualizacoes/home/home.php">
