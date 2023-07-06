@@ -200,7 +200,7 @@
                         <div class="row mt-3">
                             <div class="col-md-4 text-center">
                                 <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="cpf_cnpj">CPF/CNPJ: </label><br />
-                                <input class="form-control text-center" name="cpf_cnpj" type="text" id="cpf_cnpj" placeholder="Digite o CPF/CNPJ..." value="<?= $cpf_cnpj ?>">
+                                <input class="form-control text-center" name="cpf_cnpj" id="cpf_cnpj" placeholder="Digite o CPF/CNPJ..." type="text" value="<?= $cpf_cnpj ?>" onfocus="javascript: retirarFormatacao(this);" onblur="javascript: formatarCampo(this);" maxlength="14" />
                             </div>
                             <div class="col-md-4 text-center">
                                 <?php
@@ -296,7 +296,7 @@
                         <div class="row mt-3">
                             <div class="col-md-4 text-center">
                                 <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="cep">CEP: </label>
-                                <input class="form-control text-center" name="cep" type="text" id="cep" placeholder="Digite o cód. do CEP..." value="<?= $cep ?>">
+                                <input class="form-control text-center" name="cep" type="text" id="cep" placeholder="Digite o cód. do CEP..." value="<?= $cep ?>" maxlength="9" onkeypress="cepMascara(this)" />
                             </div>
                             <div class="col-md-4 text-center">
                                 <label class="bg-primary text-light px-2 borda-redonda-10 negrito" for="endereco">Endereço: </label>
