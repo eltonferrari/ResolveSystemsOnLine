@@ -65,21 +65,15 @@
                         <input type="hidden" name="id_pessoa" value="<?= $idPessoa ?>">
                         <div class="input-group mt-2">
                             <div class="input-group-prepend">
-                                <span class="input-group-text bg-primary text-light font-size-20 borda-redonda-20-left pl-3 pr-5 py-2 negrito">Senha atual</span>
-                            </div>
-                            <input class="form-control borda-redonda-20-right font-size-20 px-1 py-2" type="password" name="senha_antiga" id="senha_antiga" placeholder="Digite a senha atual">
-                        </div>
-                        <div class="input-group mt-2">
-                            <div class="input-group-prepend">
                                 <span class="input-group-text bg-primary text-light font-size-20 borda-redonda-20-left pl-3 pr-5 py-2 negrito">Senha nova</span>
                             </div>
-                            <input class="form-control borda-redonda-20-right font-size-20 px-1 py-2" type="password" name="senha_nova" id="senha_nova" placeholder="Digite a senha nova">
+                            <input class="form-control borda-redonda-20-right font-size-20 px-1 py-2" type="password" name="senha_nova" id="senha_nova" placeholder="Digite a senha nova" required>
                         </div>
                         <div class="input-group mt-2">
                             <div class="input-group-prepend">
                                 <span class="input-group-text bg-primary text-light font-size-20 borda-redonda-20-left pl-3 pr-4 py-2 negrito">Repita a senha</span>
                             </div>
-                            <input class="form-control borda-redonda-20-right font-size-20 px-1 py-2" type="password" name="retype_senha_nova" id="senha_antiga" placeholder="Repita a senha nova">
+                            <input class="form-control borda-redonda-20-right font-size-20 px-1 py-2" type="password" name="retype_senha_nova" id="senha_antiga" placeholder="Repita a senha nova" required>
                         </div>
                         <div class="buttons text-center">
                             <button class="blob-btn" type="submit">
