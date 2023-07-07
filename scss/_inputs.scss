@@ -1,0 +1,100 @@
+// INPUTS
+// FLIPSWITCH
+.flipswitch {
+	position: relative;
+	width: 127px;
+}
+
+.flipswitch input[type=checkbox] {
+	display: none;
+}
+
+.flipswitch-label {
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+	border: 1px solid #999999;
+	border-radius: 19px;
+}
+
+.flipswitch-inner {
+	width: 200%;
+	margin-left: -100%;
+	transition: margin 0.3s ease-in 0s;
+}
+
+.flipswitch-inner:before, .flipswitch-inner:after {
+	float: left;
+	width: 50%;
+	height: 20px;
+	padding: 0;
+	line-height: 20px;
+	font-size: 16px;
+	color: white;
+	font-family: Trebuchet, Arial, sans-serif;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+
+.flipswitch-inner:before {
+	content: "ATIVO";
+	padding-left: 20px;
+	background-color: $primary;
+	color: #FFFFFF;
+}
+
+.flipswitch-inner:after {
+	content: "INATIVO";
+	padding-right: 20px;
+	background-color: #EBEBEB;
+	color: #888888;
+	text-align: right;
+}
+
+.flipswitch-switch {
+	width: 20px;
+	margin: 0px;
+	background: #FFFFFF;
+	border: 1px solid #999999;
+	border-radius: 19px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 105px;
+	transition: all 0.3s ease-in 0s;
+}
+
+.flipswitch-cb:checked + .flipswitch-label .flipswitch-inner {
+	margin-left: 0;
+}
+
+.flipswitch-cb:checked + .flipswitch-label .flipswitch-switch {
+	right: 0;
+}
+
+// INPUT - TYPE FILE
+input[type=file] {
+	width: 350px;
+	max-width: 100%;
+	color: $primary;
+	padding: 5px;
+	background: #fff;
+	border-radius: 20px;
+	border: 1px solid $primary;
+}
+  
+input[type=file]::file-selector-button {
+	margin-right: 20px;
+	border: none;
+	background: $primary;
+	padding: 10px 20px;
+	border-radius: 20px;
+	color: #fff;
+	cursor: pointer;
+	transition: background .2s ease-in-out;
+}
+  
+input[type=file]::file-selector-button:hover {
+	background: $dark;
+	color: $primary;
+}

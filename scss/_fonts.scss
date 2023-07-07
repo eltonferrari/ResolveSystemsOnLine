@@ -1,0 +1,185 @@
+// FONTS
+
+@font-face {
+	font-family: "Ancient";
+	src: url("../../fonts/Ancient-Medium.woff");
+}
+
+@font-face {
+	font-family: "Bring";
+	src: url("../../fonts/BringHeart.woff");
+}
+
+@font-face {
+	font-family: "Madelina";
+	src: url("../../fonts/MadelinaScript.woff");
+}
+
+@font-face {
+	font-family: "Fasthand";
+	src: url('../../fonts/Fasthand-Regular.ttf');
+}
+.font-size-12 {
+	font-size: 12px;
+}
+
+.font-size-14 {
+	font-size: 14px;
+}
+
+.font-size-15 {
+	font-size: 15px;
+}
+
+.font-size-16 {
+	font-size: 16px;
+}
+
+.font-size-18 {
+	font-size: 18px;
+}
+
+.font-size-19 {
+	font-size: 19px;
+}
+
+.font-size-20 {
+	font-size: 20px;
+}
+
+.font-size-22 {
+	font-size: 22px;
+}
+
+.font-size-24 {
+	font-size: 24px;
+}
+
+.font-size-25 {
+	font-size: 25px;
+}
+
+.font-size-26 {
+	font-size: 26px;
+}
+
+.texto {
+    font-size: 1.5em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+.italico {
+    font-style: italic;
+}
+
+h1.ancient {
+	font-size: 3em;
+	font-family: "Ancient";
+}
+
+h2.bring {
+	font-family: "Bring";
+	font-size: 3em;
+}
+
+span.fasthand {
+	font-family: "Fasthand";
+	font-size: 1.3em;
+}
+
+h3.madelina {
+	font-size: 3em;
+	font-family: "Madelina";
+}
+
+.animate-character,
+.animate-character-formatura,
+.animate-character-formatura-2,
+.animate-character-msg,
+.animate-character-contrato {
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 200% auto;
+	color: #fff;
+	background-clip: text;
+	//text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.animate-character,
+.animate-character-formatura,
+.animate-character-formatura-2,
+.animate-character-contrato {
+	animation: textclip 3s linear infinite;
+}
+
+.animate-character-msg {
+	animation: textclip 0.5s linear infinite;
+}
+
+.animate-character,
+.animate-character-msg {
+	text-transform: uppercase;
+	background-image: linear-gradient(
+		-225deg,
+		#007bff 0%,
+   		#28a745 20%,
+    	#ffc107 40%,
+		#fd9902 60%,
+		#e703fc 80%,
+		#dc3545 100%
+	);
+}
+
+.animate-character-contrato {
+	text-transform: uppercase;
+	background-image: linear-gradient(
+		-225deg,
+   		#28a745 0%,
+    	#ffc107 33%,
+		#007bff 66%
+	);
+}
+
+.animate-character {
+	font-size: 50px;
+}
+
+.animate-character-formatura,
+.animate-character-msg,
+.animate-character-contrato {
+	font-size: 20px;
+}
+
+.animate-character-formatura {
+	text-transform: uppercase;
+	background-image: linear-gradient(
+		-225deg,
+		#e703fc 0%,
+   		#7a0a85 20%,
+    	#ff0707 40%,
+		#5e0786 60%,
+		#e703fc 80%,
+		#dc3545 100%
+	);
+}
+
+.animate-character-formatura-2 {
+	background-image: linear-gradient(
+		-225deg,
+		#e703fc 0%,
+   		#7a0a85 20%,
+    	#ff0707 40%,
+		#5e0786 60%,
+		#e703fc 80%,
+		#dc3545 100%
+	);
+	font-size: 15px;
+}

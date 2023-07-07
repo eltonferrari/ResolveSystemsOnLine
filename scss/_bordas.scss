@@ -1,0 +1,84 @@
+// BORDAS
+.borda-redonda-10 {
+	border-radius: 10px;
+}
+
+.borda-redonda-20,
+.borda-redonda-20-footer {
+	border-radius: 20px;
+}
+
+.borda-redonda-40 {
+	border-radius: 40px;
+}
+
+.borda-redonda-10-right {
+	border-radius: 0 10px 10px 0;
+}
+
+.borda-redonda-10-left {
+	border-radius: 10px 0 0 10px;
+}
+
+.borda-redonda-20-right {
+	border-radius: 0 20px 20px 0;
+}
+
+.borda-redonda-20-left {
+	border-radius: 20px 0 0 20px;
+}
+
+.borda-redonda-top-left {
+	border-radius: 10px 0 0 0;
+}
+
+.borda-redonda-top-right {
+	border-radius: 0 10px 0 0;
+}
+
+.caixa-borda {
+	width: 300px;
+	height: 150px;
+	background: #5ccc3a;
+	padding: 10px;
+	border-radius: 10px 50px 90px 130px;
+	box-sizing: border-box;
+}
+
+.caixa-borda-espessura {
+	border-style: solid;
+	border-color: #5ccc3a;
+	border-width: 30px;
+}
+
+.caixa-borda-estilo-solid {
+	width: 300px;
+	height: 50px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: green;
+}
+
+.caixa-borda-estilo-groove {
+	width: 300px;
+	height: 100px;
+	border-style: groove;
+	border-width: 30px;
+	border-color: green;
+}
+
+.caixa-borda-estilo-dotted {
+	width: 300px;
+	height: 50px;
+	border-style: dotted;
+	border-width: 3px;
+	border-color: green;
+}
+
+.caixa-borda-estilo-inset {
+	width: 300px;
+	height: 100px;
+	border-style: inset;
+	border-width: 30px;
+	border-color: green;
+}

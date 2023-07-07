@@ -1,0 +1,215 @@
+// BOTÃO ANIMADO 1
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+$openSans: 'Open Sans', Helvetica, Arial, sans-serif;
+
+.buttons {
+	margin-top: 20px;
+	text-align: center;
+	border-radius:20px;
+	height: 60px;
+}
+  
+$primary: #007bff;
+$dark: #FFFFFF;
+$borderW: 2px;
+
+a.blob-btn {
+	text-decoration: none;
+}
+
+.blob-btn {
+	$numOfBlobs: 4;
+	z-index: 0;
+	position: relative;
+	padding: 10px 25px;
+	margin-bottom: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	color: $primary;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	transition: color 0.5s;
+	cursor: pointer;
+	border-radius:20px;
+	&:before {
+	  	content: "";
+		z-index: 1;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		border: $borderW solid $primary;
+		border-radius:20px;
+	}
+	&:after {
+		content: "";
+		z-index: -2;
+		position: absolute;
+		left: $borderW*1.5;
+		top: $borderW*1.5;
+		width: 100%;
+		height: 100%;
+		transition: all 0.3s 0.2s;
+		border-radius:30px;
+	}
+	&:hover {
+		color: $dark;
+		border-radius:30px;
+		&:after {
+			transition: all 0.3s;
+			left: 0;
+			top: 0;
+			border-radius:30px;
+		}
+	}
+	&__inner {
+		z-index: -1;
+		overflow: hidden;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		border-radius:30px;
+		background:#ffffff;
+	}
+	// additional container created, because in FF blobs are breaking overflow:hidden of element with svg gooey filter
+	&__blobs {
+		position: relative;
+		display: block;
+		height: 100%;
+		filter: url('#goo');
+	}
+	&__blob {
+		position: absolute;
+		top: $borderW;
+		width: 100% / $numOfBlobs;
+		height: 100%;
+		background: $primary;
+		border-radius: 100%;
+		transform: translate3d(0,150%,0) scale(1.7);
+		transition: transform 0.45s;
+		@supports(filter: url('#goo')) {
+			transform: translate3d(0,150%,0) scale(1.4);
+		}
+		@for $i from 1 through $numOfBlobs {
+			&:nth-child(#{$i}) {
+				left: ($i - 1) * (120% / $numOfBlobs);
+				transition-delay: ($i - 1) * 0.08s;
+			}
+		}
+		.blob-btn:hover & {
+			transform: translateZ(0) scale(1.7);
+			@supports(filter: url('#goo')) {
+				transform: translateZ(0) scale(1.4);
+			}
+		}
+	}
+}
+//==================
+
+// BOTÃO ANIMADO 2
+
+.custom-btn {
+	margin: 20px 0px;
+	width: 130px;
+	height: 40px;
+	color: #fff;
+	border-radius: 5px;
+	padding: 60px 20px 0px 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	box-shadow:inset 2px 2px  2px 0px #ffffff80,
+					 7px 7px 20px 0px #0000001a,
+	 				 4px 4px  5px 0px #0000001a;
+	outline: none;
+}
+
+.btn-giro {
+	position: relative;
+	right: 20px;
+	bottom: 20px;
+	border:none;
+	box-shadow: none;
+	width: 130px;
+	height: 40px;
+	line-height: 42px;
+	-webkit-perspective: 230px;
+	perspective: 230px;
+}
+
+.btn-giro span {
+	background: $primary;
+	display: block;
+	position: absolute;
+	width: 130px;
+	height: 40px;
+	box-shadow:inset 2px 2px  2px 0px #ffffff80,
+	 				 7px 7px 20px 0px #0000001a,
+					 4px 4px  5px 0px #0000001a;
+	border-radius: 5px;
+	margin:0;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.btn-giro span:nth-child(1) {
+	box-shadow:
+	 	-7px -7px 20px 0px #fff9,
+	 	-4px -4px  5px 0px #fff9,
+	 	 7px  7px 20px 0px #0002,
+	 	 4px  4px  5px 0px #0001;
+	-webkit-transform: rotateX(90deg);
+	-moz-transform: rotateX(90deg);
+	transform: rotateX(90deg);
+	-webkit-transform-origin: 50% 50% -20px;
+	-moz-transform-origin: 50% 50% -20px;
+	transform-origin: 50% 50% -20px;
+}
+
+.btn-giro span:nth-child(2) {
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	-webkit-transform-origin: 50% 50% -20px;
+	-moz-transform-origin: 50% 50% -20px;
+	transform-origin: 50% 50% -20px;
+}
+
+.btn-giro:hover span:nth-child(1) {
+	box-shadow:inset 2px 2px  2px 0px #ffffff80,
+					 7px 7px 20px 0px #0000001a,
+					 4px 4px  5px 0px #0000001a;
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.btn-giro:hover span:nth-child(2) {
+	box-shadow:inset 2px 2px  2px 0px #ffffff80,
+					 7px 7px 20px 0px #0000001a,
+					 4px 4px  5px 0px #0000001a;
+    color: transparent;
+	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+}
+//==================
