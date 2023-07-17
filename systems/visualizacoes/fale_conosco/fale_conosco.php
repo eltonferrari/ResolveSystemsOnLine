@@ -48,31 +48,31 @@
                     <h6 class="text-danger text-center">* Preenchimento obrigatório</h6>
                     <form action="../../controladores/fale_conosco/valida_fale_conosco.php" method="post">
                         <div class="row">
-                            <div class="col-md-10 row m-auto mb-2">
-                                <div class="col-md-3 input-group-inline">
+                            <div class="col-sm-10 row m-auto mb-2">
+                                <div class="col-sm-3 input-group-inline">
                                     <label class="text-danger" for="nome">* </label>
                                     <label class="text-primary mr-2 negrito" for="nome">Nome: </label>
                                 </div>
-                                <div class="col-md-9 mb-2">
+                                <div class="col-sm-9 mb-2">
                                     <input class="border border-primary borda-redonda-10 p-1" type="text input-width" name="nome" id="nome" placeholder="Coloque seu nome aqui..." size="50" required>
                                 </div>
-                                <div class="col-md-3 input-group-inline">
+                                <div class="col-sm-3 input-group-inline">
                                     <label class="text-danger" for="email">* </label>
                                     <label class="text-primary mr-2 negrito" for="email">E-mail: </label>
                                 </div>
-                                <div class="col-md-9 mb-2">
+                                <div class="col-sm-9 mb-2">
                                     <input class="border border-primary borda-redonda-10 p-1" type="text input-width" name="email" id="email" placeholder="Coloque seu e-mail aqui..." size="50" required>
                                 </div>
-                                <div class="col-md-3 input-group-inline">
+                                <div class="col-sm-3 input-group-inline">
                                     <label class="text-primary mr-2 negrito" for="telefone">Telefone: </label>
                                 </div>
-                                <div class="col-md-9 mb-2">
+                                <div class="col-sm-9 mb-2">
                                     <input class="border border-primary borda-redonda-10 p-1" type="text input-width" name="telefone" id="telefone" placeholder="Coloque seu telefone aqui..." size="50">
                                 </div>
-                                <div class="col-md-3 input-group-inline">
+                                <div class="col-sm-3 input-group-inline">
                                     <label class="text-primary mr-2 negrito" for="mensagem">Deixe uma mensagem: </label>
                                 </div>
-                                <div class="col-md-9 mb-2">
+                                <div class="col-sm-9 mb-2">
                                     <textarea class="border border-primary borda-redonda-10 p-1" name="mensagem" id="mensagem" placeholder="Coloque sua mensagem aqui..." cols="53" maxlength="255" ></textarea>
                                     <div class="text-danger negrito" id="caracteres_restantes">255</div>
                                     

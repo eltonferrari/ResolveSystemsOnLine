@@ -55,9 +55,8 @@
 	$msgAdicionaArquivo = null;
 	if ($extensao != 'pdf') {
 		$msgAdicionaArquivo = "Extensão inválida.";
-		echo "Extensão inválida.";
 	} else if ($_UP['tamanho'] < $_FILES['arquivo']['size']) {
-		echo $msgAdicionaArquivo = "Arquivo muito grande.";
+		$msgAdicionaArquivo = "Arquivo muito grande.";
 	} else {
 		$caminho = $_UP['pasta'];
 		$num ++;
@@ -66,9 +65,9 @@
 			//Upload efetuado com sucesso, exibe a mensagem
 			$insertArquivo = new Arquivos();
 			if ($tipo == 'Pessoa') {
-				$insertArquivo = $insertArquivo->addArquivoPessoa($id, $descricao, $_UP['pasta'], $nome_final);
+				$insertArquivo = $insertArquivo->addArquivoPessoa($id, $descricao, $caminho, $nome_final);
 			} else if ($tipo == 'Contrato') {
-				$insertArquivo = $insertArquivo->addArquivoContrato($id, $descricao, $_UP['pasta'], $nome_final);				
+				$insertArquivo = $insertArquivo->addArquivoContrato($id, $descricao, $caminho, $nome_final);				
 			}
 			$msgAdicionaArquivo = "Arquivo adicionado com sucesso.";	
 		} else {
