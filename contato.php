@@ -51,7 +51,7 @@
 										<img class="pt-2 pb-1" src="img/icones/telefone-fixo2.png" alt="Telefone" title="Telefone fixo" width="30">
 									</div>
 									<div class="col-md-10">
-										<h4 class="text-black pt-2 negrito">(51) 32080142</h4>
+										<a href="tel:5132080142"><h4 class="text-black pt-2 negrito">(51) 32080142</h4></a>
 									</div>
 								</div>
 							</div>

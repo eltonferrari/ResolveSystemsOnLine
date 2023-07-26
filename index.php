@@ -34,7 +34,7 @@
 		<div class="container">
 			<div class="row pb-3">
 				<div class="col-md-12 text-center py-3">
-					<h3 class="animate-character">Está precisando de um site?</h3>
+					<h1 class="animate-character">Está precisando de um site?</h1>
 				</div>
 			</div>
 			<h4 class="negrito text-center text-primary">Planos Recomendados</h4>
@@ -42,7 +42,6 @@
 				<div class="col-md-4 py-1 px-3">
 					<div class="plano py-1 px-3">
 						<h4 class="text-center bg-primary text-light borda-redonda-10 negrito">Básico</h4>
-						<h6 class="text-center negrito">À partir de R$ 1.135,00</h6>
 						<ul>
 							<li>Site estático</li>
 							<li>Domínio próprio</li>
@@ -54,14 +53,13 @@
 						</ul>
 						<br /><br /><br /><br /><br /><br />
 						<div class="text-center">
-							<a href="https://wa.me/5551980475948" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
+							<a href="https://wa.me/5551998694945" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
 						</div>
 					</div>				
 				</div>
 				<div class="col-md-4 py-1 px-3">
 					<div class="plano py-1 px-3">
 						<h4 class="text-center bg-primary text-light borda-redonda-10 negrito">Intermediário</h4>
-						<h6 class="text-center negrito">À partir de R$ 2.270,00</h6>
 						<ul>
 							<li>Site estático</li>
 							<li>Domínio próprio</li>
@@ -74,14 +72,13 @@
 						</ul>
 						<br /><br /><br /><br /><br />
 						<div class="text-center">
-							<a href="https://wa.me/5551980475948" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
+							<a href="https://wa.me/5551998694945" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
 						</div>
 					</div>				
 				</div>
 				<div class="col-md-4 py-1 px-3">
 					<div class="plano py-1 px-3">
 						<h4 class="text-center bg-primary text-light borda-redonda-10 negrito">Avançado</h4>
-						<h6 class="text-center negrito">À partir de R$ 3.405,00</h6>
 						<ul>
 							<li>Site estático</li>
 							<li>Domínio próprio</li>
@@ -97,7 +94,7 @@
 
 						</ul>
 						<div class="text-center mt-2">
-							<a href="https://wa.me/5551980475948" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
+							<a href="https://wa.me/5551998694945" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
 						</div>
 					</div>				
 				</div>
@@ -106,7 +103,6 @@
 				<div class="col-md-4 py-1 px-3">
 					<div class="plano py-1 px-3">
 						<h4 class="text-center bg-primary text-light borda-redonda-10 negrito">Rápido</h4>
-						<h6 class="text-center negrito">À partir de R$ 908,00</h6>
 						<ul>
 							<li>Site estático</li>
 							<li>Página única</li>
@@ -117,7 +113,7 @@
 						</ul>
 						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 						<div class="text-center">
-							<a href="https://wa.me/5551980475948" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
+							<a href="https://wa.me/5551998694945" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
 						</div>
 					</div>				
 				</div>
@@ -125,7 +121,7 @@
 					<div class="plano py-1 px-3">
 						<h4 class="text-center bg-primary text-light borda-redonda-10 negrito">Personalizado</h4>
 						<h6 class="text-center negrito">
-							<a href="https://wa.me/5551980475948" target="_blank">Consulte o valor aqui!</a>
+							<a href="https://wa.me/5551998694945" target="_blank">Consulte o valor aqui!</a>
 						</h6>
 						<ul>
 							<li>Site estático ou dinâmico</li>
@@ -144,13 +140,13 @@
 							<li>Consultoria</li>							
 						</ul>
 						<div class="text-center">
-							<a href="https://wa.me/5551980475948" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
+							<a href="https://wa.me/5551998694945" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
 						</div>
 					</div>				
 				</div>
 				<div class="col-md-4 py-1 px-3 py-5">
 					<div class="plano py-1 px-3 py-5">
-						<a class="link-index" href="https://wa.me/5551980475948" target="_blank">
+						<a class="link-index" href="https://wa.me/5551998694945" target="_blank">
 							<h4 class="text-center bg-cinza text-light borda-redonda-10 negrito">Consulte um domínio conosco</h4>
 							<h3 class="text-center negrito py-5 font-cinza">Gratuitamente</h3>
 							<div class="text-center mt-4">

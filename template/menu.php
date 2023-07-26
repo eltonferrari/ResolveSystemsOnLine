@@ -36,7 +36,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="\contato.php">Contato</a>
+                <a class="nav-link" href="\contato.php">Contatos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="\systems/visualizacoes/fale_conosco/fale_conosco.php">Fale Conosco</a>

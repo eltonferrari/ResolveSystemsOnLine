@@ -901,22 +901,22 @@ body .parallax {
   height: 100%;
 }
 
-/* line 185, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 174, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 p.justificado {
   text-align: justify;
 }
 
-/* line 189, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 178, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 hr.divisor {
   border: 1px dotted #007bff;
 }
 
-/* line 194, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 183, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .caixa div {
   background: #ffffffb0;
 }
 
-/* line 198, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 187, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .carousel-caption {
   width: 60%;
 }
@@ -927,101 +927,96 @@ hr.divisor {
   }
 }
 
-/* line 218, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 200, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .bg-cinza {
   background-color: #5c5c5c;
 }
 
-/* line 222, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 204, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .font-cinza {
   color: #5c5c5c;
 }
 
-/* line 227, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
-.plano {
-  box-shadow: 8px 8px 10px -3px #007bffb3;
-}
-
-/* line 231, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 209, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .larger-checkbox {
   width: 20px;
   height: 20px;
 }
 
-/* line 243, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 221, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .video-menor {
   max-width: 30%;
 }
 
-/* line 247, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 225, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 p.cor-paragrafo {
   color: black;
 }
 
-/* line 252, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 230, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .contatos {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* line 259, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 237, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 div#mapa {
   float: left;
   width: 310px;
   margin-left: 37px;
 }
 
-/* line 265, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 243, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 div.font-reduzida {
   font-size: 12px;
 }
 
-/* line 269, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 247, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .text-size-button {
   font-size: 20px;
   padding: 10px 50px;
 }
 
-/* line 274, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 252, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .text-size-grande {
   font-size: 30px;
 }
 
-/* line 278, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 256, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .text-size-20 {
   font-size: 20px;
 }
 
-/* line 289, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 267, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 textarea {
   overflow: hidden;
   resize: none;
 }
 
-/* line 294, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 272, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .link-visualiza-mensagem,
 .link-visualiza-mensagem:hover,
 .link-visualiza-mensagem:focus {
   text-decoration: none;
 }
 
-/* line 300, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 278, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 span.recuo-primeira-linha,
 .recuo-primeira-linha {
   text-indent: 25px;
 }
 
-/* line 306, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 284, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .classVisivel-no {
   display: none;
 }
 
-/* line 310, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 288, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .classVisivel-yes {
   display: contents;
 }
 
-/* line 315, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
+/* line 293, ../../xampp/htdocs/ResolveSystemsOnLine/scss/style.scss */
 .font-link {
   font-size: 25px;
 }

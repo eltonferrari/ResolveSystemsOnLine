@@ -3,7 +3,7 @@
         private $host = "localhost";
         private $user = "root";
         private $password = "";
-        private $database = "resolve_systems_db";
+        private $database = "resolvesystems_db";
         private $conn;
         
         function __construct() {
