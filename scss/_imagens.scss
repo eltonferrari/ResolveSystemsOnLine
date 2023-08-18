@@ -16,10 +16,15 @@
 	background-image: url(../../img/fotos/imagem2.jpg);
 }
 
-.img2 { 
-	background-color: white;
+.imagem5 {	
+	z-index: 1;
 }
 
 .img3 {
 	background-image: url(../../img/fotos/imagem6.jpg);
+}
+
+div.row > div.col-md-12 > div.col-sm-10 {
+	padding-right: 0px;
+	padding-left: 0px;
 }

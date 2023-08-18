@@ -1,11 +1,9 @@
-<section>
-    <link   rel="stylesheet" 
-            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<section class="container">
     <a class="mb-5"	href="https://wa.me/5551998694945"
         style="	position:fixed;
                 width:60px;
                 height:60px;
-                bottom:60px;
+                bottom:80px;
                 right:40px;
                 background-color:#007BFF;
                 color:#FFF;
@@ -15,19 +13,21 @@
                 box-shadow: 1px 1px 2px #888;
                 z-index:1000;" 
         target="_blank">
-        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+        <img src="../img/icones/gifs/whatsapp-1.gif" alt="WatsApp" width="80">
+        
     </a>
 </section>
 <footer class="bg-primary fixed-botton">
     <div class="p-1">
-        <div class="row text-center">
-            <div class="col-md-7 text-light">
+        <div class="row align-content-center">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 text-light text-center">
                 <span class="fasthand">Copyright </span>
                 <img class="pb-1" src="\img/icones/copyright.png" alt="copyright" width="20">
                 <strong>Resolve Systems 2020-2023</strong>
-                 - Todos os direitos registrados
+                , Todos os direitos registrados
             </div>
-            <div class="col-md-4 bg-light borda-redonda-20-footer text-center d-flex justify-content-around">
+            <div class="col-md-5 bg-light borda-redonda-20-footer text-center d-flex justify-content-around">
                 <div class="item pt-2">
                     <a href="https://www.facebook.com/profile.php?id=100092631795853">
                         <img class="ml-2 pb-2" src="\img/icones/facebook.png" alt="facebook" width="20" title="Facebook">
@@ -66,7 +66,7 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 <script src="\js/script.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="\assets/Bootstrap4/js/bootstrap.min.js"></script>

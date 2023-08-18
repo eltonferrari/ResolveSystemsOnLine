@@ -94,4 +94,9 @@ h3 {
   border-radius: 20px;
 }
 
+/* line 84, ../../xampp/htdocs/ResolveSystemsOnLine/scss/parallax.scss */
+.index-2 {
+  z-index: 10;
+}
+
 /*# sourceMappingURL=parallax.css.map */

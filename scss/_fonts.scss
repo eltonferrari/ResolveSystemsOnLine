@@ -1,3 +1,5 @@
+@import 'variaveis';
+
 // FONTS
 
 @font-face {
@@ -63,6 +65,28 @@
 	font-size: 26px;
 }
 
+.font-size-28 {
+	font-size: 28px;
+}
+
+.font-size-30 {
+	font-size: 30px;
+}
+
+.font-size-32 {
+	font-size: 32px;
+}
+
+.font-size-48 {
+	font-size: 48px
+}
+
+.texto-index {
+	@extend .font-size-20;
+	color: $primary;
+	text-align: left;
+}
+
 .texto {
     font-size: 1.5em;
     font-family: "Times New Roman", Times, serif;
@@ -117,7 +141,7 @@ h3.madelina {
 .animate-character-formatura,
 .animate-character-formatura-2,
 .animate-character-contrato {
-	animation: textclip 3s linear infinite;
+	animation: textclip 5s linear infinite;
 }
 
 .animate-character-msg {

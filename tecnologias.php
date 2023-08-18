@@ -30,8 +30,10 @@
 		<title>RS - Resolve Systems</title>
 	</head>
 	<body class="bg-light">
-		<?php include 'template/menu.php';?>
-		<div class="container">
+		<header>
+			<?php include 'template/menu.php';?>
+		</header>
+		<section class="container">
 			<div class="conteudo">
 				<div class="d-flex justify-content-center">
 					<h2 class="text-primary">Tecnologias</h2>
@@ -196,7 +198,7 @@
 					</div>
 					<div class="border col-md-2 d-flex justify-content-center pt-4 pb-2">
 						<a href=".bd-example-modal-md-scss" data-toggle="modal" data-target=".bd-example-modal-md-scss">
-							<img src="img/icones/sass-less.png" width="110" height="70">
+							<img src="img/icones/sass-less.png" width="80">
 						</a>
 					</div>
 					<div class="modal fade bd-example-modal-md-scss" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -225,8 +227,7 @@
 				</div>
 				<hr>
 				<div class="row">
-					<div class="border col-md-4"></div>
-					<div class="border col-md-4 d-flex justify-content-center pt-3 pb-3">
+					<div class="border col-md-3 d-flex justify-content-center pt-3 pb-3">
 						<a href=".bd-example-modal-md-php" data-toggle="modal" data-target=".bd-example-modal-md-php">
 							<img src="img/icones/php7.png" width="150">
 						</a>
@@ -240,13 +241,28 @@
 										</button>
 									</header>
 									<div class="modal-body">
-
-									<!-- PAREI AQUI -->
-									
-										<p>O significado da sigla PHP é Hypertext Preprocessor, ou seja, Preprocessador de  Hypertexto. Originalmente significava Personal Home Page (Página Inicial Pessoal). É uma linguagem de script uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web e que pode ser embutida dentro do HTML. O PHP é uma linguagem de programação de código aberto, ou seja, de uso livre, gratuito.</p>
-										<p>Com ele, é possível escrever pequenos scripts de forma procedural, ou ainda utilizar orientação a objetos, ou ambos. Portanto, com ela, é possível realizar a criação de sites dinâmicos, extensões para aplicativos e otimizar programas e sistemas operacionais.</p>
-										<p>Esta linguagem conversa muito bem com o HTML, por isso é muito comum sua utilização para o desenvolvimento WEB. É Possível mesclar código HTML com código PHP em um mesmo documento de forma simples e fácil. Porém, diferente do HTML, ela atua diretamente do lado do servidor, ou seja, é uma linguagem de “Desenvolvimento Back-End”.</p>
-										<p>É uma linguagem simples e de fácil aprendizado, mas que também possui recursos avançados para programadores mais experientes. Possui uma comunidade bastante ativa e uma boa documentação. Portanto é muito utilizada para o desenvolvimento Web. Também possui diversos Frameworks e bibliotecas. Ainda é uma linguagem extremamente rápida e que esta sendo sempre atualizada.</p>
+										<p>O significado da sigla <strong>PHP</strong> é <strong><em>Hypertext Preprocessor
+										 </em></strong>, ou seja, <strong>Preprocessador de  Hypertexto</strong>. Originalmente
+										  significava <em>Personal Home Page</em> (Página Inicial Pessoal). É uma linguagem de
+										   <em>script</em> uso geral, muito utilizada, e especialmente adequada para o 
+										    desenvolvimento web e que pode ser embutida dentro do <strong>HTML</strong>. O 
+											<strong>PHP</strong> é uma linguagem de programação de código aberto, ou seja, de 
+											 uso livre, gratuito.</p>
+										<p>Com ele, é possível escrever pequenos <em>scripts</em> de forma procedural, ou ainda
+										 utilizar orientação a objetos, ou ambos. Portanto, com ela, é possível realizar a 
+										  criação de sites dinâmicos, extensões para aplicativos e otimizar programas e sistemas
+										   operacionais.</p>
+										<p>Esta linguagem conversa muito bem com o <strong>HTML</strong>, por isso é muito
+										 comum sua utilização para o desenvolvimento WEB. É Possível mesclar código 
+										  <strong>HTML</strong> com código <strong>PHP</strong> em um mesmo documento de forma
+										   simples e fácil. Porém, diferente do <strong>HTML</strong>, ela atua diretamente do
+										    lado do servidor, ou seja, é uma linguagem de <strong>“Desenvolvimento Back-End”
+											 </strong>.</p>
+										<p>É uma linguagem simples e de fácil aprendizado, mas que também possui recursos
+										 avançados para programadores mais experientes. Possui uma comunidade bastante ativa e
+										  uma boa documentação. Portanto é muito utilizada para o desenvolvimento Web. Também 
+										   possui diversos Frameworks e bibliotecas. Ainda é uma linguagem extremamente rápida e
+										    que esta sendo sempre atualizada.</p>
 									</div>
 									<footer class="modal-footer">
 										<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
@@ -255,10 +271,127 @@
 							</div>
 						</div>
 					</div>
-					<div class="border col-md-4"></div>
+					<div class="border col-md-3 d-flex justify-content-center pt-3 pb-3">
+						<a href=".bd-example-modal-md-wordpress" data-toggle="modal" data-target=".bd-example-modal-md-wordpress">
+							<img src="img/icones/wordpress.png" width="100">
+						</a>
+						<div class="modal fade bd-example-modal-md-wordpress" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-md-wordpress">
+							  	<div class="modal-content">
+									<header class="modal-header">
+										<h5 class="modal-title" id="exampleModalLongTitle">WORDPRESS</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</header>
+									<div class="modal-body">
+										<p>Criado em 2003, o <strong>WordPress</strong> veio para democratizar o desenvolvimento
+										 de sites. Ou seja, para transformar uma tarefa muito exclusiva em algo possível de ser
+										  feito pela maioria dos usuários da internet.</p>
+										<p>Hoje, o <strong>WordPress</strong> é o <strong>Gerenciador de Conteúdo</strong> mais
+										 popular e utilizado para o desenvolvimento de sites em todo o mundo. Além disso, ele é
+										  um sistema completo e de alta confiabilidade para criação, sendo capaz de atender
+										   desde <strong><em>blogs</em></strong> mais simples até grandes <strong>lojas virtuais
+											</strong>.</p>
+										<p>Sua popularidade cresceu muito nos últimos anos devido à facilidade de uso e ao
+										 grande portfólio de recursos para a criação dos mais diversos projetos. Ademais, é um
+										  sistema livre, com código aberto e gratuito que oferece ferramentas para a criação de
+										   sites de forma intuitiva e completa.</p> 
+										<p>Sua extensa comunidade de usuários também faz do <strong>WordPress</strong> um CMS
+										 em constante evolução, sendo que muitas pessoas contribuem para a melhoria da plataforma
+										  e surgimento de novos recursos dentro e fora dela.</p>
+										<p>Atualmente, a plataforma domina entre <strong>50 a 60 por cento do market share</strong>
+										 de CMS, fazendo dele o <strong>Sistema de Gerenciamento de Conteúdo</strong> mais
+										  utilizado do mundo por anos consecutivos!</p>
+										<p>Estima-se que existem mais de <strong>24 milhões</strong> de sites desenvolvidos com
+										 o CMS na web. Aqui no Brasil, a plataforma tem um <strong>market share de 25%</strong>,
+										  o que representa mais de <strong>130 mil sites</strong>.</p>  
+										<p>E não pense que a plataforma é utilizada apenas para sites pessoais ou de pequenas
+										 empresas. Por exemplo, gigantes como <strong>Magazine Luiza</strong>, <strong>Spotify
+										  </strong>, <strong>CNN</strong> e até mesmo a <strong>Microsoft</strong> possuem
+										   páginas desenvolvidas com o <strong>WordPress</strong>.</p>
+									</div>
+									<footer class="modal-footer">
+										<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="border col-md-3 d-flex justify-content-center pt-3 pb-3">
+						<a href=".bd-example-modal-md-ionic" data-toggle="modal" data-target=".bd-example-modal-md-ionic">
+							<img src="img/icones/ionic.png" width="100">
+						</a>
+						<div class="modal fade bd-example-modal-md-ionic" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-md-ionic">
+							  	<div class="modal-content">
+									<header class="modal-header">
+										<h5 class="modal-title" id="exampleModalLongTitle">IONIC</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</header>
+									<div class="modal-body">
+										<p>O <strong>Ionic</strong> é um <em>Framework Open Source</em> gratuito sobre a licença
+										 MIT para <strong>desenvolvimento de aplicações mobile híbridas</strong>.</p>
+										<p><strong>Aplicações híbridas</strong> são aplicativos móveis construídos de maneira
+										 alternativa a aplicações nativa. São construídos, geralmente, utilizando <strong>HTML
+										  </strong>, <strong>CSS</strong> e <strong>JavaScript</strong>, desta maneira se
+										   tornaram extremamente populares, pois permite o desenvolvimento multiplataforma,
+										    utilizando o mesmo <strong>HTML</strong> para diferentes sistemas operacionais.</p>
+									</div>
+									<footer class="modal-footer">
+										<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+									</footer>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="border col-md-3 d-flex justify-content-center pt-3 pb-3">
+						<a href=".bd-example-modal-md-angular" data-toggle="modal" data-target=".bd-example-modal-md-angular">
+							<img src="img/icones/angular.png" width="100">
+						</a>
+						<div class="modal fade bd-example-modal-md-angular" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-md-angular">
+							  	<div class="modal-content">
+									<header class="modal-header">
+										<h5 class="modal-title" id="exampleModalLongTitle">Angular</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</header>
+									<div class="modal-body">
+										<p><strong>Angular</strong> é um <em>JavaScript</em> de código aberto mantido pela
+										 Google para a construção de SPA (sigla para <em>Page Applications</em> ou <strong>
+										  Aplicações de Página Única</strong>). Resumidamente, uma SPA é basicamente uma
+										   aplicação web construída em uma só página, na qual a interação e a navegação 
+										    entre as sessões de uma página ocorrem de maneira a qual não é necessário
+											 recarregar a página em cada uma dessas mudanças.</p>
+										<p>Sua finalidade é nos dar ferramentas necessárias para criação de aplicações SPA,
+										 além disso também deixa o desenvolvimento deste tipo de aplicação mais simples e
+										  otimizado. Com ele, podemos desenvolver aplicações <em>web</em> voltadas tanto
+										   para resoluções <strong><em>desktop</em></strong> quanto para resoluções <strong>
+											<em>mobile</em></strong>, tornando-as dinâmicas, modernas e escaláveis.</p>
+										<p>Com o <strong>Angular</strong>, temos um novo paradigma de desenvolvimento 
+										 focado nos dados da aplicação. Ele não utiliza uma virtualização do DOM para
+										  manipulá-lo: ele utiliza mecanismos próprios de detecção de alterações na
+										   interface, alterações disparadas principalmente por uma estrutura chamada
+										    <em>Two-Way Data Binding</em>.</p>
+										<p>O <em>Two-Way Data Binding</em> mantém o <em>model</em> e a <em>view</em>
+										 sempre atualizados entre si, ou seja: sempre que algum <em>model</em> é 
+										  atualizado, essa alteração se reflete automaticamente na <em>view</em>.</p>
+									</div>
+									<footer class="modal-footer">
+										<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="row">
-					<div class="border col-md-6 d-flex justify-content-center pt-3 pb-3">
+					<div class="border col-md-2"></div>
+					<div class="border col-md-4 d-flex justify-content-center pt-3 pb-3">
 						<a href=".bd-example-modal-md-mysql" data-toggle="modal" data-target=".bd-example-modal-md-mysql">
 							<img src="img/icones/mysql.png" width="100">
 						</a>
@@ -273,11 +406,11 @@
 									</header>
 									<div class="modal-body">
 										<p>O <strong>MySQL</strong> é um sistema gerenciador de banco de dados relacional
-											 de código aberto usado na maioria das aplicações gratuitas para gerir suas
-											  bases de dados. O <strong>MySQL</strong> utiliza a linguagem <strong>SQL
-											   </strong> (<em>Structure Query Language</em> – Linguagem de Consulta
-											    Estruturada), que é a linguagem mais popular para inserir, acessar e
-												 gerenciar o conteúdo armazenado num banco de dados.</p>
+										 de código aberto usado na maioria das aplicações gratuitas para gerir suas
+										  bases de dados. O <strong>MySQL</strong> utiliza a linguagem <strong>SQL
+										   </strong> (<em>Structure Query Language</em> – Linguagem de Consulta
+											Estruturada), que é a linguagem mais popular para inserir, acessar e
+											 gerenciar o conteúdo armazenado num banco de dados.</p>
 									</div>
 									<footer class="modal-footer">
 										<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
@@ -286,7 +419,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="border col-md-6 d-flex justify-content-center pt-3 pb-3">
+					<div class="border col-md-4 d-flex justify-content-center pt-3 pb-3">
 						<a href=".bd-example-modal-md-postgresql" data-toggle="modal" data-target=".bd-example-modal-md-postgresql">
 							<img src="img/icones/postgresql1.png" width="100">
 						</a>
@@ -306,7 +439,7 @@
 											   Berkeley, o qual foi pioneiro em muitos conceitos que vieram a estar
 											    disponíveis em alguns bancos de dados comerciais mais tarde.</p>
 										<p>Nele, cada coisa criada é tratada como um objeto, tais como bancos de dados,
-													tabelas, views, triggers, etc.</p>
+										 tabelas, <em>views</em>, <em>triggers</em>, etc.</p>
 									</div>
 									<footer class="modal-footer">
 										<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
@@ -315,9 +448,10 @@
 							</div>
 						</div>
 					</div>
+					<div class="border col-md-2"></div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<div class="espaco-pre-footer"></div>
 		<?php include 'template/js-bootstrap.php';?>
 	</body>    
