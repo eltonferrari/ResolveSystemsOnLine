@@ -1,3 +1,18 @@
+@import 'variaveis';
+
+div.plano>
+div>
+a {
+	font-size: 24px;
+	font-weight: bold;
+	border: 2px solid ;
+	&.btn:hover {
+		background-color: $branco;
+		color: $primary;
+		border: 2px solid $primary;
+	}
+}
+
 // BOTÃO ANIMADO 1
 *, *:before, *:after {
 	box-sizing: border-box;
@@ -14,8 +29,6 @@ $openSans: 'Open Sans', Helvetica, Arial, sans-serif;
 	height: 60px;
 }
   
-$primary: #007bff;
-$dark: #FFFFFF;
 $borderW: 2px;
 
 a.blob-btn {

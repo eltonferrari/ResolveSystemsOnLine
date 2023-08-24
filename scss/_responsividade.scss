@@ -6,10 +6,6 @@
 		text-indent: 0;
 	}
 	
-	.voltar-topo {
-		padding-bottom: 50px;
-	}
-
 	#video {
 		width: 345px;
 		height: 213px;
@@ -19,6 +15,95 @@
 		margin-bottom: 200px;
 	}
 
+	.animate-character {
+		font-size: 22px;
+	}
+
+	.espaco-img-index-superior {
+		height: 30px;
+	}
+
+	.espaco-img-index {
+		height: 30px;
+	}
+	
+	.espaco-img-index-2 {
+		height: 50px;
+	}
+
+	img.width {
+		width: 80px;	
+	}
+	
+	img.width-maior {
+		width: 100px;	
+	}
+
+	h2.planos {
+		font-size: 32px;
+	}
+
+	section#planos>
+	div#container-ofertas>
+	div#plano>
+	div.plano>
+	h3#titulo-plano {
+		font-size: 28px;
+	}
+
+	.espaco-plano-1,
+	.espaco-plano-2,
+	.espaco-plano-rapido {
+		height: 10px;
+	}
+	
+	.animate-character-mini {
+		font-size: 30px;
+	}
+
+	.index-consulte {
+		font-size: 16px;
+	}
+
+	section#planos>
+	div#container-ofertas>
+	div#plano>
+	div.plano>
+	a.link-index>
+	h3 {
+		font-size: 20px;
+	}
+
+	.espaco-consulta-dominio {
+		height: 10px;
+	}
+
+	.espaco-consulta-dominio-interno {
+		height: 40px;
+	}
+
+	.animate-character-fale-conosco {
+		font-size: 40px;
+	}
+
+	.deseja-mensagem {
+		font-size: 20px;
+	}
+
+	.label-mensagem {
+		margin-top: 20px;
+		margin-bottom: 0px;
+	}
+
+	.input-mensagem {
+		margin-top: 0px;
+		margin-bottom: 5px;
+	}
+
+	.voltar-topo {
+		padding-bottom: 55px;
+	}
+
 	// INSTITUCIONAL
 	.conteudo {
 		padding-bottom: 100px;
@@ -26,10 +111,6 @@
 
 	.carousel-item {
 		height: 650px;
-	}
-
-	.espaco-pre-footer {
-		height: 100px;
 	}
 
 	.desaparece-sm {
@@ -109,20 +190,38 @@
 	}
 
 	.espaco-consulta-dominio {
-		height: 134px;
+		height: 10px;
+	}
+
+	.espaco-consulta-dominio-interno {
+		height: 40px;
+	}
+
+	.animate-character-fale-conosco {
+		font-size: 40px;
+	}
+
+	.deseja-mensagem {
+		font-size: 20px;
+	}
+
+	.label-mensagem {
+		margin-top: 20px;
+		margin-bottom: 0px;
+	}
+
+	.input-mensagem {
+		margin-top: 0px;
+		margin-bottom: 5px;
 	}
 
 	.voltar-topo {
-		padding-bottom: 35px;
+		padding-bottom: 45px;
 	}
 
 	// INSTITUCIONAL
 	.conteudo {
 		padding-bottom: 75px;
-	}
-
-	.espaco-pre-footer {
-		height: 150px;
 	}
 
 	.desaparece-md {
@@ -191,15 +290,22 @@
 	}
 
 	.espaco-plano-1 {
-		height: 198px;
+		height: 181px;
 	}
 	
 	.espaco-plano-2 {
-		height: 180px;
+		height: 162px;
 	}
 
 	.espaco-plano-rapido {
-		height: 115px;
+		height: 105px;
+	}
+
+	div.plano>
+	div>
+	a {
+		font-size: 20px;
+		font-weight: bold;
 	}
 	
 	.animate-character-mini {
@@ -220,7 +326,7 @@
 	}
 
 	.espaco-consulta-dominio {
-		height: 135px;
+		height: 128px;
 	}
 
 	.animate-character-fale-conosco {
@@ -285,7 +391,7 @@
 	}
 
 	.espaco-consulta-dominio {
-		height: 95px;
+		height: 100px;
 	}
 
 	.deseja-mensagem {

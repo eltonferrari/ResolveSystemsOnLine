@@ -169,7 +169,7 @@
 		<section id="planos" class="container">
 			<h2 class="text-primary text-center negrito planos">Planos Recomendados</h2>
 			<div id="container-ofertas" class="row">
-				<div id="plano" class="col-md-4 py-1 px-3">
+				<div id="plano" class="col-md-4 p-2">
 					<div class="plano py-1 px-3">
 						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Básico</h3>
 						<ul class="pl-4">
@@ -187,7 +187,7 @@
 						</div>
 					</div>				
 				</div>
-				<div id="plano" class="col-md-4 py-1 px-3">
+				<div id="plano" class="col-md-4 p-2">
 					<div class="plano py-1 px-3">
 						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Intermediário</h3>
 						<ul class="pl-4">
@@ -206,7 +206,7 @@
 						</div>
 					</div>				
 				</div>
-				<div id="plano" class="col-md-4 py-1 px-3">
+				<div id="plano" class="col-md-4 p-2">
 					<div class="plano py-1 px-3">
 						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Avançado</h3>
 						<ul class="pl-4">
@@ -230,8 +230,8 @@
 					</div>				
 				</div>
 			</div>
-			<div id="container-ofertas" class="row py-4" id="container-ofertas">
-				<div id="plano" class="col-md-4 py-1 px-3">
+			<div id="container-ofertas" class="row" id="container-ofertas">
+				<div id="plano" class="col-md-4 p-2">
 					<div class="plano py-1 px-3">
 						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Rápido</h3>
 						<ul class="pl-4">
@@ -252,7 +252,7 @@
 						</div>
 					</div>				
 				</div>
-				<div id="plano" class="col-md-4 py-1 px-3">
+				<div id="plano" class="col-md-4 p-2">
 					<div class="plano py-1 px-3">
 						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Personalizado</h3>
 						<h4 class="text-center negrito index-consulte">
@@ -281,14 +281,16 @@
 						</div>
 					</div>				
 				</div>
-				<div id="plano" class="col-md-4 px-3">
+				<div id="plano" class="col-md-4 p-2">
 					<div class="plano px-3">
 						<div class="espaco-consulta-dominio"></div>
 						<a class="link-index" href="https://wa.me/5551998694945" target="_blank">
 							<h3 class="text-center bg-cinza text-light borda-redonda-10 negrito p-1">Consulte um domínio conosco</h3>
-							<h4 class="text-center negrito py-5 font-cinza">Gratuitamente</h4>
-							<div class="text-center mt-4">
-								<button class="btn btn-secondary borda-redonda-10">Fale Conosco</button>							
+							<div class="espaco-consulta-dominio-interno"></div>
+							<h4 class="text-center negrito font-cinza">Gratuitamente</h4>
+							<div class="espaco-consulta-dominio-interno"></div>
+							<div class="text-center">
+								<button class="btn btn-secondary borda-redonda-10 mb-2">Fale Conosco</button>							
 							</div>
 						</a>
 						<div class="espaco-consulta-dominio"></div>
@@ -297,7 +299,7 @@
 			</div>
 		</section>
 		<section class="container">
-			<h5 class="text-center text-danger negrito my-5">Parcelamento em até 10X no cartão de crédito</h5>
+			<h5 class="text-center text-danger negrito mt-5">Parcelamento em até 10X no cartão de crédito</h5>
 			<div class="row mb-5">
 				<div class="col-md-8 m-auto borda-redonda-20-footer text-center d-flex justify-content-around">
 					<div class="item pt-2"><img src="img/logos/pagamentos/pix.png" alt="Pix" title="PIX" width="60"></div>
@@ -339,36 +341,36 @@
 							} else {
 						?>
 								<p class="text-primary text-center mt-1 negrito deseja-mensagem">
-									Deseja deixar uma mensagem para nós?<br />Preencha este formulário abaixo.
+									Deseja nos deixar uma mensagem?<br />Preencha este formulário abaixo.
 								</p>
 								<h6 class="text-danger text-center">* Preenchimento obrigatório</h6>
 								<form action="systems/controladores/fale_conosco/valida_fale_conosco.php" method="post">
 									<div class="row">
 										<div class="col-md-9 row m-auto mb-2">
-											<div class="col-md-3 form-group">
+											<div class="col-md-3 form-group label-mensagem">
 												<label class="text-danger" for="nome">* </label>
 												<label class="text-primary mr-2 negrito" for="nome">Nome: </label>
 											</div>
-											<div class="col-md-9 mb-2">
+											<div class="col-md-9 mb-2 input-mensagem">
 												<input class="form-control border border-primary borda-redonda-10 p-1" type="text input-width" name="nome" id="nome" placeholder="Coloque seu nome aqui..." size="50" required>
 											</div>
-											<div class="col-md-3 form-group">
+											<div class="col-md-3 form-group label-mensagem">
 												<label class="text-danger" for="email">* </label>
 												<label class="text-primary mr-2 negrito" for="email">E-mail: </label>
 											</div>
-											<div class="col-md-9 mb-2">
+											<div class="col-md-9 mb-2 input-mensagem">
 												<input class="form-control border border-primary borda-redonda-10 p-1" type="text input-width" name="email" id="email" placeholder="Coloque seu e-mail aqui..." size="50" required>
 											</div>
-											<div class="col-md-3 form-group">
+											<div class="col-md-3 form-group label-mensagem">
 												<label class="text-primary mr-2 negrito" for="telefone">Telefone: </label>
 											</div>
-											<div class="col-md-9 mb-2">
+											<div class="col-md-9 mb-2 input-mensagem">
 												<input class="form-control border border-primary borda-redonda-10 p-1" type="text input-width" name="telefone" id="telefone" placeholder="Coloque seu telefone aqui..." size="50">
 											</div>
-											<div class="col-md-3 form-group">
+											<div class="col-md-3 form-group label-mensagem">
 												<label class="text-primary mr-2 negrito" for="mensagem">Deixe uma mensagem: </label>
 											</div>
-											<div class="col-md-9 mb-2">
+											<div class="col-md-9 mb-2 input-mensagem">
 												<textarea class="form-control border border-primary borda-redonda-10 p-1" name="mensagem" id="mensagem" placeholder="Coloque sua mensagem aqui..." cols="53" maxlength="255" ></textarea>
 												<div class="text-danger text-left negrito mt-2" id="caracteres_restantes">255</div>												
 											</div>
@@ -381,10 +383,10 @@
 						<?php
 							}
 						?>
-						<br /><br />
 					</div>
 				</div>
 			</div>
+			<div class="voltar-topo"></div>
 			<div class="text-center voltar-topo">
 				<a href='#topo'>
 					<img class="voltar-topo" src="img/icones/voltar_topo.png" alt="topo" width="30" title="Voltar ao topo">
@@ -392,15 +394,5 @@
 			</div>
 		</section>
 		<?php include 'template/js-bootstrap.php'; ?>
-		<!--<script>
-			function sizeOfThings(){
-				var windowWidth = window.innerWidth;									
-				document.querySelector('.window-size').innerHTML = windowWidth;				
-			};
-			sizeOfThings();
-			window.addEventListener('resize', function(){
-				sizeOfThings();
-			});
-		</script>-->
 	</body>
 </html>
