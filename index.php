@@ -386,7 +386,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="voltar-topo"></div>
+			<div class="espaco-index"></div>
 			<div class="text-center voltar-topo">
 				<a href='#topo'>
 					<img class="voltar-topo" src="img/icones/voltar_topo.png" alt="topo" width="30" title="Voltar ao topo">

@@ -13,7 +13,7 @@
                 box-shadow: 1px 1px 2px #888;
                 z-index:1000;" 
         target="_blank">
-        <img src="../img/icones/gifs/whatsapp-3.gif" alt="WatsApp" width="80">
+        <img src="../img/icones/gifs/whatsapp-3.gif" alt="WatsApp" width="60">
         
     </a>
 </section>
@@ -27,7 +27,7 @@
                 <strong>Resolve Systems 2020-2023</strong>
                 , Todos os direitos registrados
             </div>
-            <div class="col-md-5 bg-light borda-redonda-20-footer text-center d-flex justify-content-around">
+            <div class="col-md-5 bg-light borda-redonda-20-footer text-center d-flex justify-content-around align-self-center">
                 <div class="item pt-2">
                     <a href="https://www.facebook.com/profile.php?id=100092631795853">
                         <img class="ml-2 pb-2" src="\img/icones/facebook.png" alt="facebook" width="20" title="Facebook">
