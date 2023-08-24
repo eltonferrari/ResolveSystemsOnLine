@@ -98,3 +98,13 @@ input[type=file]::file-selector-button:hover {
 	background: $dark;
 	color: $primary;
 }
+
+textarea {
+	overflow: hidden;
+	resize: none;
+}
+
+.larger-checkbox {
+	width: 20px;
+	height: 20px;
+}

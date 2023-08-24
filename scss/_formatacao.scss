@@ -1,12 +1,13 @@
 // FORMATAÇÃO
-.formatacao1 {
-    text-decoration: underline;
+p.justificado {
+	text-align: justify;
 }
 
-.formatacao2 {
-    text-decoration: overline;
+p.cor-paragrafo {
+	color: black;
 }
 
-.formatacao3 {
-    text-decoration: line-through;
+span.recuo-primeira-linha,
+.recuo-primeira-linha {
+	text-indent: 25px;
 }

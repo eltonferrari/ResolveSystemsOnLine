@@ -1,4 +1,14 @@
+@import 'fonts';
+
 a.link-index,
-a.link-no-line {	
-	text-decoration: none;	
+a.link-no-line,
+.link-visualiza-mensagem,
+.link-visualiza-mensagem:hover,
+.link-visualiza-mensagem:focus {
+	text-decoration: none;
+}
+
+// BUSCA PERFIL
+.font-link {
+	@extend	.font-size-25;
 }

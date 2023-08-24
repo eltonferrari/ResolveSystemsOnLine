@@ -60,7 +60,7 @@
 				</div>
 			</div>
 			<div class="row mt-5">
-				<div class="col-md-6 border">
+				<div class="col-md-6">
 					<div class="text-center">
 						<h5>
 							<img class="align-self-center" src="img/icones/analista.png" alt="Analista" width="40">
@@ -93,7 +93,7 @@
 						</h5>
 					</div>
 				</div>
-				<div class="col-md-6 border">
+				<div class="col-md-6">
 					<div class="text-center">
 						<h5>
 							<img class="align-self-center" src="img/icones/desenvolvedor.png" width="30">
@@ -134,7 +134,7 @@
 					<div class="col-md-5 pt-5">
 						<div class="text-center">
 							<img class="align-self-center pt-3" src="img/icones/endereco.png" alt="Endereço:" width="60px">
-							<p class="text-center pt-5">Rua Reverendo Daniel Betts, 44 - Ac. Dois<br />
+							<p class="text-center pt-5">Via Dois, 43 - Morro Santana<br />
 														Porto Alegre - RS<br />
 														CEP: 91.450-400
 							</p>

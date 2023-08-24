@@ -27,6 +27,7 @@
 		<!-- CSS CUSTOMIZADO -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<link rel="icon" href="img/logos/logo.png" type="image/x-icon">
+
 		<title>RS - Resolve Systems</title>
 	</head>
 	<body class="parallax">
@@ -35,15 +36,125 @@
 		</header>
 		<section class="container">
 			<div class="text-center mb-5">
-				<h1 class="animate-character">Está precisando de um site?</h1>
-				<div class="row">
-					<div class="col-md-3">
-						<div class="espaco-img-index-superior"></div>
-						<img src="img/icones/google-ads-logo.png" alt="" width="100">
-						<div class="espaco-img-index"></div>
-						<img src="img/icones/google-analytics-logo.png" alt="" width="100">
+				<h1 class="animate-character">Quer dar visibilidade para sua marca?</h1>
+				<div class="row d-flex justify-content-center">
+					<div class="col-md-6 row">
+						<div class="col-6">
+							<div class="espaco-img-index-superior"></div>
+							<a href=".bd-example-modal-md-g-ads" data-toggle="modal" data-target=".bd-example-modal-md-g-ads">
+								<img class="width" src="img/icones/google-ads-logo.png">
+							</a>
+							<div class="modal fade bd-example-modal-md-g-ads" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-md-g-ads">
+									<div class="modal-content">
+										<header class="modal-header">
+											<h4 class="modal-title" id="exampleModalLongTitle">Google ADS</h4>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</header>
+										<div class="modal-body text-left">
+											<p class="text-justify">
+												O Google ADS é o antigo Google AdWords, a plataforma de criação e publicação
+												de anúncios do Google. Os anúncios são veiculados na página de resultados do
+												buscador, em destaque, nas primeiras colocações ou em banners. Eles também
+												aparecem na rede de display (sites parceiros), nos aplicativos e nos vídeos
+													do YouTube.
+											</p>
+										</div>
+										<footer class="modal-footer">
+											<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+										</footer>
+									</div>
+								</div>
+							</div>
+							<div class="espaco-img-index"></div>
+							<a href=".bd-example-modal-md-meta-bus" data-toggle="modal" data-target=".bd-example-modal-md-meta-bus">
+								<img class="width" src="img/icones/meta-business-logo.png">
+							</a>
+							<div class="modal fade bd-example-modal-md-meta-bus" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-md-meta-bus">
+									<div class="modal-content">
+										<header class="modal-header">
+											<h4 class="modal-title" id="exampleModalLongTitle">Meta Business</h4>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</header>
+										<div class="modal-body text-left">
+											<p class="text-justify">
+												Com o Meta Business Suite (Facebook, Instagram, Watsapp, ... ), ou seja, o
+												Gerenciador de Negócios da Meta, você poderá supervisionar: todas as suas
+												páginas, contas e ativos de negócios em um só lugar, bem como, criar e
+												gerenciar facilmente anúncios para todas as suas contas e acompanhar
+													o que está funcionando melhor com insights de desempenho.
+											</p>
+										</div>
+										<footer class="modal-footer">
+											<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+										</footer>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="espaco-img-index-superior"></div>
+							<a href=".bd-example-modal-md-g-analytics" data-toggle="modal" data-target=".bd-example-modal-md-g-analytics">
+								<img class="width" src="img/icones/google-analytics-logo.png" alt="">
+							</a>
+							<div class="modal fade bd-example-modal-md-g-analytics" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-md-g-analytics">
+									<div class="modal-content">
+										<header class="modal-header">
+											<h4 class="modal-title" id="exampleModalLongTitle">Google Analytics</h4>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</header>
+										<div class="modal-body text-left">
+											<p class="text-justify">
+												O Google Analytics é uma plataforma que coleta dados nos seus apps e sites
+												para criar relatórios sobre sua empresa. Com ele você entende de forma
+												mais abrangente como os clientes interagem com sua empresa e, assim,
+												oferece experiências melhores e gera mais resultados.
+											</p>
+										</div>
+										<footer class="modal-footer">
+											<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+										</footer>
+									</div>
+								</div>
+							</div>
+							<div class="espaco-img-index-2"></div>
+							<a href=".bd-example-modal-md-trafego-pago" data-toggle="modal" data-target=".bd-example-modal-md-trafego-pago">
+								<img class="width-maior" src="img/icones/trafego-pago.png" alt="">
+							</a>
+							<div class="modal fade bd-example-modal-md-trafego-pago" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-md-trafego-pago">
+									<div class="modal-content">
+										<header class="modal-header">
+											<h4 class="modal-title" id="exampleModalLongTitle">Tráfego Pago</h4>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</header>
+										<div class="modal-body text-left">
+											<p class="text-justify">
+												Tráfego pago é aquele feito por meio de anúncios nos mecanismos de busca e
+												redes sociais. O seu principal objetivo é gerar mais cliques para um blog,
+												site ou página e, assim, aumentar a geração de leads do negócio. SEO e
+												marketing de conteúdo direcionam tráfego para o seu site.
+											</p>
+										</div>
+										<footer class="modal-footer">
+											<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+										</footer>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="col-md-6 d-flex justify-content-center"><!--col-sm-10 -->
+					<div class="col-md-6">
 						<div id="video" class="section embed-responsive embed-responsive-4by3 m-auto">
 							<video class="embed-responsive-item d-flex justify-content-center m-auto" autoplay loop muted>
 								<source src="videos/marketing.mp4" type="video/mp4">
@@ -51,21 +162,17 @@
 							</video>
 						</div>
 					</div>
-					<div class="col-md-3">
-						<div class="espaco-img-index-superior"></div>
-						<img src="img/icones/meta-business-logo.png" alt="" width="100">
-						<div class="espaco-img-index-2"></div>
-						<img src="img/icones/trafego-pago.png" alt="" width="150">
-					</div>
 				</div>
-				<a href="https://wa.me/5551998694945" class="btn btn-outline-primary borda-redonda-10 negrito fo" target="_blank">Solicite um Orçamento!</a>
+				<a href="https://wa.me/5551998694945" class="btn btn-outline-primary borda-redonda-10 negrito" target="_blank">Solicite um Orçamento!</a>
 			</div>
-			<h2 class="negrito text-center text-primary font-size-24">Planos Recomendados</h2>
-			<div class="row" id="container-ofertas">
-				<div class="col-md-4 py-1 px-3">
+		</section>
+		<section id="planos" class="container">
+			<h2 class="text-primary text-center negrito planos">Planos Recomendados</h2>
+			<div id="container-ofertas" class="row">
+				<div id="plano" class="col-md-4 py-1 px-3">
 					<div class="plano py-1 px-3">
-						<h3 class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Básico</h3>
-						<ul>
+						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Básico</h3>
+						<ul class="pl-4">
 							<li>Site estático</li>
 							<li>Domínio próprio</li>
 							<li>Hospedagem</li>
@@ -80,10 +187,10 @@
 						</div>
 					</div>				
 				</div>
-				<div class="col-md-4 py-1 px-3">
+				<div id="plano" class="col-md-4 py-1 px-3">
 					<div class="plano py-1 px-3">
-						<h3 class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Intermediário</h3>
-						<ul>
+						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Intermediário</h3>
+						<ul class="pl-4">
 							<li>Site estático</li>
 							<li>Domínio próprio</li>
 							<li>Hospedagem</li>
@@ -99,10 +206,10 @@
 						</div>
 					</div>				
 				</div>
-				<div class="col-md-4 py-1 px-3">
+				<div id="plano" class="col-md-4 py-1 px-3">
 					<div class="plano py-1 px-3">
-						<h3 class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Avançado</h3>
-						<ul>
+						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Avançado</h3>
+						<ul class="pl-4">
 							<li>Site estático</li>
 							<li>Domínio próprio</li>
 							<li>E-mail personalizado<br />(incluindo app para celular)</li>
@@ -123,11 +230,11 @@
 					</div>				
 				</div>
 			</div>
-			<div class="row py-4" id="container-ofertas">
-				<div class="col-md-4 py-1 px-3">
+			<div id="container-ofertas" class="row py-4" id="container-ofertas">
+				<div id="plano" class="col-md-4 py-1 px-3">
 					<div class="plano py-1 px-3">
-						<h3 class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Rápido</h3>
-						<ul>
+						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Rápido</h3>
+						<ul class="pl-4">
 							<li>Site estático</li>
 							<li>Página única</li>
 							<li>Domínio próprio</li>
@@ -135,19 +242,23 @@
 							<li>Fotos</li>
 							<li>Vídeos</li>
 						</ul>
-						<div class="espaco-plano-4"></div>
+						<div class="espaco-plano-rapido"></div>
+						<div class="text-center">
+							<h4 class="animate-character-mini">Adquira este<br />e ganhe<br />Google Analytics</h4>
+						</div>
+						<div class="espaco-plano-rapido"></div>
 						<div class="text-center">
 							<a href="https://wa.me/5551998694945" class="btn btn-primary btn-block borda-redonda-10" target="_blank">Compre agora</a>
 						</div>
 					</div>				
 				</div>
-				<div class="col-md-4 py-1 px-3">
+				<div id="plano" class="col-md-4 py-1 px-3">
 					<div class="plano py-1 px-3">
-						<h3 class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Personalizado</h3>
-						<h4 class="text-center negrito font-size-18">
+						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Personalizado</h3>
+						<h4 class="text-center negrito index-consulte">
 							<a class="link-no-line" href="https://wa.me/5551998694945" target="_blank">Consulte o valor aqui!</a>
 						</h4>
-						<ul>
+						<ul class="pl-4">
 							<li>Site estático ou dinâmico</li>
 							<li>Domínio próprio</li>
 							<li>E-mail personalizado<br />(incluindo app para celular)</li>
@@ -170,8 +281,9 @@
 						</div>
 					</div>				
 				</div>
-				<div class="col-md-4 py-1 px-3 py-5">
-					<div class="plano py-1 px-3 py-5">
+				<div id="plano" class="col-md-4 px-3">
+					<div class="plano px-3">
+						<div class="espaco-consulta-dominio"></div>
 						<a class="link-index" href="https://wa.me/5551998694945" target="_blank">
 							<h3 class="text-center bg-cinza text-light borda-redonda-10 negrito p-1">Consulte um domínio conosco</h3>
 							<h4 class="text-center negrito py-5 font-cinza">Gratuitamente</h4>
@@ -179,23 +291,26 @@
 								<button class="btn btn-secondary borda-redonda-10">Fale Conosco</button>							
 							</div>
 						</a>
+						<div class="espaco-consulta-dominio"></div>
 					</div>				
 				</div>
 			</div>
-			<div class="pagamentos">
-				<h5 class="text-center text-danger negrito mb-3">Parcelamento em até 10X no cartão de crédito</h5>
-				<div class="row mb-5">
-					<div class="col-md-8 m-auto bg-light borda-redonda-20-footer text-center d-flex justify-content-around">
-						<div class="item pt-2"><img src="img/logos/pagamentos/pix.png" alt="Pix" title="PIX" width="60"></div>
-						<div class="item pt-2"><img src="img/logos/pagamentos/boleto.png" alt="Boleto" title="BOLETO" width="60"></div>
-						<div class="item pt-2"><img src="img/logos/pagamentos/visa.png" alt="Visa" title="VISA" width="60"></div>
-						<div class="item pt-2"><img src="img/logos/pagamentos/master.png" alt="Master" title="MASTER CARD" width="60"></div>
-						<div class="item pt-2"><img src="img/logos/pagamentos/elo.png" alt="Elo" title="ELO" width="60"></div>
-						<div class="item pt-2"><img src="img/logos/pagamentos/american_express.png" alt="American" title="AMERICAN EXPRESS" width="60"></div>
-						<div class="item pt-2"><img src="img/logos/pagamentos/diners.png" alt="Diners" title="DINERS CLUB" width="60"></div>
-					</div>
+		</section>
+		<section class="container">
+			<h5 class="text-center text-danger negrito my-5">Parcelamento em até 10X no cartão de crédito</h5>
+			<div class="row mb-5">
+				<div class="col-md-8 m-auto borda-redonda-20-footer text-center d-flex justify-content-around">
+					<div class="item pt-2"><img src="img/logos/pagamentos/pix.png" alt="Pix" title="PIX" width="60"></div>
+					<div class="item pt-2"><img src="img/logos/pagamentos/boleto.png" alt="Boleto" title="BOLETO" width="60"></div>
+					<div class="item pt-2"><img src="img/logos/pagamentos/visa.png" alt="Visa" title="VISA" width="60"></div>
+					<div class="item pt-2"><img src="img/logos/pagamentos/master.png" alt="Master" title="MASTER CARD" width="60"></div>
+					<div class="item pt-2"><img src="img/logos/pagamentos/elo.png" alt="Elo" title="ELO" width="60"></div>
+					<div class="item pt-2"><img src="img/logos/pagamentos/american_express.png" alt="American" title="AMERICAN EXPRESS" width="60"></div>
+					<div class="item pt-2"><img src="img/logos/pagamentos/diners.png" alt="Diners" title="DINERS CLUB" width="60"></div>
 				</div>
 			</div>
+		</section>
+		<section class="container">
 			<div class="img1">
 				<div class="row"><!--Row -->
 					<div class="col-sm-6 m-auto d-flex justify-content-center"><!--col-sm8 -->
@@ -208,9 +323,10 @@
 					</div>
 				</div>
 			</div>
-			<br /><br /><br />
+		</section>
+		<section class="container mt-5">
 			<div class="text-center">
-				<h2 class="animate-character">Fale conosco</h2>
+				<h2 class="animate-character-fale-conosco">Fale conosco</h2>
 				<div class="row">
 					<div class="col-sm-10 m-auto">
 						<?php
@@ -222,13 +338,13 @@
 								unset($_SESSION['msgAddMensagem']);
 							} else {
 						?>
-								<p class="text-primary text-center mt-1 negrito font-size-28">
+								<p class="text-primary text-center mt-1 negrito deseja-mensagem">
 									Deseja deixar uma mensagem para nós?<br />Preencha este formulário abaixo.
 								</p>
 								<h6 class="text-danger text-center">* Preenchimento obrigatório</h6>
 								<form action="systems/controladores/fale_conosco/valida_fale_conosco.php" method="post">
 									<div class="row">
-										<div class="col-md-8 row m-auto mb-2">
+										<div class="col-md-9 row m-auto mb-2">
 											<div class="col-md-3 form-group">
 												<label class="text-danger" for="nome">* </label>
 												<label class="text-primary mr-2 negrito" for="nome">Nome: </label>
@@ -254,8 +370,7 @@
 											</div>
 											<div class="col-md-9 mb-2">
 												<textarea class="form-control border border-primary borda-redonda-10 p-1" name="mensagem" id="mensagem" placeholder="Coloque sua mensagem aqui..." cols="53" maxlength="255" ></textarea>
-												<div class="text-danger negrito" id="caracteres_restantes">255</div>
-												
+												<div class="text-danger text-left negrito mt-2" id="caracteres_restantes">255</div>												
 											</div>
 										</div>
 									</div>
@@ -277,5 +392,15 @@
 			</div>
 		</section>
 		<?php include 'template/js-bootstrap.php'; ?>
+		<!--<script>
+			function sizeOfThings(){
+				var windowWidth = window.innerWidth;									
+				document.querySelector('.window-size').innerHTML = windowWidth;				
+			};
+			sizeOfThings();
+			window.addEventListener('resize', function(){
+				sizeOfThings();
+			});
+		</script>-->
 	</body>
 </html>

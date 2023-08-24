@@ -1,3 +1,5 @@
+// PARALLAX
+
 html,
 body {
 	margin: 0;
@@ -19,8 +21,6 @@ h3 {
 	color: #111;
 	text-align: center;
 }
-
-/* EFEITO PARALLAX */
 
 .imagem1, 
 .imagem2,
@@ -79,8 +79,4 @@ h3 {
 }
  .canto {
 	border-radius: 20px;
-}
-
-.index-2 {
-	z-index: 10;
 }

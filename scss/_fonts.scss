@@ -21,6 +21,7 @@
 	font-family: "Fasthand";
 	src: url('../../fonts/Fasthand-Regular.ttf');
 }
+
 .font-size-12 {
 	font-size: 12px;
 }
@@ -64,7 +65,7 @@
 .font-size-26 {
 	font-size: 26px;
 }
-
+.deseja-mensagem,
 .font-size-28 {
 	font-size: 28px;
 }
@@ -79,6 +80,10 @@
 
 .font-size-48 {
 	font-size: 48px
+}
+
+.font-titulo-plano {
+	font-size: 24px;
 }
 
 .texto-index {
@@ -121,6 +126,8 @@ h3.madelina {
 }
 
 .animate-character,
+.animate-character-mini,
+.animate-character-fale-conosco,
 .animate-character-formatura,
 .animate-character-formatura-2,
 .animate-character-msg,
@@ -141,14 +148,21 @@ h3.madelina {
 .animate-character-formatura,
 .animate-character-formatura-2,
 .animate-character-contrato {
-	animation: textclip 5s linear infinite;
+	animation: textclip 4s linear infinite;
 }
 
 .animate-character-msg {
 	animation: textclip 0.5s linear infinite;
 }
 
+.animate-character-mini,
+.animate-character-fale-conosco {
+	animation: textclip 3s linear infinite;
+}
+
 .animate-character,
+.animate-character-mini,
+.animate-character-fale-conosco,
 .animate-character-msg {
 	text-transform: uppercase;
 	background-image: linear-gradient(
@@ -173,6 +187,14 @@ h3.madelina {
 }
 
 .animate-character {
+	font-size: 50px;
+}
+
+.animate-character-mini {
+	font-size: 35px;
+}
+
+.animate-character-fale-conosco {
 	font-size: 50px;
 }
 
@@ -206,4 +228,40 @@ h3.madelina {
 		#dc3545 100%
 	);
 	font-size: 15px;
+}
+
+// FORMATAÇÃO DE FONTES
+.formatacao1 {
+    text-decoration: underline;
+}
+
+.formatacao2 {
+    text-decoration: overline;
+}
+
+.formatacao3 {
+    text-decoration: line-through;
+}
+
+// CORES DE FONTES
+.font-cinza {
+	color: $cinza;
+}
+
+// CLASSES PARA CORRIGIR QUANDO ACHAR
+div.font-reduzida {
+	font-size:12px;
+}
+
+.text-size-button {
+	font-size: 20px;
+	padding: 10px 50px;
+}
+
+.text-size-grande {
+	font-size: 30px;
+}
+
+.text-size-20 {
+	font-size: 20px;
 }
