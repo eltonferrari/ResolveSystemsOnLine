@@ -35,7 +35,6 @@
 		</header>
 		<section id="titulo" class="container text-center">
 				<h1 class="text-primary font-titulo-contatos negrito">Contatos - Resolve Systems</h1>
-			</div>
 		</section>
 		<section id="banner-top" class="container">
 			<div class="row text-center">

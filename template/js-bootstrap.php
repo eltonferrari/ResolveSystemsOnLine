@@ -50,12 +50,12 @@
                 </div>
                 <div class="item pt-2">
                     <a href="https://www.youtube.com/channel/UCkT_0ly-WkJqKaJXg4nLYMg" target="_blank">
-                        <img class="ml-2 pb-2" src="\img/icones/youtube.png" alt="youtube" width="20" title="YouTube">
+                        <img class="ml-2 pb-2" src="\img/icones/youtube.png" alt="youtube" width="25" title="YouTube">
                     </a>
                 </div>
                 <div class="item pt-2">
                     <a href="\sustentabilidade.php" title="Sustentabilidade">
-                        <img class="pb-2" src="\img/icones/sustentabilidade.png" alt="sustentabilidade" width="20">
+                        <img class="pb-2" src="\img/icones/sustentabilidade.png" alt="sustentabilidade" width="25">
                     </a>
                 </div>
             </div>
