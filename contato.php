@@ -29,133 +29,136 @@
 		<link rel="icon" href="img/logos/logo.png" type="image/x-icon">
 		<title>RS - Resolve Systems</title>
 	</head>
-	<body class="bg-light">
-		<?php include 'template/menu.php';?>
-		<div class="container">
-			<div id="central" class="conteudo">
-				<div class="d-flex justify-content-center">
-					<h2 class="text-primary"><strong>Contatos - Resolve Systems</strong></h2>
-				</div>
-				<div class="row text-center">
-					<div class="col-md-8 bg-primary contatos m-auto borda-redonda-40">
-						<div class="text-light pb-2">
-							<span class="fasthand">Copyright </span>
-							<img class="pb-1" src="img/icones/copyright.png" alt="copyright" width="30">
-							<strong>Resolve Systems 2020-2023</strong>
-							- Todos os direitos registrados
-						</div>
-						<div class="row p-2">
-							<div class="col-md-5 m-auto bg-light borda-redonda-20 text-center rodape-index">
-								<div class="row">
-									<div class="col-md-2">
-										<img class="pt-2 pb-1" src="img/icones/telefone-fixo2.png" alt="Telefone" title="Telefone fixo" width="30">
-									</div>
-									<div class="col-md-10">
-										<a href="tel:5132080142"><h4 class="text-black pt-2 negrito">(51) 32080142</h4></a>
-									</div>
+	<body>
+		<header>
+			<?php include 'template/menu.php';?>
+		</header>
+		<section id="titulo" class="container text-center">
+				<h1 class="text-primary font-titulo-contatos negrito">Contatos - Resolve Systems</h1>
+			</div>
+		</section>
+		<section id="banner-top" class="container">
+			<div class="row text-center">
+				<div class="col-md-8 bg-primary contatos m-auto borda-redonda-40">
+					<div class="text-light pb-2">
+						<span class="fasthand">Copyright </span>
+						<img class="pb-1" src="img/icones/copyright.png" alt="copyright" width="30" />
+						<span class="negrito">
+							Resolve Systems 2020-2023. Todos os direitos registrados.
+						</span>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-8 m-auto bg-light borda-redonda-20 text-center rodape-index">
+							<div class="row">
+								<div class="col-md-10 m-auto p-2">
+									<a href="tel:5132080142" class="font-link-telefone-contatos link-no-line" target="_blank">
+										<img src="img/icones/telefone-fixo2.png" alt="Telefone" title="Telefone fixo" width="25">
+										<span class="negrito ml-2">(51) 3208 0142</span>
+									</a>
+									<div class="separador-telefone-contato"></div>
+									<a href="https://wa.me/5551998694945" class="font-link-telefone-contatos link-no-line" target="_blank">
+										<img src="img/icones/whatsapp.png" alt="Telefone" title="Telefone fixo" width="25">
+										<span class="negrito ml-2">(51) 99869 4945</span>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</section>
+		<section id="pessoas" class="container">
 			<div class="row mt-5">
-				<div class="col-md-6">
-					<div class="text-center">
-						<h5>
-							<img class="align-self-center" src="img/icones/analista.png" alt="Analista" width="40">
-							Analista
-						</h5>
-					</div>
-					<div class="text-center">
-						<h5>
-							<a href="https://www.linkedin.com/in/tiago-emidio-pieretti-vaz-9b126a192/" target="_blank">
-								<img class="align-self-center" src="img/icones/linkedin.png" alt="LinkedIn" width="30">
-								Tiago Pieretti Vaz
-							</a>
-						</h5>
-					</div>
-					<div class="text-center">
-						<h5>
-							<img class="align-self-center" src="img/icones/telefone.png" alt="Telefone:" width="30">
-							<a href="https://wa.me/5551980475948" target="_blank">
-								<img class="align-self-center" src="img/icones/whatsapp.png" alt="Whatsapp:" width="30">
-								51 98047 5948
-							</a>
-						</h5>
-					</div>
-					<div class="text-center">
-						<h5>
-							<a href="mailto:tiagovaz@resolvesystems.com.br? subject=subject text" target="_blank">
-								<img class="align-self-center" src="img/icones/e-mail.png" alt="E-mail:" width="30">
-								tiagovaz@resolvesystems.com.br
-							</a>
-						</h5>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="text-center">
-						<h5>
-							<img class="align-self-center" src="img/icones/desenvolvedor.png" width="30">
-							Desenvolvedor
-						</h5>
-					</div>
-					<div class="text-center">
-						<h5>
-							<a href="https://www.linkedin.com/in/elton-mario-rodriguez-ferrari-4558a7154/" target="_blank">
-								<img class="align-self-center" src="img/icones/linkedin.png" alt="desenvolvedor" width="30">
-								Elton Ferrari
-							</a>
-						</h5>
-					</div>
-					<div class="text-center">
-						<h5>
-							<img class="align-self-center" src="img/icones/telefone.png" alt="Telefone:" width="30">
-							<a href="https://wa.me/5551980626338" target="_blank">
-								<img class="align-self-center" src="img/icones/whatsapp.png" alt="Whatsapp:" width="30">
-								51 98062 6338
-							</a>
-						</h5>
-					</div>
-					<div class="text-center">
-						<h5>
-							<a href="mailto:eltonferrari@resolvesystems.com.br? subject=subject text" target="_blank">
-								<img class="align-self-center" src="img/icones/e-mail.png" alt="E-mail:" width="30">
-								eltonferrari@resolvesystems.com.br
-							</a>
-						</h5>
-					</div>
+				<div class="col-md-6 text-center">
+					<h2 class="font-size-24 negrito text-primary">
+						<img class="align-self-center" src="img/icones/analista.png" alt="Analista" width="40">
+						Analista
+					</h2>
+					<h3 class="font-size-18 negrito">
+						<a href="https://www.linkedin.com/in/tiago-emidio-pieretti-vaz-9b126a192/" target="_blank">
+							<img class="align-self-center" src="img/icones/linkedin.png" alt="LinkedIn" width="30">
+							<span class="text-dark ml-2">Tiago Pieretti Vaz</span>
+						</a>
+					</h3>
+					<h3 class="font-size-18 negrito">
+						<img class="align-self-center" src="img/icones/telefone.png" alt="Telefone:" width="30" />
+						<a href="https://wa.me/5551980475948" target="_blank">
+							<img class="align-self-center" src="img/icones/whatsapp.png" alt="Whatsapp:" width="30" />
+							<span class="text-dark ml-2">51 98047 5948</span>
+						</a>
+					</h3>
+					<h3 class="font-size-18 negrito">
+						<a href="mailto:tiagovaz@resolvesystems.com.br? subject=subject text" target="_blank">
+							<img class="align-self-center" src="img/icones/e-mail.png" alt="E-mail:" width="30" />
+							<span class="text-dark ml-2">tiagovaz@resolvesystems.com.br</span>
+						</a>
+					</h3>
+					<hr class="divisor-contato">
+				</div>				
+				<div class="col-md-6 text-center">
+					<h2 class="font-size-24 negrito text-primary">
+						<img class="align-self-center" src="img/icones/desenvolvedor.png" width="30" />
+						Desenvolvedor
+					</h2>
+					<h3 class="font-size-18 negrito">
+						<a href="https://www.linkedin.com/in/elton-mario-rodriguez-ferrari-4558a7154/" target="_blank">
+							<img class="align-self-center" src="img/icones/linkedin.png" alt="desenvolvedor" width="30" />
+							<span class="text-dark ml-2">Elton Ferrari</span>
+						</a>
+					</h3>
+					<h3 class="font-size-18 negrito">
+						<img class="align-self-center" src="img/icones/telefone.png" alt="Telefone:" width="30" />
+						<a href="https://wa.me/5551980626338" target="_blank">
+							<img class="align-self-center" src="img/icones/whatsapp.png" alt="Whatsapp:" width="30"/>
+							<span class="text-dark ml-2">51 98062 6338</span>
+						</a>
+					</h3>
+					<h3 class="font-size-18 negrito">
+						<a href="mailto:eltonferrari@resolvesystems.com.br? subject=subject text" target="_blank">
+							<img class="align-self-center" src="img/icones/e-mail.png" alt="E-mail:" width="30">
+							<span class="text-dark ml-2">eltonferrari@resolvesystems.com.br</span>
+						</a>
+					</h3>
 				</div>
 			</div>
+		</section>
+		<section id="encontre" class="container">		
 			<div class="text-center">
-				<h4 class="text-primary"><strong>ENCONTRE-NOS</strong></h4>
+				<h2 class="font-size-32 negrito text-primary">Encontre-nos</h2>
 				<div class="row">
-					<div class="col-md-1"></div>
-					<div class="col-md-5 pt-5">
-						<div class="text-center">
-							<img class="align-self-center pt-3" src="img/icones/endereco.png" alt="Endereço:" width="60px">
-							<p class="text-center pt-5">Via Dois, 43 - Morro Santana<br />
-														Porto Alegre - RS<br />
-														CEP: 91.450-400
-							</p>
+					<div class="col-md-10 m-auto">
+						<div class="row">
+							<div class="col-md-5">
+								<div class="espaco-endereco-contato"></div>
+								<img class="align-self-center" src="img/icones/endereco.png" alt="Endereço:" width="60px">
+								<p class="text-center pt-3">Via Dois, 43 - Morro Santana<br />
+															Porto Alegre - RS<br />
+															CEP: 91.450-400
+								</p>
+							</div>
+							<div class="col-md-1">
+								<div class="espaco-seta-endereco-contato"></div>
+								<img class="seta-mapa-direita" src="img/icones/seta_direita.png" alt="Por aqui" width="50" />
+								<img class="seta-mapa-abaixo" src="img/icones/seta_abaixo.png" alt="Por aqui" width="50" />
+							</div>
+							<div class="col-md-6 d-flex justify-content-center">
+								<div id="mapa" class="d-flex justify-content-center pb-5">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1726.9032761116196!2d-51.12782408538673!3d-30.042407223320396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197627d25a0fdd%3A0xc728acda6a03e24e!2sVia%20Dois%2C%2043%20-%20Morro%20Santana%2C%20Porto%20Alegre%20-%20RS%2C%2091450-650!5e0!3m2!1spt-BR!2sbr!4v1680792085490!5m2!1spt-BR!2sbr"
+											width="310" 
+											height="310" 
+											style="border:0;" 
+											allowfullscreen="" 
+											loading="lazy" 
+											referrerpolicy="no-referrer-when-downgrade">
+									</iframe>							
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-md-5 d-flex justify-content-center">
-						<div id="mapa" class="d-flex justify-content-center pb-5">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1726.9032761116196!2d-51.12782408538673!3d-30.042407223320396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197627d25a0fdd%3A0xc728acda6a03e24e!2sVia%20Dois%2C%2043%20-%20Morro%20Santana%2C%20Porto%20Alegre%20-%20RS%2C%2091450-650!5e0!3m2!1spt-BR!2sbr!4v1680792085490!5m2!1spt-BR!2sbr"
-									width="310" 
-									height="310" 
-									style="border:0;" 
-									allowfullscreen="" 
-									loading="lazy" 
-									referrerpolicy="no-referrer-when-downgrade">
-							</iframe>							
-						</div>
-					</div>
-					<div class="col-md-1"></div>
 				</div>
 			</div>
-		</div>
+		</section>
+		<div class="espaco-pre-footer"></div>
 		<?php include 'template/js-bootstrap.php';?>
 	</body>
 </html>

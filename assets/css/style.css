@@ -456,14 +456,33 @@ a.blob-btn {
 }
 
 /* line 39, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_espacos.scss */
+.espaco-pre-footer {
+  height: 90px;
+}
+
+/* line 43, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_espacos.scss */
 .espaco-index {
   height: 25px;
 }
 
-/* line 44, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_espacos.scss */
-.contatos {
-  padding-top: 10px;
-  padding-bottom: 10px;
+/* line 48, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_espacos.scss */
+.separador-telefone-contato {
+  height: 10px;
+}
+
+/* line 52, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_espacos.scss */
+#encontre {
+  margin-top: 30px;
+}
+
+/* line 56, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_espacos.scss */
+.espaco-endereco-contato {
+  height: 60px;
+}
+
+/* line 60, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_espacos.scss */
+.espaco-seta-endereco-contato {
+  height: 110px;
 }
 
 @font-face {
@@ -720,23 +739,33 @@ h3.madelina {
   color: #5c5c5c;
 }
 
-/* line 252, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 253, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+.font-titulo-contatos {
+  font-size: 48px;
+}
+
+/* line 257, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+.font-link-telefone-contatos {
+  font-size: 24px;
+}
+
+/* line 262, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 div.font-reduzida {
   font-size: 12px;
 }
 
-/* line 256, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 266, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .text-size-button {
   font-size: 20px;
   padding: 10px 50px;
 }
 
-/* line 261, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 271, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .text-size-grande {
   font-size: 30px;
 }
 
-/* line 265, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 275, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .text-size-20 {
   font-size: 20px;
 }
@@ -785,29 +814,29 @@ span.recuo-primeira-linha,
 }
 
 /* line 19, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_imagens.scss */
-.imagem5 {
-  z-index: 1;
-}
-
-/* line 23, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_imagens.scss */
 .img3 {
   background-image: url(../../img/fotos/imagem6.jpg);
 }
 
-/* line 27, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_imagens.scss */
+/* line 23, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_imagens.scss */
 div.row > div.col-md-12 > div.col-sm-10 {
   padding-right: 0px;
   padding-left: 0px;
 }
 
-/* line 32, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_imagens.scss */
+/* line 28, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_imagens.scss */
 img.width {
   width: 100px;
 }
 
-/* line 36, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_imagens.scss */
+/* line 32, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_imagens.scss */
 img.width-maior {
   width: 120px;
+}
+
+/* line 36, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_imagens.scss */
+.seta-mapa-abaixo {
+  display: none;
 }
 
 /* line 3, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_inputs.scss */
@@ -1187,23 +1216,33 @@ h3.madelina {
   color: #5c5c5c;
 }
 
-/* line 252, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 253, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+.font-titulo-contatos {
+  font-size: 48px;
+}
+
+/* line 257, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+.font-link-telefone-contatos {
+  font-size: 24px;
+}
+
+/* line 262, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 div.font-reduzida {
   font-size: 12px;
 }
 
-/* line 256, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 266, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .text-size-button {
   font-size: 20px;
   padding: 10px 50px;
 }
 
-/* line 261, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 271, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .text-size-grande {
   font-size: 30px;
 }
 
-/* line 265, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 275, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .text-size-20 {
   font-size: 20px;
 }
@@ -1258,129 +1297,36 @@ body {
   height: 100%;
 }
 
-/* line 12, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_parallax.scss */
-.conteudo {
-  color: #777;
-  background-color: white;
-  text-align: center;
-  padding: 50px 80px;
-}
-
-/* line 19, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_parallax.scss */
-h3 {
-  text-transform: uppercase;
-  color: #111;
-  text-align: center;
-}
-
-/* line 25, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_parallax.scss */
-.imagem1,
-.imagem2,
-.imagem3,
-.imagem4,
-.imagem5,
-.imagem6 {
-  position: relative;
-  height: 100%;
-  opacity: 0.7;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-/* line 40, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_parallax.scss */
-.imagem1 {
-  background-image: url(../../img/fotos/imagem1.jpg);
-}
-
-/* line 44, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_parallax.scss */
-.imagem2 {
-  background-image: url(../../img/fotos/imagem2.jpg);
-}
-
-/* line 48, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_parallax.scss */
-.imagem3 {
-  background-image: url(../../img/fotos/imagem3.jpg);
-}
-
-/* line 52, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_parallax.scss */
-.imagem4 {
-  background-image: url(../../img/fotos/imagem4.jpg);
-}
-
-/* line 56, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_parallax.scss */
-.imagem5 {
-  background-image: url(../../img/fotos/imagem5.jpg);
-}
-
-/* line 60, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_parallax.scss */
-.imagem6 {
-  background-image: url(../../img/fotos/imagem6.jpg);
-}
-
-/* line 64, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_parallax.scss */
-.conteudo-titulo {
-  position: absolute;
-  left: 0;
-  top: 45%;
-  width: 100%;
-  text-align: center;
-}
-
-/* line 72, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_parallax.scss */
-.conteudo-titulo span.titulo {
-  color: #fff;
-  background-color: #111;
-  padding: 18px;
-  font-size: 20px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-}
-
-/* line 80, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_parallax.scss */
-.canto {
-  border-radius: 20px;
-}
-
 @media (max-width: 575.98px) {
-  /* line 5, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
-  p.recuo-primeira-linha {
-    text-indent: 0;
-  }
-  /* line 9, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
-  body {
-    margin-bottom: 200px;
-  }
-  /* line 13, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 6, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .animate-character {
     font-size: 21px;
   }
-  /* line 17, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 10, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-img-index-superior {
     height: 30px;
   }
-  /* line 21, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 14, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-img-index {
     height: 30px;
   }
-  /* line 25, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 18, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-img-index-2 {
     height: 50px;
   }
-  /* line 29, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 22, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   img.width {
     width: 80px;
   }
-  /* line 33, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 26, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   img.width-maior {
     width: 100px;
   }
-  /* line 37, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 30, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   h2.planos {
     font-size: 32px;
   }
-  /* line 41, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 34, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   section#planos >
 div#container-ofertas >
 div#plano >
@@ -1388,21 +1334,21 @@ div.plano >
 h3#titulo-plano {
     font-size: 28px;
   }
-  /* line 49, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 42, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-plano-1,
   .espaco-plano-2,
   .espaco-plano-rapido {
     height: 10px;
   }
-  /* line 55, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 48, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .animate-character-mini {
     font-size: 30px;
   }
-  /* line 59, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 52, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .index-consulte {
     font-size: 16px;
   }
-  /* line 63, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 56, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   section#planos >
 div#container-ofertas >
 div#plano >
@@ -1411,85 +1357,102 @@ a.link-index >
 h3 {
     font-size: 20px;
   }
-  /* line 72, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 65, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-consulta-dominio {
     height: 10px;
   }
-  /* line 76, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 69, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-consulta-dominio-interno {
     height: 40px;
   }
-  /* line 80, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 73, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .animate-character-fale-conosco {
     font-size: 40px;
   }
-  /* line 84, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 77, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .deseja-mensagem {
     font-size: 20px;
   }
-  /* line 88, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 81, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .label-mensagem {
     margin-top: 20px;
     margin-bottom: 0px;
   }
-  /* line 93, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 86, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .input-mensagem {
     margin-top: 0px;
     margin-bottom: 5px;
   }
-  /* line 98, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 91, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .voltar-topo {
     padding-bottom: 55px;
   }
-  /* line 103, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
-  .conteudo {
-    padding-bottom: 100px;
+  /* line 96, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .font-titulo-contatos {
+    font-size: 26px;
   }
-  /* line 107, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
-  .carousel-item {
-    height: 650px;
+  /* line 100, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .font-link-telefone-contatos {
+    font-size: 20px;
   }
-  /* line 111, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
-  .desaparece-sm {
+  /* line 104, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  #encontre {
+    margin-top: 30px;
+  }
+  /* line 108, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .espaco-endereco-contato {
+    height: 20px;
+  }
+  /* line 112, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .espaco-seta-endereco-contato {
+    height: 20px;
+  }
+  /* line 116, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .seta-mapa-direita {
     display: none;
   }
-  /* line 115, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
-  .lg {
-    display: none;
+  /* line 120, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .seta-mapa-abaixo {
+    display: initial;
+    margin-bottom: 20px;
+  }
+  /* line 126, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .espaco-pre-footer {
+    height: 150px;
   }
 }
 
 /*Extra small devices (portrait phones, menor que 576px)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-  /* line 123, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 134, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .animate-character {
     font-size: 22px;
   }
-  /* line 127, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 138, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-img-index-superior {
     height: 30px;
   }
-  /* line 131, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 142, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-img-index {
     height: 30px;
   }
-  /* line 135, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 146, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-img-index-2 {
     height: 50px;
   }
-  /* line 139, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 150, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   img.width {
     width: 80px;
   }
-  /* line 143, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 154, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   img.width-maior {
     width: 100px;
   }
-  /* line 147, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 158, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   h2.planos {
     font-size: 32px;
   }
-  /* line 151, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 162, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   section#planos >
 div#container-ofertas >
 div#plano >
@@ -1497,21 +1460,21 @@ div.plano >
 h3#titulo-plano {
     font-size: 28px;
   }
-  /* line 159, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 170, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-plano-1,
   .espaco-plano-2,
   .espaco-plano-rapido {
     height: 10px;
   }
-  /* line 165, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 176, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .animate-character-mini {
     font-size: 20px;
   }
-  /* line 169, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 180, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .index-consulte {
     font-size: 16px;
   }
-  /* line 173, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 184, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   section#planos >
 div#container-ofertas >
 div#plano >
@@ -1520,85 +1483,98 @@ a.link-index >
 h3 {
     font-size: 20px;
   }
-  /* line 182, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 193, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-consulta-dominio {
     height: 10px;
   }
-  /* line 186, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 197, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-consulta-dominio-interno {
     height: 40px;
   }
-  /* line 190, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 201, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .animate-character-fale-conosco {
     font-size: 40px;
   }
-  /* line 194, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 205, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .deseja-mensagem {
     font-size: 20px;
   }
-  /* line 198, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 209, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .label-mensagem {
     margin-top: 20px;
     margin-bottom: 0px;
   }
-  /* line 203, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 214, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .input-mensagem {
     margin-top: 0px;
     margin-bottom: 5px;
   }
-  /* line 208, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 219, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .voltar-topo {
     padding-bottom: 25px;
   }
-  /* line 213, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
-  .conteudo {
-    padding-bottom: 75px;
+  /* line 224, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .espaco-pre-footer {
+    height: 150px;
   }
-  /* line 217, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
-  .desaparece-md {
+  /* line 229, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .font-titulo-contatos {
+    font-size: 26px;
+  }
+  /* line 233, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .font-link-telefone-contatos {
+    font-size: 20px;
+  }
+  /* line 237, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  #encontre {
+    margin-top: 30px;
+  }
+  /* line 241, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .espaco-endereco-contato {
+    height: 20px;
+  }
+  /* line 245, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .espaco-seta-endereco-contato {
+    height: 20px;
+  }
+  /* line 249, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .seta-mapa-direita {
     display: none;
   }
-  /* line 221, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
-  body {
-    margin-bottom: 200px;
-  }
-  /* line 225, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
-  .lg {
-    display: none;
+  /* line 253, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .seta-mapa-abaixo {
+    display: initial;
+    margin-bottom: 20px;
   }
 }
 
 /*Small devices (landscape phones, 576px e maiores)*/
 @media (min-width: 768px) and (max-width: 990.98px) {
-  /* line 233, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
-  p.recuo-primeira-linha {
-    text-indent: 20px;
-  }
-  /* line 237, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 262, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .animate-character {
     font-size: 30px;
   }
-  /* line 241, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 266, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-img-index-superior {
     height: 30px;
   }
-  /* line 245, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 270, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-img-index {
     height: 30px;
   }
-  /* line 249, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 274, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-img-index-2 {
     height: 50px;
   }
-  /* line 253, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 278, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   img.width {
     width: 80px;
   }
-  /* line 257, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 282, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   img.width-maior {
     width: 100px;
   }
-  /* line 261, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 286, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   section#planos >
 div#container-ofertas >
 div#plano >
@@ -1606,34 +1582,34 @@ div.plano >
 h3#titulo-plano {
     font-size: 18px;
   }
-  /* line 269, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 294, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-plano-1 {
     height: 181px;
   }
-  /* line 273, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 298, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-plano-2 {
     height: 162px;
   }
-  /* line 277, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 302, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-plano-rapido {
     height: 105px;
   }
-  /* line 281, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 306, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   div.plano >
 div >
 a {
     font-size: 20px;
     font-weight: bold;
   }
-  /* line 288, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 313, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .animate-character-mini {
     font-size: 20px;
   }
-  /* line 292, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 317, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .index-consulte {
     font-size: 16px;
   }
-  /* line 296, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 321, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   section#planos >
 div#container-ofertas >
 div#plano >
@@ -1642,102 +1618,111 @@ a.link-index >
 h3 {
     font-size: 20px;
   }
-  /* line 305, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 330, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-consulta-dominio {
     height: 120px;
   }
-  /* line 309, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 334, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-consulta-dominio-interno {
     height: 60px;
   }
-  /* line 313, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 338, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .animate-character-fale-conosco {
     font-size: 40px;
   }
-  /* line 317, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 342, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .deseja-mensagem {
     font-size: 20px;
   }
-  /* line 321, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 346, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .voltar-topo {
     margin-bottom: 80px;
   }
-  /* line 326, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
-  .conteudo {
-    padding-bottom: 75px;
+  /* line 351, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .espaco-pre-footer {
+    height: 150px;
   }
-  /* line 330, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
-  .lg {
+  /* line 356, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .font-titulo-contatos {
+    font-size: 35px;
+  }
+  /* line 360, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .font-link-telefone-contatos {
+    font-size: 20px;
+  }
+  /* line 364, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .divisor-contato {
     display: none;
   }
 }
 
 /*Medium devices (tablets, 768px e maiores)*/
 @media (min-width: 991px) and (max-width: 1199.98px) {
-  /* line 338, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
-  p.recuo-primeira-linha {
-    text-indent: 40px;
-  }
-  /* line 342, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
-  .sm {
-    display: none;
-  }
-  /* line 346, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 372, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .animate-character {
     font-size: 40px;
   }
-  /* line 350, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 376, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-img-index-superior {
     height: 100px;
   }
-  /* line 354, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 380, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-plano-1 {
     height: 162px;
   }
-  /* line 358, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 384, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-plano-2 {
     height: 144px;
   }
-  /* line 362, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 388, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-plano-rapido {
     height: 59px;
   }
-  /* line 366, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 392, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .animate-character-mini {
     font-size: 30px;
   }
-  /* line 370, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 396, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-consulta-dominio {
     height: 152px;
   }
-  /* line 374, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 400, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .deseja-mensagem {
     font-size: 24px;
   }
-  /* line 378, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 404, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .voltar-topo {
     margin-bottom: 80px;
+  }
+  /* line 409, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .divisor-contato {
+    display: none;
+  }
+  /* line 413, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .espaco-endereco-contato {
+    height: 60px;
   }
 }
 
 /*Large devices (desktops, 992px e maiores)*/
 @media (min-width: 1200px) {
-  /* line 386, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
-  p.recuo-primeira-linha {
-    text-indent: 50px;
+  /* line 422, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  .divisor-contato {
+    display: none;
   }
-  /* line 390, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
+  /* line 426, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   body {
     margin-bottom: 100px;
-  }
-  /* line 394, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
-  .sm {
-    display: none;
   }
 }
 
 /* line 5, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_separadores.scss */
-hr.divisor {
+.divisor {
+  border: 1px dotted #007bff;
+}
+
+/* line 9, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_separadores.scss */
+.divisor-contato {
   border: 1px dotted #007bff;
 }
 

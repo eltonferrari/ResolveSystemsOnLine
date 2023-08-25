@@ -29,23 +29,29 @@
 		<title>RS - Resolve Systems</title>
 	</head>
 	<body class="bg-light">
-		<?php include 'template/menu.php';?>
-		<div class="container">
-			<div class="conteudo">
-				<h3 class="text-center text-primary">Quem somos</h3>
-				<p class="recuo-primeira-linha">Fundada em 2020 a <strong>Resolve Systems</strong> está no mercado
-					 atendendo clientes, pessoa física e jurídica, dos mais diversos segmentos. Localizada na cidade 
-					  de Porto Alegre, contamos com o que há de melhor na Tecnologia da Informação.</p>
-				<p class="recuo-primeira-linha">Prestando consultoria presencial e remota, ajudando pessoas, empresas, microempreendedores (mei).</p>
-				<h3 class="text-center text-primary">Missão</h3>
-				<p class="recuo-primeira-linha">Disponibilizar soluções em site e identidade digital, criar ferramentas
-					 que resolvam dificuldades e que permitam alavancar resultados.</p>
-				<h3 class="text-center text-primary">Visão</h3>
-				<p class="recuo-primeira-linha">Levar ao usuário final uma experiencia única, com produto limpo e sustentável.</p>
-				<h3 class="text-center text-primary">Valores</h3>
-				<p class="recuo-primeira-linha">Transparência, ética, responsabilidade, confiança e respeito.</p>
+		<header>
+			<?php include 'template/menu.php';?>
+		</header>
+		<section class="container">
+			<div class="row">
+				<div class="col-md-9 m-auto text-center">
+					<h1 class="text-primary font-size-48 negrito">INSTITUCIONAL</h1>
+					<h2 class="text-primary font-size-32 negrito">Quem somos</h2>
+					<p class="font-size-28">Fundada em 2020 a <strong>Resolve Systems</strong> está no mercado
+						atendendo clientes, pessoa física e jurídica, dos mais diversos segmentos. Localizada na cidade 
+						de Porto Alegre, contamos com o que há de melhor na Tecnologia da Informação.</p>
+					<p class="font-size-28">Prestando consultoria presencial e remota, ajudando pessoas, empresas, microempreendedores (mei).</p>
+					<h2 class="text-primary font-size-32 negrito">Missão</h2>
+					<p class="font-size-28">Disponibilizar soluções em site e identidade digital, criar ferramentas
+						que resolvam dificuldades e que permitam alavancar resultados.</p>
+					<h2 class="text-primary font-size-32 negrito">Visão</h2>
+					<p class="font-size-28">Levar ao usuário final uma experiencia única, com produto limpo e sustentável.</p>
+					<h2 class="text-primary font-size-32 negrito">Valores</h2>
+					<p class="font-size-28">Transparência, ética, responsabilidade, confiança e respeito.</p>
+				</div>
 			</div>
-		</div>
+		</section>
+		<div class="espaco-pre-footer"></div>
 		<?php include 'template/js-bootstrap.php';?>
 	</body>    
 </html>

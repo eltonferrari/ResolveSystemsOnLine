@@ -1,15 +1,8 @@
 // RESPONSIVIDADE
 
 @media (max-width: 575.98px) {
-	// INDEX
-	p.recuo-primeira-linha {
-		text-indent: 0;
-	}
 	
-	body {
-		margin-bottom: 200px;
-	}
-
+	// INDEX
 	.animate-character {
 		font-size: 21px;
 	}
@@ -99,21 +92,39 @@
 		padding-bottom: 55px;
 	}
 
+	// CONTATOS
+	.font-titulo-contatos {
+		font-size: 26px;
+	}
+
+	.font-link-telefone-contatos {
+		font-size: 20px;
+	}
+
+	#encontre {
+		margin-top: 30px;
+	}
+	
+	.espaco-endereco-contato {
+		height: 20px;
+	}
+	
+	.espaco-seta-endereco-contato {
+		height: 20px;
+	}
+
+	.seta-mapa-direita {
+		display: none;
+	}
+
+	.seta-mapa-abaixo {
+		display: initial;
+		margin-bottom: 20px;
+	}
+
 	// INSTITUCIONAL
-	.conteudo {
-		padding-bottom: 100px;
-	}
-
-	.carousel-item {
-		height: 650px;
-	}
-
-	.desaparece-sm {
-		display: none;
-	}
-
-	.lg {
-		display: none;
+	.espaco-pre-footer {
+		height: 150px;
 	}
 }
 
@@ -210,30 +221,44 @@
 	}
 
 	// INSTITUCIONAL
-	.conteudo {
-		padding-bottom: 75px;
+	.espaco-pre-footer {
+		height: 150px;
 	}
 
-	.desaparece-md {
+	// CONTATOS
+	.font-titulo-contatos {
+		font-size: 26px;
+	}
+	
+	.font-link-telefone-contatos {
+		font-size: 20px;
+	}
+	
+	#encontre {
+		margin-top: 30px;
+	}
+	
+	.espaco-endereco-contato {
+		height: 20px;
+	}
+	
+	.espaco-seta-endereco-contato {
+		height: 20px;
+	}
+
+	.seta-mapa-direita {
 		display: none;
 	}
 
-	body {
-		margin-bottom: 200px;
-	}
-
-	.lg {
-		display: none;
+	.seta-mapa-abaixo {
+		display: initial;
+		margin-bottom: 20px;
 	}
 }
 
 /*Small devices (landscape phones, 576px e maiores)*/
 @media (min-width: 768px) and (max-width: 990.98px) {
 	
-	p.recuo-primeira-linha {
-		text-indent: 20px;
-	}
-
 	.animate-character {
 		font-size: 30px;
 	}
@@ -323,11 +348,20 @@
 	}
 
 	// INSTITUCIONAL
-	.conteudo {
-		padding-bottom: 75px;
+	.espaco-pre-footer {
+		height: 150px;
 	}
 
-	.lg {
+	// CONTATOS
+	.font-titulo-contatos {
+		font-size: 35px;
+	}
+	
+	.font-link-telefone-contatos {
+		font-size: 20px;
+	}
+
+	.divisor-contato {
 		display: none;
 	}
 }
@@ -335,14 +369,6 @@
 /*Medium devices (tablets, 768px e maiores)*/
 @media (min-width: 991px) and (max-width: 1199.98px) {
 	
-	p.recuo-primeira-linha {
-		text-indent: 40px;
-	}
-	
-	.sm {
-		display: none;
-	}
-
 	.animate-character {
 		font-size: 40px;
 	}
@@ -378,20 +404,26 @@
 	.voltar-topo {
 		margin-bottom: 80px;
 	}
+
+	// CONTATO
+	.divisor-contato {
+		display: none;
+	}
+
+	.espaco-endereco-contato {
+		height: 60px;
+	}
 }
 
 /*Large devices (desktops, 992px e maiores)*/
 @media (min-width: 1200px) {
 	
-	p.recuo-primeira-linha {
-		text-indent: 50px;
+	// CONTATO
+	.divisor-contato {
+		display: none;
 	}
 
 	body {
 		margin-bottom: 100px;
-	}
-
-	.sm {
-		display: none;
 	}
 }

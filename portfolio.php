@@ -28,58 +28,39 @@
 		<link rel="icon" href="img/logos/logo.png" type="image/x-icon">
 		<title>RS - Resolve Systems</title>
 	</head>
-	<body class="bg-light">
-		<?php include 'template/menu.php';?>
-		<div class="container conteudo">
-			<div class="d-flex justify-content-center">
-				<h2 class="text-primary">Portfólio</h2>
+	<body>
+		<header>
+			<?php include 'template/menu.php';?>
+		</header>
+		<section class="container">
+			<div id="titulo" class="text-center">
+				<h1 class="text-primary font-size-48 negrito">Portfólio</h1>
 			</div>
 			<hr class="divisor">
+			<a class="link-no-line" href="https://carroantigo.000webhostapp.com/" target="_blank">
+				<h2 class="text-center text-primary display-in">
+					<img src="img/logos/antigomobilista_logo.png" alt="Em construção" width="40" />
+					Antigomobilista
+				</h2>
+				<p class="display-in">Rede social feita para quem gosta de carros antigos</p>
+				<img src="img/icones/Under_construction_icon.png" alt="Em construção" width="60" />
+				<p class="display-in">Em construção</p>
+			</a>
+			<br />
 			<div class="row">
-				<div class="col-md-6 m-auto text-center py-3">
-					<a class="link-no-line" href="https://carroantigo.000webhostapp.com/" target="_blank">
-						<h5 class="text-center text-primary">
-							<img src="img/logos/antigomobilista_logo.png" alt="Em construção" width="40">
-							Antigomobilista
-							<img src="img/logos/antigomobilista_logo_invertido.png" alt="Em construção" width="40">
-						</h5>
-						<button class="btn btn-primary">Ir para Site Antigomobilista</button>
-						<h5 class="text-center text-light bg-dark py-1 mt-1 borda-redonda-20">
-							Rede social feita para quem gosta de carros antigos
-							<img src="img/icones/Under_construction_icon.png" alt="Em construção" width="40">
-						</h5>
-					</a>
+				<div class="col-md-4 img-responsive">
+					<img class="img-fluid" src="img/portifolio/antigomobilista/print-home-antigomobilista.png" alt="Print Home Antigomobilista" />
 				</div>
-			</div>
+				<div class="col-md-4">
+					<img class="img-fluid" src="img/portifolio/antigomobilista/print-login-antigomobilista.png" alt="Print Login Antigomobilista" />
+				</div>
+				<div class="col-md-4">
+					<img class="img-fluid" src="img/portifolio/antigomobilista/print-registro-antigomobilista.png" alt="Print Registro Antigomobilista" />
+				</div>
+			</div>		
 			<hr class="divisor">
-			<h3 class="text-primary text-center">Modelos</h3>
-			<div class="row">
-				<div class="col-md-6 text-center py-3">
-					<a class="link-no-line" href="https://formaturaads2022.000webhostapp.com/" target="_blank">
-						<h5 class="text-center text-primary">
-							<img src="img/icones/papiro.png" alt="Formatura" width="40">
-							Formatura
-							<img src="img/icones/papiro.png" alt="Formatura" width="40">
-						</h5>
-						<button class="btn btn-primary">Ir para site de Formatura</button>
-					</a>
-				</div>
-				<div class="col-md-6 text-center py-3">
-					<h5 class="text-center text-primary">Casamento</h5>
-					<a href="portfolio/casamento.html" class="btn btn-primary">Ir para modelo de Casamento</a>					
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 text-center pt-3 pb-5">
-					<h5 class="text-center text-primary">Aniversário</h5>
-					<a href="portfolio/aniversario.html" class="btn btn-primary">Ir para modelo de Aniversário</a>					
-				</div>
-				<div class="col-md-6 text-center pt-3 pb-5">
-					<h5 class="text-center text-primary">Time de Futebol</h5>
-					<a href="portfolio/time.html" class="btn btn-primary">Ir para modelo de Time de Futebol</a>					
-				</div>
-			</div>
-		</div>			
+		</section>		
+		<div class="espaco-pre-footer"></div>					
 		<?php include 'template/js-bootstrap.php';?>
 	</body>    
 </html>

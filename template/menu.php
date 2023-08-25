@@ -31,7 +31,6 @@
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown">O que fazemos?</a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="\tecnologias.php">Tecnologias</a>
-                    <a class="dropdown-item" href="\ferramentas/ferramentas_p-00.php">Ferramentas</a>
                     <a class="dropdown-item" href="\portfolio.php">Portfólio</a>
                 </div>
             </li>

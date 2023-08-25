@@ -2,6 +2,10 @@
 
 // SEPARADORES
 
-hr.divisor {
+.divisor {
+    border: 1px dotted $primary;
+}
+
+.divisor-contato {
     border: 1px dotted $primary;
 }

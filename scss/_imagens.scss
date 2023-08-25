@@ -16,10 +16,6 @@
 	background-image: url(../../img/fotos/imagem2.jpg);
 }
 
-.imagem5 {	
-	z-index: 1;
-}
-
 .img3 {
 	background-image: url(../../img/fotos/imagem6.jpg);
 }
@@ -35,4 +31,8 @@ img.width {
 
 img.width-maior {
 	width: 120px;	
+}
+
+.seta-mapa-abaixo {
+	display: none;
 }
