@@ -312,10 +312,10 @@
 				</div>
 			</div>
 		</section>
-		<section class="container">
-			<div class="img1">
-				<div class="row"><!--Row -->
-					<div class="col-sm-6 m-auto d-flex justify-content-center"><!--col-sm8 -->
+		<section class="img1">
+			<div class="container align-self-center">
+				<div class="row">
+					<div class="col-sm-10 m-auto d-flex justify-content-center">
 						<div id="video" class="section embed-responsive embed-responsive-4by3 m-auto">
 							<video class="embed-responsive-item d-flex justify-content-center m-auto" autoplay loop muted>
 								<source src="videos/video3.mp4" type="video/mp4">
