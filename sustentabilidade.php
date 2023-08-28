@@ -55,19 +55,19 @@
         <section id="texto" class="container">
             <div class="row">
                 <div class="col-md-10 m-auto">
-                    <p class="recuo-primeira-linha font-size-22 justificado">
+                    <p class="recuo-primeira-linha font-size-20 justificado">
                         Desenvolvimento sustentável é o desenvolvimento capaz de suprir
                          as necessidades da geração atual, garantindo a capacidade de
                           atender as necessidades das futuras gerações. É o
                            desenvolvimento que não esgota os recursos para o futuro.
                     </p>
-                    <p class="recuo-primeira-linha font-size-22 justificado">
+                    <p class="recuo-primeira-linha font-size-20 justificado">
                         Essa definição surgiu na Comissão Mundial sobre Meio Ambiente e
                          Desenvolvimento, criada pelas Nações Unidas para discutir e
                           propor meios de harmonizar dois objetivos: o desenvolvimento
                            econômico e a conservação ambiental.
                     </p>
-                    <p class="recuo-primeira-linha font-size-22 justificado">
+                    <p class="recuo-primeira-linha font-size-20 justificado">
                         Nos últimos anos, práticas de responsabilidade social
                          corporativa tornaram-se parte da estratégia de um número
                           crescente de empresas, cientes da necessária relação entre
@@ -76,7 +76,7 @@
                              com o estado da saúde ambiental e o bem-estar coletivo da
                               sociedade.
                     </p>
-                    <p class="recuo-primeira-linha font-size-22 justificado">
+                    <p class="recuo-primeira-linha font-size-20 justificado">
                         É cada vez mais importante que as empresas tenham consciência de
                          que são parte integrante do mundo e não consumidoras do mundo.
                           O reconhecimento de que os recursos naturais são finitos e de
@@ -86,7 +86,7 @@
                               sustentável, o qual sugere a utilização dos recursos
                                naturais com qualidade e não em quantidade.
                     </p>
-                    <p class="recuo-primeira-linha font-size-22 justificado">
+                    <p class="recuo-primeira-linha font-size-20 justificado">
                         O consumidor é cada vez mais consciente do peso ecológico e
                          social de suas próprias escolhas. Assim, para a empresa
                           garantir a satisfação dos consumidores ela terá, cada vez mais,
@@ -95,7 +95,7 @@
                              temáticas como a sustentabilidade e empenhando-se a atingir
                               resultados positivos a favor do ambiente.
                     </p>
-                    <p class="recuo-primeira-linha font-size-22 justificado">
+                    <p class="recuo-primeira-linha font-size-20 justificado">
                         Empresas que queiram manter a competitividade ao longo prazo
                          devem, portanto, responder às expectativas dos
                           cidadãos-consumidores, valorizando o comportamento
@@ -114,10 +114,11 @@
                 </div>
             </div>
         </section>
+        <div class="voltar-topo-pre"></div>
         <section id="texto" class="container">
             <div class="row">
                 <div class="col-md-10 m-auto">
-                    <p class="recuo-primeira-linha font-size-24 justificado">
+                    <p class="recuo-primeira-linha font-size-22 justificado">
                         Para a <strong>Resolve Systems</strong> a colaboração e as
                          parcerias, públicas e privadas, representam um pressuposto
                           essencial para um futuro sustentável, ajudando, desta
@@ -131,7 +132,6 @@
 				<img class="voltar-topo" src="img/icones/voltar_topo.png" alt="topo" width="30" title="Voltar ao topo">
 			</a>
 		</div>
-        <div class="espaco-pre-footer"></div>
 		<?php include 'template/js-bootstrap.php'; ?>
 	</body>
 </html>

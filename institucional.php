@@ -34,20 +34,20 @@
 		</header>
 		<section class="container">
 			<div class="row">
-				<div class="col-md-9 m-auto text-center">
-					<h1 class="text-primary font-size-48 negrito">INSTITUCIONAL</h1>
-					<h2 class="text-primary font-size-32 negrito">Quem somos</h2>
-					<p class="font-size-28 recuo-primeira-linha justificado">Fundada em 2020 a <strong>Resolve Systems</strong> está no mercado
+				<div class="col-md-10 m-auto text-center">
+					<h1 class="text-primary font-size-40 negrito">INSTITUCIONAL</h1>
+					<h2 class="text-primary font-size-24 negrito">Quem somos</h2>
+					<p class="font-size-18 recuo-primeira-linha justificado">Fundada em 2020 a <strong>Resolve Systems</strong> está no mercado
 						atendendo clientes, pessoa física e jurídica, dos mais diversos segmentos. Localizada na cidade 
 						de Porto Alegre, contamos com o que há de melhor na Tecnologia da Informação.</p>
-					<p class="font-size-28 recuo-primeira-linha justificado">Prestando consultoria presencial e remota, ajudando pessoas, empresas, microempreendedores (mei).</p>
-					<h2 class="text-primary font-size-32 negrito">Missão</h2>
-					<p class="font-size-28 recuo-primeira-linha justificado">Disponibilizar soluções em site e identidade digital, criar ferramentas
+					<p class="font-size-18 recuo-primeira-linha justificado">Prestando consultoria presencial e remota, ajudando pessoas, empresas, microempreendedores (mei).</p>
+					<h2 class="text-primary font-size-26 negrito">Missão</h2>
+					<p class="font-size-18 recuo-primeira-linha justificado">Disponibilizar soluções em site e identidade digital, criar ferramentas
 						que resolvam dificuldades e que permitam alavancar resultados.</p>
-					<h2 class="text-primary font-size-32 negrito">Visão</h2>
-					<p class="font-size-28 recuo-primeira-linha justificado">Levar ao usuário final uma experiencia única, com produto limpo e sustentável.</p>
-					<h2 class="text-primary font-size-32 negrito">Valores</h2>
-					<p class="font-size-28 recuo-primeira-linha justificado">Transparência, ética, responsabilidade, confiança e respeito.</p>
+					<h2 class="text-primary font-size-26 negrito">Visão</h2>
+					<p class="font-size-18 recuo-primeira-linha justificado">Levar ao usuário final uma experiencia única, com produto limpo e sustentável.</p>
+					<h2 class="text-primary font-size-26 negrito">Valores</h2>
+					<p class="font-size-18 recuo-primeira-linha justificado">Transparência, ética, responsabilidade, confiança e respeito.</p>
 				</div>
 			</div>
 		</section>
@@ -57,7 +57,6 @@
 				<img class="voltar-topo" src="img/icones/voltar_topo.png" alt="topo" width="30" title="Voltar ao topo">
 			</a>
 		</div>
-        <div class="espaco-pre-footer"></div>
 		<?php include 'template/js-bootstrap.php'; ?>
 	</body>
 </html>
