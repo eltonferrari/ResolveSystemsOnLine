@@ -13,7 +13,7 @@
                 box-shadow: 1px 1px 2px #888;
                 z-index:1000;" 
         target="_blank">
-        <img src="../img/icones/gifs/whatsapp-3.gif" alt="WatsApp" width="60">
+        <img src="../img/icones/gifs/whatsapp-1.gif" alt="WatsApp" width="60">
         
     </a>
 </section>

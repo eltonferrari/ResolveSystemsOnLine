@@ -69,25 +69,25 @@
 		<section id="pessoas" class="container">
 			<div class="row mt-5">
 				<div class="col-md-6 text-center">
-					<h2 class="font-size-24 negrito text-primary">
+					<h2 class="font-size-22 negrito text-primary">
 						<img class="align-self-center" src="img/icones/analista.png" alt="Analista" width="40">
-						Analista
+						Analista de Negócios
 					</h2>
 					<h3 class="font-size-18 negrito">
-						<a href="https://www.linkedin.com/in/tiago-emidio-pieretti-vaz-9b126a192/" target="_blank">
+						<a class="link-no-line" href="https://www.linkedin.com/in/tiago-emidio-pieretti-vaz-9b126a192/" target="_blank">
 							<img class="align-self-center" src="img/icones/linkedin.png" alt="LinkedIn" width="30">
 							<span class="text-dark ml-2">Tiago Pieretti Vaz</span>
 						</a>
 					</h3>
 					<h3 class="font-size-18 negrito">
 						<img class="align-self-center" src="img/icones/telefone.png" alt="Telefone:" width="30" />
-						<a href="https://wa.me/5551980475948" target="_blank">
+						<a class="link-no-line" href="https://wa.me/5551980475948" target="_blank">
 							<img class="align-self-center" src="img/icones/whatsapp.png" alt="Whatsapp:" width="30" />
 							<span class="text-dark ml-2">51 98047 5948</span>
 						</a>
 					</h3>
 					<h3 class="font-size-18 negrito">
-						<a href="mailto:tiagovaz@resolvesystems.com.br? subject=subject text" target="_blank">
+						<a class="link-no-line" href="mailto:tiagovaz@resolvesystems.com.br? subject=subject text" target="_blank">
 							<img class="align-self-center" src="img/icones/e-mail.png" alt="E-mail:" width="30" />
 							<span class="text-dark ml-2">tiagovaz@resolvesystems.com.br</span>
 						</a>
@@ -95,25 +95,25 @@
 					<hr class="divisor-contato">
 				</div>				
 				<div class="col-md-6 text-center">
-					<h2 class="font-size-24 negrito text-primary">
+					<h2 class="font-size-22 negrito text-primary">
 						<img class="align-self-center" src="img/icones/desenvolvedor.png" width="30" />
-						Desenvolvedor
+						Analista Desenvolvedor
 					</h2>
 					<h3 class="font-size-18 negrito">
-						<a href="https://www.linkedin.com/in/elton-mario-rodriguez-ferrari-4558a7154/" target="_blank">
+						<a class="link-no-line" href="https://www.linkedin.com/in/elton-mario-rodriguez-ferrari-4558a7154/" target="_blank">
 							<img class="align-self-center" src="img/icones/linkedin.png" alt="desenvolvedor" width="30" />
 							<span class="text-dark ml-2">Elton Ferrari</span>
 						</a>
 					</h3>
 					<h3 class="font-size-18 negrito">
 						<img class="align-self-center" src="img/icones/telefone.png" alt="Telefone:" width="30" />
-						<a href="https://wa.me/5551980626338" target="_blank">
+						<a class="link-no-line" href="https://wa.me/5551980626338" target="_blank">
 							<img class="align-self-center" src="img/icones/whatsapp.png" alt="Whatsapp:" width="30"/>
 							<span class="text-dark ml-2">51 98062 6338</span>
 						</a>
 					</h3>
 					<h3 class="font-size-18 negrito">
-						<a href="mailto:eltonferrari@resolvesystems.com.br? subject=subject text" target="_blank">
+						<a class="link-no-line" href="mailto:eltonferrari@resolvesystems.com.br? subject=subject text" target="_blank">
 							<img class="align-self-center" src="img/icones/e-mail.png" alt="E-mail:" width="30">
 							<span class="text-dark ml-2">eltonferrari@resolvesystems.com.br</span>
 						</a>

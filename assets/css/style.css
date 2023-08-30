@@ -422,7 +422,7 @@ a.blob-btn {
 
 /* line 11, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_espacos.scss */
 .espaco-img-index-2 {
-  height: 70px;
+  height: 30px;
 }
 
 /* line 15, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_espacos.scss */
@@ -850,15 +850,20 @@ div.row > div.col-md-12 > div.col-sm-10 {
 
 /* line 28, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_imagens.scss */
 img.width {
-  width: 100px;
+  width: 80px;
 }
 
 /* line 32, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_imagens.scss */
+img.width-medio {
+  width: 100px;
+}
+
+/* line 36, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_imagens.scss */
 img.width-maior {
   width: 120px;
 }
 
-/* line 36, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_imagens.scss */
+/* line 40, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_imagens.scss */
 .seta-mapa-abaixo {
   display: none;
 }
@@ -1477,7 +1482,7 @@ h3 {
   }
   /* line 146, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-img-index-2 {
-    height: 50px;
+    height: 20px;
   }
   /* line 150, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   img.width {
@@ -1603,7 +1608,7 @@ h3 {
   }
   /* line 274, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   .espaco-img-index-2 {
-    height: 50px;
+    height: 20px;
   }
   /* line 278, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_responsividade.scss */
   img.width {
