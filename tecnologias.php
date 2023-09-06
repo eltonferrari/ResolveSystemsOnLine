@@ -42,7 +42,7 @@
 			<div class="row my-3">
 				<div id="google" class="col-md-6">
 					<div class="row">
-						<div id="google-ads" class="col-6 d-flex justify-content-center py-2 border">
+						<div id="google-ads" class="col-6 d-flex justify-content-center py-2">
 							<a href=".bd-example-modal-md-g-ads" data-toggle="modal" data-target=".bd-example-modal-md-g-ads">
 								<img class="width" src="img/icones/google-ads-logo.png">
 							</a>
@@ -71,7 +71,7 @@
 								</div>
 							</div>
 						</div>
-						<div id="google-analytics" class="col-6 d-flex justify-content-center py-2 border">
+						<div id="google-analytics" class="col-6 d-flex justify-content-center py-2">
 							<a href=".bd-example-modal-md-g-analytics" data-toggle="modal" data-target=".bd-example-modal-md-g-analytics">
 								<img class="width" src="img/icones/google-analytics-logo.png">
 							</a>
@@ -103,7 +103,7 @@
 				</div>
 				<div id="meta-trafego" class="col-md-6">
 					<div class="row">
-						<div id="meta-business" class="col-6 d-flex justify-content-center py-2 border">
+						<div id="meta-business" class="col-6 d-flex justify-content-center py-2">
 							<a href=".bd-example-modal-md-meta-bus" data-toggle="modal" data-target=".bd-example-modal-md-meta-bus">
 								<img class="width" src="img/icones/meta-business-logo.png">
 							</a>
@@ -132,7 +132,7 @@
 								</div>
 							</div>
 						</div>
-						<div id="trafego-pago" class="col-6 d-flex justify-content-center pb-1 border">
+						<div id="trafego-pago" class="col-6 d-flex justify-content-center pb-1">
 							<a href=".bd-example-modal-md-trafego-pago" data-toggle="modal" data-target=".bd-example-modal-md-trafego-pago">
 								<img class="width-maior" src="img/icones/trafego-pago.png" alt="">
 							</a>
@@ -168,7 +168,7 @@
 			<div class="row mb-3">
 				<div id="html-css" class="col-md-4">
 					<div class="row">
-						<div id="html" class="col-6 d-flex justify-content-center py-1 border">
+						<div id="html" class="col-6 d-flex justify-content-center py-1">
 							<a href=".bd-example-modal-md-html" data-toggle="modal" data-target=".bd-example-modal-md-html">
 								<img class="width" src="img/icones/html5.png">
 							</a>
@@ -203,7 +203,7 @@
 								</div>
 							</div>
 						</div>
-						<div id="css" class="col-6 d-flex justify-content-center py-1 border">
+						<div id="css" class="col-6 d-flex justify-content-center py-1">
 							<a href=".bd-example-modal-md-css" data-toggle="modal" data-target=".bd-example-modal-md-css">
 								<img class="width" src="img/icones/css3.png">
 							</a>
@@ -238,7 +238,7 @@
 				</div>
 				<div id="js-jquery" class="col-md-4">
 					<div class="row">
-						<div id="js" class="col-6 d-flex justify-content-center py-1 border">	
+						<div id="js" class="col-6 d-flex justify-content-center py-1">	
 							<a href=".bd-example-modal-md-js" data-toggle="modal" data-target=".bd-example-modal-md-js">
 								<img class="width" src="img/icones/javascript.png">
 							</a>
@@ -268,7 +268,7 @@
 								</div>
 							</div>
 						</div>
-						<div id="jquery" class="col-6 d-flex justify-content-center py-1 border">
+						<div id="jquery" class="col-6 d-flex justify-content-center py-1">
 							<a href=".bd-example-modal-md-jq" data-toggle="modal" data-target=".bd-example-modal-md-jq">
 								<img class="width" src="img/icones/jquery.png">
 							</a>
@@ -302,7 +302,7 @@
 				</div>
 				<div id="bootstrap-scss" class="col-md-4">
 					<div class="row">
-						<div id="bootstrap" class="col-6 d-flex justify-content-center pb-1 border">
+						<div id="bootstrap" class="col-6 d-flex justify-content-center pb-1">
 							<a href=".bd-example-modal-md-bootstrap" data-toggle="modal" data-target=".bd-example-modal-md-bootstrap">
 								<img class="width" src="img/icones/bootstrap4.png">
 							</a>
@@ -333,7 +333,7 @@
 								</div>
 							</div>
 						</div>
-						<div id="sass" class="col-6 d-flex justify-content-center pb-1 border">
+						<div id="sass" class="col-6 d-flex justify-content-center pb-1">
 							<a href=".bd-example-modal-md-scss" data-toggle="modal" data-target=".bd-example-modal-md-scss">
 								<img class="width-medio" src="img/icones/sass-less.png">
 							</a>
@@ -369,7 +369,7 @@
 			<div class="row mb-3">
 				<div id="php-wordpress" class="col-md-6">			
 					<div class="row">
-						<div id="php" class="col-6 d-flex justify-content-center border">
+						<div id="php" class="col-6 d-flex justify-content-center">
 							<a href=".bd-example-modal-md-php" data-toggle="modal" data-target=".bd-example-modal-md-php">
 								<img class="width-maior" src="img/icones/php7.png">
 							</a>
@@ -413,7 +413,7 @@
 								</div>
 							</div>
 						</div>
-						<div id="wordpress" class="col-6 d-flex justify-content-center pt-3 pb-1 border">
+						<div id="wordpress" class="col-6 d-flex justify-content-center pt-3 pb-1">
 							<a href=".bd-example-modal-md-wordpress" data-toggle="modal" data-target=".bd-example-modal-md-wordpress">
 								<img class="width" src="img/icones/wordpress.png">
 							</a>
@@ -464,7 +464,7 @@
 				</div>
 				<div id="ionic-angular" class="col-md-6">
 					<div class="row">
-						<div id="ionic" class="col-6 d-flex justify-content-center pt-3 border">
+						<div id="ionic" class="col-6 d-flex justify-content-center pt-3">
 							<a href=".bd-example-modal-md-ionic" data-toggle="modal" data-target=".bd-example-modal-md-ionic">
 								<img class="width" src="img/icones/ionic.png">
 							</a>
@@ -493,7 +493,7 @@
 								</div>
 							</div>
 						</div>
-						<div id="angular" class="col-6 d-flex justify-content-center pt-3 border">
+						<div id="angular" class="col-6 d-flex justify-content-center pt-3">
 							<a href=".bd-example-modal-md-angular" data-toggle="modal" data-target=".bd-example-modal-md-angular">
 								<img class="width" src="img/icones/angular.png">
 							</a>
@@ -540,7 +540,7 @@
 		</section>
 		<section id="tecnologias-banco-dados" class="container">
 			<div class="row">
-				<div id="mysql" class="col-6 d-flex justify-content-center py-1 border">
+				<div id="mysql" class="col-6 d-flex justify-content-center py-1">
 					<a href=".bd-example-modal-md-mysql" data-toggle="modal" data-target=".bd-example-modal-md-mysql">
 						<img class="width" src="img/icones/mysql.png">
 					</a>
@@ -568,7 +568,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="postgresql" class="col-6 d-flex justify-content-center py-1 border">
+				<div id="postgresql" class="col-6 d-flex justify-content-center py-1">
 					<a href=".bd-example-modal-md-postgresql" data-toggle="modal" data-target=".bd-example-modal-md-postgresql">
 						<img class="width" src="img/icones/postgresql.png">
 					</a>

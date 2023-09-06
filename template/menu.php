@@ -3,6 +3,7 @@
     <!-- LOGO -->
     <a href="\index.php" class="navbar-brand">
         <img src="\img/logos/logo-icon.png" width="40">
+        <span id="nome-menu" class="ml-3 mr-5">Resolve Systems</span>
     </a>
     <!-- MENU HAMBURGUER -->
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">

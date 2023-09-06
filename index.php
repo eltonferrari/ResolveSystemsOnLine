@@ -169,7 +169,7 @@
 		<section id="planos" class="container">
 			<h2 class="text-primary text-center negrito planos">Planos Recomendados</h2>
 			<div id="container-ofertas" class="row">
-				<div id="plano" class="col-md-4 p-2">
+				<div id="basico" class="col-md-4 p-2">
 					<div class="plano py-1 px-3">
 						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Básico</h3>
 						<ul class="pl-4">
@@ -187,7 +187,7 @@
 						</div>
 					</div>				
 				</div>
-				<div id="plano" class="col-md-4 p-2">
+				<div id="intermediario" class="col-md-4 p-2">
 					<div class="plano py-1 px-3">
 						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Intermediário</h3>
 						<ul class="pl-4">
@@ -206,7 +206,7 @@
 						</div>
 					</div>				
 				</div>
-				<div id="plano" class="col-md-4 p-2">
+				<div id="avancado" class="col-md-4 p-2">
 					<div class="plano py-1 px-3">
 						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Avançado</h3>
 						<ul class="pl-4">
@@ -231,7 +231,7 @@
 				</div>
 			</div>
 			<div id="container-ofertas" class="row" id="container-ofertas">
-				<div id="plano" class="col-md-4 p-2">
+				<div id="rapido" class="col-md-4 p-2">
 					<div class="plano py-1 px-3">
 						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Rápido</h3>
 						<ul class="pl-4">
@@ -252,12 +252,9 @@
 						</div>
 					</div>				
 				</div>
-				<div id="plano" class="col-md-4 p-2">
+				<div id="personalizado" class="col-md-4 p-2">
 					<div class="plano py-1 px-3">
 						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Personalizado</h3>
-						<h4 class="text-center negrito index-consulte">
-							<a class="link-no-line" href="https://wa.me/5551998694945" target="_blank">Consulte o valor aqui!</a>
-						</h4>
 						<ul class="pl-4">
 							<li>Site estático ou dinâmico</li>
 							<li>Domínio próprio</li>
@@ -281,7 +278,7 @@
 						</div>
 					</div>				
 				</div>
-				<div id="plano" class="col-md-4 p-2">
+				<div id="consulta" class="col-md-4 p-2">
 					<div class="plano px-3">
 						<div class="espaco-consulta-dominio"></div>
 						<a class="link-index" href="https://wa.me/5551998694945" target="_blank">

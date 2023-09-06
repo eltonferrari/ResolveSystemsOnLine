@@ -21,6 +21,11 @@
 	src: url('../../fonts/Fasthand-Regular.ttf');
 }
 
+@font-face {
+	font-family: "Digital";
+	src: url("../../fonts/Efourpro-OPrP.ttf");
+}
+
 .font-size-12 {
 	font-size: 12px;
 }
@@ -136,6 +141,11 @@ h3.madelina {
 	font-family: "Madelina";
 }
 
+#nome-menu {
+	font-family: "Digital";
+	color: #007bff;
+}
+
 .animate-character,
 .animate-character-mini,
 .animate-character-fale-conosco,
@@ -202,7 +212,7 @@ h3.madelina {
 }
 
 .animate-character-mini {
-	font-size: 35px;
+	font-size: 25px;
 }
 
 .animate-character-fale-conosco {
