@@ -4,7 +4,8 @@
 	z-index: 1;
 }
 
-ul.navbar-nav > li.nav-item > a.nav-link {
+ul.navbar-nav > li.nav-item > a.nav-link,
+a.dropdown-item {
 	background-color: #f8f9fa;
 	color: #007bff;
 }
@@ -13,9 +14,16 @@ ul.navbar-nav > li.nav-item > a.nav-link {
 .navbar-toggler:focus,
 ul.navbar-nav > li.nav-item > a.nav-link:hover,
 ul.navbar-nav > li.nav-item > a.nav-link:focus,
-ul.navbar-nav > li.nav-item > div.dropdown-menu >a.dropdown-item:hover,
-ul.navbar-nav > li.nav-item > div.dropdown-menu >a.dropdown-item:focus {
+ul.navbar-nav > li.nav-item > ul.dropdown-menu >a.dropdown-item:hover,
+ul.navbar-nav > li.nav-item > ul.dropdown-menu >a.dropdown-item:focus,
+a.dropdown-item:hover,
+a.dropdown-item:focus {
 	background-color: #007bff;
 	border-radius: 10px;
 	color:	#f8f9fa;
+}
+
+ul.navbar-nav li.dropdown:hover ul.dropdown-menu
+{ 
+    display: block; 
 }

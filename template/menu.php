@@ -30,10 +30,11 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown">O que fazemos?</a>
-                <div class="dropdown-menu">
+                <ul class="dropdown-menu">
+                    <a class="dropdown-item" href="\nossotrabalho.php">Sobre nosso trabalho</a>
                     <a class="dropdown-item" href="\tecnologias.php">Tecnologias</a>
                     <a class="dropdown-item" href="\portfolio.php">Portfólio</a>
-                </div>
+                </ul>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="\contato.php">Contatos</a>
