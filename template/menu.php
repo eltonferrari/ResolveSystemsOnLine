@@ -31,7 +31,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown">O que fazemos?</a>
                 <ul class="dropdown-menu">
-                    <a class="dropdown-item" href="\nossotrabalho.php">Sobre nosso trabalho</a>
+                    <!--<a class="dropdown-item" href="\nossotrabalho.php">Sobre nosso trabalho</a>-->
                     <a class="dropdown-item" href="\tecnologias.php">Tecnologias</a>
                     <a class="dropdown-item" href="\portfolio.php">Portfólio</a>
                 </ul>
