@@ -56,6 +56,9 @@
             } else {
         ?>
                 <ul class="navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://wp.resolvesystems.com.br/">Ir para WordPress</a>
+                    </li>
                     <li class="nav-item pt-2">
                         <a class="clock px-2 py-1" href="#"></a>
                     </li>

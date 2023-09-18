@@ -760,53 +760,59 @@ h3.madelina {
   font-size: 15px;
 }
 
-/* line 255, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* line 261, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .formatacao1 {
   text-decoration: underline;
 }
 
-/* line 259, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 265, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .formatacao2 {
   text-decoration: overline;
 }
 
-/* line 263, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 269, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .formatacao3 {
   text-decoration: line-through;
 }
 
-/* line 268, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 274, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .font-cinza {
   color: #5c5c5c;
 }
 
-/* line 274, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 280, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .font-titulo-contatos {
   font-size: 48px;
 }
 
-/* line 278, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 284, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .font-link-telefone-contatos {
   font-size: 24px;
 }
 
-/* line 283, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 289, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 div.font-reduzida {
   font-size: 12px;
 }
 
-/* line 287, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 293, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .text-size-button {
   font-size: 20px;
   padding: 10px 50px;
 }
 
-/* line 292, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 298, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .text-size-grande {
   font-size: 30px;
 }
 
-/* line 296, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 302, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .text-size-20 {
   font-size: 20px;
 }
@@ -1266,53 +1272,59 @@ h3.madelina {
   font-size: 15px;
 }
 
-/* line 255, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* line 261, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .formatacao1 {
   text-decoration: underline;
 }
 
-/* line 259, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 265, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .formatacao2 {
   text-decoration: overline;
 }
 
-/* line 263, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 269, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .formatacao3 {
   text-decoration: line-through;
 }
 
-/* line 268, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 274, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .font-cinza {
   color: #5c5c5c;
 }
 
-/* line 274, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 280, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .font-titulo-contatos {
   font-size: 48px;
 }
 
-/* line 278, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 284, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .font-link-telefone-contatos {
   font-size: 24px;
 }
 
-/* line 283, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 289, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 div.font-reduzida {
   font-size: 12px;
 }
 
-/* line 287, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 293, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .text-size-button {
   font-size: 20px;
   padding: 10px 50px;
 }
 
-/* line 292, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 298, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .text-size-grande {
   font-size: 30px;
 }
 
-/* line 296, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
+/* line 302, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_fonts.scss */
 .text-size-20 {
   font-size: 20px;
 }
@@ -1813,15 +1825,14 @@ h3 {
   box-shadow: 8px 8px 10px -3px #007bffb3;
 }
 
+/* line 6, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_sombras.scss */
+.sombra-form:hover {
+  box-shadow: 5px 5px 25px 0px #007bffb3;
+}
+
 /* line 1, ../../xampp/htdocs/ResolveSystemsOnLine/scss/_videos.scss */
 .video-menor {
   max-width: 30%;
-}
-
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

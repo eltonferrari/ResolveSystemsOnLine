@@ -173,7 +173,7 @@
 					<div class="plano py-1 px-3">
 						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Básico</h3>
 						<ul class="pl-4">
-							<li>Site estático</li>
+							<li>Site</li>
 							<li>Domínio próprio</li>
 							<li>Hospedagem</li>
 							<li>Fotos</li>
@@ -191,7 +191,7 @@
 					<div class="plano py-1 px-3">
 						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Intermediário</h3>
 						<ul class="pl-4">
-							<li>Site estático</li>
+							<li>Site</li>
 							<li>Domínio próprio</li>
 							<li>Hospedagem</li>
 							<li>Fotos</li>
@@ -210,7 +210,7 @@
 					<div class="plano py-1 px-3">
 						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Avançado</h3>
 						<ul class="pl-4">
-							<li>Site estático</li>
+							<li>Site</li>
 							<li>Domínio próprio</li>
 							<li>E-mail personalizado<br />(incluindo app para celular)</li>
 							<li>Hospedagem</li>
@@ -235,7 +235,7 @@
 					<div class="plano py-1 px-3">
 						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Rápido</h3>
 						<ul class="pl-4">
-							<li>Site estático</li>
+							<li>Site</li>
 							<li>Página única</li>
 							<li>Domínio próprio</li>
 							<li>Hospedagem</li>
@@ -256,7 +256,7 @@
 					<div class="plano py-1 px-3">
 						<h3 id="titulo-plano" class="text-center bg-primary text-light borda-redonda-10 negrito p-1">Personalizado</h3>
 						<ul class="pl-4">
-							<li>Site estático ou dinâmico</li>
+							<li>Site</li>
 							<li>Domínio próprio</li>
 							<li>E-mail personalizado<br />(incluindo app para celular)</li>
 							<li>Hospedagem</li>
@@ -343,7 +343,7 @@
 								<h6 class="text-danger text-center">* Preenchimento obrigatório</h6>
 								<form action="systems/controladores/fale_conosco/valida_fale_conosco.php" method="post">
 									<div class="row">
-										<div class="col-md-9 row m-auto mb-2">
+										<div class="col-md-9 row m-auto mb-2 sombra-form">
 											<div class="col-md-3 form-group label-mensagem">
 												<label class="text-danger" for="nome">* </label>
 												<label class="text-primary mr-2 negrito" for="nome">Nome: </label>
